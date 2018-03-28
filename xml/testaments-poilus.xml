@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Testaments de poilus : édition numérique</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <!--<listWit>
+              <witness>
+                 <msDesc>
+                    <msIdentifier>
+                       <repository></repository>
+                       <idno>MC/ET/LXXXIX/2355</idno>
+                       <msName>Minute du 11 octobre 1917</msName>
+                    </msIdentifier>
+                    <msContents>
+                       <summary><p></p></summary>
+                       
+                    </msContents>
+                    <physDesc>
+                       <p>Papier à lettre blanc, 2 pages, dim. 30,2 x 20 cm, encre ; enveloppe, dim. 11,5 x 14,5 cm, encre. </p>
+                    </physDesc>
+                 </msDesc>
+              </witness>
+           </listWit>-->
+            <p/>
+         </sourceDesc>
+
+      </fileDesc>
+   </teiHeader>
+   <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="testaments-poilus-introduction">
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Testaments de poilus : introduction</title>
+               <principal>
+                  <persName>
+                     <forename>Christine</forename>
+                     <surname>Nougaret</surname>
+                     <affiliation>Centre Jean-Mabillon (EA 3624) de l’École nationale des
+                        chartes</affiliation>
+                  </persName>
+               </principal>
+
+               <respStmt>
+                  <resp>contributions au texte, encodage, corrections</resp>
+                  <persName>
+                     <forename>Florence</forename>
+                     <surname>Clavaud</surname>
+                     <affiliation>Archives nationales</affiliation>
+                     <affiliation>Centre Jean-Mabillon (EA 3624) de l’École nationale des
+                        chartes</affiliation>
+                  </persName>
+               </respStmt>
+            </titleStmt>
+            <editionStmt>
+               <p/>
+            </editionStmt>
+            <extent/>
+            <publicationStmt>
+               <p/>
+            </publicationStmt>
+            <sourceDesc>
+               <p/>
+            </sourceDesc>
+         </fileDesc>
+      </teiHeader>
+      <text>
+         <body>
+            <head>Introduction et parties liminaires</head>
+            <div xml:id="homePageAbstract">
+               <p>Le raccourcissement des délais de communication des archives, suite à
+                  <!-- FC juin 2916 --><!--une-->la loi de 2008, a permis l’accès aux minutes
+                  notariales de la Grande Guerre, matériau
+                  <!-- FC juin 2916 --><!--ignoré-->inaccessible jusqu’à ce jour
+                  <!--des--><!-- FC juin 2916 -->aux historiens. Dans la continuité des travaux du
+                  Centre Jean-Mabillon sur l’écrit parisien, la présente édition électronique entend
+                  innover en fournissant aux chercheurs <hi rend="bold">un échantillon significatif de testaments de
+                  Poilus parisiens, morts pour la France entre 1914 et 1922</hi>. Les 134 textes ici
+                  retenus, issus de trois études notariales parisiennes et conservés aux Archives
+                  nationales (Minutier central), permettront aux lecteurs de
+                  <!--voir--><!-- FC juin 2916 -->saisir le potentiel de ces écrits personnels pour
+                  approcher l’<hi rend="bold">état d’esprit des combattants</hi>, alors que la perspective de la mort à
+                  la guerre est bien présente dans le secret de leur cœur.</p>
+               <p>Cette édition numérique a été réalisée pour la partie historique par Christine
+                  Nougaret, professeur à l’École nationale des chartes, et pour la partie
+                  technologique par Florence Clavaud, conservateur en chef du patrimoine aux
+                  Archives nationales, toutes deux membres du Centre Jean-Mabillon, avec la
+                  collaboration de Natalia Pashkeeva, diplômée du Master 2 Technologies numériques
+                  appliquées à l’histoire de l’École des chartes, doctorante à l’EHESS. Ce projet n’aurait pu se faire sans le
+                  soutien de Marie-Françoise Limon-Bonnet, <!-- FC juin 2916 -->conservateur général
+                  du patrimoine, responsable du Minutier central des notaires
+                  <!--parisiens--><!-- FC juin 2916 -->de Paris, et le concours
+                  de<!-- sa collaboratrice--><!-- FC juin 2916 --> Mélisa Locatelli, secrétaire de
+                  documentation, responsable de la collecte des archives notariales au Minutier.</p>
+               <p>Ce travail constitue par ailleurs <hi rend="bold">la première étape d’un projet plus vaste</hi> soutenu par le Laboratoire d’Excellence (LabEx) PATRIMA, pour lequel les Archives nationales, l’École nationale des chartes, l’université de Cergy-Pontoise, l’université Paris 8 et les Archives départementales des Yvelines se sont associées. L’objectif de ce projet est d’identifier, de numériser et d’éditer numériquement
+                  un nombre beaucoup plus important de ces testaments de Poilus, en faisant appel aux volontaires, à qui d’ici
+                  un an devrait être proposé un travail de transcription en ligne sur une plate-forme collaborative. Nous donnerons plus d’informations sur ce projet dès que possible.</p>
+            </div>
+            <div xml:id="projet">
+               <!-- FC qques corrections octobre 2016 suite à 2e relecture CN-->
+               <head>Le projet</head>
+               <div>
+                  <head>Les choix éditoriaux</head>
+                  <p>L’édition porte sur les testaments olographes et leurs enveloppes éventuelles,
+                     si elles sont de la main du Poilu. On a choisi d’ignorer pour ce projet les
+                     mentions d’enregistrement ajoutées à ces testaments lors du règlement des
+                     successions : seul est donc édité le texte autographe tel que délimité par le
+                     bâtonnage du juge. <!-- FC juin 2916 -->Ont aussi été écartées, à ce jour, de
+                     l’édition, les onze lettres missives testamentaires du corpus.</p>
+                  <p>Pour replacer ces testaments dans leur contexte, en les rattachant à la période
+                     où ils ont été écrits et non à celle où ils ont été ouverts, nous avons décidé
+                     de présenter l’édition par date d’écriture des testaments. Chaque testament a
+                     reçu un numéro d’ordre selon ce classement. Des menus de navigation horizontaux
+                     synchronisés, concernant les années, les mois puis les jours, permettent
+                     d’accéder aux testaments cherchés.</p>
+
+                  <p>L’édition inclut l’intégralité des images numériques des documents, qui ont été
+                     produites par les Archives
+                     nationales<!--, y compris les pages blanches éventuelles des testaments--><!-- FC juin 2016 -->.
+                     Elle est séquencée par document&#xa0;: au sein de la même page web, la
+                     transcription ou l’édition du document sont données à côté des images numériques, qu’il
+                     s’agisse du testament ou de son enveloppe. On peut, en restant sur la même page
+                     web, feuilleter les pages du document.</p>
+
+                  <p>Chaque testament est introduit par une brève analyse donnant : sa date de temps
+                     et de lieu ; le nom de son auteur, les circonstances et la date du décès du
+                     Poilu ; une description matérielle du testament (type de papier, pagination,
+                     dimensions, matière de l’écriture) ; sa cote aux Archives nationales.</p>
+                  <p>Nous avons fait le choix de livrer au lecteur deux versions de l’édition :<list>
+                        <item>Une transcription imitative du texte, permettant de respecter le plus
+                           fidèlement possible l’écriture et la mise en page du Poilu, et de rendre
+                           compte ainsi de la matérialité du texte ;</item>
+                        <item>Une édition du texte définitif, modernisée (orthographe) et normalisée
+                           (harmonisation de l’écriture des dates, de la ponctuation et de la
+                           présentation, et résolution des abréviations&#xa0; correction des fautes de
+                           syntaxe), qui permet une lecture plus fluide. Pour cette dernière, nous
+                           avons suivi les règles d’édition de l’École des Chartes<ref
+                              xml:id="introRef001" target="#introFootnote001" type="footnote" n="1"
+                           />.</item>
+                     </list></p>
+                  <p>Les notes d’apparat critique, qui portent sur l’établissement du texte, ont été
+                     rattachées à la transcription, tandis que l’annotation historique, très
+                     succincte, relève de l’édition : l’essentiel des identifications est donné dans
+                     les index (index des
+                     <!--noms de personnes--><!-- FC juin 2016 -->testateurs et index des noms de lieux de décès).</p>
+                  <p>L’index <!--noms de personnes--><!-- FC juin 2016 -->des testateurs est en fait
+                     l’index des Poilus auteurs des testaments. Pour chacun d’eux sont indiqués son
+                     identité complète (nom, prénoms, dates d’existence) ; son dernier domicile ;
+                     son état matrimonial ; son grade dans l’armée et ses éventuelles décorations ;
+                     les circonstances et la date du décès ; les sources utilisées pour élaborer la
+                     notice.</p>
+                  <p>L’index des noms de lieux de décès, qui permet de rapprocher des Poilus morts
+                     au même endroit, comprend les noms de lieux tels qu’ils figurent dans la <ref
+                        target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
+                        type="externalLink">base de données des morts pour la France de la Première
+                        Guerre mondiale</ref> ou dans la minute de chaque testament. S’agissant le
+                     plus souvent de lieux-dits, ils ont fait l’objet d’une identification aussi
+                     précise que possible, chaque lieu-dit étant rattaché à sa commune d’origine. Le
+                     cas échéant, on a précisé la localisation actuelle (cas des communes fusionnées
+                     ou disparues). La géolocalisation des lieux de décès a par ailleurs été établie
+                     selon la norme WGS84 (<foreign xml:lang="eng">World Geodetic System
+                        1984</foreign>), grâce à la base de données web <ref
+                        target="http://www.geonames.org/" type="externalLink">Geonames</ref>. Pour
+                     l’instant, de simples liens renvoient à cette application&#xa0;; ultérieurement nous
+                     proposerons une carte interactive pour l’accès à l’index des lieux de
+                     décès.</p>
+                 
+                  <p>Des liens actifs permettent de circuler entre l’édition des testaments, l’index
+                     des testateurs et l’index des lieux de décès.</p>
+                  <!-- <p>Un clic sur une image numérique permet d’atteindre la même image au sein de la visionneuse d’images de la salle des inventaires virtuelle des Archives nationales.</p>-->
+               </div>
+               <div>
+                  <head>Les choix techniques</head>
+                  <p>La présente édition est entièrement encodée en XML conformément au standard
+                        <ref target="http://www.tei-c.org/index.xml" type="externalLink">TEI (Text
+                        Encoding Initiative)</ref>. Nous donnerons beaucoup plus d’informations sur
+                     le modèle d’encodage prochainement.</p>
+                  <p>L’ensemble du site est produit à partir des fichiers XML/TEI à l’aide d’un
+                     programme écrit en XSLT (version 2 de ce langage). La mise en forme en est
+                     assurée par une feuille de style CSS3. Certains effets et fonctionnalités de
+                     navigation sont gérés par un script JavaScript.</p>
+                  <!-- <p>Pour consulter ce site web, il est recommandé d’utiliser un navigateur web récent et un écran de définition au moins égale à 1280 pixels en largeur.</p>-->
+               </div>
+               <signed><persName>Christine Nougaret</persName> et <persName>Florence
+                     Clavaud</persName>,
+                     <!--<date when="1016-04-11">11 avril 2016</date>--><!-- FC juin 2016 --><date
+                     when="2016-06-11">février 2017</date>.</signed>
+            </div>
+            <div xml:id="credits">
+
+               <list>
+
+                  <item>Identification et édition critique des documents, élaboration des index,
+                     rédaction de l’introduction : Christine Nougaret (École nationale des chartes,
+                     Centre Jean-Mabillon)</item>
+                  <item>Numérisation en mode image des documents : Archives nationales, direction de
+                     l’Appui scientifique, département de la Conservation, service Image</item>
+                  <item>Analyse et indexation des minutes notariales au sein des instruments de
+                     recherche de la salle des inventaires virtuelle des Archives nationales :
+                     Mélisa Locatelli, sous la direction de Marie-Françoise Limon-Bonnet (Archives
+                     nationales, direction des Fonds, département du Minutier central des notaires
+                     de Paris)</item>
+                  <item>Rédaction de la section sur le projet : Christine Nougaret, Florence Clavaud
+                     (Archives nationales, direction des Fonds | École nationale des chartes, Centre
+                     Jean-Mabillon)</item>
+                  <item>Conception du modèle de balisage XML/TEI, encodage XML/TEI de l’ensemble des
+                     contenus, contrôles de qualité et de cohérence : Florence Clavaud et Natalia
+                     Pashkeeva (École nationale des chartes, Centre Jean-Mabillon)</item>
+                  <item>Conception et réalisation du site web : Florence Clavaud</item>
+                  <item>Hébergement du site web : Julien Delord (École nationale des chartes, centre
+                     de ressources informatiques)</item>
+               </list>
+            </div>
+            <div xml:id="contact">
+               
+               <p>Vous vous intéressez au projet et souhaitez des informations ? Vous avez une question, une observation ? Vous êtes membre de la famille d’un des Poilus dont le testament est édité, et souhaitez entrer en contact avec l’équipe projet ? Vous souhaitez participer à l’opération de transcription collaborative ?</p><p> N’hésitez pas à nous contacter à l’adresse de courriel suivante : <ref type="email">dmc.an@culture.gouv.fr</ref></p>
+            </div>
+            <div xml:id="mentionsLegales">
+               <div xml:id="cite">
+                  <head>Citer la présente édition</head>
+                  <p>Pour citer la présente édition dans son ensemble, utiliser la mention
+                     suivante : <bibl><respStmt>
+                           <persName><surname>Nougaret</surname><forename>Christine</forename></persName>
+                           <persName><surname>Clavaud</surname><forename>Florence</forename></persName>
+                           <resp>dirs.</resp>
+                        </respStmt><!--<author><persName><surname>Anfray</surname><forename>Benjamin</forename><nameLink>d’</nameLink></persName></author><author><persName><surname>Pashkeeva</surname><forename>Natalia</forename></persName></author>--><title>Testaments
+                           de guerre de Poilus parisiens (1914-1918) : une édition
+                           critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
+                           chartes</publisher><date>2017-....</date><note type="onLineAccess"
+                           >Édition numérique en ligne : <ref
+                              target="http://elec.enc.sorbonne.fr/testaments-de-poilus/"
+                              >http://elec.enc.sorbonne.fr/testaments-de-poilus/</ref> (consulté le
+                           [date de consultation]).</note></bibl></p>
+                  <p>Pour citer une page de la présente édition, utiliser la mention suivante : <bibl><respStmt>
+                           <persName><surname>Nougaret</surname><forename>Christine</forename></persName>
+                           <persName><surname>Clavaud</surname><forename>Florence</forename></persName>
+                           <resp>dirs.</resp>
+                        </respStmt><title level="a">[Titre de la page citée]</title><title level="j"
+                           >Testaments de guerre de Poilus parisiens (1914-1918) : une édition
+                           critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
+                           chartes</publisher><date>2017-....</date><note type="onLineAccess">En
+                           ligne : [adresse web de la page citée] (consulté le [date de
+                           consultation]).</note></bibl></p>
+                  <p>Exemple : pour citer le testament n° 5 : <bibl><respStmt>
+                           <persName><surname>Nougaret</surname><forename>Christine</forename></persName>
+                           <persName><surname>Clavaud</surname><forename>Florence</forename></persName>
+                           <resp>dirs.</resp>
+                        </respStmt><title level="a">Testament n° 5 (Étienne Joseph Driancourt, 1<hi
+                              rend="sup">er</hi> août 1914)</title><title level="j">Testaments de
+                           guerre de Poilus parisiens (1914-1918) : une édition
+                           critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
+                           chartes</publisher><date>2017-....</date><note type="onLineAccess">En
+                           ligne : <ref
+                              target="http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html"
+                              >http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>
+                           (consulté le [date de consultation]).</note></bibl></p>
+               </div>
+               <div>
+                  <head>Licence</head>
+                  <div>
+                     <p>L’interface, les fonctionnalités, la forme et le contenu du présent site
+                        constituent, ensemble, <emph rend="bold">une œuvre protégée par les lois en
+                           vigueur sur la propriété intellectuelle</emph>.</p>
+                  </div>
+                  <div>
+                     <head>Réutilisation des images numériques</head>
+                     <p>Les reproductions des documents des Archives nationales sont destinées à un usage privé.
+                        Toute utilisation pour une publication, une exposition, une diffusion plus large doit faire l'objet d’une demande de réutilisation des données publiques (<ref target="http://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques" type="externalLink">En savoir plus</ref>).</p>
+                     <!--<p>La reproduction en vue d’un usage exclusivement privé des images numériques
+                        des documents édités est autorisée par les Archives nationales, qui en
+                        restent le propriétaire exclusif.</p>
+                     <p>En matière de réutilisation, les Archives nationales sont un service
+                        culturel au sens de l’ordonnance n° 2005-650 du 6 juin 2005 complétant la
+                        loi n°78-753 du 17 juillet 1978 portant diverses mesures d’amélioration
+                        entre l’administration et le public et transposant en droit français la
+                        directive communautaire du 17 novembre 2003. Elles bénéficient donc d’un
+                        régime dérogatoire et fixent elles-mêmes leurs règles de réutilisation des
+                        données publiques.</p>
+                     <p>Toute <emph rend="bold">diffusion de ces images sous quelque forme et sur
+                           quelque support que ce soit</emph> (papier, audiovisuel ou numérique),
+                        pour quelque finalité que ce soit (pédagogique, scientifique ou
+                        commerciale), doit faire l’objet d’une <emph rend="bold">demande
+                           d’autorisation préalable auprès des Archives nationales</emph>.</p>
+                     <p> L’autorisation de réutilisation pourra être donnée pour les usages
+                        exclusivement déclarés par l’utilisateur lors de sa demande, le cas échéant
+                        contre paiement d’une redevance de réutilisation.</p>-->
+                  </div>
+                  <div>
+                     <head>Réutilisation de l’édition des testaments</head>
+                     <p>L’École nationale des chartes met à disposition cette ressource électronique
+                        structurée (introduction, édition proprement dite des testaments, index), protégée par le code de la propriété intellectuelle sur les
+                        bases de données (L341-1), selon les termes de la licence Creative Commons :
+                        « Paternité - Pas d’Utilisation Commerciale - Pas de Modification&#xa0; 2.0
+                        France ». Cette licence est disponible en ligne : <ref
+                           target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/" type="externalLink"
+                           >http://creativecommons.org/licenses/by-nc-nd/2.0/fr/</ref> ou par
+                        courrier postal à Creative Commons, 171 Second Street, Suite 300, San
+                        Francisco, California 94105, USA.</p>
+
+
+                     <p><seg type="paragraphLabel">Paternité</seg> : l’École nationale des chartes
+                        demande à ce que toute publication dérivée de ses ressources électroniques
+                        comporte : <list>
+                           <item>1) le nom de l’École nationale des chartes et son logo ainsi que la
+                              mention des auteurs de l’édition ;</item>
+                           <item>2) l’URI permettant d’accéder à la page citée, ou à défaut à la
+                              page d’accueil de ce site web ;</item>
+                           <item>3) la date du fichier source utilisé.</item>
+                        </list></p>
+                     <p><seg type="paragraphLabel">Pas d’Utilisation Commerciale</seg> : L’École
+                        nationale des chartes souhaite encourager l’utilisation et l’amélioration de
+                        ses ressources électroniques, pour les intérêts de l’enseignement et de la
+                        recherche. Toute autorisation au-delà du champ de cette licence doit être
+                        obtenue auprès de l’École nationale des chartes.</p>
+                     <p><seg type="paragraphLabel">Pas de modification</seg> : Afin de mieux servir
+                        la communauté scientifique, l’École nationale des chartes s’engage à
+                        conserver et à toujours offrir publiquement la version la plus à jour de ses
+                        ressources électroniques par une URI pérenne. Elle s’engage à les corriger
+                        et à les améliorer, à intégrer les contributions qui lui sont soumises
+                        (après validation par un comité scientifique), et à référencer l’origine de
+                        ces contributions. Toute modification de la ressource qui ne serait pas
+                        reversée à la version de référence sous l’autorité éditoriale de l’École
+                        nationale des chartes doit faire l’objet de l’accord de celle-ci, afin de ne
+                        pas disperser les contributions et de permettre les meilleures conditions
+                        possibles de collaboration scientifique.</p>
+                     <p> Tout litige soulevé par le non respect des termes de cette licence sera
+                        soumis à la juridiction des tribunaux de Paris.</p>
+
+
+
+
+
+                  </div>
+                  <div>
+                     <p>Certains des fichiers XML/TEI correspondant aux contenus textuels de ce site
+                        (édition critique des documents, index) seront rendus téléchargeables
+                        ultérieurement.</p>
+                  </div>
+               </div>
+
+            </div>
+            <div xml:id="introduction">
+               <div>
+                  <head>Origine et nature du projet</head>
+                  <p>Lisant les <title><ref target="#poisson-etudes-notariales" type="linkToIntro"
+                           >Études notariales</ref></title> de Jean-Paul Poisson, j’avais été
+                     frappée par son appel à une enquête sur les testaments de la Grande Guerre,
+                     négligés par les historiens contemporanéistes. L’auteur, historien du notariat
+                     et clerc de notaire, avait pu constater la présence de ce type d’actes à
+                     l’office Dufour (étude <!--48--><!-- FC juin 2016 -->XLVIII aux Archives
+                     nationales, Minutier central des notaires de Paris) où il travaillait, et il en
+                     signalait le grand intérêt pour l’histoire des sentiments religieux et
+                     patriotiques ; néanmoins une législation restrictive de l’accès et la faible
+                     densité de ces actes dans un océan de minutes constituaient autant d’obstacles
+                     à une telle recherche. Le raccourcissement des délais de communication de 100 à
+                     75 ans, suite à <!--une --><!-- FC juin 2016 -->la nouvelle législation
+                     <!--en--><!-- FC juin 2016 -->de 2008, et la collecte de minutes qui en a
+                     résulté aux Archives nationales permettent aujourd’hui <!--FC correction octobre 2016 l’accès à--> l’ouverture de ces
+                     sources.</p>
+                  <p>La présente édition numérique, qui s’inscrit dans le programme sur l’écrit
+                     parisien du Centre Jean-Mabillon et dans une recherche sur les écrits du for
+                     privé, s’attache aux testaments des Poilus parisiens décédés lors du conflit ou
+                     de ses suites. Les résultats présentés sont la première étape d’une enquête
+                     plus vaste dans les fonds du Minutier central <!-- FC juin 2016 -->des notaires
+                     de Paris. Trois offices notariaux, qui ont versé leurs archives en 2013, ont
+                     été retenus : étude <!--33-->XXXIII (M<hi rend="sup">e</hi> Delafon, 6
+                     boulevard de Strasbourg), étude <!--59-->LIX (M<hi rend="sup">e</hi> Bossy, 9
+                     rue des Pyramides) et étude <!--89-->LXXXIX (M<hi rend="sup">e</hi> Ploix, 25
+                     boulevard Beaumarchais). Leurs minutes ont été systématiquement dépouillées
+                     pour la période d’août 1914 à juillet 1922 ; ces huit années couvrent la guerre
+                     et l’immédiat après-guerre, qui voit le règlement de la succession de nombreux
+                     Poilus décédés de leurs blessures, de maladies contractées au service ou dont
+                     la disparition a été reconnue par jugement. En l’absence de répertoires,
+                     ceux-ci n’ayant pas été versés, 320 cartons ont été compulsés et 708 testaments
+                     masculins repérés. Les mentions portées sur les minutes, croisées avec les
+                     données de la <!-- FC ajout lien octobre 2016--><ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France de la Première Guerre
+                     mondiale</ref> (au sein du portail « Mémoire des hommes » du ministère de la Défense), ont
+                     permis d’identifier 167 testaments olographes de Poilus (23 %), dont 155 sont
+                     morts pour la France.</p>
+                  <!-- FC TODO insérer tableau de stats -->
+                  <table cols="4">
+                     <head>Statistiques (août 1914-juillet 1922)</head>
+                     <row>
+                        <cell/>
+                        <cell>Nombre de testateurs identifiés</cell>
+                        <cell>Dont : Poilus</cell>
+                        <cell>Dont : morts pour la France</cell>
+                     </row>
+                     <row>
+                        <cell>Étude XXXIII</cell>
+                        <cell>276</cell>
+                        <cell>30</cell>
+                        <cell>26</cell>
+                     </row>
+                     <row>
+                        <cell>Étude LIX</cell>
+                        <cell>210</cell>
+                        <cell>28</cell>
+                        <cell>28</cell>
+                     </row>
+                     <row>
+                        <cell>Étude LXXXIX</cell>
+                        <cell>703</cell>
+                        <cell>109</cell>
+                        <cell>101</cell>
+                     </row>
+                     <row>
+                        <cell>Total</cell>
+                        <cell>1197</cell>
+                        <cell>167</cell>
+                        <cell>155</cell>
+                     </row>
+                  </table>
+                  <p>134 de ces testaments, soit 80 %, ont été écrits pendant la durée de la guerre,
+                     avec un pic remarquable entre le 1<hi rend="sup">er</hi> et le 5 août 1914 (40
+                     % des testaments). À titre de comparaison, seules 5 femmes ont testé pendant la
+                     même période. On pourrait donc parler de testaments de l’entrée en guerre. Des
+                     dépouillements ultérieurs dans d’autres études parisiennes confirmeront ou
+                     infirmeront ce constat.</p>
+                  <figure type="largePicture">
+                     <figDesc>Date de rédaction des testaments de guerre</figDesc>
+                     <graphic url="introduction-image-1-ter.jpg"/>
+                  </figure>
+                  <figure type="largePicture">
+                     <figDesc>Testaments de poilus écrits entre le 31 juillet et le 5 août
+                        1914</figDesc>
+                     <graphic url="introduction-image-2-bis.jpg"/>
+                  </figure>
+
+                  <p>Pour l’édition critique, il a été décidé de ne retenir que les testaments de
+                     guerre des Poilus morts pour la France, c’est-à-dire ceux écrits entre le 31
+                     juillet 1914 (veille de la mobilisation générale) et le 11 novembre 1918 (jour
+                     de l’armistice), soit 134 testaments <!-- FC juin 2016 -->écrits par 128
+                     testateurs.</p>
+                  <p>En revanche, les études ci-après, sur la procédure de régularisation des
+                     testaments de Poilus, sur les spécificités formelles de ces testaments ainsi
+                     que l’aperçu sur le Poilu et la mort s’appuient sur l’ensemble du corpus des
+                     testaments de Poilus.</p>
+                 <!-- <signed><persName>Christine Nougaret</persName>,
+                        <!-\-<date>17 mars 2016</date>-\-><date when="2016-06-11">11 juin
+                     2016</date></signed>-->
+               </div>
+               <div>
+                  <head>Les testateurs et leurs testaments</head>
+                  <div xml:id="testateurs-en-chiffres">
+                     <head>Les testateurs en quelques chiffres</head>
+
+                     <p>Comme le laisse supposer la conservation de leur testament dans le Minutier
+                        parisien, les 128 testateurs sont majoritairement domiciliés à Paris à leur
+                        décès.</p>
+                     <!-- TODO INSERER STATS-->
+                     <table>
+                        <head>Lieux du domicile</head>
+                        <row>
+                           <cell>Lieu du domicile</cell>
+                           <cell>Nombre de testateurs</cell>
+                        </row>
+                        <row>
+                           <cell>Paris</cell>
+                           <cell>12</cell>
+                        </row>
+                        <row>
+                           <cell>Seine</cell>
+                           <cell>12</cell>
+                        </row>
+                        <row>
+                           <cell>Seine-et-Marne</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>Seine-et-Oise</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Aveyron<!--FC octobre 2016 (12)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Indre<!--FC octobre 2016 (36)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Jura<!-- FC octobre 2016(39)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Maine-et-Loire<!-- FC octobre 2016(49)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Marne<!-- FC octobre 2016(51)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Nièvre<!--FC octobre 2016 (58)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Nord<!-- FC octobre 2016(59)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Puy-de-Dôme<!-- FC octobre 2016(63)--></cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Londres (Angleterre)</cell>
+                           <cell>1</cell>
+                        </row>
+                     </table>
+                     <p>Tous les arrondissements parisiens sont représentés, avec une dominante pour
+                        ceux du centre-est (3<hi rend="sup">e</hi>, 4<hi rend="sup">e</hi> , 11<hi
+                           rend="sup">e</hi> et 12<hi rend="sup">e</hi>), à mettre en regard avec
+                        l’implantation des trois études notariées dépouillées.</p>
+                     <table>
+                        <head>Répartition par arrondissement parisien</head>
+                        <row>
+                           <cell>Arrondissement parisien du domicile</cell>
+                           <cell>Nombre de testateurs</cell>
+                        </row>
+                        <row>
+                           <cell>1<hi rend="sup">er</hi> arr.</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>2<hi rend="sup">e</hi> arr.</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>3<hi rend="sup">e</hi> arr.</cell>
+                           <cell>7</cell>
+                        </row>
+                        <row>
+                           <cell>4<hi rend="sup">e</hi> arr.</cell>
+                           <cell>6</cell>
+                        </row>
+                        <row>
+                           <cell>5<hi rend="sup">e</hi> arr.</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>6<hi rend="sup">e</hi> arr.</cell>
+                           <cell>4</cell>
+                        </row>
+                        <row>
+                           <cell>7<hi rend="sup">e</hi> arr.</cell>
+                           <cell>6</cell>
+                        </row>
+                        <row>
+                           <cell>8<hi rend="sup">e</hi> arr.</cell>
+                           <cell>4</cell>
+                        </row>
+                        <row>
+                           <cell>9<hi rend="sup">e</hi> arr.</cell>
+                           <cell>4</cell>
+                        </row>
+                        <row>
+                           <cell>10<hi rend="sup">e</hi> arr.</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>11<hi rend="sup">e</hi> arr.</cell>
+                           <cell>18</cell>
+                        </row>
+                        <row>
+                           <cell>12<hi rend="sup">e</hi> arr.</cell>
+                           <cell>17</cell>
+                        </row>
+                        <row>
+                           <cell>13<hi rend="sup">e</hi> arr.</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>14<hi rend="sup">e</hi> arr.</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>15<hi rend="sup">e</hi> arr.</cell>
+                           <cell>4</cell>
+                        </row>
+                        <row>
+                           <cell>16<hi rend="sup">e</hi> arr.</cell>
+                           <cell>6</cell>
+                        </row>
+                        <row>
+                           <cell>17<hi rend="sup">e</hi> arr.</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>18<hi rend="sup">e</hi> arr.</cell>
+                           <cell>5</cell>
+                        </row>
+                        <row>
+                           <cell>19<hi rend="sup">e</hi> arr.</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>20<hi rend="sup">e</hi> arr.</cell>
+                           <cell>4</cell>
+                        </row>
+                     </table>
+                     <p>Malgré cette domiciliation écrasante dans l’actuelle Île-de-France, les
+                        testateurs sont nés pour un peu plus de la moitié d’entre eux (66) loin de
+                        Paris et de sa région, deux étant même de nationalité étrangère, et donc
+                        engagés volontaires (<ref target="#NDeToledo" type="linkToPersonsIndex">De
+                           Toledo</ref>, italien né en Turquie&#xa0; <ref target="#LWidhalm"
+                           type="linkToPersonsIndex">Widhalm</ref>, autrichien).</p>
+                     <table cols="2">
+                        <head>Répartition par lieux de naissance</head>
+                        <row>
+                           <cell>Lieu de naissance</cell>
+                           <cell>Nombre de testateurs</cell>
+                        </row>
+                        <row>
+                           <cell><hi rend="underline">Île-de-France</hi>
+                              <list>
+                                 <item>Paris</item>
+                                 <item>Seine</item>
+                                 <item>Seine-et-Marne</item>
+                                 <item>Seine-et-Oise</item>
+                              </list>
+                           </cell>
+                           <cell><!-- FC juin 2016--><hi rend="bold">62</hi>
+                              <list>
+                                 <item>54</item>
+                                 <item>5</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                              </list></cell>
+                        </row>
+                        <row>
+                           <cell><hi rend="underline">Province</hi>
+                              <list>
+                                 <item>Ain<!--FC octobre 2016--></item>
+                                 <item>Aisne<!--FC octobre 2016--></item>
+                                 <item>Alpes-Maritimes<!--FC octobre 2016--></item>
+                                 <item>Aube<!--FC octobre 2016 (10)--></item>
+                                 <item>Aveyron<!--FC octobre 2016 (12)--></item>
+                                 <item>Bouches-du-Rhône<!--FC octobre 2016 (13)--></item>
+                                 <item>Charente<!--FC octobre 2016 (16)--></item>
+                                 <item>Cher<!--FC octobre 2016 (18)--></item>
+                                 <item>Côtes-du-Nord<!--FC octobre 2016 (22)--></item>
+                                 <item>Dordogne<!--FC octobre 2016 (24)--></item>
+                                 <item>Doubs<!--FC octobre 2016 (25)--></item>
+                                 <item>Finistère<!--FC octobre 2016 (29)--></item>
+                                 <item>Ille-et-Vilaine<!--FC octobre 2016 (35)--></item>
+                                 <item>Indre<!--FC octobre 2016 (36)--></item>
+                                 <item>Indre-et-Loire<!--FC octobre 2016 (37)--></item>
+                                 <item>Loire<!--FC octobre 2016 (42)--></item>
+                                 <item>Lot<!--FC octobre 2016 (46)--></item>
+                                 <item>Lot-et-Garonne<!--FC octobre 2016 (47)--></item>
+                                 <item>Lozère<!--FC octobre 2016 (48)--></item>
+                                 <item>Maine-et-Loire<!--FC octobre 2016 (49)--></item>
+                                 <item>Marne<!--FC octobre 2016 (51)--></item>
+                                 <item>Meurthe-et-Moselle<!-- FC octobre 2016(54)--></item>
+                                 <item>Morbihan<!--FC octobre 2016 (56)--></item>
+                                 <item>Nièvre<!--FC octobre 2016 (58)--></item>
+                                 <item>Nord<!--FC octobre 2016 (59)--></item>
+                                 <item>Orne<!--FC octobre 2016 (61)--></item>
+                                 <item>Puy-de-Dôme<!--FC octobre 2016 (63)--></item>
+                                 <item>Hautes-Pyrénées<!--FC octobre 2016 (65)--></item>
+                                 <item>Pyrénées-Orientales<!--FC octobre 2016 (66)--></item>
+                                 <item>Haute-Saône<!--FC octobre 2016 (70)--></item>
+                                 <item>Saône-et-Loire<!--FC octobre 2016 (71)--></item>
+                                 <item>Sarthe<!--FC octobre 2016 (72)--></item>
+                                 <item>Savoie<!--FC octobre 2016 (73)--></item>
+                                 <item>Haute-Savoie<!--FC octobre 2016 (74)--></item>
+                                 <item>Seine-Inférieure<!--FC octobre 2016 (76)--></item>
+                                 <item>Deux-Sèvres<!--FC octobre 2016 (79)--></item>
+                                 <item>Vaucluse<!--FC octobre 2016 (84)--></item>
+                                 <item>Haute-Vienne<!--FC octobre 2016 (87)--></item>
+                                 <item>Vosges<!--FC octobre 2016 (88)--></item>
+                                 <item>Yonne<!--FC octobre 2016 (89)--></item>
+                              </list></cell>
+                           <cell><!-- FC juin 2016 --><hi rend="bold">59</hi>
+                              <list>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>2</item>
+                                 <item>4</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>2</item>
+                                 <item>3</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>4</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>3</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>3</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                                 <item>2</item>
+
+                              </list>
+                           </cell>
+                        </row>
+                        <row>
+                           <cell>Alsace-Lorraine</cell>
+                           <cell><!-- FC juin 2016--><hi rend="bold">3</hi></cell>
+                        </row>
+                        <row>
+                           <cell><hi rend="underline">Étranger</hi><lb/>Argentine, Autriche,
+                              Belgique, Turquie </cell>
+                           <cell><!-- FC juin 2016--><hi rend="bold">4</hi></cell>
+                        </row>
+
+
+                     </table>
+                     <p>Grâce à la <ref
+                           target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
+                           type="externalLink">base de données des morts pour la France</ref> du
+                        portail « Mémoire des hommes »<!-- FC (lien ?),--> croisée avec les minutes
+                        de dépôt des testaments, on peut établir à 31 ans l’âge moyen des
+                        <!--FC juin 2016 testateurs--> Poilus à la rédaction de leur testament. On
+                        ne compte qu’un mineur, âgé de 19 ans.</p>
+                     <p>Concernant leur situation maritale, connue pour 127 d’entre eux sur 128, 77
+                        testateurs sont mariés, 48 célibataires et 2 veufs.</p>
+                     <p>Les professions, fournies par les minutes pour 81 testateurs, sont variées,
+                        avec une forte représentation des employés, artisans et commerçants. On peut
+                        tenter de les répartir par catégories professionnelles, même si ces données
+                        demanderaient à être croisées avec les niveaux de fortune d’après les
+                        déclarations à l’enregistrement.</p>
+                     <table>
+                        <head>Répartition par catégories professionnelles<lb/> (par ordre
+                           décroissant)</head>
+                        <row>
+                           <cell><hi rend="underline">Employés divers</hi>
+                              <list>
+                                 <item>Employé de commerce</item>
+                                 <item>Employé de banque</item>
+                                 <item>Employé de bureau</item>
+                                 <item>Garçon de café</item>
+                                 <item>Métreur / vérificateur</item>
+                                 <item>Représentant de commerce</item>
+                                 <item>Agent de publicité</item>
+                                 <item>Clerc de notaire</item>
+                                 <item>Commis architecte</item>
+                              </list></cell>
+                           <cell>28 <list>
+                                 <item>9</item>
+                                 <item>5</item>
+                                 <item>5</item>
+                                 <item>3</item>
+                                 <item>2</item>
+                                 <item>2</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                                 <item>1</item>
+                              </list></cell>
+                        </row>
+                        <row>
+                           <cell>Commerçants</cell>
+                           <cell>14</cell>
+                        </row>
+                        <row>
+                           <cell>Artisans</cell>
+                           <cell>13</cell>
+                        </row>
+                        <row>
+                           <cell>Professions libérales</cell>
+                           <cell>5</cell>
+                        </row>
+                        <row>
+                           <cell>Négociants/banquiers</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>Ouvriers</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>Domestiques</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>Employés de l’État</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>Industriels</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>Propriétaires</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>Militaires</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Agriculteurs</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Clergé</cell>
+                           <cell>0</cell>
+                        </row>
+                     </table>
+                     <!-- TODO INSERER STATS-->
+                  </div>
+                  <div>
+                     <head>Description matérielle des testaments</head>
+                     <p>Les 134 testaments constituant le corpus sont écrits, pour 72 d’entre eux,
+                        sur une feuille de papier timbré de format 24,9 x17,8 cm, de valeur faciale
+                        de 60 centimes, tandis que pour les 62 restants, le testateur a eu recours
+                        au papier à lettre (60) ou, exceptionnellement, au papier pelure (1) ou à
+                        une feuille de registre (1).</p>
+                     <p>Le papier à lettre se répartit comme suit : papier blanc (32), blanc
+                        quadrillé (11) ou réglé (7), papier bleuté (1) ou gris (2), papier blanc
+                        avec en-tête personnel (2) ou commercial (3), papier de deuil (1).</p>
+                     <table>
+                        <row>
+                           <cell/>
+                           <cell>Testaments olographes</cell>
+                           <cell>Lettres <!--FC juin 2016 de dernières volontés-->missives</cell>
+                        </row>
+                        <row>
+                           <cell>Papier timbré</cell>
+                           <cell>72</cell>
+                           <cell>0</cell>
+                        </row>
+                        <row>
+                           <cell>Papier à lettre</cell>
+                           <cell>49</cell>
+                           <cell>11</cell>
+                        </row>
+                        <row>
+                           <cell>Papier pelure</cell>
+                           <cell>1</cell>
+                           <cell>0</cell>
+                        </row>
+                        <row>
+                           <cell>Feuille de registre</cell>
+                           <cell>1</cell>
+                           <cell>0</cell>
+                        </row>
+                     </table>
+
+                     <p>126 testaments sont écrits à l’encre, 6 au crayon, 2 à l’encre et au
+                        crayon.</p>
+                     <table>
+                        <row>
+                           <cell/>
+                           <cell>Testaments olographes</cell>
+                           <cell>Lettres missives</cell>
+                        </row>
+                        <row>
+                           <cell>Encre</cell>
+                           <cell>119</cell>
+                           <cell>7</cell>
+                        </row>
+                        <row>
+                           <cell>Crayon</cell>
+                           <cell>3</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>Mixte</cell>
+                           <cell>1</cell>
+                           <cell>1</cell>
+                        </row>
+
+                     </table>
+                     <p>Une majorité écrasante des testaments (94 sur 134) tient sur une seule page,
+                        tandis que le plus court d’entre eux ne compte que six mots, hors date et
+                        signature.</p>
+                     <table>
+                        <row>
+                           <cell/>
+                           <cell>Testaments olographes</cell>
+                           <cell>Lettres missives</cell>
+                        </row>
+                        <row>
+                           <cell>1 page</cell>
+                           <cell>92</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>2 pages</cell>
+                           <cell>23</cell>
+                           <cell>2</cell>
+                        </row>
+                        <row>
+                           <cell>3 pages</cell>
+                           <cell>7</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>4 pages</cell>
+                           <cell>0</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>5 pages</cell>
+                           <cell>1</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>6 pages et plus</cell>
+                           <cell>0</cell>
+                           <cell>2</cell>
+                        </row>
+                     </table>
+                     <p>95 testaments ont été présentés ouverts aux juges, les 39 autres sous
+                        enveloppe portant une suscription, close par des cachets dans 14 cas.</p>
+                     <table>
+                        <row>
+                           <cell/>
+                           <cell>Testaments olographes</cell>
+                           <cell>Lettres missives</cell>
+                        </row>
+                        <row>
+                           <cell>Ouvert</cell>
+                           <cell>88</cell>
+                           <cell>7</cell>
+                        </row>
+                        <row>
+                           <cell>Fermé</cell>
+                           <cell>35<lb/>Cachet : 13</cell>
+                           <cell>4<lb/>Cachet : 1</cell>
+                        </row>
+
+
+                     </table>
+                  </div>
+                  <div xml:id="dispositions-testamentaires">
+                     <head>Les dispositions testamentaires</head>
+                     <!-- FC juin 2016 texte ajouté -->
+                     <p>Acte de dévolution à titre gratuit, le testament permet aussi d’exprimer ses
+                        dernières volontés dans le domaine moral et spirituel.</p>
+                     <div>
+                        <head>Patrimoine</head>
+                        <!-- EGranie-->
+                        <!-- <ref target="#NDeToledo" type="linkToPersonsIndex">De
+                           Toledo</ref>-->
+                        <p>Sans surprise, tous les testaments organisent la succession du testateur,
+                           à l’exception de celui d’<!--<ref target="#EGranie" type="linkToPersonsIndex">-->Edmond Granié<!--</ref>--> (<ref target="#will-097" type="linkToEdition">testament n° 97</ref>), qui, veuf et sans enfant, n’a
+                           qu’une préoccupation, être enterré auprès de sa femme. Un acte de
+                           dévolution déshérite le parent indigne (<!--<ref target="#LBrivois" type="linkToPersonsIndex">L. Brivois</ref>) (-->L. Brivois, <ref target="#will-056" type="linkToEdition">testament n° 56</ref>), tandis qu’un autre
+                           prévoit l’annulation de ses dispositions testamentaires si l’épouse
+                           légataire allait se fixer en Allemagne (<!--<ref target="#JELaforet" type="linkToPersonsIndex">-->Laforêt<!--</ref>-->, <ref target="#will-051" type="linkToEdition">testament n° 51</ref>).</p>
+                        <div>
+                           <head>Bénéficiaires</head>
+                           <p>Deux paramètres entrent en ligne de compte : l’état marital et la
+                              présence ou non d’enfants. En effet au début du XX<hi rend="sup"
+                                 >e</hi> siècle, le Code civil prévoit les règles de dévolution
+                              suivantes : priorité est donnée aux enfants et descendants du défunt
+                              (petits-enfants ou arrière-petits-enfants) ; à défaut à ses ascendants
+                              (parents, grands-parents), et à ses collatéraux, c’est-à dire ses
+                              frères et sœurs ou ses neveux (art. 731). Ce n’est qu’en l’absence de
+                              ces héritiers légitimes, que les biens passent aux enfants naturels,
+                              ensuite à l’époux survivant, et, s’il n’y en a pas, à l’État (art.
+                              723, mod. L. 25 mars 1896). Peu favorisé par le Code civil, le
+                              conjoint survivant s’est vu toutefois reconnaître, à partir de 1891,
+                              un usufruit, en quotité variable selon la qualité des successeurs
+                              (art. 767, mod. L 9 mars 1891 et 3 avril 1917). À côté de la
+                              dévolution légale, le Code civil reconnaît aux conjoints le droit de
+                              tester au profit du survivant, dans la limite des droits des héritiers
+                              légaux (art. 1094, mod. L 14 février 1900).</p>
+                           <p>Sans surprise, les <hi rend="bold">testateurs mariés</hi> disposent
+                              majoritairement en faveur de leur épouse, dont ils veulent améliorer
+                              le sort, au-delà des règles de la dévolution légale, soulignant
+                              parfois l’implication de leur femme dans le succès de leurs affaires
+                              (<!--<ref target="#GEBelgiovanni" type="linkToPersonsIndex">-->Belgiovanni<!--</ref>-->, <ref target="#will-049" type="linkToEdition">testament n° 49</ref>). En l’absence d’enfants, ils font de leur conjointe leur
+                              légataire universelle (art. 916), sans condition (<!--<ref target="#JLagache" type="linkToPersonsIndex">-->Lagache<!--</ref>-->, <ref target="#will-132" type="linkToEdition">testament n° 132</ref>) ou sous
+                              réserve de survenance d’enfant (<!--<ref target="#JBregeras" type="linkToPersonsIndex">-->Bregeras<!--</ref>-->, <ref target="#will-128" type="linkToEdition">testament n° 128</ref> ; <!--<ref target="#JEVachette" type="linkToPersonsIndex">-->Vachette<!--</ref>-->, <ref target="#will-030" type="linkToEdition">testament n° 30</ref>) ou du prédécès des
+                              parents du testateur (<!--<ref target="#EQuainon" type="linkToPersonsIndex">-->Quainon<!--</ref>-->, <ref target="#will-117" type="linkToEdition">testament n° 117</ref>) ; d’autres attribuent à leur épouse
+                              survivante toute la quotité disponible, plus l’usufruit de la réserve
+                              (<!--<ref target="#MDumont" type="linkToPersonsIndex">Dumont</ref>-->Dumont, <ref target="#will-009" type="linkToEdition">testament n° 9</ref>), comme le permet l’article 1094 du Code civil ; certains,
+                              toutefois, soucieux de conserver les biens dans la famille de sang,
+                              limitent le droit de leur conjointe à l’usufruit légal (<!--<ref target="#JDDuffourc" type="linkToPersonsIndex">-->Duffourc<!--</ref>-->, <ref target="#will-055" type="linkToEdition">testament n° 55</ref> ; <!--<ref target="#EMarchal" type="linkToPersonsIndex">-->Marchal<!--</ref>-->, <ref target="#will-013" type="linkToEdition">testament n° 13</ref>). Pour les testateurs pères de famille, la dévolution aux
+                              enfants comme héritiers réservataires va de soi, la conjointe étant
+                              désignée alors comme simple usufruitière (<!--<ref target="#MRPatey" type="linkToPersonsIndex">-->Patey<!--</ref>-->, <ref target="#will-003" type="linkToEdition">testament n° 3</ref>) ou comme bénéficiaire
+                              d’un quart en toute propriété (<!--<ref target="#MBrivois" type="linkToPersonsIndex">-->M. Brivois<!--</ref>-->, testaments n° <ref target="#will-034" type="linkToEdition">34</ref> et <ref target="#will-035" type="linkToEdition">35</ref>). </p>
+                           <p>Les testaments des <hi rend="bold">célibataires</hi> reprennent les
+                              dispositions de la dévolution légale en faveur des ascendants ou des
+                              collatéraux (partage en parties égales, <!--<ref target="#MMathelin" type="linkToPersonsIndex">-->Mathelin<!--</ref>-->, <ref target="#will-031" type="linkToEdition">testament n° 31</ref>) ; legs universel avec
+                              charge, <!--<ref target="#EDriancourt" type="linkToPersonsIndex">-->Driancourt<!--</ref>-->, <ref target="#will-005" type="linkToEdition">testament n° 5</ref> ; legs particuliers, <!--<ref target="#SocquetClerc" type="linkToPersonsIndex">-->Socquet-Clerc<!--</ref>-->, <ref target="#will-083" type="linkToEdition">testament n° 83</ref>). Les
+                              célibataires qui vivent en concubinage, notoire ou dissimulé,
+                              prévoient des legs particuliers (mobilier de la chambre commune,
+                              compte courant, titres boursiers…) à leur compagne (<!--<ref target="#HBattmann" type="linkToPersonsIndex">-->Battmann<!--</ref>-->, <ref target="#will-098" type="linkToEdition">testament n° 98</ref> ; <!--<ref target="#FLChatin" type="linkToPersonsIndex">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref> ; <!--<ref target="#JSTardy" type="linkToPersonsIndex">-->Tardy<!--</ref>-->, <ref target="#will-028" type="linkToEdition">testament n° 28</ref>) et s’en remettent à la générosité et à la compréhension de
+                              leurs héritiers légaux pour la bonne exécution du legs
+                              (<!--<ref target="#CRLaederich" type="linkToPersonsIndex">-->Laederich<!--</ref>-->, <ref target="#will-043" type="linkToEdition">testament n° 43</ref>).</p>
+                           <p>Le souci du bien-être des parents survivants anime plusieurs
+                              testateurs qui en appellent à leur futur légataire pour y veiller
+                              (<!--<ref target="#EDriancourt" type="linkToPersonsIndex">-->Driancourt<!--</ref>, -->, <ref target="#will-005" type="linkToEdition">testament n° 5</ref> ; <!--<ref target="#JLLegeay" type="linkToPersonsIndex">-->Legeay<!--</ref>-->, <ref target="#will-016" type="linkToEdition">testament n° 16</ref> ).</p>
+                        </div>
+                        <div>
+                           <head>Quantité et nature du patrimoine</head>
+                           <p>Du fait de leur âge et de leur catégorie sociale, la plupart des
+                              testateurs ont peu de patrimoine (Voir <ref
+                                 target="#testateurs-en-chiffres" type="linkToIntro">Les testateurs
+                                 en quelques chiffres</ref>). Pour les plus pauvres, leur actif se
+                              limite au mobilier de leur chambre à coucher et à leurs effets
+                              personnels (<!--<ref target="#CHerpin" type="linkToPersonsIndex">-->Herpin<!--</ref>-->, <ref target="#will-022" type="linkToEdition">testament n° 22</ref> ). Assez significativement, le terme « fortune »
+                              n’est utilisé que dans neuf testaments (<!--<ref target="#LBrivois" type="linkToPersonsIndex">-->L. Brivois<!--</ref>-->, <ref target="#will-056" type="linkToEdition">testament n° 56</ref> ; <!--<ref type="linkToPersonsIndex" target="#ACharquillon">-->Charquillon<!--</ref>-->, <ref target="#will-120" type="linkToEdition">testament n° 120</ref> ; <!--<ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">-->Chateauneuf-Randon<!--</ref>-->, <ref target="#will-014" type="linkToEdition">testament n° 14</ref> ; <!--<ref type="linkToPersonsIndex" target="#LDebain">-->Debain<!--</ref>-->, <ref target="#will-060" type="linkToEdition">testament n° 60</ref> ; <!--<ref type="linkToPersonsIndex" target="#JFeulard">-->Feulard<!--</ref>-->, <ref target="#will-119" type="linkToEdition">testament n° 119</ref> ; <!--<ref target="#CRLaederich" type="linkToPersonsIndex">-->Laederich<!--</ref>-->, <ref target="#will-043" type="linkToEdition">testament n° 43</ref> ; <!--<ref type="linkToPersonsIndex" target="#ELaborde">-->Laborde<!--</ref>-->, <ref target="#will-101" type="linkToEdition">testament n° 101</ref> ; <!--<ref type="linkToPersonsIndex" target="#LeConte">-->Le Conte<!--</ref>-->, <ref target="#will-074" type="linkToEdition">testament n° 74</ref> ; <!--<ref target="#EMarchal" type="linkToPersonsIndex">-->Marchal<!--</ref>-->, <ref target="#will-013" type="linkToEdition">testament n° 13</ref>). Néanmoins, une part de la succession se réglant par la
+                              dévolution légale, et du fait de l’emploi d’expressions toutes faites
+                              (« tout ce que je possède », « biens présent et à venir »), il serait
+                              hasardeux de tirer des conclusions sur le patrimoine des testateurs à
+                              partir de quelques dispositions. Notons seulement que certains
+                              testaments énumèrent des biens meubles et immeubles précis, témoignant
+                              de la situation patrimoniale du testateur (<!--<ref type="linkToPersonsIndex" target="#JBaumont">-->Baumont<!--</ref>-->, <ref target="#will-018" type="linkToEdition">testament n° 18</ref> ; <!--<ref type="linkToPersonsIndex" target="#LBeaumont">-->Beaumont<!--</ref>-->, <ref target="#will-019" type="linkToEdition">testament n° 19</ref> ; <!--<ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">-->Chateauneuf-Randon<!--</ref>-->, <ref target="#will-014" type="linkToEdition">testament n° 14</ref> ; <!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref> ; <!--<ref type="linkToPersonsIndex" target="#FGonthier">-->Gonthier<!--</ref>-->, <ref target="#will-021" type="linkToEdition">testament n° 21</ref> ; <!--<ref type="linkToPersonsIndex" target="#EGrandjean">-->Grandjean<!--</ref>-->, <ref target="#will-010" type="linkToEdition">testament n° 10</ref> ; <!--<ref target="#EMarchal" type="linkToPersonsIndex">-->Marchal<!--</ref>-->, <ref target="#will-013" type="linkToEdition">testament n° 13</ref> ; <!--<ref type="linkToPersonsIndex" target="#LFPegorier">-->Pégorier<!--</ref>-->, <ref target="#will-024" type="linkToEdition">testament n° 24</ref> ;
+                              <!--<ref type="linkToPersonsIndex" target="#MRogue">-->Rogue<!--</ref>-->, <ref target="#will-026" type="linkToEdition">testament n° 26</ref>). Certains font état de leurs dettes (<!--<ref type="linkToPersonsIndex" target="#JLefort">-->Lefort<!--</ref>-->, <ref target="#will-012" type="linkToEdition">testament n° 12</ref>), d’autres de leurs
+                              créances (<!--<ref type="linkToPersonsIndex" target="#FGonthier">-->Gonthier<!--</ref>-->, <ref target="#will-021" type="linkToEdition">testament n° 21</ref> ; <!--<ref type="linkToPersonsIndex" target="#AFTourain">-->Tourain<!--</ref>-->, <ref target="#will-029" type="linkToEdition">testament n° 29</ref>), d’autres encore de leurs espérances
+                              d’héritage (<!--<ref type="linkToPersonsIndex" target="#LDufriche">-->Dufriche<!--</ref>-->, <ref target="#will-008" type="linkToEdition">testament n° 8</ref> ; <!--<ref type="linkToPersonsIndex" target="#ELaborde">-->Laborde<!--</ref>-->, <ref target="#will-101" type="linkToEdition">testament n° 101</ref>).</p>
+                           <p>Enfin, les testateurs commerçants, industriels ou professions
+                              libérales règlent la succession de leurs affaires (<!--<ref type="linkToPersonsIndex" target="#JBernel">-->Bernel<!--</ref>-->, <ref target="#will-006" type="linkToEdition">testament n° 6</ref> ; <!--<ref type="linkToPersonsIndex" target="#JDDuffourc">-->Duffourc<!--</ref>-->, <ref target="#will-055" type="linkToEdition">testament n° 55</ref> ; <!--<ref type="linkToPersonsIndex" target="#JLefort">-->Lefort<!--</ref>-->, <ref target="#will-012" type="linkToEdition">testament n° 12</ref> ; <!--<ref type="linkToPersonsIndex" target="#MRPatey">-->Patey<!--</ref>-->, <ref target="#will-003" type="linkToEdition">testament n° 3</ref>).</p>
+                        </div>
+                     </div>
+                     <div>
+                        <head>Souvenirs personnels et de famille</head>
+                        <p>Parmi les biens dont on organise la dévolution, figurent les souvenirs
+                           personnels ou de famille : <cit><quote>Je désire que des objets m’ayant
+                              appartenu soient donnés en souvenir de moi aux membres de ma famille,
+                              oncles, tantes, cousins. Ma mère gardera pour elle ce qu’elle
+                              désirera</quote><bibl><!--<ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">-->Chateauneuf-Randon<!--</ref>-->, <ref target="#will-014" type="linkToEdition">testament n° 14</ref></bibl></cit>.</p>
+                        <p>Ces legs particuliers d’objets symboliques, destinés à conserver le
+                           souvenir du disparu auprès de ses proches, ne concernent que huit
+                           testaments. Montre en or (<!--<ref type="linkToPersonsIndex" target="#JBaumont">-->Baumont<!--</ref>-->, <ref target="#will-018" type="linkToEdition">testament n° 18</ref> ; <!--<ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">-->Chateauneuf-Randon<!--</ref>-->, <ref target="#will-014" type="linkToEdition">testament n° 14</ref> ; <!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref>), armes de
+                           chasse (<!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref> ; <!--<ref target="#CRLaederich" type="linkToPersonsIndex">-->Laederich<!--</ref>-->, <ref target="#will-043" type="linkToEdition">testament n° 43</ref>), bijoux (<!--<ref type="linkToPersonsIndex" target="#EGrandjean">-->Grandjean<!--</ref>-->, <ref target="#will-010" type="linkToEdition">testament n° 10</ref>), tenue militaire
+                           (<!--<ref type="linkToPersonsIndex" target="#FBoudeau">-->Boudeau<!--</ref>-->, <ref target="#will-057" type="linkToEdition">testament n° 57</ref>), objets de piété (<!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref> ; <!--<ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">-->Chateauneuf-Randon<!--</ref>-->, <ref target="#will-014" type="linkToEdition">testament n° 14</ref>) sont légués aux
+                           parents, aux collatéraux<!--FC octobre 2016, aux neveux-->, aux amis ou amies les plus proches.
+                           Certains prévoient le retour à leur famille de sang de souvenirs de
+                           famille tels qu’argenterie à monogramme (<!--<ref type="linkToPersonsIndex" target="#LeConte">-->Le Conte<!--</ref>-->, <ref target="#will-074" type="linkToEdition">testament n° 74</ref>) ou service de vieux
+                           saxe (<!--<ref target="#CRLaederich" type="linkToPersonsIndex">-->Laederich<!--</ref>-->, <ref target="#will-043" type="linkToEdition">testament n° 43</ref>).</p>
+                        <p>La famille professionnelle n’est pas oubliée non plus : l’avocat <!--<ref type="linkToPersonsIndex" target="#MRPatey">-->Patey<!--</ref>--> (<ref target="#will-003" type="linkToEdition">testament n° 3</ref>) lègue ses livres de droit à l’ordre des avocats tandis que le médecin
+                           <!--<ref type="linkToPersonsIndex" target="#EGrandjean">-->Grandjean<!--</ref>--> (<ref target="#will-010" type="linkToEdition">testament n° 10</ref>) lègue à la « bibliothèque de l’Hospice des Enfants assistés, 74
+                           rue Denfert-Rochereau » tous ses livres de médecine.</p>
+                        <p>Enfin, deux testateurs demandent la destruction de leur correspondance
+                           personnelle (<!--<ref type="linkToPersonsIndex" target="#HGe">-->Gé<!--</ref>-->, <ref target="#will-033" type="linkToEdition">testament n° 33</ref> ; <!--<ref type="linkToPersonsIndex" target="#EGrandjean">-->Grandjean<!--</ref>-->, <ref target="#will-010" type="linkToEdition">testament n° 10</ref>).</p>
+                     </div>
+                     <div>
+                        <head>Esprit religieux et amour familial</head>
+                        <p>Les considérations religieuses sont quasi absentes de ces testaments.
+                           Seul Chateauneuf-Randon ouvre le sien par le dessin d’une croix. L’appel
+                           aux prières des proches n’est présent que deux fois (<!--<ref type="linkToPersonsIndex" target="#VNBoch">-->Boch<!--</ref>-->, <ref target="#will-048" type="linkToEdition">testament n° 48</ref> ; <!--<ref type="linkToPersonsIndex" target="#LeConte">-->Le Conte<!--</ref>-->, <ref target="#will-074" type="linkToEdition">testament n° 74</ref>) ;
+                           pour les funérailles religieuses, voir <ref target="#poilu-et-mort"
+                              type="linkToIntro">Le Poilu et la mort</ref>), associé chez Le Conte
+                           au souci d’une éducation religieuse pour ses enfants en une forme de
+                           testament spirituel : <cit><quote>Je ne fais aucune recommandation spéciale
+                              par écrit, mon vœu le plus cher est que mes enfants soient tous de
+                              bons chrétiens et de bons Français ; qu’ils restent unis dans la vie,
+                              s’entendent toujours bien et ne causent aucune peine à leur
+                              mère</quote><bibl><ref target="#will-074" type="linkToEdition">testament n° 74</ref></bibl></cit>.</p>
+                        <p>Éducation chrétienne des enfants pour les uns (Heppe, <ref target="#will-015" type="linkToEdition">testament n° 15</ref> ; <!--<ref type="linkToPersonsIndex" target="#LeConte">-->Le Conte<!--</ref>-->, <ref target="#will-074" type="linkToEdition">testament n° 74</ref>), laïque
+                           pour d’autres (<!--<ref type="linkToPersonsIndex" target="#HGe">-->Gé<!--</ref>-->, <ref target="#will-033" type="linkToEdition">testament n° 33</ref>), le testament de guerre, même dans sa forme concise,
+                           peut donc révéler les convictions profondes des testateurs.</p>
+                        <p>Le testament enfin est le lieu d’épanchements sobres. Appels à la
+                           concorde familiale, reconnaissance envers les proches, amour conjugal se
+                           laissent deviner derrière des formules pudiques (<cit><quote>je lègue à ma
+                              chère femme et à mon cher fils tous les deux adorés</quote><bibl><!--<ref type="linkToPersonsIndex" target="#AFTourain">-->Tourain<!--</ref>-->, <ref target="#will-029" type="linkToEdition">testament n° 29</ref></bibl></cit>)
+                           ou s’expriment plus librement : <cit><quote>Je remercie de tout mon cœur mon
+                              oncle Léon, ma tante Charlotte et ma chère Germaine de leur grande et
+                              constante affection. Elle fut pour moi la plus douce consolation de ma
+                              vie. Mes souvenirs à notre famille et dernier adieu dans ce
+                              monde</quote><!--FC octobre 2016. --><bibl><!--<ref type="linkToPersonsIndex" target="#GNicolon">-->Nicolon<!--</ref>-->, <ref target="#will-124" type="linkToEdition">testament n° 124</ref></bibl></cit>.</p>
+                     </div>
+                     <!--<signed><persName>Christine Nougaret</persName>,
+                           <!-\-FC juin 2016 <date>17 mars 2016</date>-\-><date when="2016-06-11">11
+                           juin 2016</date></signed>-->
+                  </div>
+               </div>
+               <div>
+                  <head>La procédure de régularisation des testaments de Poilus</head>
+                  <p>L’examen diplomatique des minutes permet d’expliquer la procédure de dépôt de
+                     ces testaments, tous olographes. Nous n’avons, en effet, aucun exemple dans
+                     l’échantillon de testament authentique aux armées comme en prévoit le <ref type="linkToBibl" target="#DallozRepDCivil">Code
+                     civil (art. 981)</ref>.</p>
+                  <p>Chaque minute consiste en un dossier comprenant : <list>
+                        <item>Une chemise avec un intitulé<!-- FC juin 2016--><!--,--> et, souvent
+                           au verso, l’identité précise du défunt avec les circonstances du
+                           décès ;</item>
+                        <item>Le testament olographe et ses codicilles éventuels ;</item>
+                        <item>Une expédition de l’ordonnance de dépôt du juge, qui donne sa date à
+                           la minute ;</item>
+                        <item>Éventuellement, l’envoi en possession ou les renonciations ;</item>
+                        <item>Exceptionnellement, un extrait d’acte d’état civil, avec
+                           mention<!-- FC juin 2016-->, le cas échéant,<!-- FC juin 2016--> du
+                           jugement de constat de disparition.</item>
+                     </list></p>
+                  <p>La procédure de régularisation des testaments olographes est donc celle en
+                     vigueur de 1899 à 1966 (Dalloz, <title>Répertoire de droit civil</title>) :
+                     après le décès du testateur et pour permettre <!-- FC juin 2016-->le règlement
+                     de la succession, le testament est produit au greffe du tribunal de première
+                     instance de la Seine où il est ouvert, le cas échéant, puis bâtonné dans les
+                     blancs, coté, signé et paraphé à chaque page, avant d’être remis à un notaire
+                     pour dépôt au rang de ses minutes.</p>
+                  <figure type="largePicture">
+                     
+                     <graphic url="procedure-image-1.jpg"/>
+                     <figDesc>Une minute de dépôt judiciaire de testament olographe (MC/ET/XXX/1852)</figDesc>
+                  </figure>
+                  <figure type="largePicture">
+                     
+                     <graphic url="procedure-image-3.jpg"/>
+                     <figDesc>Mentions du juge du tribunal de première instance de la Seine (MC/ET/XXX/1852)</figDesc>
+                  </figure>
+                  <p>Trois particularités sont à souligner toutefois, qui singularisent ces
+                     testaments : <list>
+                        <item>la mention de « Mort pour la France » qui figure au verso de la
+                           chemise et dans l’ordonnance du juge. Attribuée par la loi du 2 juillet
+                           1915 afin d’honorer les combattants, français ou étrangers, tués par
+                           l’ennemi depuis le 2 août 1914, ou décédés des suites de blessures de
+                           guerre ou de maladies contractées au combat, cette mention devient
+                           obligatoire dans les actes d’état civil des morts et ceux qui en
+                           découlent (loi du 30 septembre 1915). La disposition est étendue aux
+                           disparus<!--suite à  --><!-- FC juin 2016-->, à la suite de la loi du 25
+                           juin 1919 qui instaure une procédure de jugement par le tribunal, afin de
+                           constater le décès sur un faisceau d’indices et d’attribuer aux disparus
+                           la qualification de « morts pour la France ».</item>
+                        <item>le décalage entre la date du décès et celle de l’enregistrement du
+                           testament au tribunal<!-- FC juin 2016-->.<!--,--> Cette formalité
+                           obligatoire<!-- FC juin 2016-->, qui tend à assurer la préservation du
+                           testament contre toute tentative de suppression ou
+                           d’altération<!-- FC juin 2016-->, ne <!--FC octobre 2016pouvant-->peut être effectuée immédiatement
+                           après le décès comme ordinairement, du fait de la difficulté d’apporter
+                           la preuve de centaines voire de milliers de morts quotidiennes : 27 000
+                           Français ont péri dans la seule journée du 22 août 1914. Hormis les morts
+                           à l’hôpital à Paris, le délai moyen entre le décès et le dépôt judiciaire
+                           est de 6 mois <!--FC octobre 2016en moyenne -->jusqu’au début de l’année 1917, et de 30 mois
+                           ensuite quand affluent les dossiers de disparus. Sans doute faut-il voir
+                           dans cet allongement des délais un effet de l’instruction ministérielle
+                           du 2 juin 1916, longue de 20 pages, qui tente d’organiser le chaos en
+                           formulant des règles extrêmement contraignantes pour identifier tués et
+                           disparus et enregistrer leur décès, formalité légale préalable à tout
+                           règlement de succession. La découverte du testament lui-même peut aussi
+                           être tardive et fortuite retardant d’autant le règlement de la
+                           succession.</item>
+                        <item>les circonstances de la production du testament. Dans la majorité des
+                           cas, le testament est confié prioritairement à l’épouse ou à la compagne
+                           (74), et à défaut au notaire (17). Seule une minorité des testateurs (8)
+                           choisissent pour leur testament l’abri du domicile, du coffre de banque
+                           ou du portefeuille.</item>
+                     </list>
+                     <figure type="largePicture">
+                        
+                        <graphic url="procedure-image-2.jpg"/>
+                        <figDesc>Mention « mort pour la France » (MC/ET/XXX/1852)</figDesc>
+                     </figure></p>
+                  <table>
+                     <head>Garde du testament</head>
+                     <row>
+                        <cell/>
+                        <cell>Nombre de testaments</cell>
+                     </row>
+                     <row>
+                        <cell><hi rend="underline">Proches</hi><lb/>Conjointe : 60<lb/> "Héritière"
+                           : 14<lb/> Parents : 7<lb/> Frères, soeurs, beaux-frères, belles-soeurs :
+                           5<lb/> Oncles, cousins : 3<lb/> Beau-père : 1<lb/> Ami : 2<lb/> Associé :
+                           2 </cell>
+                        <cell>94</cell>
+                     </row>
+                     <row>
+                        <cell><hi rend="underline">Professionnel du droit</hi><lb/>Administrateur
+                           judiciaire : 1<lb/>Avocat : 1<lb/>Huissier : 1<lb/>Notaire : 17</cell>
+                        <cell>20</cell>
+                     </row>
+                     <row>
+                        <cell><hi rend="underline">Lieu sûr</hi><!--</cell><cell>--><lb/>Domicile :
+                           4<lb/>Banque : 2<lb/>Sur soi : 2</cell>
+                        <cell>8</cell>
+                     </row>
+                     <row>
+                        <cell>Non spécifié</cell>
+                        <cell>12</cell>
+                     </row>
+                  </table>
+                  <p>Il arrive que l’ordonnance de dépôt fasse état de la découverte du testament
+                     sur le cadavre du <!--FC octobre 2016poilu-->Poilu. L’instruction ministérielle du 2 juillet 1916 sur les
+                     successions militaires prévoit, en effet, de rassembler les objets trouvés sur
+                     les morts ou laissés par eux au cantonnement<!-- FC juin 2016-->, et de les
+                     adresser exclusivement au Service général des pensions du ministère
+                     <!-- FC juin 2016-->de la Guerre à Paris (art. 5), sauf à les incinérer pour
+                     des raisons d’hygiène (art. 17). Les testaments font l’objet d’une attention
+                     toute particulière puisqu’ils doivent être adressés sans délai à ce même
+                     bureau, « sous pli rouge recommandé accompagné d’un bordereau d’envoi »
+                     détaillant l’identité du défunt, les coordonnées de sa famille, et l’expéditeur
+                     (art. 10). La minute Nicolon en fournit un excellent exemple. <figure type="largePicture">
+
+                        <graphic url="FRAN_0045_00365_ptt.jpg"/>
+                        <figDesc>MC/ET/LIX/1094, minute du 24 mars 1917 : enveloppe rouge de
+                           transmission du testament au Service général des pensions</figDesc>
+                     </figure></p>
+                  <p>Avant cette date,
+                     les testaments trouvés sur les morts ont pu être adressés directement aux
+                     familles, comme celui de Victor Boch indiquant au verso <quote>Prière à celui
+                        qui trouvera ceci d’avoir la bonté de le faire parvenir à sa
+                        destinataire</quote>, ce qui fut fait. Ce testament (<ref target="#will-048"
+                           type="linkToEdition">n° 48</ref>) porte encore à ce jour la marque des
+                     pliures dans le portefeuille du sergent.</p>
+
+                  <!--<signed><persName>Christine Nougaret</persName>, <date when="2016-06-12">12 juin
+                        2016</date></signed>-->
+               </div>
+               <div>
+                  <head>Les spécificités formelles des testaments de
+                     <!-- FC juin 2016-->Poilus</head>
+                  <p>À rebours de la procédure très cadrée de dépôt des testaments olographes de
+                     Poilus, le formalisme du testament lui-même est des plus souples.</p>
+                  <p>Tous les testaments du corpus sont olographes : ils sont entièrement écrits,
+                     datés et signés de la main du testateur (Code civil, art. 970). Ils ne sont
+                     assujettis à aucune formalité, hormis l’acquittement des droits de timbre
+                     (papier timbré ou timbre mobile) et d’enregistrement, lesquels sont d’ailleurs
+                     supprimés en 1917 pour les testaments faits par les militaires pendant la durée
+                     des hostilités<!-- La--><!-- FC juin 2016--> (loi du 16 avril 1917).</p>
+                  <p>Dans les faits, deux types d’actes sous seing privé se
+                     distinguent<!-- FC juin 2016--> : le testament proprement dit et la lettre de
+                     dernières volontés, qui diffèrent nettement par leurs caractères externes et
+                     internes.</p>
+                  <div>
+                     <head>Le testament olographe</head>
+                     <p>La forme testamentaire domine de manière écrasante puisqu’elle représente 93
+                        % du corpus. Elle se caractérise par un texte bref qu’encadrent l’intitulé
+                        rituel mais facultatif « ceci est mon testament » (55%), la date et la
+                        signature du testateur ; le tout tient généralement sur une page. Il s’agit
+                        de parer au plus pressé en réglant le sort de ses proches. Nul temps pour de
+                        longs développements dans ces testaments écrits à la hâte, au domicile au
+                        moment de la mobilisation, en garnison avant le départ au front, ou à la
+                        faveur d’une courte et trop rare permission.</p>
+                     <table>
+                        <head>Lieux de rédaction des testaments olographes</head>
+                        <row>
+                           <cell>Domicile</cell>
+                           <cell>92</cell>
+                        </row>
+                        <row>
+                           <cell>Garnison</cell>
+                           <cell>15</cell>
+                        </row>
+                        <row>
+                           <cell>Front</cell>
+                           <cell>11</cell>
+                        </row>
+                        <row>
+                           <cell>Hôpital</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Non spécifié</cell>
+                           <cell>4</cell>
+                        </row>
+
+                     </table>
+                     <p>Ces circonstances exceptionnelles sont succinctement évoquées dans l’exposé
+                        des motifs : <cit>
+                           <quote>La mobilisation générale est déclarée, je <hi rend="bold">pars
+                                 demain</hi> 2<hi rend="sup">e</hi> jour. Pris à l’improviste je
+                              n’ai plus le temps ni les moyens de faire une donation en règle à ma
+                              femme bien aimée</quote>
+                           <bibl>Jules Legeay, 2 août 1914, <ref target="#will-016"
+                                 type="linkToEdition">testament n° 16</ref></bibl>
+                        </cit></p>
+                     <p>Moins fréquemment, elles figurent dans la date initiale ou les clauses
+                        finales : <list>
+                           <item><cit>
+                                 <quote>Paris le 2 août 1914, <hi rend="bold">au moment de
+                                       partir</hi> pour la guerre</quote>
+                                 <bibl>Louis Rogue, <ref target="#will-026" type="linkToEdition"
+                                       >testament n° 26</ref></bibl>
+                              </cit></item>
+                           <item><cit>
+                                 <quote>Ce papier continuera d’être valable depuis ma mort (<hi
+                                       rend="bold">partant en campagne</hi> le 11<hi rend="sup"
+                                       >e</hi> jour de la mobilisation et ne sachant si je
+                                    reviendrai) qui devra être bien confirmée pour jouir de ce
+                                    legs</quote>
+                                 <bibl>Jules Godard, 12 août 1914, <ref target="#will-062"
+                                       type="linkToEdition">testament n° 62</ref></bibl>
+                              </cit></item>
+                        </list></p>
+                     <p>Parfois, la suscription, la souscription, la date finale ou un post-scriptum
+                        précisent le statut de soldat mobilisé :<list>
+                           <item>suscription : <cit>
+                                 <quote>Je soussigné Louis Bocquet, vérificateur au ministère du
+                                    Travail, demeurant à Paris, 32 avenue Daumesnil, actuellement
+                                    soldat au <!-- FC juin 2016-->2<hi rend="sup">e</hi> groupe
+                                    d’aviation et <hi rend="bold">en permission</hi> à Paris</quote>
+                                 <bibl>Louis Bocquet, 4 novembre 1915, <ref target="#will-108"
+                                       type="linkToEdition">testament n° 108</ref></bibl>
+                              </cit></item>
+                           <item>souscription : <cit>
+                                 <quote>Léon Saulnier soldat au <!-- FC juin 2016-->12<hi rend="sup"
+                                       >e</hi> d’artillerie, <hi rend="bold">rentrant à
+                                       l’hôpital</hi> demeurant 27 rue Mercoeur</quote>
+                                 <bibl>Léon Saulnier, 17 janvier 1915<!-- FC juin 2016-->, testament
+                                    non
+                                    édité<!--FC TESTT PAS TROUVE<ref target="will-108" type="linkToEdition">testament n° 108</ref>--></bibl>
+                              </cit></item>
+                           <item>date finale : <cit>
+                                 <quote>Fait à Dreux le 29 septembre 1915 <hi rend="bold">avant mon
+                                       départ pour le front</hi> des armées de la République</quote>
+                                 <bibl>Louis Baudu, <ref target="#will-107" type="linkToEdition"
+                                       >testament n° 107</ref></bibl>
+                              </cit></item>
+                           <item>post-scriptum : <cit>
+                                 <quote>Ce testament est fait de ma main à Garnay qui est la <hi
+                                       rend="bold">garnison</hi> de la 27<hi rend="sup">e</hi>
+                                    compagnie du 67<hi rend="sup">e</hi> de ligne</quote>
+                                 <bibl>Georges Socquet-Clerc, 21 février 1915, <ref
+                                       target="#will-083" type="linkToEdition">testament n°
+                                    83</ref></bibl>
+                              </cit></item>
+                        </list></p>
+                     <p>Le dispositif est succinct (legs universel à la compagne ou la mère), d’une
+                        ligne à une page <!-- FC juin 2016-->(voir <ref
+                           target="#dispositions-testamentaires" type="linkToIntro">Les dispositions
+                           testamentaires</ref>). Les héritiers y sont toujours désignés à la 3<hi
+                           rend="sup">e</hi> personne. Une formule d’adieu explicite peut clore le
+                        dispositif.</p>
+                     <p>Pressés par les événements et confrontés à un inconnu terrifiant, les
+                        testateurs ont pour principal souci de garantir la force juridique de leurs
+                        dernières volontés en insérant celles-ci dans un cadre qui les authentifie.
+                        Pour ce<!--,--><!-- FC juin 2016--> faire, ils recourent majoritairement au
+                        papier timbré (60%). Quand celui-ci manque, les 1<hi rend="sup">er</hi> et 2
+                        août 1914, ils se rabattent à regret sur le papier libre comme Marcel
+                        Goigoux qui prend la précaution de noter que son testament <cit>
+                           <quote>ne pouvant pas être sur papier timbré à cause du siège qui sévit à
+                              Paris doit être considéré comme valable et bon</quote>
+                           <bibl>2 août 1914, <ref target="#will-020" type="linkToEdition">testament
+                                 n° 20</ref></bibl>
+                        </cit>.</p>
+                     <p><cit>
+                           <quote>Je n’ai pu dresser ce testament sur papier timbré car il n’y en
+                              avait plus dans les bureaux de tabac</quote>
+                           <bibl>Rogue, 2 août 1914, <ref target="#will-026" type="linkToEdition"
+                                 >testament n° 26</ref></bibl>
+                        </cit>.</p>
+                     <p><cit>
+                           <quote>J’écris sur ce papier libre faute d’avoir pu me procurer du papier
+                              timbré</quote>
+                           <bibl>Grandjean, 1<hi rend="sup">er</hi> août 1914, <ref
+                                 target="#will-010" type="linkToEdition">testament n°
+                              10</ref></bibl>
+                        </cit>.</p>
+                     <p>Les testateurs veillent aussi au respect des
+                        <!-- FC juin 2016--><!--3-->trois règles explicites du testament
+                        olographe que sont l’écriture entièrement autographe (<cit><quote>Fait en entier
+                           de ma main</quote><bibl><!--<ref type="linkToPersonsIndex" target="#JMurat">-->Murat<!--</ref>-->, <ref target="#will-092" type="linkToEdition">testament n° 92</ref></bibl></cit>)&#xa0; la date toujours présente et souvent
+                        réitérée en lettres et en chiffres, parfois en tête et fin de testament <!-- FC octobre 2016-->(<!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref>) ;
+                        enfin la signature, parfois répétée plusieurs fois (<!--<ref type="linkToPersonsIndex" target="#BLabrin">-->Labrin<!--</ref>-->, <ref target="#will-068" type="linkToEdition">testament n° 68</ref>) et reportée
+                        aussi sur l’enveloppe quand le testament est clos. Mais
+                        aussi<!-- FC juin 2016-->, ils reprennent à leur compte les formules du
+                        testament authentique<!-- FC juin 2016-->, affirmant par exemple <quote>être
+                           sain<!--t--><!-- FC juin 2016--> de corps et d’esprit</quote><!-- FC octobre 2016--> (18 mentions) et donc
+                        dotés de la capacité de tester. La révocation d’un testament antérieur<!--FC octobre 2016--> (7 mentions), les
+                        clauses finales, la mention des mots raturés considérés comme nuls et
+                        l’emploi d’un vocabulaire juridique témoignent d’une appropriation du modèle
+                        ou des conseils reçus d’un notaire.</p>
+                  </div>
+                  <div>
+                     <head>La lettre de dernières volontés</head>
+                     <p>La seconde forme adoptée pour tester est celle de la lettre missive énonçant
+                        un testament, admise comme acte de dernières<!-- FC juin 2016--> volontés
+                        par les tribunaux. Écrite le plus souvent au front, dans l’urgence, le
+                        danger et la précarité, elle représente 7 % du corpus.</p>
+                     <table>
+                        <head>Lieux de rédaction des lettres de dernières volontés</head>
+                        <row>
+                           <cell>Domicile</cell>
+                           <cell>3</cell>
+                        </row>
+                        <row>
+                           <cell>Garnison</cell>
+                           <cell>1</cell>
+                        </row>
+                        <row>
+                           <cell>Front</cell>
+                           <cell>4</cell>
+                        </row>
+                        <row>
+                           <cell>Hôpital</cell>
+                           <cell>0</cell>
+                        </row>
+                        <row>
+                           <cell>Non spécifié</cell>
+                           <cell>1</cell>
+                        </row>
+                     </table>
+                     <p>Généralement longues et écrites au crayon sur des papiers de fortune, les
+                        lettres testamentaires ont été conservées par les familles pour être
+                        produites en cas de besoin. Souvent peu lisibles, elles obligent les
+                        notaires à en établir une <quote>copie collationnée destinée à en conserver
+                           le texte intégral et à suppléer aux originaux eux-mêmes au cas où
+                           l’écriture tracée au crayon pourrait venir à s’effacer ou
+                           s’altérer</quote> (minute Dondain). Ces lettres ne se distinguent des
+                        lettres ordinaires de <!-- FC juin 2016-->Poilus que par la présence en leur
+                        sein de dispositions testamentaires égrenées dans une ou plusieurs lettres,
+                        qui seront toutes produites au tribunal (Boutin, <ref target="#will-118" type="linkToEdition">testament n° 118</ref> ; Cohendy, <ref target="#will-081" type="linkToEdition">testament n° 81</ref> ; Mercier, <ref target="#will-110" type="linkToEdition">testament n° 110</ref> ; Roux, <ref target="#will-099" type="linkToEdition">testament n° 99</ref> ; Stofft, <ref target="#will-106" type="linkToEdition">testament n° 106</ref>). Différent est le cas de la
+                           <quote>dernière lettre</quote>, en forme testamentaire, remise au
+                        destinataire seulement après la mort du testateur qui peut prendre la forme
+                        d’un testament spirituel ou tout au moins d’un bilan d’existence (Burret, <ref target="#will-063" type="linkToEdition">testament n° 63</ref> ; Dardonville, <ref target="#will-133" type="linkToEdition">testament n° 133</ref>).</p>
+                  </div>
+                  <!--<signed><persName>Christine Nougaret</persName>,
+                        <!-\-<date>17 mars 2016</date>-\-><!-\- FC juin 2016-\-><date when="2016-06-11"
+                        >11 juin 2016</date></signed>-->
+               </div>
+               <div xml:id="poilu-et-mort">
+                  <head>Le Poilu et la mort</head>
+                  <p>Contrairement à ce que pourrait faire penser le succès de la mobilisation et
+                     l’enthousiasme patriotique qu’elle soulève chez de nombreux Français, la
+                     possibilité d’une mort imminente est un sentiment bien présent chez les
+                     mobilisés dès août 1914, sentiment qui interroge sur la nature du rapport à la
+                     guerre entre consentement et contrainte.</p>
+                  <p>Il est évidemment impossible de chiffrer une telle réalité tant la
+                     disproportion est gigantesque entre les chiffres officiels et ce modeste
+                     échantillon parisien. Deux millions d’hommes ont été mobilisés en août 1914, 10
+                     milliards de lettres échangées pendant toute la guerre et on ignore combien de
+                     testaments furent dressés.</p>
+                  <p>Ces 134 testaments de guerre permettent néanmoins d’approcher la vision de la
+                     mort présente chez un certain nombre de Poilus. Faire son testament, c’est <cit>
+                        <quote>éviter le malheur d’être surpris par la mort avant d’avoir réglé
+                           [ses] affaires</quote>
+                        <bibl>Canivenq, 4 août 1914, <ref target="#will-053" type="linkToEdition"
+                              >testament n° 53</ref></bibl>
+                     </cit> ; c’est aussi <cit>
+                        <quote>aider le plus possible [les siens dans leur] vie nouvelle</quote>
+                        <bibl>Gatbois, 15 septembre 1915, <ref target="#will-104"
+                              type="linkToEdition">testament n° 104</ref></bibl>
+                     </cit> ; c’est enfin <!--FC octobre 2016<cit>
+                        <quote>-->dire adieu à tous ceux que l’on chérit <!--FC octobre 2016</quote>-->
+                        (<bibl>Ravignon, 18 septembre 1915, <ref target="#will-105"
+                              type="linkToEdition">testament n° 105</ref></bibl>)
+                     <!--FC octobre 2016</cit>-->. Cette pratique de l’âge avancé concerne ici des hommes jeunes, puisque
+                     ils ont en moyenne 31 ans lorsqu’ils rédigent leur testament. La présence d’un
+                     testament écrit à 19 ans par Georges Socquet-Clerc (<ref target="#will-083" type="linkToEdition">testament n° 83</ref>) rappelle que la capacité
+                     testamentaire des mineurs (16-21 ans) a été reconnue, pour le temps de guerre,
+                     à l’égal de celle des majeurs (loi du 28 octobre 1916), dérogeant ainsi aux
+                     dispositions du Code civil (art. 904).</p>
+                  <p>La possibilité de la mort peut être implicite dans le testament (le seul fait
+                     de rédiger un testament en témoigne) ou explicite (allusion à la mort) : 64
+                     testaments l’évoquent directement ou par périphrase. Cette hypothèse est
+                     généralement introduite par la conjonction <term>si</term>, suivie d’un verbe
+                     au présent (<quote>si je meurs</quote>), qui exprime une éventualité probable,
+                     ou d’un verbe à l’imparfait, marque d’une éventualité plus improbable, tandis
+                     que la formule <quote>ne sachant si</quote> traduit l’ignorance du destin.</p>
+                  <table>
+                     <head>Occurrences des mots "décès", "mort", ou "tué" dans les testaments de
+                        guerre</head>
+                     <row>
+                        <cell>Terme ou expression employé</cell>
+                        <cell>Nombre de testaments</cell>
+                     </row>
+                     <row>
+                        <cell>Décès</cell>
+                        <cell>29</cell>
+                     </row>
+                     <row>
+                        <cell>Mort</cell>
+                        <cell>18</cell>
+                     </row>
+                     <row>
+                        <cell>Tué</cell>
+                        <cell>2</cell>
+                     </row>
+                     <row>
+                        <cell>Périphrase</cell>
+                        <cell>15</cell>
+                     </row>
+                     <row>
+                        <cell>Total</cell>
+                        <cell>64 testaments (46%)</cell>
+                     </row>
+                  </table>
+                  <p>Le mot <term>décès</term>, le plus employé, est neutre, car il renvoie à un
+                     contexte juridico-administratif ; il est utilisé dans la formule rituelle
+                        <quote>en cas de décès</quote>, qui reste somme toute une abstraction, sauf
+                     évocation des funérailles souhaitées. </p>
+                  <p>Plus expressifs, le mot <term>mort</term> et le verbe <term>mourir</term> sont
+                     associés chez leurs utilisateurs aux notions de champ d’honneur et de mort pour
+                     la patrie.</p>
+                  <p>Quant à l’adjectif <term>tué</term>, le seul qui renvoie explicitement à la
+                     violence de la guerre, il n’est employé que deux fois :<list>
+                        <item><cit>
+                              <quote>…dans le cas où je serai tué dans la guerre qui va
+                                 suivre</quote>
+                              <bibl>Boch, 4 août 1914, <ref target="#will-048" type="linkToEdition"
+                                    >testament n° 48</ref></bibl>
+                           </cit></item>
+                        <item><cit>
+                              <quote>À la veille de partir en guerre, si je me fais tuer…</quote>
+                              <bibl>Mazurier, 3 mars 1915, <ref target="#will-086"
+                                    type="linkToEdition">testament n° 86</ref></bibl>
+                           </cit>.</item>
+                     </list></p>
+                  <p><term>Décès</term>, <term>mort</term>, <term>tué</term> restent l’apanage du
+                     testament olographe. Le recours aux périphrases (<quote>je ne sais si je
+                        reviendrai</quote>, <quote>si j’y reste</quote>, <quote>en cas d’accident
+                        grave</quote>, <quote>s’il m’arrivait malheur</quote>…) caractérise les
+                     lettres aux proches, qu’on souhaite, sinon rassurer, du moins épargner en
+                     employant des euphémismes. À ce palmarès, le verbe <term>revenir</term> est le
+                     plus employé.</p>
+                  <p>Au travers des termes <!--FC octobre 2016employés-->utilisés, trois états d’esprit se révèlent. La sérénité,
+                     que ressent le capitaine Debain, est exceptionnelle et renvoie aux débuts de la
+                     guerre : <cit>
+                        <quote>Ceci est mon testament écrit en toute sérénité la veille de mon
+                           départ pour la guerre contre l’Allemagne</quote>
+                        <bibl>capitaine Debain, 12 août 1914, <ref target="#will-060"
+                              type="linkToEdition">testament n° 60</ref></bibl>
+                     </cit>.</p>
+                  <p>Plus fréquente est l’angoisse de la mort, tempérée par le sens du devoir au
+                     service du pays : <cit>
+                        <quote>Voici une nouvelle calamité, la guerre, guerre terrible comme
+                           l’histoire n’en a pas encore enregistrée, avec notre ennemi héréditaire
+                           l’Allemagne…Quant à moi qui vais sur mes 41 ans, je pars…d’ici quelques
+                           jours le 14 août d’après mon ordre de route pour Chartres d’où l’on me
+                           dirigera peut-être je ne sais où. Qu’importe ! De même que tous je ferai
+                           moi aussi tout mon devoir…</quote>
+                        <bibl>Henri Burret, 14 août 1914, <ref target="#will-063"
+                              type="linkToEdition">testament n° 63</ref></bibl>
+                     </cit>.</p>
+                  <p>Enfin, la résignation devant une mort inévitable, sinon attendue pour échapper
+                     à la « fournaise » ou à une vie décevante se manifeste dans les testaments et
+                     lettres d’adieu à partir de 1916 : <cit>
+                        <quote>En ce moment où je t’écris je suis en plein dans la fournaise mais
+                           malgré cela je trouve encore le moment de penser à toi et à maman.
+                           J’attends d’un instant à l’autre la bonne blessure qui me permettra enfin
+                           d’aller vous voir… j’attends la mort d’un moment à l’autre… S’il
+                           m’arrivait malheur je te lègue tout ce qui m’appartient… Malgré le
+                           cafard…</quote>
+                        <bibl>Boutin, 2 juillet 1916, <ref target="#will-118" type="linkToEdition"
+                              >testament n° 118</ref></bibl>
+                     </cit>.</p>
+                  <p>En revanche, quel que soit leur état d’esprit, peu de testateurs manifestent
+                     des exigences pour eux-mêmes. Seuls quatre d’entre eux donnent des consignes
+                     pour leurs funérailles, tel Louis Le Conte : <cit>
+                        <quote>Pas de fleurs ni de couronnes, un enterrement simple, mais beaucoup
+                           de messes, en particulier les 33 messes grégoriennes dites le plus tôt
+                           possible après mon décès et des prières</quote>
+                        <bibl>Le Conte, 1<hi rend="sup">er</hi> mars 1917, <ref target="#will-074"
+                              type="linkToEdition">testament n° 74</ref></bibl>
+                     </cit>. </p>
+                  <p>Plus nombreux sont-ils à terminer leur testament par un adieu ou un pardon,
+                     dans un dernier message aux proches où la sincérité le dispute à l’émotion. <cit>
+                        <quote>M’étant ainsi, si je puis dire, conformé aux usages du monde en
+                           réglant les derniers petits détails de la vie lorsque la mort paraît
+                           proche, j’envoie un ultime adieu à mes parents en les priant de n’avoir
+                           pas trop de chagrin en apprenant que j’ai été tué, puisque ç’aura été,
+                           comme on est coutumier de le dire, pour la patrie. Je quitterai le monde
+                           sans trop de regrets car sa monotonie est trop grande et les moments
+                           agréables y sont trop rares. J’ai terminé. Fait le dix-huit septembre mil
+                           neuf cent quinze, étant sain de corps et d’esprit. <foreign xml:lang="lat">Vale</foreign></quote>
+                        <bibl>Jean Ravignon, 18 septembre 1915, <ref target="#will-105"
+                              type="linkToEdition">testament n° 105</ref></bibl></cit>.</p>
+                  <p>Jean Ravignon <!--sera--><!-- FC juin 2016-->fut tué huit 8 jours plus tard à
+                     Massiges, dans les combats de Champagne de septembre-octobre 1915 qui
+                     <!--ont vu--><!-- FC juin 2016-->virent la perte de 150 000 hommes.</p>
+                  <!--<signed><persName>Christine Nougaret</persName>,
+                        <!-\-<date>17 mars 2016</date>-\-><!-\- FC juin 2016-\-><date when="2016-06-11"
+                        >11 juin 2016</date></signed>-->
+               </div>
+               <div>
+                  <head>Sources et bibliographie</head>
+                  <listBibl>
+                     <head>Sources</head>
+                     <listBibl>
+                        <head>Sources manuscrites</head>
+                        <listBibl>
+                           <head>Archives nationales, Minutier central des notaires de Paris</head>
+                           <bibl>
+                              <msIdentifier>
+                                 <idno> MC/ET/XXXIII/1844 à MC/ET/XXXIII/1921 </idno>
+                                 <msName>Étude <!--33--><!-- FC juin 2016-->XXXIII, Maître Delafon, 6
+                                    <!--Bd--><!-- FC juin 2016-->boulevard de Strasbourg, Paris
+                                    10e</msName>
+                              </msIdentifier>
+                           </bibl>
+                           <bibl><msIdentifier>
+                                 <idno>MC/ET/LIX/1081 à MC/ET/LIX/1170</idno>
+                                 <msName>Étude <!--59--><!-- FC juin 2016-->LIX, Maître Bossy, 9 rue des
+                                    Pyramides, Paris 1er</msName>
+                              </msIdentifier></bibl>
+                           <bibl><msIdentifier>
+                                 <idno>MC/ET/LXXXIX/2337 à MC/ET/LXXXIX/2438</idno>
+                                 <msName>Étude <!-- FC juin 2016--><!--89-->LXXXIX, Maître Ploix, 25
+                                    boulevard Beaumarchais, Paris 4e</msName>
+                              </msIdentifier></bibl>
+                        </listBibl>
+
+                     </listBibl>
+                     <listBibl>
+                        <head>Sources imprimées</head>
+                        <!-- FC juin 2016-->
+                        <!-- <bibl><title>Code civil</title></bibl>-->
+                        <bibl><author><persName><surname>Carpentier</surname><forename>M.
+                           A.</forename></persName></author><title>Code
+                              civil</title><pubPlace>Paris</pubPlace><publisher>Sirey</publisher><date>1922</date><biblScope>XLI-940
+                                 p.</biblScope><series>Petits codes Carpentier</series><ref
+                                    target="http://gallica.bnf.fr/ark:/12148/bpt6k3798478">Version en
+                                    ligne</ref>
+                        </bibl>
+                        <bibl><author><surname>Dalloz</surname></author><title>Guerre de 1914 :
+                              documents officiels, textes législatifs et
+                              réglementaires</title><pubPlace>Paris</pubPlace>
+                           <date>[1915-1918]</date><biblScope unit="volume">22 vol.</biblScope>
+                           <ref target="http://catalogue.bnf.fr/ark:/12148/cb318556850">Version en ligne sur
+                           Gallica, accessible par la notice du catalogue de la BnF</ref></bibl>
+                        <bibl xml:id="DallozRepDCivil"><author><surname>Dalloz</surname></author><title>Répertoire de droit
+                              civil</title>
+                           <pubPlace>Paris</pubPlace><date>1951-1955</date><biblScope unit="volume"
+                              >5 vol.</biblScope></bibl>
+                     </listBibl>
+                  </listBibl>
+                  <listBibl>
+                     <head>Bibliographie</head>
+                     <bibl>
+                        <author n="1"><persName><surname>Audoin-Rouzeau</surname>
+                              <forename>Stéphane</forename></persName></author><author n="2"
+                                 ><persName><surname>Becker</surname><forename>Annette</forename></persName></author><title>14-18.
+                           Retrouver la guerre</title>
+                        <pubPlace>Paris</pubPlace><publisher>Gallimard</publisher><date>2000</date>
+                     </bibl>
+                     <bibl><author><persName><surname>Cazals</surname>
+                              <forename>Rémy</forename></persName></author><title>Les mots de
+                           14-18</title><pubPlace>Toulouse</pubPlace>
+                        <publisher>Presses universitaires du
+                        Mirail</publisher><date>2003</date></bibl>
+                     <bibl><author n="1"><persName><surname>Cochet</surname>
+                              <forename>François</forename></persName></author><author n="2"
+                                 ><persName><surname>Porte</surname>
+                              <forename>Rémy</forename></persName></author><title>Dictionnaire de la
+                           Grande Guerre.
+                           1914-1918</title><pubPlace>Paris</pubPlace><publisher>Robert
+                           Laffont</publisher>
+                        <date>2008</date><series>Bouquins</series></bibl>
+                     <bibl><respStmt>
+                           <persName><surname>Étienne</surname><forename>Geneviève</forename></persName>
+                           <persName><surname>Limon-Bonnet</surname><forename>Marie-Françoise</forename>
+                           </persName>
+                           <resp>dir.</resp>
+                        </respStmt><title>Les archives notariales, manuel pratique et
+                           juridique</title><pubPlace>Paris</pubPlace><publisher>La Documentation
+                           française</publisher><date>2013</date></bibl>
+                     <bibl><respStmt>
+                           <persName><surname>Homer</surname>
+                              <forename>Isabelle</forename></persName>
+                           <persName><surname>Pénicaut</surname>
+                              <forename>Emmanuel</forename></persName>
+                           <resp>dir.</resp>
+                        </respStmt><title>Le soldat et la mort dans la Grande
+                           Guerre</title><pubPlace>Rennes</pubPlace><publisher>PUR</publisher><date>2016</date></bibl>
+                     <bibl><author><persName><surname>Le Naour</surname>
+                              <forename>Jean-Yves</forename></persName></author><title>1914. La
+                           grande illusion</title>
+                        <pubPlace>Paris</pubPlace><publisher>Perrin</publisher><date>2012</date></bibl>
+                     <bibl><respStmt>
+                           <persName><surname>Nivet</surname>
+                              <forename>Philippe</forename></persName>
+                           <persName><surname>Coutant</surname>
+                              <forename>Coraline</forename></persName>
+                           <persName><surname>Stoll</surname>
+                              <forename>Mathieu</forename></persName>
+                           <resp>dir.</resp>
+                        </respStmt><title>Archives de la Grande Guerre. Des sources pour
+                           l’histoire</title><pubPlace>Rennes</pubPlace>
+                        <publisher>PUR</publisher><date>2014</date></bibl>
+                     <bibl xml:id="poisson-etudes-notariales"
+                                 ><author><persName><surname>Poisson</surname>
+                              <forename>Jean-Paul</forename></persName></author><title level="a">Les
+                           testaments de la Grande Guerre. Appel pour une enquête</title><title
+                           level="j">Études
+                           notariales</title><pubPlace>Paris</pubPlace><publisher>Economica</publisher><date>1996</date><biblScope>p.
+                           332-336</biblScope></bibl>
+                     <bibl><author><persName><surname>Purseigle</surname>
+                              <forename>Pierre</forename></persName></author><title>Mobilisation,
+                           sacrifice, et citoyenneté. Angleterre - France,
+                           1914-1918</title><pubPlace>Paris</pubPlace><publisher>Les Belles
+                           Lettres</publisher><date>2013</date></bibl>
+                  </listBibl>
+                  <listBibl xml:id="web">
+                     <head>Sites internet utilisés pour les identifications</head>
+                     <bibl><author><orgName>Archives nationales</orgName></author><title><ref
+                              target="http://www.culture.gouv.fr/documentation/leonore/pres.htm"
+                              >Léonore (Légion d’honneur), dossiers nominatifs des personnes nommées
+                              ou promues dans l’Ordre de la Légion d’honneur depuis 1802 et décédées
+                              avant 1977</ref></title></bibl>
+                     
+                     <bibl><title><ref target="http://www.carto1418.fr">Cartographie 1914-1918. Le
+                              front ouest de la Première Guerre</ref></title></bibl>
+
+                     <bibl><title><ref target="http://cassini.ehess.fr">Des villages de Cassini aux
+                              communes d’aujourd’hui</ref></title></bibl>
+
+                     <bibl><author><orgName>FranceGenWeb</orgName></author><title><ref
+                              target="http://www.memorial-genweb.org">MémorialGenWeb, relevés de
+                              monuments aux morts, soldats et victimes civiles, français et
+                              étrangers, tués ou disparus par faits de guerre, morts en déportation,
+                              « Morts pour la France »</ref></title></bibl>
+                     <!-- FC ajout notice octobre 2016-->
+                     <bibl><author><orgName>Ministère de la culture et de la communication</orgName></author>
+                        <title><ref target="http://www.culture.fr/Genealogie/Grand-Memorial">Grand Mémorial</ref></title></bibl>
+                     <bibl><author><orgName>Ministère de la défense. Secrétariat général pour
+                              l’administration. Direction de la mémoire, du patrimoine et des
+                              archives</orgName></author>
+                        <title><ref
+                              target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
+                              >Site Mémoire des hommes : base de données des Morts pour la France de
+                              la Première Guerre mondiale</ref></title>
+                     </bibl>
+                     <bibl><title><ref target="http://www.geonames.org/">The Geonames geographical
+                              database</ref></title></bibl>
+
+
+
+                     <bibl><author><orgName>Ville de Paris. Direction des affaires culturelles.
+                              Sous-Direction du patrimoine et de l’histoire. Département de
+                              l’histoire, de la mémoire et des musées
+                              associatifs</orgName></author><title><ref
+                              target="http://memorial14-18.paris.fr/memorial/">14-18 Monument aux
+                              morts de la Grande Guerre Ville de Paris</ref></title></bibl>
+
+                  </listBibl>
+               </div>
+            </div>
+         </body>
+         <back>
+            <div>
+               <note xml:id="introFootnote001" target="#introRef001"
+                           ><bibl><author><surname>Nougaret</surname>
+                           (<forename>Christine</forename>)</author>,
+                           <author><surname>Parinet</surname>
+                        (<forename>Élisabeth</forename>)</author>, <respStmt>
+                        <persName><surname>Clavaud</surname>
+                           (<forename>Florence</forename>)</persName>
+                        <resp> (collab.)</resp>
+                     </respStmt>. <title>L’édition critique des textes contemporains, XIX<hi
+                           rend="sup">e</hi>-XXI<hi rend="sup">e</hi> siècle</title>.
+                        <pubPlace>Paris</pubPlace> : <publisher>École nationale des
+                        chartes</publisher>, <date>2015</date>.</bibl></note>
+            </div>
+         </back>
+      </text>
+   </TEI>
+   <xi:include parse="xml" href="testaments-poilus-edition.xml"/>
+   <xi:include parse="xml" href="testaments-poilus-index.xml"/>
+
+</teiCorpus>
