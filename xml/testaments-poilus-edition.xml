@@ -460,11 +460,11 @@
                         <reg>.</reg>
                         <orig/>
                      </choice></dateline>
-                  <signed rend="right"><seg type="signature"><persName ref="#EJDriancourt"
+                  <signed rend="right"><seg type="signature"><persName ref="#EDriancourt"
                               ><surname>Driancourt</surname></persName></seg><lb/>
                      <space dim="vertical" quantity="1" unit="lines"/>
                      <metamark rend="horizontalLine" function="separating"/> 
-                     <persName ref="#EJDriancourt">Etienne <surname>Driancourt</surname></persName>,
+                     <persName ref="#EDriancourt">Etienne <surname>Driancourt</surname></persName>,
                      caporal au<lb/> 51<hi rend="supUnderlined">e</hi> de <choice>
                         <reg>ligne</reg>
                         <orig>Ligne</orig>
@@ -476,7 +476,7 @@
                <pb facs="../images/FRAN_0045_01077.jpg" type="envelope"/>
                <div type="envelope">
                   <p><hi rend="doubleUnderlined">À n’ouvrir qu’après ma mort</hi>
-                     <seg rend="right"><persName ref="#EJDriancourt"><surname>Driancourt</surname></persName></seg>
+                     <seg rend="right"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>
                   </p>
                   <p>
                      <address><addrLine><choice><reg>À</reg><orig>à</orig></choice> Monsieur A. Ploix<choice><reg>,</reg><orig/></choice>&#xa0;</addrLine>
@@ -487,32 +487,32 @@
                   <metamark rend="horizontalLine" function="separating"/>
                   <p>Ceci est mon testament !<lb/>
                      <cb/>
-                     <seg rend="left"><seg type="signature"><persName ref="#EJDriancourt"
+                     <seg rend="left"><seg type="signature"><persName ref="#EDriancourt"
                         ><surname>Driancourt</surname></persName></seg><!--<choice><reg>,</reg><orig/></choice>--><lb/>
                      le 1<hi rend="supUnderlined">er</hi> août 1914</seg> <cb/>
-                     <seg rend="right"><persName ref="#EJDriancourt">Etienne
+                     <seg rend="right"><persName ref="#EDriancourt">Etienne
                         <surname>Driancourt</surname></persName><choice><reg>,</reg><orig/></choice><lb/> caporal au 51<hi rend="supUnderlined">e</hi> d’Infanterie<lb/> 3<hi rend="supUnderlined">e</hi> C<hi rend="supUnderlined">ie</hi> à Beauvais (Oise)</seg> </p>
                      <!--NP: ajouter la photo du verso de l'enveloppe <pb/>
                      suivi de quatre signatures de Driancourt 
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                               ><surname>Driancourt</surname></persName></seg>
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                               ><surname>Driancourt</surname></persName></seg>
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                               ><surname>Driancourt</surname></persName></seg>  
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                               ><surname>Driancourt</surname></persName></seg>        
                      -->   
                   <!-- FC octobre 2916 -->
                   <pb facs="../images/FRAN_0045_01078.jpg" type="envelope-verso"/>
-                  <p><seg type="signature"><persName ref="#EJDriancourt"
+                  <p><seg type="signature"><persName ref="#EDriancourt"
                      ><surname>Driancourt</surname></persName></seg>
                     
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                         ><surname>Driancourt</surname></persName></seg>
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                         ><surname>Driancourt</surname></persName></seg>  
-                     <seg type="signature"><persName ref="#EJDriancourt"
+                     <seg type="signature"><persName ref="#EDriancourt"
                         ><surname>Driancourt</surname></persName></seg>    </p>
                      
                </div>
@@ -1325,7 +1325,7 @@
                      gardera pour<lb/> elle ce qu’elle désirera. Je vou<lb break="no"/>drais que ma montre
                      armoriée<lb/> soit donnée à Randon, mon Christ<lb/> à Espérance. </p>
                   <signed rend="right"><seg type="signature"><persName
-                           ref="#ChateaueufRandonTournel"><forename>Honoré</forename><lb/>
+                           ref="#ChateauneufRandonTournel"><forename>Honoré</forename><lb/>
                            <choice>
                               <expan>C<ex>om</ex>te</expan>
                               <abbr>C<hi rend="sup">te</hi></abbr>
@@ -3402,7 +3402,7 @@
                         <reg>,</reg>
                         <orig/>
                      </choice> le<lb/> trois août <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent<lb/> quatorze. </dateline>
-                  <signed><seg type="signature"><persName ref="#ELCheiney"><surname>Cheiney</surname> L.</persName></seg><lb/>
+                  <signed><seg type="signature"><persName ref="#ECheiney"><surname>Cheiney</surname> L.</persName></seg><lb/>
                      <seg type="address">6 rue Dorian</seg></signed>
                </div>
             </body>
