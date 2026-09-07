@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="testaments-poilus-index">
    <teiHeader>
       <fileDesc>
@@ -21,7 +21,9 @@
       <body><!-- ajout de l'index par F. Clavaud le 4 août 2015 --><!-- FC 9 mars 2016<div type="index">-->
          <div>
             <listPerson>
-               <person xml:id="EAime">
+               <listPerson xml:id="testateurs-A">
+            <head>A</head>
+            <person xml:id="EAime">
                   <persName>
                      <surname>Aimé</surname>, <forename>Ernest</forename>
                      <forename>Jean</forename>
@@ -100,7 +102,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="EBarbut">
+               </listPerson>
+         <listPerson xml:id="testateurs-B">
+            <head>B</head>
+            <person xml:id="EBarbut">
                   <persName>
                      <surname>Barbut</surname>, <forename>Marie</forename>
                      <forename>Barthélémy</forename>
@@ -507,6 +512,29 @@
                      </title>
                   </bibl>
                </person>
+               <person xml:id="EBurgun">
+                  <persName>
+                     <surname>Burgun</surname>, <forename>Émile</forename>
+                  </persName>
+                  <birth>1885</birth>
+                  <death>1915</death>
+                  <note type="biography">
+                     <p>Employé à la Compagnie du Gaz, domicilié à Paris (11<hi rend="sup">e</hi>), 9 rue Jean Macé.</p>
+                     <p>Marié à Clotilde Antoinette Bidault.</p>
+                     <p>Sergent au 353<hi rend="sup">e</hi> régiment d’infanterie.</p>
+                     <p>Mort pour la France au combat de <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>,
+                                le 9 mai 1915, tué à l’ennemi.</p>
+                  </note>
+                  <bibl>
+                     <author>Ministère de la défense, Secrétariat général pour
+                                l’administration, Direction de la mémoire, du patrimoine et des
+                                archives</author>
+                     <title>
+                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc80dedb0">Mémoire des hommes : notice relative à Émile
+                                Burgun</ref>
+                     </title>
+                  </bibl>
+               </person>
                <person xml:id="HEBurret">
                   <persName>
                      <surname>Burret</surname>, <forename>Henri</forename>
@@ -532,30 +560,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="EBurgun">
-                  <persName>
-                     <surname>Burgun</surname>, <forename>Émile</forename>
-                  </persName>
-                  <birth>1885</birth>
-                  <death>1915</death>
-                  <note type="biography">
-                     <p>Employé à la Compagnie du Gaz, domicilié à Paris (11<hi rend="sup">e</hi>), 9 rue Jean Macé.</p>
-                     <p>Marié à Clotilde Antoinette Bidault.</p>
-                     <p>Sergent au 353<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>,
-                                le 9 mai 1915, tué à l’ennemi.</p>
-                  </note>
-                  <bibl>
-                     <author>Ministère de la défense, Secrétariat général pour
-                                l’administration, Direction de la mémoire, du patrimoine et des
-                                archives</author>
-                     <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc80dedb0">Mémoire des hommes : notice relative à Émile
-                                Burgun</ref>
-                     </title>
-                  </bibl>
-               </person>
-               <person xml:id="LAPCanivenq">
+               </listPerson>
+         <listPerson xml:id="testateurs-C">
+            <head>C</head>
+            <person xml:id="LAPCanivenq">
                   <persName>
                      <surname>Canivenq</surname>, <forename>Louis</forename>
                      <forename>Albert</forename>
@@ -870,7 +878,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="EDardonville">
+               </listPerson>
+         <listPerson xml:id="testateurs-D">
+            <head>D</head>
+            <person xml:id="EDardonville">
                   <persName>
                      <surname>Dardonville</surname>, <forename>Edouard</forename>
                      <forename>Louis</forename>
@@ -921,6 +932,34 @@
                      <title>
                         <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e23658024">Mémoire des hommes : notice relative à Joseph Gaston
                                     Dauriac</ref>
+                     </title>
+                  </bibl>
+               </person>
+               <person xml:id="NDeToledo">
+                  <persName>
+                     <surname>De Toledo</surname>, <forename>Nissim</forename>
+                  </persName>
+                  <birth>1886</birth>
+                  <death>1918</death>
+                  <note type="biography">
+                     <p>Italien.</p>
+                     <!-- Natalia Pashkeeva, le 8 janvier 2016 : Turquie dans la base Mémoire des Hommes -->
+                     <!-- FC 16 mars : nationalité confirmée par CN -->
+                     <p>Banquier, domicilié à Paris (16<hi rend="sup">e</hi>), 133, boulevard
+                                Exelmans.</p>
+                     <p>Célibataire.</p>
+                     <p>Engagé volontaire pour la durée de la guerre, maréchal des logis au
+                                    1<hi rend="sup">er</hi> Cuirassiers.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-065">Montvoisin près Epernay (Marne)</placeName>, le 16 juillet
+                                1918, tué à l’ennemi.</p>
+                  </note>
+                  <bibl>
+                     <author>Ministère de la défense, Secrétariat général pour
+                                l’administration, Direction de la mémoire, du patrimoine et des
+                                archives</author>
+                     <title>
+                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a024bf335e">Mémoire des hommes : notice relative à Nissim De
+                                Toledo</ref>
                      </title>
                   </bibl>
                </person>
@@ -997,34 +1036,6 @@
                      <title>
                         <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e3e2d7c02">Mémoire des hommes : notice relative à Marcelin
                                 Descombes</ref>
-                     </title>
-                  </bibl>
-               </person>
-               <person xml:id="NDeToledo">
-                  <persName>
-                     <surname>De Toledo</surname>, <forename>Nissim</forename>
-                  </persName>
-                  <birth>1886</birth>
-                  <death>1918</death>
-                  <note type="biography">
-                     <p>Italien.</p>
-                     <!-- Natalia Pashkeeva, le 8 janvier 2016 : Turquie dans la base Mémoire des Hommes -->
-                     <!-- FC 16 mars : nationalité confirmée par CN -->
-                     <p>Banquier, domicilié à Paris (16<hi rend="sup">e</hi>), 133, boulevard
-                                Exelmans.</p>
-                     <p>Célibataire.</p>
-                     <p>Engagé volontaire pour la durée de la guerre, maréchal des logis au
-                                    1<hi rend="sup">er</hi> Cuirassiers.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-065">Montvoisin près Epernay (Marne)</placeName>, le 16 juillet
-                                1918, tué à l’ennemi.</p>
-                  </note>
-                  <bibl>
-                     <author>Ministère de la défense, Secrétariat général pour
-                                l’administration, Direction de la mémoire, du patrimoine et des
-                                archives</author>
-                     <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a024bf335e">Mémoire des hommes : notice relative à Nissim De
-                                Toledo</ref>
                      </title>
                   </bibl>
                </person>
@@ -1220,31 +1231,6 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="MDumont">
-                  <persName>
-                     <surname>Dumont</surname>, <forename>Marcel</forename>
-                     <forename>Charles</forename>
-                  </persName>
-                  <birth>1883</birth>
-                  <death>1915</death>
-                  <note type="biography">
-                     <p>Négociant, domicilié à Paris (11<hi rend="sup">e</hi>), 82 avenue de la République.</p>
-                     <p>Marié à Margarite Bossoreil.</p>
-                     <p>Soldat de 2<hi rend="sup">e</hi> classe au 353<hi rend="sup">e</hi>
-                                régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>, le 28 mai
-                                1915, tué à l’ennemi.</p>
-                  </note>
-                  <bibl>
-                     <author>Ministère de la défense, Secrétariat général pour
-                                l’administration, Direction de la mémoire, du patrimoine et des
-                                archives</author>
-                     <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5e29db09">Mémoire des hommes : notice relative à Marcel Charles
-                                    Dumont</ref>
-                     </title>
-                  </bibl>
-               </person>
                <person xml:id="PMDumesny">
                   <persName>
                      <surname>Dumesny</surname>, <forename>Paul</forename>
@@ -1269,6 +1255,31 @@
                         <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5d48b825">Mémoire des hommes : notice relative à Paul Marcel
                                     Dumesny</ref>
                         <!--Natalia Pashkeeva, le 8 janvier 2016 : le lien ne fonctionne pas -->
+                     </title>
+                  </bibl>
+               </person>
+               <person xml:id="MDumont">
+                  <persName>
+                     <surname>Dumont</surname>, <forename>Marcel</forename>
+                     <forename>Charles</forename>
+                  </persName>
+                  <birth>1883</birth>
+                  <death>1915</death>
+                  <note type="biography">
+                     <p>Négociant, domicilié à Paris (11<hi rend="sup">e</hi>), 82 avenue de la République.</p>
+                     <p>Marié à Margarite Bossoreil.</p>
+                     <p>Soldat de 2<hi rend="sup">e</hi> classe au 353<hi rend="sup">e</hi>
+                                régiment d’infanterie.</p>
+                     <p>Mort pour la France au <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>, le 28 mai
+                                1915, tué à l’ennemi.</p>
+                  </note>
+                  <bibl>
+                     <author>Ministère de la défense, Secrétariat général pour
+                                l’administration, Direction de la mémoire, du patrimoine et des
+                                archives</author>
+                     <title>
+                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5e29db09">Mémoire des hommes : notice relative à Marcel Charles
+                                    Dumont</ref>
                      </title>
                   </bibl>
                </person>
@@ -1334,7 +1345,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="MEtienne">
+               </listPerson>
+         <listPerson xml:id="testateurs-E">
+            <head>E</head>
+            <person xml:id="MEtienne">
                   <persName>
                      <surname>Etienne</surname>, <forename>Marcel</forename>
                   </persName>
@@ -1359,7 +1373,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="LFavre">
+               </listPerson>
+         <listPerson xml:id="testateurs-F">
+            <head>F</head>
+            <person xml:id="LFavre">
                   <persName>
                      <surname>Favre</surname>, <forename>Louis</forename>
                   </persName>
@@ -1517,7 +1534,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="FGaillard">
+               </listPerson>
+         <listPerson xml:id="testateurs-G">
+            <head>G</head>
+            <person xml:id="FGaillard">
                   <persName>
                      <surname>Gaillard</surname>, <forename>François</forename>
                   </persName>
@@ -1874,7 +1894,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="FHemy">
+               </listPerson>
+         <listPerson xml:id="testateurs-H">
+            <head>H</head>
+            <person xml:id="FHemy">
                   <persName>
                      <surname>Hémy</surname>, <forename>François</forename>
                   </persName>
@@ -1949,7 +1972,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="MJacquat">
+               </listPerson>
+         <listPerson xml:id="testateurs-J">
+            <head>J</head>
+            <person xml:id="MJacquat">
                   <persName>
                      <surname>Jacquat</surname>, <forename>Marcellin</forename>
                      <forename>Adolphe</forename>
@@ -1999,7 +2025,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="ELaborde">
+               </listPerson>
+         <listPerson xml:id="testateurs-L">
+            <head>L</head>
+            <person xml:id="ELaborde">
                   <persName>
                      <surname>Laborde</surname>,
                             <forename>Enrique</forename>
@@ -2252,6 +2281,33 @@
                      </title>
                   </bibl>
                </person>
+               <person xml:id="LeConte">
+                  <persName>
+                     <surname>Le Conte</surname>, <forename>Louis</forename>
+                     <forename>Charles</forename>
+                     <forename>Eugène</forename>
+                  </persName>
+                  <birth>1875</birth>
+                  <death>1918</death>
+                  <note type="biography">
+                     <p>Domicilié à Paris (16<hi rend="sup">e</hi>), 5
+                                rue de Magdebourg.</p>
+                     <p>Marié à Marie Germaine Chrestien de Poly.</p>
+                     <p>Chef d’escadron au 5<hi rend="sup">e</hi> régiment de Dragons,
+                                chevalier de la Légion d’honneur.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-058">Marizy-Sainte-Geneviève (Aisne)</placeName>, le 2 juin
+                                1918, tué à l’ennemi.</p>
+                  </note>
+                  <bibl>
+                     <author>Ministère de la défense, Secrétariat général pour
+                                l’administration, Direction de la mémoire, du patrimoine et des
+                                archives</author>
+                     <title>
+                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f281d88e5">Mémoire des hommes : notice relative à Louis Charles Eugène Le
+                                    Conte</ref>
+                     </title>
+                  </bibl>
+               </person>
                <person xml:id="AGLebaillif">
                   <persName>
                      <surname>Lebaillif</surname>, <forename>Albert</forename>
@@ -2284,33 +2340,6 @@
                      <title>
                         <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f211b1366">Mémoire des hommes : notice relative à Albert Gabriel
                                     Lebaillif</ref>
-                     </title>
-                  </bibl>
-               </person>
-               <person xml:id="LeConte">
-                  <persName>
-                     <surname>Le Conte</surname>, <forename>Louis</forename>
-                     <forename>Charles</forename>
-                     <forename>Eugène</forename>
-                  </persName>
-                  <birth>1875</birth>
-                  <death>1918</death>
-                  <note type="biography">
-                     <p>Domicilié à Paris (16<hi rend="sup">e</hi>), 5
-                                rue de Magdebourg.</p>
-                     <p>Marié à Marie Germaine Chrestien de Poly.</p>
-                     <p>Chef d’escadron au 5<hi rend="sup">e</hi> régiment de Dragons,
-                                chevalier de la Légion d’honneur.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-058">Marizy-Sainte-Geneviève (Aisne)</placeName>, le 2 juin
-                                1918, tué à l’ennemi.</p>
-                  </note>
-                  <bibl>
-                     <author>Ministère de la défense, Secrétariat général pour
-                                l’administration, Direction de la mémoire, du patrimoine et des
-                                archives</author>
-                     <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f281d88e5">Mémoire des hommes : notice relative à Louis Charles Eugène Le
-                                    Conte</ref>
                      </title>
                   </bibl>
                </person>
@@ -2417,7 +2446,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="EMarchal">
+               </listPerson>
+         <listPerson xml:id="testateurs-M">
+            <head>M</head>
+            <person xml:id="EMarchal">
                   <persName>
                      <surname>Marchal</surname>, <forename>Ernest</forename>
                      <forename>André</forename>
@@ -2518,6 +2550,34 @@
                      </title>
                   </bibl>
                </person>
+               <person xml:id="AMaurel">
+                  <persName>
+                     <surname>Maurel</surname>, <forename>Auguste</forename>
+                     <forename>Jules</forename>
+                     <forename>Alexandre</forename>
+                  </persName>
+                  <birth>1883</birth>
+                  <death>1918</death>
+                  <note type="biography">
+                     <p>Marchand de vins, restaurateur, domicilié à
+                                Bessuéjouls (Aveyron), demeurant à Paris, 22 place
+                                Denfert-Rochereau.</p>
+                     <p>Marié à Valérie Vinches.</p>
+                     <p>Sergent au 67<hi rend="sup">e</hi> bataillon de chasseurs.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-007">Bagneux
+                                (Aisne)</placeName>, le 11 septembre 1918, tué à
+                                l’ennemi.</p>
+                  </note>
+                  <bibl>
+                     <author>Ministère de la défense, Secrétariat général pour
+                                l’administration, Direction de la mémoire, du patrimoine et des
+                                archives</author>
+                     <title>
+                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f6c58390e">Mémoire des hommes : notice relative à Auguste Jules Alexandre
+                                    Maurel</ref>
+                     </title>
+                  </bibl>
+               </person>
                <person xml:id="GMazurier">
                   <persName>
                      <surname>Mazurier</surname>, <forename>Gustave</forename>
@@ -2595,34 +2655,6 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="AMaurel">
-                  <persName>
-                     <surname>Maurel</surname>, <forename>Auguste</forename>
-                     <forename>Jules</forename>
-                     <forename>Alexandre</forename>
-                  </persName>
-                  <birth>1883</birth>
-                  <death>1918</death>
-                  <note type="biography">
-                     <p>Marchand de vins, restaurateur, domicilié à
-                                Bessuéjouls (Aveyron), demeurant à Paris, 22 place
-                                Denfert-Rochereau.</p>
-                     <p>Marié à Valérie Vinches.</p>
-                     <p>Sergent au 67<hi rend="sup">e</hi> bataillon de chasseurs.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-007">Bagneux
-                                (Aisne)</placeName>, le 11 septembre 1918, tué à
-                                l’ennemi.</p>
-                  </note>
-                  <bibl>
-                     <author>Ministère de la défense, Secrétariat général pour
-                                l’administration, Direction de la mémoire, du patrimoine et des
-                                archives</author>
-                     <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f6c58390e">Mémoire des hommes : notice relative à Auguste Jules Alexandre
-                                    Maurel</ref>
-                     </title>
-                  </bibl>
-               </person>
                <person xml:id="JMurat">
                   <persName>
                      <surname>Murat</surname>, <forename>Jules</forename>
@@ -2648,7 +2680,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="GNicolon">
+               </listPerson>
+         <listPerson xml:id="testateurs-N">
+            <head>N</head>
+            <person xml:id="GNicolon">
                   <persName>
                      <surname>Nicolon</surname>, <forename>Georges</forename>
                      <forename>François</forename>
@@ -2716,7 +2751,10 @@
                      </note>
                   </bibl>
                </person>
-               <person xml:id="LPain">
+               </listPerson>
+         <listPerson xml:id="testateurs-P">
+            <head>P</head>
+            <person xml:id="LPain">
                   <persName>
                      <surname>Pain</surname>, <forename>Louis</forename>
                      <forename>Ernest</forename>
@@ -2819,7 +2857,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="EQuainon">
+               </listPerson>
+         <listPerson xml:id="testateurs-Q">
+            <head>Q</head>
+            <person xml:id="EQuainon">
                   <persName>
                      <surname>Quainon</surname>, <forename>Emile</forename>
                   </persName>
@@ -2843,7 +2884,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="LRavignon">
+               </listPerson>
+         <listPerson xml:id="testateurs-R">
+            <head>R</head>
+            <person xml:id="LRavignon">
                   <persName>
                      <surname>Ravignon</surname>, <forename>Louis</forename>
                      <forename>Jean</forename>
@@ -3021,7 +3065,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="ESimonnet">
+               </listPerson>
+         <listPerson xml:id="testateurs-S">
+            <head>S</head>
+            <person xml:id="ESimonnet">
                   <persName>
                      <surname>Simonnet</surname>, <forename>Emile</forename>
                   </persName>
@@ -3176,7 +3223,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="JSTardy">
+               </listPerson>
+         <listPerson xml:id="testateurs-T">
+            <head>T</head>
+            <person xml:id="JSTardy">
                   <persName>
                      <surname>Tardy</surname>, <forename>Joseph</forename>
                      <forename>Séraphin</forename>
@@ -3251,7 +3301,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="JEVachette">
+               </listPerson>
+         <listPerson xml:id="testateurs-V">
+            <head>V</head>
+            <person xml:id="JEVachette">
                   <persName>
                      <surname>Vachette</surname>, <forename>Joseph</forename>
                      <forename>Emile</forename>
@@ -3302,7 +3355,10 @@
                      </title>
                   </bibl>
                </person>
-               <person xml:id="LWaguet">
+               </listPerson>
+         <listPerson xml:id="testateurs-W">
+            <head>W</head>
+            <person xml:id="LWaguet">
                   <persName>
                      <surname>Waguet</surname>, <forename>Léon</forename>
                      <forename>Auguste</forename>
@@ -3355,10 +3411,29 @@
                   </bibl>
                </person>
             </listPerson>
+         </listPerson>
             <!--</div>-->
             <listPlace>
                <head>Lieux de décès</head>
-               <place xml:id="pl-001">
+               <!--Reprise de l'encodage de l'index par NP-->
+               <!-- FC janvier 2017 : n'est pas un lieu de décès <place xml:id="pl-105">
+                  <placeName when-iso="-700/">
+                     <settlement type="commune">Mytilène</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Lesbos</district>
+                     <region>Égée-Septentrionale</region>
+                     <country>Grèce</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>39.11 26.55472</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/256866/</idno>
+               </place>
+               -->
+            <listPlace xml:id="lieux-A">
+            <head>A</head>
+            <place xml:id="pl-001">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Ablain-Saint-Nazaire</settlement>
                   </placeName>
@@ -3428,7 +3503,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035843/</idno>
                </place>
-               <place xml:id="pl-006">
+               </listPlace>
+         <listPlace xml:id="lieux-B">
+            <head>B</head>
+            <place xml:id="pl-006">
                   <placeName when-iso="1793/">
                      <settlement type="cantonCapital">Baccarat</settlement>
                   </placeName>
@@ -3442,7 +3520,6 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035498/</idno>
                </place>
-               <!--Reprise de l'encodage de l'index par NP-->
                <place xml:id="pl-007">
                   <placeName when-iso="1793">
                      <settlement type="commune">Bagneux</settlement>
@@ -3508,23 +3585,6 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3034905/</idno>
                </place>
-               <place xml:id="pl-011">
-                  <placeName type="old" when-iso="1793/1956">
-                     <settlement type="commune">Belloy</settlement>
-                  </placeName>
-                  <placeName when-iso="1956/">
-                     <settlement type="commune">Belloy-en-Santerre</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Somme</district>
-                     <region>Nord-Pas-de-Calais-Picardie</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.88293 2.85517</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3033597/</idno>
-               </place>
                <place xml:id="pl-012">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Bellemagny</settlement>
@@ -3543,6 +3603,23 @@
                      <geo>47.6888 7.0668</geo>
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3033680/</idno>
+               </place>
+               <place xml:id="pl-011">
+                  <placeName type="old" when-iso="1793/1956">
+                     <settlement type="commune">Belloy</settlement>
+                  </placeName>
+                  <placeName when-iso="1956/">
+                     <settlement type="commune">Belloy-en-Santerre</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Somme</district>
+                     <region>Nord-Pas-de-Calais-Picardie</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.88293 2.85517</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3033597/</idno>
                </place>
                <place xml:id="pl-013">
                   <placeName when-iso="1793/">
@@ -3745,7 +3822,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3018575/</idno>
                </place>
-               <place xml:id="pl-025">
+               </listPlace>
+         <listPlace xml:id="lieux-C">
+            <head>C</head>
+            <place xml:id="pl-025">
                   <placeName>
                      <settlement>Caisnes</settlement>
                   </placeName>
@@ -3884,7 +3964,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3022155/</idno>
                </place>
-               <place xml:id="pl-034">
+               </listPlace>
+         <listPlace xml:id="lieux-D">
+            <head>D</head>
+            <place xml:id="pl-034">
                   <placeName when-iso="1793/1922" type="old">
                      <settlement>Dugny</settlement>
                   </placeName>
@@ -3901,7 +3984,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3020710/</idno>
                </place>
-               <place xml:id="pl-035">
+               </listPlace>
+         <listPlace xml:id="lieux-E">
+            <head>E</head>
+            <place xml:id="pl-035">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Épernay</settlement>
                   </placeName>
@@ -3943,7 +4029,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3019504/</idno>
                </place>
-               <place xml:id="pl-038">
+               </listPlace>
+         <listPlace xml:id="lieux-F">
+            <head>F</head>
+            <place xml:id="pl-038">
                   <placeName when-iso="1793">
                      <settlement type="commune">Filain</settlement>
                   </placeName>
@@ -3998,7 +4087,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3017400/</idno>
                </place>
-               <place xml:id="pl-042">
+               </listPlace>
+         <listPlace xml:id="lieux-G">
+            <head>G</head>
+            <place xml:id="pl-042">
                   <placeName>
                      <settlement type="commune">Gaouz</settlement>
                   </placeName>
@@ -4041,7 +4133,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2969274/</idno>
                </place>
-               <place xml:id="pl-045">
+               </listPlace>
+         <listPlace xml:id="lieux-H">
+            <head>H</head>
+            <place xml:id="pl-045">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Hargicourt</settlement>
                   </placeName>
@@ -4091,7 +4186,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3013097/</idno>
                </place>
-               <place xml:id="pl-048">
+               </listPlace>
+         <listPlace xml:id="lieux-J">
+            <head>J</head>
+            <place xml:id="pl-048">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Jaulzy</settlement>
                   </placeName>
@@ -4105,7 +4203,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3012423/</idno>
                </place>
-               <place xml:id="pl-049">
+               </listPlace>
+         <listPlace xml:id="lieux-K">
+            <head>K</head>
+            <place xml:id="pl-049">
                   <placeName>
                      <geogName type="mountain">Kokereel</geogName>, <geogFeat>mont</geogFeat>
                   </placeName>
@@ -4122,38 +4223,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3032146/</idno>
                </place>
-               <place xml:id="pl-050">
-                  <placeName when-iso="1801/">
-                     <settlement type="commune">Landifay-et-Bertaignemont</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Aisne</district>
-                     <region>Nord-Pas-de-Calais-Picardie</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>50.8 2.7</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3032146/</idno>
-               </place>
-               <place xml:id="pl-051">
-                  <placeName type="old" when-iso="1801/1972">
-                     <settlement>Landrecourt</settlement>
-                  </placeName>
-                  <placeName when-iso="1972/">
-                     <settlement type="commune">Landrecourt-Lempire</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Meuse</district>
-                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.1 5.35</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3007829/</idno>
-               </place>
-               <place xml:id="pl-052">
+               </listPlace>
+         <listPlace xml:id="lieux-L">
+            <head>L</head>
+            <place xml:id="pl-052">
                   <placeName>
                      <settlement type="hamlet">La Maison-Blanche</settlement>
                   </placeName>
@@ -4187,7 +4260,92 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3025720/</idno>
                </place>
-               <place xml:id="pl-054">
+               <place xml:id="pl-050">
+                  <placeName when-iso="1801/">
+                     <settlement type="commune">Landifay-et-Bertaignemont</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Aisne</district>
+                     <region>Nord-Pas-de-Calais-Picardie</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>50.8 2.7</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3032146/</idno>
+               </place>
+               <place xml:id="pl-051">
+                  <placeName type="old" when-iso="1801/1972">
+                     <settlement>Landrecourt</settlement>
+                  </placeName>
+                  <placeName when-iso="1972/">
+                     <settlement type="commune">Landrecourt-Lempire</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Meuse</district>
+                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.1 5.35</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3007829/</idno>
+               </place>
+               <place xml:id="pl-067">
+                  <placeName>
+                     <settlement type="suburb">La Neuville</settlement>
+                  </placeName>
+                  <location>
+                     <placeName when-iso="1793/">
+                        <settlement type="cantonCapital">Cormicy</settlement>
+                     </placeName>
+                     <district type="departement">Marne</district>
+                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.37071 3.89595</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3023631/</idno>
+               </place>
+               <place xml:id="pl-074">
+                  <placeName>
+                     <settlement type="hamlet">La Pierre-Croisée</settlement>
+                  </placeName>
+                  <location>
+                     <placeName when-iso="1801/">
+                        <settlement type="commune">Lachalade</settlement>
+                     </placeName>
+                     <district type="departement">Meuse</district>
+                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.16779 4.95998</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3010480/</idno>
+               </place>
+               <place xml:id="pl-073">
+                  <placeName>
+                     <settlement type="farm">Les Petites-Perthes</settlement>
+                  </placeName>
+                  <location>
+                     <placeName when-iso="1851/">
+                        <settlement type="commune">Châtelraould-Saint-Louvent</settlement>
+                     </placeName>
+                     <district type="departement">Marne</district>
+                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>48.65476 4.51601</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/3000015/</idno>
+               </place>
+               </listPlace>
+         <listPlace xml:id="lieux-M">
+            <head>M</head>
+            <place xml:id="pl-054">
                   <placeName>
                      <settlement type="commune">Mangelaëre</settlement>
                   </placeName>
@@ -4218,20 +4376,6 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995995/</idno>
                </place>
-               <place xml:id="pl-056">
-                  <placeName when-iso="1793/">
-                     <settlement type="cantonCapital">Maroeuil</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Pas-de-Calais</district>
-                     <region>Nord-Pas-de-Calais-Picardie</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>50.32519 2.70504</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/2995586/</idno>
-               </place>
                <place xml:id="pl-057">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Maricourt</settlement>
@@ -4259,6 +4403,20 @@
                      <geo>49.18245 3.2033</geo>
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995685/</idno>
+               </place>
+               <place xml:id="pl-056">
+                  <placeName when-iso="1793/">
+                     <settlement type="cantonCapital">Maroeuil</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Pas-de-Calais</district>
+                     <region>Nord-Pas-de-Calais-Picardie</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>50.32519 2.70504</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/2995586/</idno>
                </place>
                <place xml:id="pl-059">
                   <placeName when-iso="1793/">
@@ -4386,24 +4544,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2991297/</idno>
                </place>
-               <place xml:id="pl-067">
-                  <placeName>
-                     <settlement type="suburb">La Neuville</settlement>
-                  </placeName>
-                  <location>
-                     <placeName when-iso="1793/">
-                        <settlement type="cantonCapital">Cormicy</settlement>
-                     </placeName>
-                     <district type="departement">Marne</district>
-                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.37071 3.89595</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3023631/</idno>
-               </place>
-               <place xml:id="pl-068">
+               </listPlace>
+         <listPlace xml:id="lieux-N">
+            <head>N</head>
+            <place xml:id="pl-068">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Neuville-Vitasse</settlement>
                   </placeName>
@@ -4430,6 +4574,23 @@
                      <geo>46.98956 3.159</geo>
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2990474/</idno>
+               </place>
+               </listPlace>
+         <listPlace xml:id="lieux-P">
+            <head>P</head>
+            <place xml:id="pl-075">
+                  <placeName when-iso="1793/">
+                     <settlement type="commune">Paissy</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Aisne</district>
+                     <region>Nord-Pas-de-Calais-Picardie</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.42535 3.69726</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/2988784/</idno>
                </place>
                <place xml:id="pl-070">
                   <placeName>
@@ -4475,54 +4636,6 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974147/</idno>
                </place>
-               <place xml:id="pl-073">
-                  <placeName>
-                     <settlement type="farm">Les Petites-Perthes</settlement>
-                  </placeName>
-                  <location>
-                     <placeName when-iso="1851/">
-                        <settlement type="commune">Châtelraould-Saint-Louvent</settlement>
-                     </placeName>
-                     <district type="departement">Marne</district>
-                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>48.65476 4.51601</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3000015/</idno>
-               </place>
-               <place xml:id="pl-074">
-                  <placeName>
-                     <settlement type="hamlet">La Pierre-Croisée</settlement>
-                  </placeName>
-                  <location>
-                     <placeName when-iso="1801/">
-                        <settlement type="commune">Lachalade</settlement>
-                     </placeName>
-                     <district type="departement">Meuse</district>
-                     <region>Alsace-Champagne-Ardenne-Lorraine</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.16779 4.95998</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/3010480/</idno>
-               </place>
-               <place xml:id="pl-075">
-                  <placeName when-iso="1793/">
-                     <settlement type="commune">Paissy</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Aisne</district>
-                     <region>Nord-Pas-de-Calais-Picardie</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.42535 3.69726</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/2988784/</idno>
-               </place>
                <place xml:id="pl-076">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Pontavert</settlement>
@@ -4551,7 +4664,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2788726/</idno>
                </place>
-               <place xml:id="pl-078">
+               </listPlace>
+         <listPlace xml:id="lieux-Q">
+            <head>Q</head>
+            <place xml:id="pl-078">
                   <placeName>
                      <settlement type="farm">Quennevières</settlement>
                   </placeName>
@@ -4568,7 +4684,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2972107/</idno>
                </place>
-               <place xml:id="pl-079">
+               </listPlace>
+         <listPlace xml:id="lieux-S">
+            <head>S</head>
+            <place xml:id="pl-079">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Saint-Hilaire-le-Grand</settlement>
                   </placeName>
@@ -4727,7 +4846,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2973720/</idno>
                </place>
-               <place xml:id="pl-089">
+               </listPlace>
+         <listPlace xml:id="lieux-T">
+            <head>T</head>
+            <place xml:id="pl-089">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Toul</settlement>
                   </placeName>
@@ -4775,7 +4897,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974147/</idno>
                </place>
-               <place xml:id="pl-092">
+               </listPlace>
+         <listPlace xml:id="lieux-V">
+            <head>V</head>
+            <place xml:id="pl-092">
                   <placeName type="old" when-iso="1793/1956">
                      <settlement>Vailly</settlement>
                   </placeName>
@@ -4888,7 +5013,22 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2968471/</idno>
                </place>
-               <place xml:id="pl-099">
+               <place xml:id="pl-104">
+                  <placeName when-iso="1793/">
+                     <settlement type="commune">Villers-le-Sec</settlement>
+                  </placeName>
+                  <location>
+                     <district type="departement">Aisne</district>
+                     <region>Nord-Pas-de-Calais-Picardie</region>
+                     <country>France</country>
+                  </location>
+                  <location type="geographicalCoordinates">
+                     <geo>49.77729 3.50012</geo>
+                  </location>
+                  <idno type="geonamesURI">http://sws.geonames.org/2968373/</idno>
+               </place>
+               
+             <place xml:id="pl-099">
                   <placeName>
                      <settlement type="hamlet">Vingré</settlement>
                   </placeName>
@@ -4927,7 +5067,10 @@
                   <idno type="geonamesURI">http://sws.geonames.org/2967856/</idno>
                </place>
                
-               <place xml:id="pl-101">
+               </listPlace>
+         <listPlace xml:id="lieux-Z">
+            <head>Z</head>
+            <place xml:id="pl-101">
                   <placeName>
                      <settlement type="commune">Zeitenlik</settlement>
                   </placeName>
@@ -4978,37 +5121,8 @@
                   <idno type="geonamesURI">http://sws.geonames.org/2967110/</idno>
                </place>
                
-               <place xml:id="pl-104">
-                  <placeName when-iso="1793/">
-                     <settlement type="commune">Villers-le-Sec</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Aisne</district>
-                     <region>Nord-Pas-de-Calais-Picardie</region>
-                     <country>France</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>49.77729 3.50012</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/2968373/</idno>
-               </place>
-               
-             <!-- FC janvier 2017 : n'est pas un lieu de décès <place xml:id="pl-105">
-                  <placeName when-iso="-700/">
-                     <settlement type="commune">Mytilène</settlement>
-                  </placeName>
-                  <location>
-                     <district type="departement">Lesbos</district>
-                     <region>Égée-Septentrionale</region>
-                     <country>Grèce</country>
-                  </location>
-                  <location type="geographicalCoordinates">
-                     <geo>39.11 26.55472</geo>
-                  </location>
-                  <idno type="geonamesURI">http://sws.geonames.org/256866/</idno>
-               </place>
-               -->
-            </listPlace>
+               </listPlace>
+         </listPlace>
          </div>
       </body>
    </text>
