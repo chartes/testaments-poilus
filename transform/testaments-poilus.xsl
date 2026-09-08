@@ -322,9 +322,12 @@
        sous-liste nommée par lettre, qui est l'unité de page de l'ÉLEC
        historique. Les deux niveaux ont leur propre gabarit, la sous-liste
        pouvant être servie seule comme fragment DTS. -->
-  <xsl:template match="tei:listPerson[tei:listPerson]" priority="10">
+  <xsl:template match="tei:listPerson[not(tei:person)]" priority="10">
     <section class="tp-index-persons">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">Index des testateurs</h2>
+      <!-- Servie sans ses lettres, qui en sont des unités citables, la liste
+           englobante n'affichait rien : la barre lui tient lieu de sommaire. -->
+      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
       <xsl:apply-templates select="tei:listPerson"/>
     </section>
   </xsl:template>
@@ -337,9 +340,12 @@
     </section>
   </xsl:template>
 
-  <xsl:template match="tei:listPlace[tei:listPlace]" priority="10">
+  <xsl:template match="tei:listPlace[not(tei:place)]" priority="10">
     <section class="tp-index-places">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">Index des lieux de décès</h2>
+      <!-- Servie sans ses lettres, qui en sont des unités citables, la liste
+           englobante n'affichait rien : la barre lui tient lieu de sommaire. -->
+      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
       <xsl:apply-templates select="tei:listPlace"/>
     </section>
   </xsl:template>

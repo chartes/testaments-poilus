@@ -176,6 +176,27 @@ for tag in ("listPerson", "listPlace"):
         liste.insert((list(liste).index(tete) + 1) if tete is not None else 0, barre)
         n_barres += 1
 
+    # La liste englobante est servie sans ses lettres — elles en sont des unités
+    # citables — et sa page restait vide. Elle reçoit la barre seule, qui tient
+    # lieu de sommaire : une lettre est alors à un clic.
+    for englobante in index.iter(TEI + tag):
+        if englobante.get(XID) or not listes:
+            continue
+        for vieux in englobante.findall(TEI + "note"):
+            if vieux.get("subtype") == "generated":
+                englobante.remove(vieux)
+        barre = etree.Element(TEI + "note", type="letter-nav", subtype="generated")
+        barre.text = "\n            "
+        for autre in listes:
+            r = etree.SubElement(barre, TEI + "ref", type="letterNav")
+            r.set("target", "#" + autre.get(XID))
+            r.set("corresp", autre.get(XID))
+            tete = autre.find(TEI + "head")
+            r.text = (tete.text or "").strip() if tete is not None else autre.get(XID)[-1]
+            r.tail = "\n            "
+        englobante.insert(0, barre)
+        n_barres += 1
+
 # Les renvois du texte vers l'index ne disent pas quelle lettre ouvrir :
 # « MRPatey » se range sous P, « pl-076 » sous le nom du lieu. On inscrit donc
 # la lettre à côté du renvoi, dans un @corresp, pour que la feuille puisse
