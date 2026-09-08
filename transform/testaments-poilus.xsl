@@ -97,6 +97,9 @@
         | parent::tei:ref[@type = 'linkToPersonsIndex']">testaments-poilus-index</xsl:when>
       <xsl:when test="self::tei:ref[@type = 'linkToEdition']
         | parent::tei:ref[@type = 'linkToEdition']">testaments-poilus-edition</xsl:when>
+      <!-- la barre des lettres ne vise jamais que l'index -->
+      <xsl:when test="self::tei:ref[@type = 'letterNav']
+        | parent::tei:ref[@type = 'letterNav']">testaments-poilus-index</xsl:when>
       <!-- sinon la cible est ailleurs dans le document courant -->
       <xsl:otherwise><xsl:call-template name="tp-current-resource"/></xsl:otherwise>
     </xsl:choose>
@@ -114,7 +117,13 @@
        seule des divisions de testament. -->
   <xsl:template name="tp-current-resource">
     <xsl:choose>
-      <xsl:when test="//tei:listPerson | //tei:listPlace | //tei:person | //tei:place">testaments-poilus-index</xsl:when>
+      <!-- La barre des lettres et le titre d'index suffisent a reconnaitre
+           l'index : servie seule, la page d'accueil d'un index n'a plus ni
+           liste ni notice — DoTS ne livre que les enfants du fragment — et
+           l'index etait alors pris pour l'introduction, si bien que ses vingt
+           liens de lettres menaient a une 404. -->
+      <xsl:when test="//tei:listPerson | //tei:listPlace | //tei:person | //tei:place
+        | //tei:note[@type = 'letter-nav'] | //tei:head[@type = 'index']">testaments-poilus-index</xsl:when>
       <xsl:when test="//tei:div[@type = 'will'] | //tei:text[starts-with(@xml:id, 'will-')]">testaments-poilus-edition</xsl:when>
       <xsl:otherwise>testaments-poilus-introduction</xsl:otherwise>
     </xsl:choose>
@@ -256,11 +265,14 @@
       <xsl:if test="@rend = 'current'">
         <xsl:attribute name="style">font-weight:700;color:#a73136</xsl:attribute>
       </xsl:if>
+      <!-- La lettre visee est la page elle-meme : pas d'ancre a lui ajouter.
+           Elle en portait une, #testateurs-B, qui ne se trouve nulle part sur
+           la page — l'@xml:id est sur la <listPerson>, et DoTS ne sert que les
+           enfants du fragment. Sans consequence a l'affichage, mais 760 liens
+           du corpus visaient une ancre absente. -->
       <xsl:attribute name="href">
-        <xsl:call-template name="tp-href">
-          <xsl:with-param name="anchor" select="substring-after(@target, '#')"/>
-          <xsl:with-param name="unite" select="@corresp"/>
-        </xsl:call-template>
+        <xsl:value-of select="concat($tp_app_base, $tp_collection,
+          '/document/testaments-poilus-index?refId=', @corresp)"/>
       </xsl:attribute>
       <xsl:apply-templates/>
     </a>
@@ -280,6 +292,15 @@
        « tei:bibl//tei:note » de teiHeader2html : rendues en ligne, sans appel. -->
   <xsl:template match="tei:bibl//tei:note">
     <xsl:call-template name="noteref"/>
+  </xsl:template>
+
+  <!-- Sauf la mention d'accès en ligne, qui fait corps avec la référence
+       bibliographique : « Édition numérique en ligne : http://… (consulté le
+       [date]) ». Sur la page « Citer la présente édition », la règle
+       ci-dessus en faisait trois appels de note dont le corps n'était nulle
+       part — la collecte des notes ne descend pas dans une <bibl>. -->
+  <xsl:template match="tei:bibl//tei:note[@type = 'onLineAccess']" priority="1">
+    <xsl:apply-templates/>
   </xsl:template>
 
   <!-- L'appel déporté <ref type="note" xml:id="x"> est visé par le @target de
