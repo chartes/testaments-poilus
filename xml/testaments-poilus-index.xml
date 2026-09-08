@@ -78,7 +78,7 @@
                                 d’infanterie, commandeur de la Légion d’honneur, décoré de la Croix
                                 de guerre.</p>
                      <p>Mort pour la France à la batterie Est du fort de Souville, commune de
-                                <placeName ref="#pl-039">Fleury-devant-Douaumont (Meuse)</placeName>, le 6 septembre 1916, de blessures
+                                <placeName ref="#pl-039" corresp="lieux-F">Fleury-devant-Douaumont (Meuse)</placeName>, le 6 septembre 1916, de blessures
                                 de guerre.</p>
                   </note>
                   <bibl>
@@ -105,7 +105,7 @@
                      <p>Marié à Christine Jeanne Caze.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 322<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à la cote 321 à <placeName ref="#pl-021">Bras-sur-Meuse (Meuse)</placeName>, le 4 août 1916, tué
+                     <p>Mort pour la France à la cote 321 à <placeName ref="#pl-021" corresp="lieux-B">Bras-sur-Meuse (Meuse)</placeName>, le 4 août 1916, tué
                                 à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -131,7 +131,7 @@
                      <p>Marié à Émilie Villain.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 346<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-096">Verdun (Meuse)</placeName>, le 22 août 1916, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-096" corresp="lieux-V">Verdun (Meuse)</placeName>, le 22 août 1916, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -180,7 +180,7 @@
                      <p>Marchand de métaux, domicilié à Paris (11<hi rend="sup">e</hi>), 135 boulevard Voltaire.</p>
                      <p>Marié à Thérèse Queignard.</p>
                      <p>Sergent major au 2<hi rend="sup">e</hi> Groupe d’aviation.</p>
-                     <p>Mort pour la France à l’ambulance 16/9 à <placeName ref="#pl-066">Mouy (Oise)</placeName>, le 15 septembre
+                     <p>Mort pour la France à l’ambulance 16/9 à <placeName ref="#pl-066" corresp="lieux-M">Mouy (Oise)</placeName>, le 15 septembre
                                 1918, de maladie contractée en service commandé.</p>
                   </note>
                   <bibl>
@@ -205,7 +205,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 28<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-095">Vaux-devant-Damloup (Meuse)</placeName>, le 1<hi rend="sup">er</hi> juin 1916, tué à l’ennemi.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-095" corresp="lieux-V">Vaux-devant-Damloup (Meuse)</placeName>, le 1<hi rend="sup">er</hi> juin 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
                      <author>Ministère de la défense, Secrétariat général pour
@@ -229,7 +229,7 @@
                      <p>Marié à Laure Druart.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 67<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France au ravin de <placeName ref="#pl-019">Bouchavesnes (Somme)</placeName>, le 12 octobre
+                     <p>Mort pour la France au ravin de <placeName ref="#pl-019" corresp="lieux-B">Bouchavesnes (Somme)</placeName>, le 12 octobre
                                 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -255,7 +255,7 @@
                                 Castelar.</p>
                      <p>Célibataire.</p>
                      <p>Caporal au 282<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à Vauxrot, <placeName ref="#pl-033">commune de Cuffies (Aisne)</placeName>, le 12
+                     <p>Mort pour la France à Vauxrot, <placeName ref="#pl-033" corresp="lieux-C">commune de Cuffies (Aisne)</placeName>, le 12
                                 janvier 1915, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -282,7 +282,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 13<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-017">Bois Jura, commune d’Apremont-la-Forêt (Meuse)</placeName>, le 4
+                     <p>Mort pour la France au <placeName ref="#pl-017" corresp="lieux-B">Bois Jura, commune d’Apremont-la-Forêt (Meuse)</placeName>, le 4
                                 novembre 1914, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -307,7 +307,7 @@
                      <p>Domicilié à Paris (18<hi rend="sup">e</hi>), 67 rue Lamarck.</p>
                      <p>Marié.</p>
                      <p>Caporal au 320<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-082">Sapogne (Ardennes)</placeName>, le 29 août 1914, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-082" corresp="lieux-S">Sapogne (Ardennes)</placeName>, le 29 août 1914, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -333,7 +333,7 @@
                      <p>Marié à Marguerite (X.).</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 11<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-096">Verdun (Meuse)</placeName>, le 25 décembre 1917, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-096" corresp="lieux-V">Verdun (Meuse)</placeName>, le 25 décembre 1917, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -360,7 +360,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 166<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-055">Marchéville (Meuse)</placeName>, le 27 mars
+                     <p>Mort pour la France au combat de <placeName ref="#pl-055" corresp="lieux-M">Marchéville (Meuse)</placeName>, le 27 mars
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -386,7 +386,7 @@
                                 La Vieuville.</p>
                      <p>Marié à Clotilde Virginie André.</p>
                      <p>Sergent au 97<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-052">la Maison-Blanche (Pas-de-Calais)</placeName>, le 8 octobre
+                     <p>Mort pour la France à <placeName ref="#pl-052" corresp="lieux-L">la Maison-Blanche (Pas-de-Calais)</placeName>, le 8 octobre
                                 1914, sur le champ de bataille.</p>
                   </note>
                   <bibl>
@@ -411,7 +411,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 2<hi rend="sup">e</hi>
                                 Groupe d’aviation.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-087">Souilly (Meuse)</placeName>, le 4 octobre 1917, des suites
+                     <p>Mort pour la France à <placeName ref="#pl-087" corresp="lieux-S">Souilly (Meuse)</placeName>, le 4 octobre 1917, des suites
                                 de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -438,7 +438,7 @@
                      <p>Marié à Mathilde Pellet.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 155<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-079">Saint-Hilaire-le-Grand (Marne)</placeName>, le 25 septembre
+                     <p>Mort pour la France à <placeName ref="#pl-079" corresp="lieux-S">Saint-Hilaire-le-Grand (Marne)</placeName>, le 25 septembre
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -465,7 +465,7 @@
                                 Poniatowski.</p>
                      <p>Célibataire.</p>
                      <p>Lieutenant au 46<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’hôpital temporaire de <placeName ref="#pl-069">Nevers (Nièvre)</placeName>, le 23
+                     <p>Mort pour la France à l’hôpital temporaire de <placeName ref="#pl-069" corresp="lieux-N">Nevers (Nièvre)</placeName>, le 23
                                 septembre 1914, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -492,7 +492,7 @@
                      <p>Marié à Amélie Rose Godefroy.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 9<hi rend="sup">e</hi>
                                 Régiment de zouaves.</p>
-                     <p>Mort pour la France à l’hôpital d’évacuation de <placeName ref="#pl-028">Cerisy-Gailly
+                     <p>Mort pour la France à l’hôpital d’évacuation de <placeName ref="#pl-028" corresp="lieux-C">Cerisy-Gailly
                                 (Somme)</placeName>, le 19 août 1916, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -521,7 +521,7 @@
                      <p>Marié à Louise Merlet.</p>
                      <p>Soldat de 1<hi rend="sup">e</hi> classe au 20<hi rend="sup">e</hi>
                                 bataillon de chasseurs à pied.</p>
-                     <p>Mort pour la France à la bataille de <placeName ref="#pl-053">la Malmaison (Aisne)</placeName>, à
+                     <p>Mort pour la France à la bataille de <placeName ref="#pl-053" corresp="lieux-L">la Malmaison (Aisne)</placeName>, à
                                 l’ambulance 13/8 à Sermoise (Aisne), le 25 octobre 1917, de
                                 blessures de guerre (fracture du crâne).</p>
                   </note>
@@ -549,7 +549,7 @@
                                 Ortolan.</p>
                      <p>Célibataire.</p>
                      <p>Sergent au 5<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 4/54 à <placeName ref="#pl-051">Landrecourt (Meuse)</placeName>, le 23
+                     <p>Mort pour la France à l’ambulance 4/54 à <placeName ref="#pl-051" corresp="lieux-L">Landrecourt (Meuse)</placeName>, le 23
                                 décembre 1916, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -577,7 +577,7 @@
                      <p>Marié à Suzanne Pauline Marguerite Duplan.</p>
                      <p>Arme.</p>
                      <!--A PRECISER-->
-                     <p>Mort pour la France à l’hôpital Auban-Moët à <placeName ref="#pl-035">Epernay (Marne)</placeName>, le 19
+                     <p>Mort pour la France à l’hôpital Auban-Moët à <placeName ref="#pl-035" corresp="lieux-E">Epernay (Marne)</placeName>, le 19
                                 novembre 1918, de maladie contractée en service commandé.</p>
                   </note>
                   <bibl>
@@ -601,7 +601,7 @@
                      <p>Employé à la Compagnie du Gaz, domicilié à Paris (11<hi rend="sup">e</hi>), 9 rue Jean Macé.</p>
                      <p>Marié à Clotilde Antoinette Bidault.</p>
                      <p>Sergent au 353<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>,
+                     <p>Mort pour la France au combat de <placeName ref="#pl-018" corresp="lieux-B">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>,
                                 le 9 mai 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -627,7 +627,7 @@
                      <p>Veuf.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 30<hi rend="sup">e</hi>
                                 régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-009">Bar-le-Duc (Meuse)</placeName>, le 10 février 1916, de
+                     <p>Mort pour la France à <placeName ref="#pl-009" corresp="lieux-B">Bar-le-Duc (Meuse)</placeName>, le 10 février 1916, de
                                 maladie contractée au front.</p>
                   </note>
                   <bibl>
@@ -677,7 +677,7 @@
                      <p>Marié à Noémie Maillier.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 360<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-039">Fleury-devant-Douaumont (Meuse)</placeName>, le 1<hi rend="sup">er</hi> avril 1916, tué à l’ennemi.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-039" corresp="lieux-F">Fleury-devant-Douaumont (Meuse)</placeName>, le 1<hi rend="sup">er</hi> avril 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
                      <author>Ministère de la défense, Secrétariat général pour
@@ -702,7 +702,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 37<hi rend="sup">e</hi>
                                 régiment d’infanterie, musicien.</p>
-                     <p>Mort pour la France à la carrière de <placeName ref="#pl-050">Landifay (Aisne)</placeName>, le 4 novembre
+                     <p>Mort pour la France à la carrière de <placeName ref="#pl-050" corresp="lieux-L">Landifay (Aisne)</placeName>, le 4 novembre
                                 1918, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -728,7 +728,7 @@
                      <p>Marié à Louise Elise Bioteau.</p>
                      <p>Soldat de 1<hi rend="sup">er</hi> classe au 155<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-044">bois de la Gruerie (Marne)</placeName>, le 29 janvier
+                     <p>Mort pour la France au <placeName ref="#pl-044" corresp="lieux-G">bois de la Gruerie (Marne)</placeName>, le 29 janvier
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -753,7 +753,7 @@
                      <p>Étudiant, domicilié à Paris (13<hi rend="sup">e</hi>), 7 rue des Wallons.</p>
                      <p>Marié à Reine Bourgery.</p>
                      <p>Pilote, caporal au 1<hi rend="sup">er</hi> groupe d’aviation.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-020">Bourges (Cher)</placeName>, le 21 juillet 1918, dans un
+                     <p>Mort pour la France à <placeName ref="#pl-020" corresp="lieux-B">Bourges (Cher)</placeName>, le 21 juillet 1918, dans un
                                 accident survenu en service commandé.</p>
                   </note>
                   <bibl>
@@ -783,7 +783,7 @@
                                 commune de Dun-le-Poëlier (Indre).</p>
                      <p>Célibataire</p>
                      <p>Sous-lieutenant de réserve au 26<hi rend="sup">e</hi> Dragons.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-041">Fraize (Vosges)</placeName>, le 4 septembre 1914, à la
+                     <p>Mort pour la France à <placeName ref="#pl-041" corresp="lieux-F">Fraize (Vosges)</placeName>, le 4 septembre 1914, à la
                                 suite de blessures de guerre.</p>
                   </note>
                   <!-- FC 9 mars 2016 : introuvable dans la base Mémoire des hommes<bibl><author>Ministère de la défense, Secrétariat général pour
@@ -818,7 +818,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 27<hi rend="sup">e</hi>
                                 régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-056">Maroeuil (Pas-de-Calais)</placeName>, le 10 janvier 1915,
+                     <p>Mort pour la France à <placeName ref="#pl-056" corresp="lieux-M">Maroeuil (Pas-de-Calais)</placeName>, le 10 janvier 1915,
                                 tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -844,7 +844,7 @@
                                 Dorian.</p>
                      <p>Marié à Alice Grandjean.</p>
                      <p>Sergent au 31<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-094">Vauquois (Meuse)</placeName>, le 7 septembre 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-094" corresp="lieux-V">Vauquois (Meuse)</placeName>, le 7 septembre 1915, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -871,7 +871,7 @@
                      <p>Marié à Marie Hechly.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 43<hi rend="sup">e</hi>
                                 Régiment d’infanterie coloniale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-057">Maricourt (Somme)</placeName>, le 13 octobre 1914, suite de
+                     <p>Mort pour la France à <placeName ref="#pl-057" corresp="lieux-M">Maricourt (Somme)</placeName>, le 13 octobre 1914, suite de
                                 blessures de la guerre.</p>
                   </note>
                   <bibl>
@@ -896,7 +896,7 @@
                                 (Puy-de-Dôme).</p>
                      <p>Soldat au 99<hi rend="sup">e</hi> Régiment d’infanterie
                                 territoriale.</p>
-                     <p>Mort pour la France à l’ambulance 5/10 à <placeName ref="#pl-012">Bellemagny (Haut-Rhin)</placeName>, le
+                     <p>Mort pour la France à l’ambulance 5/10 à <placeName ref="#pl-012" corresp="lieux-B">Bellemagny (Haut-Rhin)</placeName>, le
                                 11 novembre 1916, des suites de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -923,7 +923,7 @@
                                 (Maine-et-Loire), 28 rue Lenepveu.</p>
                      <p>Marié à Marie Mathilde Yvonne Broutelle.</p>
                      <p>Caporal au 241<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-039">Fleury-devant-Douaumont (Meuse)</placeName>, le 27 juin
+                     <p>Mort pour la France à <placeName ref="#pl-039" corresp="lieux-F">Fleury-devant-Douaumont (Meuse)</placeName>, le 27 juin
                                 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -950,7 +950,7 @@
                      <p>Marié à Lucienne Yvonne Contrel.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 68<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 3/55 à <placeName ref="#pl-048">Jaulzy (Oise)</placeName>, le 29 août
+                     <p>Mort pour la France à l’ambulance 3/55 à <placeName ref="#pl-048" corresp="lieux-J">Jaulzy (Oise)</placeName>, le 29 août
                                 1918, des suites de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -977,7 +977,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 11<hi rend="sup">e</hi>
                                 régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France àen captivité à <placeName ref="#pl-070">Parchim (Allemagne)</placeName>, le 10
+                     <p>Mort pour la France àen captivité à <placeName ref="#pl-070" corresp="lieux-P">Parchim (Allemagne)</placeName>, le 10
                                 janvier 1915, d’une fluxion de poitrine.</p>
                   </note>
                   <bibl>
@@ -1027,7 +1027,7 @@
                                 avenue Bugeaud.</p>
                      <p>Marié.</p>
                      <p>Lieutenant au 24<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-071">Paris</placeName> (16<hi rend="sup">e</hi>), 2 rue Georges
+                     <p>Mort pour la France à <placeName ref="#pl-071" corresp="lieux-P">Paris</placeName> (16<hi rend="sup">e</hi>), 2 rue Georges
                                 Bizet, le 5 octobre 1918, de suite de blessures de
                             guerre.</p>
                   </note>
@@ -1055,7 +1055,7 @@
                      <p>Célibataire.</p>
                      <p>Sergent à la 22<hi rend="sup">e</hi> section des commis et ouvriers
                                 d’administration.</p>
-                     <p>Mort pour la France à l’hôpital auxiliaire 198 à <placeName ref="#pl-071">Paris</placeName>, 9 rue
+                     <p>Mort pour la France à l’hôpital auxiliaire 198 à <placeName ref="#pl-071" corresp="lieux-P">Paris</placeName>, 9 rue
                                 Euryale, le 29 mars 1919, de maladie contractée en service
                                 (broncho-pneumonie).</p>
                   </note>
@@ -1085,7 +1085,7 @@
                      <p>Célibataire.</p>
                      <p>Engagé volontaire pour la durée de la guerre, maréchal des logis au
                                     1<hi rend="sup">er</hi> Cuirassiers.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-065">Montvoisin près Epernay (Marne)</placeName>, le 16 juillet
+                     <p>Mort pour la France à <placeName ref="#pl-065" corresp="lieux-M">Montvoisin près Epernay (Marne)</placeName>, le 16 juillet
                                 1918, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1113,7 +1113,7 @@
                      <p>Marié à Hélène Cartault</p>
                      <p>Chef de bataillon au 156<hi rend="sup">e</hi> régiment
                                 d’infanterie</p>
-                     <p>Mort pour la France à l’ambulance 4/22, annexe de <placeName ref="#pl-100">Vitry-le-François
+                     <p>Mort pour la France à l’ambulance 4/22, annexe de <placeName ref="#pl-100" corresp="lieux-V">Vitry-le-François
                                 (Marne)</placeName>, le 16 novembre 1915, des suites de blessures de
                             guerre.</p>
                   </note>
@@ -1140,7 +1140,7 @@
                                 Sainte-Marie.</p>
                      <p>Marié à Juliette Lemarie.</p>
                      <p>Caporal au 4<hi rend="sup">e</hi> Régiment de zouaves.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-104">Villers-le-Sec (Aisne)</placeName>, le 30 août 1914, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-104" corresp="lieux-V">Villers-le-Sec (Aisne)</placeName>, le 30 août 1914, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1164,7 +1164,7 @@
                      <p>Electricien, domicilié à Paris (16<hi rend="sup">e</hi>), 2 rue François-Ponsard.</p>
                      <p>Marié à Jenny Henriette Fauchez.</p>
                      <p>Soldat au 107<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-008">Baleycourt, commune de Verdun (Meuse)</placeName>, le 19
+                     <p>Mort pour la France à <placeName ref="#pl-008" corresp="lieux-B">Baleycourt, commune de Verdun (Meuse)</placeName>, le 19
                                 mai 1916, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1189,7 +1189,7 @@
                      <p>Industriel domicilié à Paris (11<hi rend="sup">e</hi>), 120 boulevard Richard-Lenoir.</p>
                      <p>Marié.</p>
                      <p>Lieutenant au 59<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-049">mont Kokereel (Nord)</placeName>, le 29 avril 1918, tué à
+                     <p>Mort pour la France au <placeName ref="#pl-049" corresp="lieux-K">mont Kokereel (Nord)</placeName>, le 29 avril 1918, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1215,7 +1215,7 @@
                      <p>Employé de commerce, domicilié à Paris (3<hi rend="sup">e</hi>), 70 rue des Archives.</p>
                      <p>Célibataire.</p>
                      <p>Sergent au 52<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-072">Perthes-lès-Hurlus (Marne)</placeName>, le 27 septembre
+                     <p>Mort pour la France à <placeName ref="#pl-072" corresp="lieux-P">Perthes-lès-Hurlus (Marne)</placeName>, le 27 septembre
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1241,7 +1241,7 @@
                                 rue Montorgueil.</p>
                      <p>Célibataire.</p>
                      <p>Sergent major au 51<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-067">la Neuville (Marne)</placeName>, le 4 mai 1917, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-067" corresp="lieux-L">la Neuville (Marne)</placeName>, le 4 mai 1917, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1268,7 +1268,7 @@
                      <p>Marié à Jeanne (X.).</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 82<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-074">la Pierre-Croisée cote 285 (Meuse)</placeName>, le 13
+                     <p>Mort pour la France à <placeName ref="#pl-074" corresp="lieux-L">la Pierre-Croisée cote 285 (Meuse)</placeName>, le 13
                                 juillet 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1295,7 +1295,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 20<hi rend="sup">e</hi>
                                 escadron du Train.</p>
-                     <p>Mort pour la France à l’ambulance ½, secteur 63, à <placeName ref="#pl-100">Vitry-le-François
+                     <p>Mort pour la France à l’ambulance ½, secteur 63, à <placeName ref="#pl-100" corresp="lieux-V">Vitry-le-François
                                 (Marne)</placeName>, le 5 novembre 1916, des suites de blessures.</p>
                   </note>
                   <bibl>
@@ -1322,7 +1322,7 @@
                      <p>Marié à Marie Joséphine Morère-Poc</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 42<hi rend="sup">e</hi>
                                 régiment d’infanterie</p>
-                     <p>Mort pour la France au plateau de <placeName ref="#pl-099">Vingré (Aisne)</placeName>, le 12 novembre
+                     <p>Mort pour la France au plateau de <placeName ref="#pl-099" corresp="lieux-V">Vingré (Aisne)</placeName>, le 12 novembre
                                 1914, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1363,7 +1363,7 @@
                      <p>Marié à Eugénie Pettro.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 46<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance, à <placeName ref="#pl-097">Vienne-le-Château (Marne)</placeName>, le 16
+                     <p>Mort pour la France à l’ambulance, à <placeName ref="#pl-097" corresp="lieux-V">Vienne-le-Château (Marne)</placeName>, le 16
                                 juillet 1915, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1389,7 +1389,7 @@
                      <p>Marié à Marie Denise Chamblant.</p>
                      <p>Maréchal des logis au 59<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France à l’hôpital temporaire n°2 à <placeName ref="#pl-096">Verdun (Meuse)</placeName>, le
+                     <p>Mort pour la France à l’hôpital temporaire n°2 à <placeName ref="#pl-096" corresp="lieux-V">Verdun (Meuse)</placeName>, le
                                 18 octobre 1914, de maladie contractée en service
                             commandé.</p>
                   </note>
@@ -1417,7 +1417,7 @@
                      <p>Marié à Margarite Bossoreil.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 353<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-018">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>, le 28 mai
+                     <p>Mort pour la France au <placeName ref="#pl-018" corresp="lieux-B">Bois-le-Prêtre (Meurthe-et-Moselle)</placeName>, le 28 mai
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1444,7 +1444,7 @@
                                 17 rue de l’Église.</p>
                      <p>Célibataire.</p>
                      <p>Sergent au 53<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 10/2 à <placeName ref="#pl-034">Dugny-sur-Meuse (Meuse)</placeName>, le
+                     <p>Mort pour la France à l’ambulance 10/2 à <placeName ref="#pl-034" corresp="lieux-D">Dugny-sur-Meuse (Meuse)</placeName>, le
                                 5 juin 1916, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1473,7 +1473,7 @@
                      <p>Marié à Marie-Julie Revial.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 11<hi rend="sup">e</hi>
                                 bataillon de chasseurs.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-061">Metzeral (Alsace)</placeName>, le 21 juin 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-061" corresp="lieux-M">Metzeral (Alsace)</placeName>, le 21 juin 1915, tué à
                                 l’ennemi.</p>
                   </note>
                   <!--FC 9 mars 2016 non trouvé dans la base Mémoire des hommes <bibl><author>Ministère de la défense, Secrétariat général pour
@@ -1530,7 +1530,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 2<hi rend="sup">e</hi>
                                 régiment mixte (tirailleurs et zouaves).</p>
-                     <p>Mort pour la France à l’ambulance 5/3 à <placeName ref="#pl-034">Dugny (Meuse)</placeName>, le 3 mai 1916,
+                     <p>Mort pour la France à l’ambulance 5/3 à <placeName ref="#pl-034" corresp="lieux-D">Dugny (Meuse)</placeName>, le 3 mai 1916,
                                 suite de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1580,7 +1580,7 @@
                      <p>Soldat à la 4<hi rend="sup">e</hi> section du C.G.A. (contrôle
                                 général des armées ?).</p>
                      <!--A PRECISER-->
-                     <p>Mort pour la France à son domicile à <placeName ref="#pl-047">Houilles (Seine-et-Oise)</placeName>, le 7
+                     <p>Mort pour la France à son domicile à <placeName ref="#pl-047" corresp="lieux-H">Houilles (Seine-et-Oise)</placeName>, le 7
                                 juillet 1919, suite de maladie contractée en service (tuberculose
                                 pulmonaire).</p>
                   </note>
@@ -1607,7 +1607,7 @@
                                 rue de Charenton.</p>
                      <p>Célibataire.</p>
                      <p>Caporal au 150<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-081">Sapigneul (Marne)</placeName>, le 16 avril 1917, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-081" corresp="lieux-S">Sapigneul (Marne)</placeName>, le 16 avril 1917, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1634,7 +1634,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 11<hi rend="sup">e</hi>
                                 régiment de cuirassiers à pied.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-098">Villequier-Aumont (Aisne)</placeName>, le 24 mars 1918, tué
+                     <p>Mort pour la France à <placeName ref="#pl-098" corresp="lieux-V">Villequier-Aumont (Aisne)</placeName>, le 24 mars 1918, tué
                                 à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1660,7 +1660,7 @@
                                 cours de Vincennes.</p>
                      <p>Marié à Jeanne Evain.</p>
                      <p>Sous-lieutenant au 31<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-094">Vauquois (Meuse)</placeName>, le 16 octobre 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-094" corresp="lieux-V">Vauquois (Meuse)</placeName>, le 16 octobre 1915, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1688,7 +1688,7 @@
                      <p>Caporal au 23<hi rend="sup">e</hi> Régiment d’infanterie
                                 coloniale.</p>
                      <!--A PRECISER-->
-                     <p>Mort pour la France à <placeName ref="#pl-059">Massiges (Marne)</placeName>, le 25 septembre 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-059" corresp="lieux-M">Massiges (Marne)</placeName>, le 25 septembre 1915, tué à
                                 l’ennemi (disparu).</p>
                   </note>
                   <bibl>
@@ -1717,7 +1717,7 @@
                      <p>Lieutenant d’artillerie au 10<hi rend="sup">e</hi> régiment
                                 d’artillerie coloniale, chevalier de la Légion d’honneur, décoré de
                                 la Croix de guerre.</p>
-                     <p>Mort pour la France à l’hôpital civil de <placeName ref="#pl-030">Châlons-sur-Marne (Marne)</placeName>,
+                     <p>Mort pour la France à l’hôpital civil de <placeName ref="#pl-030" corresp="lieux-C">Châlons-sur-Marne (Marne)</placeName>,
                                 le 24 avril 1917, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1765,7 +1765,7 @@
                      <p>Marié à Antoinette Sophie Orliac.</p>
                      <p>Soldat au 139<hi rend="sup">e</hi> régiment d’infanterie.</p>
                      <!-- FC 16 mars : affectation confirmée par CN -->
-                     <p>Mort pour la France à l’hôpital d’<placeName ref="#pl-036">Épinal (Vosges)</placeName>, le 7 septembre
+                     <p>Mort pour la France à l’hôpital d’<placeName ref="#pl-036" corresp="lieux-E">Épinal (Vosges)</placeName>, le 7 septembre
                                 1914, des suites de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1792,7 +1792,7 @@
                      <p>Célibataire.</p>
                      <p>Chasseur de 2<hi rend="sup">e</hi> classe au 17<hi rend="sup">e</hi>
                                 bataillon de chasseurs alpins.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-088">Suippes (Marne)</placeName>, le 13 ou 14 septembre 1914,
+                     <p>Mort pour la France à <placeName ref="#pl-088" corresp="lieux-S">Suippes (Marne)</placeName>, le 13 ou 14 septembre 1914,
                                 tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -1818,7 +1818,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 167<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’hôpital militaire Bautzen-Thouvenot à <placeName ref="#pl-089">Toul
+                     <p>Mort pour la France à l’hôpital militaire Bautzen-Thouvenot à <placeName ref="#pl-089" corresp="lieux-T">Toul
                                 (Meurthe-et-Moselle)</placeName>, le 12 décembre 1914, d’une fièvre
                                 typhoïde.</p>
                   </note>
@@ -1851,7 +1851,7 @@
                      <p>Marié à Berthe Geneviève (X.).</p>
                      <p>Maréchal des logis au 39<hi rend="sup">e</hi> Régiment d’artillerie
                                 de campagne.</p>
-                     <p>Mort pour la France à l’ambulance 3/64 à <placeName ref="#pl-013">Bénaménil
+                     <p>Mort pour la France à l’ambulance 3/64 à <placeName ref="#pl-013" corresp="lieux-B">Bénaménil
                                 (Meurthe-et-Moselle)</placeName>, le 17 janvier 1917, des suites de
                                 blessures.</p>
                   </note>
@@ -1876,7 +1876,7 @@
                      <p>Métreur vérificateur, domicilié à Paris (18<hi rend="sup">e</hi>), 36 rue Damrémont.</p>
                      <p>Célibataire.</p>
                      <p>Sergent au 3<hi rend="sup">e</hi> bataillon de chasseurs à pied.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire
+                     <p>Mort pour la France à <placeName ref="#pl-001" corresp="lieux-A">Ablain-Saint-Nazaire
                                     (Pas-de-Calais)</placeName>, le 16 janvier 1915, tué à
                                 l’ennemi.</p>
                   </note>
@@ -1902,7 +1902,7 @@
                      <p>Encaisseur, domicilié à Paris (9<hi rend="sup">e</hi>), 37 rue Fontaine.</p>
                      <p>Marié à Berthe Augustine Brisolier.</p>
                      <p>Sapeur au 5<hi rend="sup">e</hi> Régiment du Génie.</p>
-                     <p>Mort pour la France à l’hôpital militaire Villemin à <placeName ref="#pl-071">Paris</placeName> (10<hi rend="sup">e</hi>), 8 rue des Récollets, le 29 décembre 1918, de
+                     <p>Mort pour la France à l’hôpital militaire Villemin à <placeName ref="#pl-071" corresp="lieux-P">Paris</placeName> (10<hi rend="sup">e</hi>), 8 rue des Récollets, le 29 décembre 1918, de
                                 pneumonie grippale.</p>
                   </note>
                   <bibl>
@@ -1930,7 +1930,7 @@
                      <p>Marié à Sidonie Huet.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 121<hi rend="sup">e</hi>
                                 bataillon de chasseurs à pied.</p>
-                     <p>Mort pour la France à l’hôpital 34 bis à <placeName ref="#pl-103">Zuydcoote (Nord)</placeName>, le 22 mai
+                     <p>Mort pour la France à l’hôpital 34 bis à <placeName ref="#pl-103" corresp="lieux-Z">Zuydcoote (Nord)</placeName>, le 22 mai
                                 1918, des suites de blessures de guerre (syndrome consécutif à une
                                 intoxication par gaz).</p>
                   </note>
@@ -1956,7 +1956,7 @@
                      <p>Marié à Marie Candellier.</p>
                      <p>Soldat au 21<hi rend="sup">e</hi> régiment d’infanterie
                                 coloniale.</p>
-                     <p>Mort pour la France à l’ambulance 15 à <placeName ref="#pl-022">Braux-Sainte-Cohière (Marne)</placeName>,
+                     <p>Mort pour la France à l’ambulance 15 à <placeName ref="#pl-022" corresp="lieux-B">Braux-Sainte-Cohière (Marne)</placeName>,
                                 le 18 novembre 1915, des suites de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -1982,7 +1982,7 @@
                      <p>Célibataire</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 41<hi rend="sup">e</hi>
                                 bataillon de Chasseurs à pied</p>
-                     <p>Mort pour la France à <placeName ref="#pl-006">Baccarat
+                     <p>Mort pour la France à <placeName ref="#pl-006" corresp="lieux-B">Baccarat
                                     (Meurthe-et-Moselle)</placeName>, le 18 novembre 1914, tué à
                                 l’ennemi.</p>
                   </note>
@@ -2009,7 +2009,7 @@
                                 Dugommier.</p>
                      <p>Marié à Marguerite Trescal.</p>
                      <p>Sergent au 97<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-010">Barleux (Somme)</placeName>, le 4 septembre 1916, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-010" corresp="lieux-B">Barleux (Somme)</placeName>, le 4 septembre 1916, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2035,7 +2035,7 @@
                                 Villette.</p>
                      <p>Marié à Émilie Bastien.</p>
                      <p>Caporal au 72<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-044">bois de la Gruerie (Meuse)</placeName>, le 16 novembre
+                     <p>Mort pour la France au <placeName ref="#pl-044" corresp="lieux-G">bois de la Gruerie (Meuse)</placeName>, le 16 novembre
                                 1914, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2062,7 +2062,7 @@
                      <p>Célibataire.</p>
                      <p>Médecin auxiliaire au 160<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 15 à <placeName ref="#pl-063">Montdidier (Somme)</placeName>, le 3
+                     <p>Mort pour la France à l’ambulance 15 à <placeName ref="#pl-063" corresp="lieux-M">Montdidier (Somme)</placeName>, le 3
                                 décembre 1914, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -2086,7 +2086,7 @@
                      <p>Marchand de salaisons, domicilié à Paris (15<hi rend="sup">e</hi>), 12 rue Camulogène.</p>
                      <p>Veuf.</p>
                      <p>131<hi rend="sup">e</hi> Régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France à l’ambulance 6 à <placeName ref="#pl-032">Commercy (Meuse)</placeName>, le 8 janvier
+                     <p>Mort pour la France à l’ambulance 6 à <placeName ref="#pl-032" corresp="lieux-C">Commercy (Meuse)</placeName>, le 8 janvier
                                 1916, de maladie contractée en service.</p>
                   </note>
                   <bibl>
@@ -2111,7 +2111,7 @@
                      <p>Employé d’hôtel, domicilié à Paris (12<hi rend="sup">e</hi>), 2 rue de Chaligny.</p>
                      <p>Marié à Berthe Joséphine (X.).</p>
                      <p>Sergent au 82<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’hôpital mixte d’<placeName ref="#pl-005">Auxerre (Yonne)</placeName>, le 27 avril 1917, de blessure en
+                     <p>Mort pour la France à l’hôpital mixte d’<placeName ref="#pl-005" corresp="lieux-A">Auxerre (Yonne)</placeName>, le 27 avril 1917, de blessure en
                                 service commandé.</p>
                   </note>
                   <bibl>
@@ -2158,7 +2158,7 @@
                      <p>Agent de publicité, domicilié à Paris (20<hi rend="sup">e</hi>), 18 passage des Saints-Simoniens.</p>
                      <p>Marié.</p>
                      <p>Sergent au 408<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-078">Quennevières, commune de
+                     <p>Mort pour la France au combat de <placeName ref="#pl-078" corresp="lieux-Q">Quennevières, commune de
                                 Tracy-le-Mont (Oise)</placeName>, le 8 mai 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2186,7 +2186,7 @@
                      <p>Marié à Emma Coda Forno.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 2<hi rend="sup">e</hi>
                                 Groupe d’aviation.</p>
-                     <p>Mort pour la France à l’ambulance 2/22 à <placeName ref="#pl-093">Vatry (Marne)</placeName>, le 24 octobre
+                     <p>Mort pour la France à l’ambulance 2/22 à <placeName ref="#pl-093" corresp="lieux-V">Vatry (Marne)</placeName>, le 24 octobre
                                 1918, de maladie contractée au service.</p>
                   </note>
                   <bibl>
@@ -2213,7 +2213,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 226<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-027">Carency (Pas-de-Calais)</placeName>, le 27 décembre 1914,
+                     <p>Mort pour la France à <placeName ref="#pl-027" corresp="lieux-C">Carency (Pas-de-Calais)</placeName>, le 27 décembre 1914,
                                 tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2260,7 +2260,7 @@
                      <p>Valet de chambre, domicilié à Reims (Marne).</p>
                      <p>Célibataire.</p>
                      <p>Engagé sous le nom de Georges Bellan, brigadier au 204<hi rend="sup">e</hi> régiment d’artillerie de campagne.</p>
-                     <p>Mort pour la France à l’hôpital temporaire de <placeName ref="#pl-040">Flórina (Grèce)</placeName>, le 21
+                     <p>Mort pour la France à l’hôpital temporaire de <placeName ref="#pl-040" corresp="lieux-F">Flórina (Grèce)</placeName>, le 21
                                 juillet 1917, de maladie contractée en service.</p>
                   </note>
                   <bibl>
@@ -2287,7 +2287,7 @@
                      <p>Marié à Marie-Louise Le Guen.</p>
                      <p>Lieutenant au 1<hi rend="sup">er</hi> bataillon de Tirailleurs
                                 malgaches.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-040">Flórina (Grèce)</placeName>, le 9 juin 1917, de blessures
+                     <p>Mort pour la France à <placeName ref="#pl-040" corresp="lieux-F">Flórina (Grèce)</placeName>, le 9 juin 1917, de blessures
                                 de guerre (chute d’avion).</p>
                   </note>
                   <bibl>
@@ -2337,7 +2337,7 @@
                                 bis rue des Saules.</p>
                      <p>Marié à Benoîte Colozy.</p>
                      <p>Soldat au 49<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 2/51 à <placeName ref="#pl-002">Ambleny (Aisne)</placeName>, le 19 septembre 1918, des suites
+                     <p>Mort pour la France à l’ambulance 2/51 à <placeName ref="#pl-002" corresp="lieux-A">Ambleny (Aisne)</placeName>, le 19 septembre 1918, des suites
                                 de blessure de guerre.</p>
                   </note>
                   <bibl>
@@ -2363,7 +2363,7 @@
                                 avenue Parmentier .</p>
                      <p>Célibataire.</p>
                      <p>Soldat au 272<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-073">Petites-Perthes (Marne)</placeName>, le 10
+                     <p>Mort pour la France au combat de <placeName ref="#pl-073" corresp="lieux-L">Petites-Perthes (Marne)</placeName>, le 10
                                 septembre 1914.</p>
                   </note>
                   <bibl>
@@ -2389,7 +2389,7 @@
                      <p>Marié à Sophie Pradatié.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 246<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire
+                     <p>Mort pour la France à <placeName ref="#pl-001" corresp="lieux-A">Ablain-Saint-Nazaire
                                     (Pas-de-Calais)</placeName>, le 23 mai 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2415,7 +2415,7 @@
                                 de Talleyrand.</p>
                      <p>Célibataire.</p>
                      <p>Lieutenant au 50<hi rend="sup">e</hi> régiment d’artillerie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-102">Zillebeke près Ypres (Belgique)</placeName>, le 29 novembre
+                     <p>Mort pour la France à <placeName ref="#pl-102" corresp="lieux-Z">Zillebeke près Ypres (Belgique)</placeName>, le 29 novembre
                                 1914, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2441,7 +2441,7 @@
                                 de Turbigo.</p>
                      <p>Marié à Anne-Marie Emmrich.</p>
                      <p>Caporal au 268<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-077">Poperinghe (Belgique)</placeName>, le 19 novembre 1914, tué
+                     <p>Mort pour la France à <placeName ref="#pl-077" corresp="lieux-P">Poperinghe (Belgique)</placeName>, le 19 novembre 1914, tué
                                 à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2466,7 +2466,7 @@
                      <p>Domicilié à Paris (3<hi rend="sup">e</hi>), 65 rue de Saintonge.</p>
                      <p>Marié à Lucie Louise Joséphine Minachon.</p>
                      <p>Soldat au 264<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-085">Sommepy (Marne)</placeName>, le 29 décembre 1918, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-085" corresp="lieux-S">Sommepy (Marne)</placeName>, le 29 décembre 1918, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2493,7 +2493,7 @@
                      <p>Marié à Etiennette Bonjour.</p>
                      <p>Sous-lieutenant au 9<hi rend="sup">e</hi> Régiment d’infanterie
                                 coloniale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-086">Souain (Marne)</placeName>, le 17 septembre 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-086" corresp="lieux-S">Souain (Marne)</placeName>, le 17 septembre 1915, tué à
                                 l’ennemi par des éclats d’obus à la tête.</p>
                   </note>
                   <bibl>
@@ -2520,7 +2520,7 @@
                      <p>Marié à Cécile Germaine Clémentine Leroux.</p>
                      <p>Sergent au 31<hi rend="sup">e</hi> régiment d’infanterie
                                 territoriale.</p>
-                     <p>Mort pour la France à l’hôpital complémentaire n°39 à <placeName ref="#pl-084">Solesmes
+                     <p>Mort pour la France à l’hôpital complémentaire n°39 à <placeName ref="#pl-084" corresp="lieux-S">Solesmes
                                 (Sarthe)</placeName>, le 3 juillet 1916, de maladie contractée au service
                                 commandé.</p>
                   </note>
@@ -2547,7 +2547,7 @@
                                 rue Sedaine.</p>
                      <p>Marié à Joséphine Chrétien.</p>
                      <p>Caporal au 369<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-038">Filain (Aisne)</placeName>, le 26 octobre 1917, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-038" corresp="lieux-F">Filain (Aisne)</placeName>, le 26 octobre 1917, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2573,7 +2573,7 @@
                      <p>Marié à Louise Vellay.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 6<hi rend="sup">e</hi>
                                 Régiment d’infanterie coloniale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-088">Suippes (Marne)</placeName>, le 25 septembre 1915, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-088" corresp="lieux-S">Suippes (Marne)</placeName>, le 25 septembre 1915, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2601,7 +2601,7 @@
                      <p>Marié à Marie Germaine Chrestien de Poly.</p>
                      <p>Chef d’escadron au 5<hi rend="sup">e</hi> régiment de Dragons,
                                 chevalier de la Légion d’honneur.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-058">Marizy-Sainte-Geneviève (Aisne)</placeName>, le 2 juin
+                     <p>Mort pour la France à <placeName ref="#pl-058" corresp="lieux-M">Marizy-Sainte-Geneviève (Aisne)</placeName>, le 2 juin
                                 1918, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2628,7 +2628,7 @@
                      <p>Marié.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 360<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire
+                     <p>Mort pour la France à <placeName ref="#pl-001" corresp="lieux-A">Ablain-Saint-Nazaire
                                     (Pas-de-Calais)</placeName>, le 27 janvier 1915, tué à
                                 l’ennemi.</p>
                   </note>
@@ -2666,7 +2666,7 @@
                      <p>Célibataire.</p>
                      <p>Lieutenant de réserve au 254<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-043">Grand-Fayt (Nord)</placeName>, le 25 août 1914, tué à
+                     <p>Mort pour la France au <placeName ref="#pl-043" corresp="lieux-G">Grand-Fayt (Nord)</placeName>, le 25 août 1914, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2691,7 +2691,7 @@
                      <p>Ingénieur, domicilié à Lons-le-Saunier (Jura).</p>
                      <p>Marié.</p>
                      <p>Sergent au 103<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-004">Aubérive
+                     <p>Mort pour la France à <placeName ref="#pl-004" corresp="lieux-A">Aubérive
                                     (Marne)</placeName>, le 25 septembre 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2717,7 +2717,7 @@
                      <p>Marié à Lucie Victoire Bégou.</p>
                      <p>Soldat de 1<hi rend="sup">e</hi> classe au 42<hi rend="sup">e</hi>
                                 bataillon de chasseurs à pied.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-031">Cléry (Somme)</placeName>, le 13 septembre 1916, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-031" corresp="lieux-C">Cléry (Somme)</placeName>, le 13 septembre 1916, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2744,7 +2744,7 @@
                      <p>Marié à Lucie Charlotte Hicard.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 160<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 14/2 à <placeName ref="#pl-060">Meaux (Seine-et-Marne)</placeName>, le 6
+                     <p>Mort pour la France à l’ambulance 14/2 à <placeName ref="#pl-060" corresp="lieux-M">Meaux (Seine-et-Marne)</placeName>, le 6
                                 décembre 1918, de suites de blessures par accident.</p>
                   </note>
                   <bibl>
@@ -2794,7 +2794,7 @@
                      <p>Marié à Héloïse Schaebel.</p>
                      <p>Sergent major au 1<hi rend="sup">er</hi> Régiment d’infanterie
                                 coloniale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-097">Vienne-le-Château (Marne)</placeName>, le 7 août 1915, tué
+                     <p>Mort pour la France à <placeName ref="#pl-097" corresp="lieux-V">Vienne-le-Château (Marne)</placeName>, le 7 août 1915, tué
                                 à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2820,7 +2820,7 @@
                      <p>Représentant de commerce, domicilié à Paris (4<hi rend="sup">e</hi>), 90 rue de Rivoli.</p>
                      <p>Marié à Suzanne Féron.</p>
                      <p>Sergent-major au 128<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-011">Belloy-en-Santerre (Somme)</placeName>, le 6 septembre
+                     <p>Mort pour la France à <placeName ref="#pl-011" corresp="lieux-B">Belloy-en-Santerre (Somme)</placeName>, le 6 septembre
                                 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -2846,7 +2846,7 @@
                      <p>Comptable, domicilié à Paris (11<hi rend="sup">e</hi>), 57 rue Sedaine.</p>
                      <p>Célibataire.</p>
                      <p>Soldat au 124<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-003">Andechy
+                     <p>Mort pour la France à <placeName ref="#pl-003" corresp="lieux-A">Andechy
                                     (Somme)</placeName>, le 14 novembre 1914, de blessures de
                                 guerre.</p>
                   </note>
@@ -2873,7 +2873,7 @@
                                 (Angleterre), 38 Margaret Street.</p>
                      <p>Célibataire.</p>
                      <p>Caporal au 311<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-083">Seraucourt (Meuse)</placeName>, le 10 septembre 1914, de blessures de guerre.</p>
+                     <p>Mort pour la France à <placeName ref="#pl-083" corresp="lieux-S">Seraucourt (Meuse)</placeName>, le 10 septembre 1914, de blessures de guerre.</p>
                   </note>
                   <bibl>
                      <author>Ministère de la défense, Secrétariat général pour
@@ -2900,7 +2900,7 @@
                                 Denfert-Rochereau.</p>
                      <p>Marié à Valérie Vinches.</p>
                      <p>Sergent au 67<hi rend="sup">e</hi> bataillon de chasseurs.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-007">Bagneux
+                     <p>Mort pour la France à <placeName ref="#pl-007" corresp="lieux-B">Bagneux
                                 (Aisne)</placeName>, le 11 septembre 1918, tué à
                                 l’ennemi.</p>
                   </note>
@@ -2927,7 +2927,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 111<hi rend="sup">e</hi>
                                 régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France à l’hôpital d’évacuation 32 à <placeName ref="#pl-064">Mont-Notre-Dame
+                     <p>Mort pour la France à l’hôpital d’évacuation 32 à <placeName ref="#pl-064" corresp="lieux-M">Mont-Notre-Dame
                                 (Aisne)</placeName>, le 2 janvier 1918, de maladie en contractée en service.</p>
                   </note>
                   <bibl>
@@ -2955,7 +2955,7 @@
                      <p>Marié à Rosalie Ashburnet Ann Anger, de nationalité anglaise.</p>
                      <p>Engagé volontaire pour la durée de la guerre, sous-lieutenant de
                                 réserve à titre temporaire depuis le 10 avril 1916 au 154<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 10/6 à <placeName ref="#pl-014">Blercourt (Meuse)</placeName>, le 3 juin
+                     <p>Mort pour la France à l’ambulance 10/6 à <placeName ref="#pl-014" corresp="lieux-B">Blercourt (Meuse)</placeName>, le 3 juin
                                 1916, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -2981,7 +2981,7 @@
                                 avenue de Saint-Germain.</p>
                      <p>Marié à Marie Fournier.</p>
                      <p>Sapeur au 1<hi rend="sup">er</hi> régiment du Génie.</p>
-                     <p>Mort pour la France à l’attaque de Bovent, à <placeName ref="#pl-037">Deniécourt (Somme)</placeName>, le 6
+                     <p>Mort pour la France à l’attaque de Bovent, à <placeName ref="#pl-037" corresp="lieux-E">Deniécourt (Somme)</placeName>, le 6
                                 octobre 1916 (disparu au combat).</p>
                   </note>
                   <bibl>
@@ -3006,7 +3006,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 246<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire
+                     <p>Mort pour la France à <placeName ref="#pl-001" corresp="lieux-A">Ablain-Saint-Nazaire
                                     (Pas-de-Calais)</placeName>, le 23 mai 1915, disparu au
                                 combat.</p>
                   </note>
@@ -3059,7 +3059,7 @@
                      <p>Célibataire</p>
                      <p>Sous-lieutenant au 107<hi rend="sup">e</hi> régiment d’artillerie
                                 lourde</p>
-                     <p>Mort pour la France à <placeName ref="#pl-075">Paissy (Aisne)</placeName>, le 10 février 1917, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-075" corresp="lieux-P">Paissy (Aisne)</placeName>, le 10 février 1917, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3087,7 +3087,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 366<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’hôpital de <placeName ref="#pl-096">Verdun (Meuse)</placeName>, le 19 décembre
+                     <p>Mort pour la France à l’hôpital de <placeName ref="#pl-096" corresp="lieux-V">Verdun (Meuse)</placeName>, le 19 décembre
                                 1914, de maladie contractée en service.</p>
                   </note>
                   <bibl>
@@ -3150,7 +3150,7 @@
                                 Auber.</p>
                      <p>Marié à Elisabeth Schuhler.</p>
                      <p>Caporal au 232<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-015">Bois-de-la-Grille (Marne)</placeName>, le 13 juin 1917,
+                     <p>Mort pour la France au <placeName ref="#pl-015" corresp="lieux-B">Bois-de-la-Grille (Marne)</placeName>, le 13 juin 1917,
                                 tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3176,7 +3176,7 @@
                                 Villersexel.</p>
                      <p>Marié à Andrée Ferté.</p>
                      <p>Sergent au 289<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au bois des Buttes, <placeName ref="#pl-076">commune de Pontavert (Aisne)</placeName>,
+                     <p>Mort pour la France au bois des Buttes, <placeName ref="#pl-076" corresp="lieux-P">commune de Pontavert (Aisne)</placeName>,
                                 le 16 mars 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3203,7 +3203,7 @@
                      <p>Marié à Jeanne Émilie Boileau.</p>
                      <p>Brigadier au 9<hi rend="sup">e</hi> régiment d’artillerie de
                                 campagne.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-091">Trou Bricot près Tahure (Marne)</placeName>, le 3 octobre
+                     <p>Mort pour la France au <placeName ref="#pl-091" corresp="lieux-T">Trou Bricot près Tahure (Marne)</placeName>, le 3 octobre
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3230,7 +3230,7 @@
                      <p>Marié à Jeanne Fortunet.</p>
                      <p>Sous-lieutenant au 13<hi rend="sup">e</hi> Régiment d’artillerie
                                 .</p>
-                     <p>Mort pour la France à <placeName ref="#pl-045">Hargicourt (Somme)</placeName>, le 10 octobre 1916, de
+                     <p>Mort pour la France à <placeName ref="#pl-045" corresp="lieux-H">Hargicourt (Somme)</placeName>, le 10 octobre 1916, de
                                 blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -3278,7 +3278,7 @@
                                 Sébastopol.</p>
                      <p>Marié à Jeanne Sénéchal.</p>
                      <p>Sergent au 408<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à l’ambulance 1/21 à <placeName ref="#pl-085">Sommepy (Marne)</placeName>, le 3
+                     <p>Mort pour la France à l’ambulance 1/21 à <placeName ref="#pl-085" corresp="lieux-S">Sommepy (Marne)</placeName>, le 3
                                 novembre 1918, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -3328,7 +3328,7 @@
                      <p>Célibataire.</p>
                      <p>Capitaine au 21<hi rend="sup">e</hi> Régiment d’infanterie
                                 coloniale.</p>
-                     <p>Mort pour la France dans le secteur de <placeName ref="#pl-059">Massiges-Virginy (Marne)</placeName>, le
+                     <p>Mort pour la France dans le secteur de <placeName ref="#pl-059" corresp="lieux-M">Massiges-Virginy (Marne)</placeName>, le
                                 25 septembre 1915, tué à l’ennemi de blessures par armes à feu.</p>
                   </note>
                   <bibl>
@@ -3354,7 +3354,7 @@
                      <p>Marié à Lucie Gadet.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 224<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-086">Souain (Marne)</placeName>, le 26 mai 1918, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-086" corresp="lieux-S">Souain (Marne)</placeName>, le 26 mai 1918, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3381,7 +3381,7 @@
                      <p>Marié en secondes noces à Marie Alexandrine Legendre.</p>
                      <p>Sous-lieutenant au 297<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France à l’ouvrage de Froideterre, <placeName ref="#pl-021">commune de Bras-sur-Meuse (Meuse)</placeName>,
+                     <p>Mort pour la France à l’ouvrage de Froideterre, <placeName ref="#pl-021" corresp="lieux-B">commune de Bras-sur-Meuse (Meuse)</placeName>,
                                 le 27 juin 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3408,7 +3408,7 @@
                                 des Wallons</p>
                      <p>Célibataire</p>
                      <p>Sergent au 41<hi rend="sup">e</hi> régiment d’infanterie</p>
-                     <p>Mort pour la France à <placeName ref="#pl-068">Neuville-Vitasse (Pas-de-Calais)</placeName>, le 3 octobre
+                     <p>Mort pour la France à <placeName ref="#pl-068" corresp="lieux-N">Neuville-Vitasse (Pas-de-Calais)</placeName>, le 3 octobre
                                 1914, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3435,7 +3435,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 365<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-024">Buscourt (Somme)</placeName>, le 15 juillet 1916, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-024" corresp="lieux-B">Buscourt (Somme)</placeName>, le 15 juillet 1916, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3461,7 +3461,7 @@
                      <p>Marié à Eugénie Pinck .</p>
                      <p>Caporal au 89<hi rend="sup">e</hi> régiment d’infanterie, décoré de
                                 la Croix de guerre.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-046">la Haute-Chevauchée (Meuse)</placeName>, le 14 juillet
+                     <p>Mort pour la France à <placeName ref="#pl-046" corresp="lieux-H">la Haute-Chevauchée (Meuse)</placeName>, le 14 juillet
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3486,7 +3486,7 @@
                      <p>Domicilié à Asnières (Seine), 34 avenue de Courbevoie.</p>
                      <p>Célibataire.</p>
                      <p>Caporal au 150<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France au <placeName ref="#pl-016">Bois-du-Roi près Cuchery (Marne)</placeName>, le 15
+                     <p>Mort pour la France au <placeName ref="#pl-016" corresp="lieux-B">Bois-du-Roi près Cuchery (Marne)</placeName>, le 15
                                 juillet 1918, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3535,7 +3535,7 @@
                      <p>Marié à Jeanne Emilie Wermuth</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 115<hi rend="sup">e</hi>
                                 régiment d’artillerie lourde</p>
-                     <p>Mort pour la France à l’hôpital temporaire n°1 à <placeName ref="#pl-101">Zeitenlik (Grèce)</placeName>,
+                     <p>Mort pour la France à l’hôpital temporaire n°1 à <placeName ref="#pl-101" corresp="lieux-Z">Zeitenlik (Grèce)</placeName>,
                                 le 30 juin 1916, de maladie.</p>
                   </note>
                   <bibl>
@@ -3562,7 +3562,7 @@
                      <p>Marié à Nathalie Verdier.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 35<hi rend="sup">e</hi>
                                 Régiment d’infanterie territoriale.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-096">Verdun (Meuse)</placeName>, secteur de Froideterre, le 25
+                     <p>Mort pour la France à <placeName ref="#pl-096" corresp="lieux-V">Verdun (Meuse)</placeName>, secteur de Froideterre, le 25
                                 mars 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3588,7 +3588,7 @@
                                 Lecourbe.</p>
                      <p>Célibataire.</p>
                      <p>Soldat au 404<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France dans le secteur de <placeName ref="#pl-029">Cerny-en-Laonnois (Aisne)</placeName>, le
+                     <p>Mort pour la France dans le secteur de <placeName ref="#pl-029" corresp="lieux-C">Cerny-en-Laonnois (Aisne)</placeName>, le
                                 28 août 1917, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3614,7 +3614,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 20<hi rend="sup">e</hi>
                                 escadron du Train.</p>
-                     <p>Mort pour la France à l’hôpital de <placeName ref="#pl-090">Tracy-le-Mont (Oise)</placeName>, le 13 mai
+                     <p>Mort pour la France à l’hôpital de <placeName ref="#pl-090" corresp="lieux-T">Tracy-le-Mont (Oise)</placeName>, le 13 mai
                                 1915, de blessures.</p>
                   </note>
                   <bibl>
@@ -3641,7 +3641,7 @@
                                 Sébastopol.</p>
                      <p>Célibataire.</p>
                      <p>Sous-lieutenant observateur au 2e Groupe d’aviation.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-023">Brieulles-Saint-Justin (Ardennes)</placeName>
+                     <p>Mort pour la France à <placeName ref="#pl-023" corresp="lieux-B">Brieulles-Saint-Justin (Ardennes)</placeName>
                         <!--à voir si le lien vers la commune est juste -->, le 22
                                 octobre 1918, tué à l’ennemi (disparu).</p>
                   </note>
@@ -3670,7 +3670,7 @@
                      <p>Directeur d’agence de la Société générale, domicilié à Paris (8<hi rend="sup">e</hi>), 78 rue de Rome.</p>
                      <p>Marié à Antonine Boudaquin.</p>
                      <p>Sergent au 306<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-092">Vailly (Aisne)</placeName>, le 30 octobre 1914,
+                     <p>Mort pour la France à <placeName ref="#pl-092" corresp="lieux-V">Vailly (Aisne)</placeName>, le 30 octobre 1914,
                                 de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -3720,7 +3720,7 @@
                      <p>Célibataire.</p>
                      <p>Soldat de 2<hi rend="sup">e</hi> classe au 99<hi rend="sup">e</hi>
                                 régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-071">Paris</placeName> (9<hi rend="sup">e</hi>), 1 rue Auber,
+                     <p>Mort pour la France à <placeName ref="#pl-071" corresp="lieux-P">Paris</placeName> (9<hi rend="sup">e</hi>), 1 rue Auber,
                                 le 22 mai 1915, de blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -3745,7 +3745,7 @@
                      <p>Domicilié à Saint-Fargeau (Seine-et-Marne).</p>
                      <p>Marié.</p>
                      <p>Soldat au 103<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-025">Caisnes (Oise)</placeName>, le 17 septembre 1914, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-025" corresp="lieux-C">Caisnes (Oise)</placeName>, le 17 septembre 1914, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3771,7 +3771,7 @@
                      <p>Marié.</p>
                      <p>Sergent fourrier au 90<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France au combat de <placeName ref="#pl-026">Calonne (Pas-de-Calais)</placeName>, le 27 mai
+                     <p>Mort pour la France au combat de <placeName ref="#pl-026" corresp="lieux-C">Calonne (Pas-de-Calais)</placeName>, le 27 mai
                                 1915, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3820,7 +3820,7 @@
                                 Latour-Maubourg.</p>
                      <p>Marié à Madeleine Cécile Marie Lallement.</p>
                      <p>Commandant au 81<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-080">Saint-Julien (Belgique)</placeName>, le 27 octobre 1914, de
+                     <p>Mort pour la France à <placeName ref="#pl-080" corresp="lieux-S">Saint-Julien (Belgique)</placeName>, le 27 octobre 1914, de
                                 blessures de guerre.</p>
                   </note>
                   <bibl>
@@ -3847,7 +3847,7 @@
                      <p>Célibataire.</p>
                      <p>Sous-lieutenant au 110<hi rend="sup">e</hi> régiment
                                 d’infanterie.</p>
-                     <p>Mort pour la France à à <placeName ref="#pl-054">Mangelaëre (Belgique)</placeName>, le 9 octobre 1917, tué
+                     <p>Mort pour la France à à <placeName ref="#pl-054" corresp="lieux-M">Mangelaëre (Belgique)</placeName>, le 9 octobre 1917, tué
                                 à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3896,7 +3896,7 @@
                      <p>Sous-chef de bureau à la Société générale, domicilié à Paris (5<hi rend="sup">e</hi>), 18 rue Gay-Lussac.</p>
                      <p>Célibataire.</p>
                      <p>Caporal au 372<hi rend="sup">e</hi> régiment d’infanterie.</p>
-                     <p>Mort pour la France devant la cote 1248 au nord-ouest de <placeName ref="#pl-062">Monastir
+                     <p>Mort pour la France devant la cote 1248 au nord-ouest de <placeName ref="#pl-062" corresp="lieux-M">Monastir
                                 (Serbie)</placeName>, le 27 novembre 1916, tué à l’ennemi.</p>
                   </note>
                   <bibl>
@@ -3924,7 +3924,7 @@
                      <p>Célibataire.</p>
                      <p>Engagé dans la Légion étrangère, soldat de 2<hi rend="sup">e</hi>
                                 classe au 1<hi rend="sup">er</hi> régiment de marche du 1<hi rend="sup">er</hi> étranger.</p>
-                     <p>Mort pour la France à <placeName ref="#pl-042">Gaouz (Maroc)</placeName>, le 9 août 1918, tué à
+                     <p>Mort pour la France à <placeName ref="#pl-042" corresp="lieux-G">Gaouz (Maroc)</placeName>, le 9 août 1918, tué à
                                 l’ennemi.</p>
                   </note>
                   <bibl>

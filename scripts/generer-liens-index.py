@@ -216,8 +216,20 @@ for fichier in (EDITION, INTRODUCTION):
             n_corresp += 1
     a.write(fichier, encoding="UTF-8", xml_declaration=True)
 
+# L'index renvoie aussi a lui-meme : la notice d'un testateur cite le lieu ou il
+# est mort. Servi une lettre a la fois, ce renvoi-la doit lui aussi dire quelle
+# page ouvrir, faute de quoi la feuille retombe sur un lien vers l'index entier
+# — dont la page d'accueil n'affiche plus les notices. On annote l'arbre deja en
+# memoire, et non le fichier, pour ne pas perdre les notes posees plus haut.
+for el in list(index.iter(TEI + "persName")) + list(index.iter(TEI + "placeName")):
+    ref = el.get("ref") or ""
+    if ref.startswith("#") and lettre_de.get(ref[1:]):
+        el.set("corresp", lettre_de[ref[1:]])
+        n_corresp += 1
+
 arbre.write(INDEX, encoding="UTF-8", xml_declaration=True)
 sys.stdout.write(f"{n_barres} barres de lettres\n")
 sys.stdout.write(f"{n_pers} testateurs reliés à leur testament\n")
 sys.stdout.write(f"{n_lieux} lieux reliés à leurs testateurs "
                  f"({sum(len(v) for v in morts_a.values())} renvois)\n")
+sys.stdout.write(f"{n_corresp} renvois annotés de leur lettre\n")
