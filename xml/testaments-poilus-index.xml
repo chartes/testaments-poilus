@@ -21,7 +21,8 @@
       <body><!-- ajout de l'index par F. Clavaud le 4 août 2015 --><!-- FC 9 mars 2016<div type="index">-->
          <div>
             <listPerson xml:id="testateurs">
-               <note type="letter-nav" subtype="generated">
+               <head type="index" subtype="generated">Index des testateurs</head>
+            <note type="letter-nav" subtype="generated">
             <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
             <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
             <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
@@ -3942,7 +3943,8 @@
          </listPerson>
             <!--</div>-->
             <listPlace xml:id="lieux">
-               <note type="letter-nav" subtype="generated">
+               <head type="index" subtype="generated">Index des lieux de décès</head>
+            <note type="letter-nav" subtype="generated">
             <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
             <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
             <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>

@@ -189,6 +189,17 @@ for tag in ("listPerson", "listPlace"):
         for vieux in englobante.findall(TEI + "note"):
             if vieux.get("subtype") == "generated":
                 englobante.remove(vieux)
+        # Titre de l'index. DoTS ne sert d'un fragment que ses enfants : servie
+        # seule, la liste englobante disparait et la feuille n'a plus de quoi
+        # nommer la page. Le <head> traverse, lui, et porte le titre.
+        for vieux in englobante.findall(TEI + "head"):
+            if vieux.get("subtype") == "generated":
+                englobante.remove(vieux)
+        titre = etree.Element(TEI + "head", type="index", subtype="generated")
+        titre.text = ("Index des testateurs" if tag == "listPerson"
+                      else "Index des lieux de décès")
+        titre.tail = "\n            "
+        englobante.insert(0, titre)
         barre = etree.Element(TEI + "note", type="letter-nav", subtype="generated")
         barre.text = "\n            "
         for autre in listes:
@@ -198,7 +209,7 @@ for tag in ("listPerson", "listPlace"):
             tete = autre.find(TEI + "head")
             r.text = (tete.text or "").strip() if tete is not None else autre.get(XID)[-1]
             r.tail = "\n            "
-        englobante.insert(0, barre)
+        englobante.insert(1, barre)
         n_barres += 1
 
 # Les renvois du texte vers l'index ne disent pas quelle lettre ouvrir :
