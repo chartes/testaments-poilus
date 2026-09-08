@@ -320,16 +320,27 @@
 
   <!-- Les deux index sont groupés par lettre : une liste englobante, puis une
        sous-liste nommée par lettre, qui est l'unité de page de l'ÉLEC
-       historique. Les deux niveaux ont leur propre gabarit, la sous-liste
-       pouvant être servie seule comme fragment DTS. -->
+       historique. Trois vues, donc trois gabarits : le document entier, la
+       liste englobante servie seule (l'accueil d'un index) et la lettre. -->
+
+  <!-- Vue d'ensemble du document : on ne déroule ni les lettres ni les
+       notices, seulement le nom de chaque index. Deux barres de lettres côte à
+       côte n'y apprennent rien, et le sommaire de gauche les donne déjà. -->
+  <xsl:template match="tei:listPerson[tei:listPerson]" priority="11">
+    <section class="tp-index-persons">
+      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">
+        <a href="{concat($tp_app_base, $tp_collection, '/document/', 'testaments-poilus-index', '?refId=', @xml:id)}"
+           style="color:inherit;text-decoration:none">Index des testateurs</a>
+      </h2>
+    </section>
+  </xsl:template>
+
   <xsl:template match="tei:listPerson[not(tei:person)]" priority="10">
     <section class="tp-index-persons">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">Index des testateurs</h2>
       <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
-           entier. L'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
-           unité citable, elle ne reçoit de toute façon pas ses lettres ; sans
-           cette règle, la vue d'ensemble du document empilait les deux index
-           et leurs 232 notices. -->
+           entier — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
+           unité citable, la liste ne reçoit de toute façon pas ses lettres. -->
       <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
     </section>
   </xsl:template>
@@ -342,14 +353,24 @@
     </section>
   </xsl:template>
 
+  <!-- Vue d'ensemble du document : on ne déroule ni les lettres ni les
+       notices, seulement le nom de chaque index. Deux barres de lettres côte à
+       côte n'y apprennent rien, et le sommaire de gauche les donne déjà. -->
+  <xsl:template match="tei:listPlace[tei:listPlace]" priority="11">
+    <section class="tp-index-places">
+      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
+        <a href="{concat($tp_app_base, $tp_collection, '/document/', 'testaments-poilus-index', '?refId=', @xml:id)}"
+           style="color:inherit;text-decoration:none">Index des lieux de décès</a>
+      </h2>
+    </section>
+  </xsl:template>
+
   <xsl:template match="tei:listPlace[not(tei:place)]" priority="10">
     <section class="tp-index-places">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">Index des lieux de décès</h2>
       <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
-           entier. L'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
-           unité citable, elle ne reçoit de toute façon pas ses lettres ; sans
-           cette règle, la vue d'ensemble du document empilait les deux index
-           et leurs 232 notices. -->
+           entier — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
+           unité citable, la liste ne reçoit de toute façon pas ses lettres. -->
       <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
     </section>
   </xsl:template>

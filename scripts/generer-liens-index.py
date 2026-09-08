@@ -156,7 +156,11 @@ sys.stdout.write(f"{n_tt} testaments au sommaire de l'édition\n")
 # entier pour passer d'une lettre à l'autre.
 n_barres = 0
 for tag in ("listPerson", "listPlace"):
-    listes = [l for l in index.iter(TEI + tag) if l.get(XID)]
+    # Une lettre est une liste qui porte directement des entrées ; la liste
+    # englobante, elle, ne porte que des lettres. Toutes deux ont un @xml:id
+    # depuis que l'index a deux pages d'accueil citables.
+    listes = [l for l in index.iter(TEI + tag)
+              if l.get(XID) and (l.findall(TEI + "person") or l.findall(TEI + "place"))]
     for liste in listes:
         for vieux in liste.findall(TEI + "note"):
             if vieux.get("subtype") == "generated":
@@ -180,7 +184,7 @@ for tag in ("listPerson", "listPlace"):
     # citables — et sa page restait vide. Elle reçoit la barre seule, qui tient
     # lieu de sommaire : une lettre est alors à un clic.
     for englobante in index.iter(TEI + tag):
-        if englobante.get(XID) or not listes:
+        if englobante in listes or not listes:
             continue
         for vieux in englobante.findall(TEI + "note"):
             if vieux.get("subtype") == "generated":
