@@ -21,7 +21,27 @@
       <body><!-- ajout de l'index par F. Clavaud le 4 août 2015 --><!-- FC 9 mars 2016<div type="index">-->
          <div>
             <listPerson>
-               <listPerson xml:id="testateurs-A">
+               <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><listPerson xml:id="testateurs-A">
             <head>A</head>
             <note type="letter-nav" subtype="generated">
             <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A" rend="current">A</ref>
@@ -3922,7 +3942,27 @@
          </listPerson>
             <!--</div>-->
             <listPlace>
-               <head>Lieux de décès</head>
+               <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><head>Lieux de décès</head>
                <!--Reprise de l'encodage de l'index par NP-->
                <!-- FC janvier 2017 : n'est pas un lieu de décès <place xml:id="pl-105">
                   <placeName when-iso="-700/">
