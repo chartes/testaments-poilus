@@ -27,6 +27,7 @@ XID = "{http://www.w3.org/XML/1998/namespace}id"
 BASE = "xml/"
 EDITION = BASE + "testaments-poilus-edition.xml"
 INDEX = BASE + "testaments-poilus-index.xml"
+INTRODUCTION = BASE + "testaments-poilus-introduction.xml"
 
 
 def nom(pers):
@@ -72,6 +73,17 @@ for pers in index.iter(TEI + "person"):
             morts_a.setdefault(ref[1:], []).append(pers)
 
 
+# Lettre d'appartenance de chaque entrée, prise sur la sous-liste qui la porte.
+lettre_de = {}
+for liste in list(index.iter(TEI + "listPerson")) + list(index.iter(TEI + "listPlace")):
+    lid = liste.get(XID)
+    if not lid:
+        continue
+    for e in list(liste.findall(TEI + "person")) + list(liste.findall(TEI + "place")):
+        if e.get(XID):
+            lettre_de[e.get(XID)] = lid
+
+
 def poser(parent, type_, contenu):
     for vieux in parent.findall(TEI + "note"):
         if vieux.get("subtype") == "generated":
@@ -104,6 +116,8 @@ for lieu in index.iter(TEI + "place"):
         for p in gens:
             item = etree.SubElement(note, TEI + "ref", type="linkToPersonsIndex")
             item.set("target", "#" + p.get(XID))
+            if lettre_de.get(p.get(XID)):
+                item.set("corresp", lettre_de[p.get(XID)])
             item.text = nom(p) + dates(p)
             item.tail = "\n                  "
     poser(lieu, "linksToEdition", contenu)
@@ -137,7 +151,52 @@ groupe.insert(0, sommaire)
 arbre_ed.write(EDITION, encoding="UTF-8", xml_declaration=True)
 sys.stdout.write(f"{n_tt} testaments au sommaire de l'édition\n")
 
+# Barre des lettres, sur le modèle de christofle : précalculée dans chaque
+# sous-liste, elle survit à excludeFragments et évite d'avoir à charger l'index
+# entier pour passer d'une lettre à l'autre.
+n_barres = 0
+for tag in ("listPerson", "listPlace"):
+    listes = [l for l in index.iter(TEI + tag) if l.get(XID)]
+    for liste in listes:
+        for vieux in liste.findall(TEI + "note"):
+            if vieux.get("subtype") == "generated":
+                liste.remove(vieux)
+        barre = etree.Element(TEI + "note", type="letter-nav", subtype="generated")
+        barre.text = "\n            "
+        for autre in listes:
+            r = etree.SubElement(barre, TEI + "ref", type="letterNav")
+            r.set("target", "#" + autre.get(XID))
+            r.set("corresp", autre.get(XID))
+            if autre is liste:
+                r.set("rend", "current")
+            tete = autre.find(TEI + "head")
+            r.text = (tete.text or "").strip() if tete is not None else autre.get(XID)[-1]
+            r.tail = "\n            "
+        tete = liste.find(TEI + "head")
+        liste.insert((list(liste).index(tete) + 1) if tete is not None else 0, barre)
+        n_barres += 1
+
+# Les renvois du texte vers l'index ne disent pas quelle lettre ouvrir :
+# « MRPatey » se range sous P, « pl-076 » sous le nom du lieu. On inscrit donc
+# la lettre à côté du renvoi, dans un @corresp, pour que la feuille puisse
+# ouvrir la bonne page plutôt que l'index entier.
+n_corresp = 0
+for fichier in (EDITION, INTRODUCTION):
+    a = etree.parse(fichier)
+    for el in list(a.getroot().iter(TEI + "persName")) + list(a.getroot().iter(TEI + "placeName")):
+        ref = el.get("ref") or ""
+        if ref.startswith("#") and lettre_de.get(ref[1:]):
+            el.set("corresp", lettre_de[ref[1:]])
+            n_corresp += 1
+    for el in a.getroot().iter(TEI + "ref"):
+        cible = (el.get("target") or "")[1:]
+        if lettre_de.get(cible):
+            el.set("corresp", lettre_de[cible])
+            n_corresp += 1
+    a.write(fichier, encoding="UTF-8", xml_declaration=True)
+
 arbre.write(INDEX, encoding="UTF-8", xml_declaration=True)
+sys.stdout.write(f"{n_barres} barres de lettres\n")
 sys.stdout.write(f"{n_pers} testateurs reliés à leur testament\n")
 sys.stdout.write(f"{n_lieux} lieux reliés à leurs testateurs "
                  f"({sum(len(v) for v in morts_a.values())} renvois)\n")

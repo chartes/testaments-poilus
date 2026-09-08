@@ -122,12 +122,17 @@
 
   <xsl:template name="tp-href">
     <xsl:param name="anchor"/>
+    <xsl:param name="unite"/>
     <xsl:variable name="res">
       <xsl:call-template name="dts-resource-for-anchor">
         <xsl:with-param name="anchor" select="$anchor"/>
       </xsl:call-template>
     </xsl:variable>
     <xsl:choose>
+      <!-- La page est nommée : on l'ouvre et on saute à l'ancre. -->
+      <xsl:when test="$unite != ''">
+        <xsl:value-of select="concat($tp_app_base, $tp_collection, '/document/', $res, '?refId=', $unite, '#', $anchor)"/>
+      </xsl:when>
       <!-- Une unité citable — un testament, une lettre d'index — s'ouvre par
            son ref ; une ancre interne se rejoint dans le document entier. -->
       <xsl:when test="starts-with($anchor, 'will-') and substring-after(substring-after($anchor, '-'), '-') = ''">
@@ -161,6 +166,18 @@
             <xsl:for-each select="$cible[1]">
               <xsl:attribute name="href"><xsl:call-template name="href"/></xsl:attribute>
             </xsl:for-each>
+          </xsl:when>
+          <!-- Le @corresp inscrit par generer-liens-index.py nomme la page
+               qui porte la cible : « MRPatey » se range sous testateurs-P,
+               « pl-076 » sous lieux-M. Sans lui il faudrait ouvrir l'index
+               entier, les deux listes à la fois. -->
+          <xsl:when test="../@corresp">
+            <xsl:attribute name="href">
+              <xsl:call-template name="tp-href">
+                <xsl:with-param name="anchor" select="substring($path, 2)"/>
+                <xsl:with-param name="unite" select="../@corresp"/>
+              </xsl:call-template>
+            </xsl:attribute>
           </xsl:when>
           <xsl:otherwise>
             <xsl:attribute name="href">
@@ -218,6 +235,36 @@
   <!-- …et ne pas la ramasser une seconde fois en note de fin, avec un lien de
        retour vers un appel qui n'existe pas. -->
   <xsl:template match="tei:note[@type = 'summary']" mode="fn" priority="30"/>
+
+  <!-- Barre des lettres, précalculée dans chaque sous-liste (christofle fait
+       de même pour ses mois) : une lettre servie seule ne voit pas ses
+       voisines, la feuille ne pourrait donc pas la construire. -->
+  <xsl:template match="tei:note[@type = 'letter-nav']" priority="30">
+    <nav class="tp-letter-nav" aria-label="Navigation par lettre"
+         style="margin:.4rem 0 1rem;font-size:1.05rem">
+      <xsl:for-each select="tei:ref">
+        <xsl:if test="position() &gt; 1"><span style="color:#c9c2bf"> | </span></xsl:if>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+    </nav>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type = 'letter-nav']" mode="fn" priority="30"/>
+
+  <xsl:template match="tei:ref[@type = 'letterNav']" priority="10">
+    <a class="tp-letter-link">
+      <xsl:if test="@rend = 'current'">
+        <xsl:attribute name="style">font-weight:700;color:#a73136</xsl:attribute>
+      </xsl:if>
+      <xsl:attribute name="href">
+        <xsl:call-template name="tp-href">
+          <xsl:with-param name="anchor" select="substring-after(@target, '#')"/>
+          <xsl:with-param name="unite" select="@corresp"/>
+        </xsl:call-template>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
 
   <xsl:template match="tei:list[@type = 'summary']" priority="5">
     <ul class="sommaire" style="list-style:square;margin:1rem 0 0 1.5rem;padding:0">
@@ -285,6 +332,7 @@
   <xsl:template match="tei:listPerson[tei:person]" priority="9">
     <section class="tp-index-letter" id="{@xml:id}">
       <xsl:call-template name="tp-index-lettre"/>
+      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
       <xsl:apply-templates select="tei:person"/>
     </section>
   </xsl:template>
@@ -299,6 +347,7 @@
   <xsl:template match="tei:listPlace[tei:place]" priority="9">
     <section class="tp-index-letter" id="{@xml:id}">
       <xsl:call-template name="tp-index-lettre"/>
+      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
       <xsl:apply-templates select="tei:place"/>
     </section>
   </xsl:template>
