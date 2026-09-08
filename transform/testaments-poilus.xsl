@@ -127,7 +127,16 @@
         <xsl:with-param name="anchor" select="$anchor"/>
       </xsl:call-template>
     </xsl:variable>
-    <xsl:value-of select="concat($tp_app_base, $tp_collection, '/document/', $res, '#', $anchor)"/>
+    <xsl:choose>
+      <!-- Une unité citable — un testament, une lettre d'index — s'ouvre par
+           son ref ; une ancre interne se rejoint dans le document entier. -->
+      <xsl:when test="starts-with($anchor, 'will-') and substring-after(substring-after($anchor, '-'), '-') = ''">
+        <xsl:value-of select="concat($tp_app_base, $tp_collection, '/document/', $res, '?refId=', $anchor)"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="concat($tp_app_base, $tp_collection, '/document/', $res, '#', $anchor)"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- ====================================================================
@@ -195,6 +204,29 @@
         <span><xsl:call-template name="atts"/><xsl:apply-templates/></span>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <!-- Sommaire de la page « Les testaments ». DoTS sert cette unité avec
+       excludeFragments : ses 134 enfants, unités citables, en sont retirés et
+       la page restait vide. La source porte donc une liste, produite par
+       scripts/generer-liens-index.py ; un <note> étant admis dans un <group>
+       par le modèle TEI et n'ayant pas d'@xml:id, il traverse le filtrage. -->
+  <xsl:template match="tei:note[@type = 'summary']" priority="30">
+    <xsl:apply-templates select="tei:list"/>
+  </xsl:template>
+
+  <!-- …et ne pas la ramasser une seconde fois en note de fin, avec un lien de
+       retour vers un appel qui n'existe pas. -->
+  <xsl:template match="tei:note[@type = 'summary']" mode="fn" priority="30"/>
+
+  <xsl:template match="tei:list[@type = 'summary']" priority="5">
+    <ul class="sommaire" style="list-style:square;margin:1rem 0 0 1.5rem;padding:0">
+      <xsl:apply-templates select="tei:item"/>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="tei:list[@type = 'summary']/tei:item" priority="5">
+    <li style="margin:.18rem 0"><xsl:apply-templates/></li>
   </xsl:template>
 
   <!-- Les cinq notes logées dans une <bibl> tombaient sous le motif
@@ -297,6 +329,13 @@
       </h4>
       <xsl:apply-templates select="tei:note[@type = 'biography']" mode="tp-bio"/>
       <xsl:apply-templates select="tei:bibl" mode="tp-bibl"/>
+      <!-- Renvoi vers le testament du testateur, comme sur l'ÉLEC. -->
+      <xsl:if test="tei:note[@type = 'linkToEdition']/tei:ref">
+        <p class="linkToEdition" style="font-size:.9rem;margin:.2rem 0">
+          <xsl:text>Testament </xsl:text>
+          <xsl:apply-templates select="tei:note[@type = 'linkToEdition']/tei:ref"/>
+        </p>
+      </xsl:if>
     </article>
   </xsl:template>
 
@@ -427,15 +466,15 @@
         </p>
       </xsl:if>
       <!-- testateurs morts à ce lieu (croisement via les notices biographiques) -->
-      <xsl:variable name="morts" select="key('tp-deces', concat('#', @xml:id))"/>
-      <xsl:if test="$morts">
+      <!-- Les testateurs morts ici. Le rapprochement se faisait par la clef
+           tp-deces, qui ne voit plus rien dès que les deux index sont servis
+           lettre par lettre : il est désormais inscrit dans la source par
+           scripts/generer-liens-index.py. -->
+      <xsl:if test="tei:note[@type = 'linksToEdition']/tei:ref">
         <section class="linksToEdition" style="font-size:.9rem">
           <ul style="margin:.2rem 0;padding-left:1.2rem">
-            <xsl:for-each select="$morts">
-              <li>Lieu de décès de <a class="internalLink" href="#{@xml:id}" style="color:#a73136;text-decoration:none;border-bottom:1px dotted #a73136">
-                <xsl:apply-templates select="tei:persName" mode="tp-name"/>
-                <xsl:if test="tei:birth or tei:death"><xsl:text> (</xsl:text><xsl:value-of select="normalize-space(tei:birth)"/><xsl:text>-</xsl:text><xsl:value-of select="normalize-space(tei:death)"/><xsl:text>)</xsl:text></xsl:if>
-              </a></li>
+            <xsl:for-each select="tei:note[@type = 'linksToEdition']/tei:ref">
+              <li>Lieu de décès de <xsl:apply-templates select="."/></li>
             </xsl:for-each>
           </ul>
         </section>

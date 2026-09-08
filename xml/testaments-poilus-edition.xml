@@ -1,22 +1,156 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="testaments-poilus-edition">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Testaments de poilus : édition des testaments</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p/>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p/>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
       <group>
-         <text xml:id="will-001">
+         <note type="summary" subtype="generated"><list type="summary">
+            <item><ref type="linkToEdition" target="#will-001">Testament olographe de Fernand Lucien Jules Melchior Chatin, mort pour la France à Maroeuil (Pas-de-Calais), le 10 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-002">Testament olographe d’Émile Alexandre Gorand, mort pour la France au bois de la Gruerie (Meuse), le 16 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-003">Testament olographe de Marie René Patey, mort pour la France au bois des Buttes, commune de Pontavert (Aisne), le 16 mars 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-004">Testament olographe d’Albert Gabriel Lebaillif, mort pour la France à Ablain-Saint-Nazaire (Pas-de-Calais), le 27 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-005">Testament olographe d’Étienne Joseph Driancourt, mort pour la France à la Neuville (Marne), le 4 mai 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-006">Testament olographe de Joseph Bernel, mort pour la France à Verdun (Meuse), le 25 décembre 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-007">Testament olographe d’Émile Burgun, mort pour la France au Bois-le-Prêtre (Meurthe-et-Moselle), le 9 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-008">Testament olographe de Lucien Eléonor Victor Dufriche, mort pour la France à Vienne-le-Château (Marne), le 16 juillet 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-009">Testament olographe de Marcel Charles Dumont, mort pour la France au Bois-le-Prêtre (Meurthe-et-Moselle), le 28 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-010">Testament olographe d’Émile Jean Léon Grandjean, mort pour la France à Montdidier (Somme), le 3 décembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-011">Testament olographe de Pierre Auguste Lacroix, mort pour la France à Ablain-Saint-Nazaire (Pas-de-Calais), le 23 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-012">Testament olographe de Jules Pierre Désiré Lefort, mort pour la France au Grand-Fayt (Nord), le 25 août 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-013">Testament olographe d’Ernest André Marchal, mort pour la France à Vienne-le-Château (Marne), le 7 août 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-014">Testament olographe de Roger Henri Charles Honoré de Chateauneuf-Randon du Tournel, mort pour la France à Fraize (Vosges), le 4 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-015">Testament olographe de Joseph Camille Marcel Heppe, mort pour la France à Vatry (Marne), le 24 octobre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-016">Testament olographe de Jules Louis Legeay, mort pour la France à Aubérive (Marne), le 25 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-017">Testament olographe d’Émile Charles Dubois, mort pour la France à Vitry-le-François (Marne), le 5 novembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-018">Testament olographe de Jules Joseph Baumont, mort pour la France à Vauxrot, commune de Cuffies (Aisne), le 12 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-019">Testament olographe de Léon Henri Beaumont, mort pour la France au Bois-Jurat (Meuse), le 4 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-020">Testament olographe de Marcel Maurice Goigoux, mort pour la France à Baccarat (Meurthe-et-Moselle), le 18 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-021">Testament olographe de Joseph François Gonthier, mort pour la France à Barleux (Somme), le 4 septembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-022">Testament olographe de Céleste Camille Herpin, mort pour la France à Carency (Pas-de-Calais), le 27 décembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-023">Testament olographe d’Eugène Louis Landry, mort pour la France à Filain (Aisne), le 26 octobre 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-024">Testament olographe de Léon François Pégorier, mort pour la France au Trou Bricot près Tahure (Marne), le 3 octobre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-025">Testament olographe d’Alphonse René Poy, mort pour la France à Hargicourt (Somme), le 10 octobre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-026">Testament olographe de Maurice Charles Clément Rogue, mort pour la France à Neuville-Vitasse (Pas-de-Calais), le 3 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-027">Testament olographe d’Émile Simonnet, mort pour la France à Zeitenlik (Grèce), le 30 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-028">Testament olographe de Joseph Séraphin Tardy, mort pour la France à Paris (9e), 1 rue Auber, le 22 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-029">Testament olographe d’Alcide Firmin Tourain, mort pour la France à Calonne (Pas-de-Calais), le 27 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-030">Testament olographe de Joseph Émile Vachette, mort pour la France à Saint-Julien (Belgique), le 27 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-031">Testament olographe de Maurice Victor Mathelin, mort pour la France à Seraucourt (Meuse), le 10 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-032">Testament olographe d’Henri Louis Delépine, mort pour la France à Villers-le-Sec (Aisne), le 30 août 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-033">Testament olographe d’Henri Gé, mort pour la France à Ablain-Saint-Nazaire (Pas-de-Calais), le 16 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-034">Testament olographe de Maurice Paul Anthime Brivois, mort pour la France à Épernay (Marne), le 19 novembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-035">Testament olographe de Maurice Paul Anthime Brivois, mort pour la France à Épernay (Marne), le 19 novembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-036">Testament olographe de Louis Favre, mort pour la France à Houilles (Seine-et-Oise), le 7 juillet 1919.</ref></item>
+            <item><ref type="linkToEdition" target="#will-037">Testament olographe de Marie Barthelemy Émile Barbut, mort pour la France à Mouy (Oise), le 15 septembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-038">Testament olographe d’Édouard Louis Cheiney, mort pour la France à Vauquois (Meuse), le 7 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-039">Testament olographe d’Ange Pierre Joseph Chemin, mort pour la France à Maricourt (Somme), le 13 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-040">Testament olographe d’Armand Marcel Cornillault, mort pour la France à Jaulzy (Oise), le 29 août 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-041">Testament olographe de Paul Marcel Dumesny, mort pour la France à Verdun (Meuse), le 18 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-042">Testament olographe de Lucien Émile Galustre, mort pour la France à Suippes (Marne), le 13 ou 14 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-043">Testament olographe de Charles Roger Laederich, mort pour la France à Zillebeke (Belgique), le 29 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-044">Testament olographe d’Albert Lapraz, mort pour la France à Suippes (Marne), le 25 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-045">Lettre testamentaire et testament olographe de Paul Valentin Rouvel, mort pour la France à Buscourt (Somme), le 15 juillet 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-046">Testament olographe de Louis Victor Rouvrais, mort pour la France à la Haute-Chevauchée (Meuse), le 14 juillet 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-047">Testament olographe d’Alexandre Victor Titard, mort pour la France à Caisnes (Oise), le 17 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-048">Testament olographe de Victor Nicolas Boch, mort pour la France à la Maison-Blanche (Pas-de-Calais), le 8 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-049">Testament olographe de Georges Ernest Belgiovanni, mort pour la France à Sapogne (Ardennes), le 29 août 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-050">Testament olographe de Jules Eugène Coureau, mort pour la France à Parchim (Allemagne), le 10 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-051">Testament olographe de Jules Émile Laforêt, mort pour la France à Poperinghe (Belgique), le 19 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-052">Testament olographe de Pierre Charles Victor Martin, mort pour la France à Andechy (Somme), le 14 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-053">Testament olographe de Louis Albert Paulin Canivenq, mort pour la France à Fleury-devant-Douaumont (Meuse), le 1er avril 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-054">Lettre missive testamentaire d’Auguste Paul Dondain, mort pour la France à Perthes-lès-Hurlus (Marne), le 27 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-055">Testament olographe de Jules Dominique Zéphirin Duffourc, mort pour la France à Vingré (Aisne), le 12 novembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-056">Testament olographe de Lucien Jean Baptiste Brivois, mort pour la France à Landrecourt (Meuse), le 23 décembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-057">Testament olographe de François Jean Étienne Boudeau, mort pour la France à Nevers (Nièvre), le 23 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-058">Testament olographe de Pierre Charles Reyt, mort pour la France à Froideterre, commune de Bras-sur-Meuse (Meuse), le 27 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-059">Testament olographe de François Gaillard, mort pour la France à l’hôpital d’Épinal (Vosges), le 7 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-060">Testament olographe de Lucien Pierre Armand Debain, mort pour la France à Vitry-le-François (Marne), le 16 novembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-061">Testament olographe de Raymond Alexandre Cellier, mort pour la France au bois de la Gruerie (Marne), le 29 janvier 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-062">Testament olographe de Jules Godard, mort pour la France à Braux- Sainte-Cohière (Marne), le 18 novembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-063">Lettre missive testamentaire d’Henri Eugène Burret, mort pour la France à Bar-le-Duc (Meuse), le 10 février 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-064">Testament olographe de René Marcel Galustre, mort pour la France à Toul (Meurthe-et-Moselle), le 12 décembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-065">Testament olographe de Marcel Starck, mort pour la France à Tracy-le-Mont (Oise), le 13 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-066">Testament olographe de René Jean Marie Octave Sublet d’Heudicourt de Lenoncourt, mort pour la France à Vailly (Aisne), le 30 octobre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-067">Testament olographe d’Émile Paul Alexandre Collmann, mort pour la France à Fleury-devant-Douaumont (Meuse), le 27 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-068">Testament olographe de Bernard Labrin, mort pour la France à Petites-Perthes (Marne), le 10 septembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-069">Testament olographe de Léon Charles Pascal Lainé, mort pour la France à Solesmes (Sarthe), le 3 juillet 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-070">Testament olographe de François Marie Guével, mort pour la France à Auxerre (Yonne), le 27 avril 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-071">Testament olographe de Louis Ernest Victor Pain, mort pour la France au Bois-de-la-Grille (Marne), le 13 juin 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-072">Testament olographe d’Albert Prudent Andry, mort pour la France à Verdun (Meuse), le 22 août 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-073">Testament olographe de Jules Émile Henri Dupuis, mort pour la France à Dugny-sur-Meuse (Meuse), le 5 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-074">Testament olographe de Louis Charles Eugène Le Conte, mort pour la France à Marizy-Sainte-Geneviève (Aisne), le 2 juin 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-075">Testament olographe de Fernand Albert dit André Bezy, mort pour la France à Marchéville (Meuse), le 27 mars 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-076">Lettre missive testamentaire de Jean Nicouleau, mort pour la France à Verdun (Meuse), le 19 décembre 1914.</ref></item>
+            <item><ref type="linkToEdition" target="#will-077">Testament olographe d’Auguste Émile Balthazard Dussolier-Gond, mort pour la France à Metzeral (Alsace), le 21 juin 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-078">Testament olographe de Jules Pierre Métayer, mort pour la France à Deniécourt (Somme), le 6 octobre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-079">Testament olographe de Pierre Calixte Alric, mort pour la France à Bras-sur-Meuse (Meuse), le 4 août 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-080">Testament olographe d’Henri Driard, mort pour la France à la Pierre Croisée cote 285 (Meuse), le 13 juillet 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-081">Lettre missive testamentaire de François Cohendy, mort pour la France à Bellemagny (Alsace), le 11 novembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-082">Testament olographe d’Hippolyte Bondeux, mort pour la France à Saint-Hilaire-le-Grand (Marne), le 25 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-083">Testament olographe de Georges Alfred Socquet-Clerc, mort pour la France à Cerny (Aisne), le 28 août 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-084">Testament olographe de Léon Auguste Camille Waguet, mort pour la France devant la cote 1248 nord-ouest de Monastir (Serbie), le 27 novembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-085">Testament olographe de René Maximilien Fourcès, mort pour la France à Massiges (Marne), le 25 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-086">Testament olographe de Gustave Fernand Mazurier, mort pour la France à Mont-Notre-Dame (Aisne), le 2 janvier 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-087">Lettre missive testamentaire d’Auguste Paul Dondain, mort pour la France à Perthes-lès-Hurlus (Marne), le 27 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-088">Testament olographe d’Auguste Louis Jolly, mort pour la France à Flórina (Grèce), le 9 juin 1917, et codicille du 27 mai 1916 (Mytilène, Grèce).</ref></item>
+            <item><ref type="linkToEdition" target="#will-089">Testament olographe de François Hemy, mort pour la France à Quennevières (Oise), le 8 mai 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-090">Testament olographe d’Henri Étienne Simonnot, mort pour la France à Verdun (Meuse), le 25 mars 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-091">Testament olographe de Pierre Retteler, mort pour la France à Souain (Marne), le 26 mai 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-092">Testament olographe de Jules Murat, mort pour la France à Ablain-Saint-Nazaire (Pas-de-Calais), le 23 mai 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-093">Testament olographe d’Albert Alexandre Foudriat, mort pour la France à Vauquois (Meuse), le 16 octobre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-094">Testament olographe d’Étienne Joseph Driancourt, mort pour la France à la Neuville (Marne), le 4 mai 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-095">Testament olographe de Marcelin Descombes, mort pour la France à Baleycourt (Meuse), le 19 mai 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-096">Testament olographe de Marcel Étienne, mort pour la France à Dugny (Meuse), le 3 mai 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-097">Testament olographe d’Edmond Granié, mort pour la France à Commercy (Meuse), le 8 janvier 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-098">Testament olographe d’Henri Battmann, mort pour la France à Vaux-devant-Damloup (Meuse), le 1er juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-099">Lettre missive testamentaire de Marcel Amédée Roux, mort pour la France au Bois-du-Roi (Marne), le 15 juillet 1918. À la suite : 2 cartes-lettres non datées.</ref></item>
+            <item><ref type="linkToEdition" target="#will-100">Testament olographe d’Édouard Albert Gerber, mort pour la France à Paris, le 29 décembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-101">Testament olographe d’Enrique Laborde, mort pour la France à Ambleny (Aisne), le 19 septembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-102">Testament olographe de Joseph Henry Lagarde, mort pour la France à Souain (Marne), le 17 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-103">Testament olographe d’Auguste Jules Alexandre Maurel, mort pour la France à Bagneux (Aisne), le 11 septembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-104">Testament olographe de Lucien Auguste Constant Gatbois, mort pour la France à Bénaménil (Meurthe-et-Moselle), le 17 janvier 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-105">Testament olographe de Louis Jean Ravignon, mort pour la France à Massiges (Marne), le 25 septembre 1915.</ref></item>
+            <item><ref type="linkToEdition" target="#will-106">Lettre missive testamentaire de Georges Louis Charles Stofft, mort pour la France à Brieulles-Saint-Justin (Ardennes) , le 22 octobre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-107">Testament olographe de Louis Baudu, mort pour la France à Bouchavesnes (Somme), le 12 octobre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-108">Testament olographe de Louis Bocquet, mort pour la France à Souilly (Meuse), le 4 octobre 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-109">Testament olographe d’Auguste Victor Leroy, mort pour la France à Cléry (Somme), le 13 septembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-110">Lettre missive testamentaire de Jean Armand Eugène Mercier, mort pour la France à Blercourt (Meuse), le 3 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-111">Testament olographe de Maurice Louis Joseph Martin, mort pour la France à Belloy-en-Santerre (Somme), le 6 septembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-112">Testament olographe de Paul Louis Feugère, mort pour la France à Sapigneul (Marne), le 16 avril 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-113">Testament olographe de Joseph Gaston Dauriac, mort pour la France à Paris, le 29 mars 1919.</ref></item>
+            <item><ref type="linkToEdition" target="#will-114">Codicille de Pierre Charles Reyt, mort pour la France à Froideterre, commune de Bras-sur-Meuse (Meuse), le 27 juin 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-115">Testament olographe de Jean Alphonse Henri Frager, mort pour la France à Châlons-sur-Marne (Marne), le 24 avril 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-116">Lettre missive testamentaire de Léon Auguste Camille Waguet, mort pour la France devant la cote 1248 nord-ouest de Monastir (Serbie), le 27 novembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-117">Testament olographe d’Émile Quainon, mort pour la France à Sommepy (Marne), le 3 novembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-118">Lettre missive testamentaire de Francisque Léon Boutin, mort pour la France à Cerisy-Gailly (Somme), le 19 août 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-119">Codicille au testament olographe du 12 février 1909 de Jean Marie Henri Feulard, mort pour la France à Villequier-Aumont (Aisne), le 24 mars 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-120">Testament olographe d’André Charquillon, mort pour la France à Bourges (Cher), le 21 juillet 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-121">Testament olographe d’Ernest Jean Aimé, mort pour la France à Fleury-devant-Douaumont (Meuse), le 6 septembre 1916.</ref></item>
+            <item><ref type="linkToEdition" target="#will-122">Testament olographe de Marcel Jules Devouge, mort pour la France au mont Kokereel (Nord), le 29 avril 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-123">Testament olographe de Marcelin Adolphe Jacquat, mort pour la France à Flórina (Grèce), le 21 juillet 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-124">Testament olographe de Georges François Marie Auguste Nicolon, mort pour la France à Paissy (Aisne), le 10 février 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-125">Testament olographe de Louis Charles Eugène Le Conte, mort pour la France à Marizy-Sainte-Geneviève (Aisne), le 2 juin 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-126">Testament olographe d’Honoré Antoine Carrié, mort pour la France à la carrière de Landifay (Aisne), le 4 novembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-127">Testament olographe de Fernand Louis Vexiau, mort pour la France à Mangelaëre (Belgique), le 9 octobre 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-128">Testament olographe de Jean Henri Jules Auguste Brégeras, mort pour la France à la Malmaison (Aisne), le 25 octobre 1917.</ref></item>
+            <item><ref type="linkToEdition" target="#will-129">Testament olographe d’Édouard Julien René Gillon, mort pour la France à Zuydcoote (Nord), le 22 mai 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-130">Testament olographe de Léopold Widhalm, mort pour la France à Gaouz (Maroc), le 9 août 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-131">Testament olographe de Nissim De Toledo, mort pour la France à Montvoisin près Épernay (Marne), le 16 juillet 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-132">Testament olographe de Jules Lagache, mort pour la France à Sommepy (Marne), le 29 décembre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-133">Lettre missive testamentaire d’Édouard Louis Charles Dardonville, mort pour la France à Paris, le 5 octobre 1918.</ref></item>
+            <item><ref type="linkToEdition" target="#will-134">Testament olographe de Paul Louis Libouton, mort pour la France à Meaux (Seine-et-Marne), le 6 décembre 1918.</ref></item>
+            </list></note><text xml:id="will-001">
             <front>
                <docDate><date when="1914-07-31">1914, 31 juillet</date>.
                      <placeName>Paris</placeName>.</docDate>
@@ -243,8 +377,7 @@
                   <p>Papier à lettre blanc, 4 pages, dim. 17,3 x 12,7 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-3ref478ks-10y7o1gmjzx60&amp;details=true&amp;auSeinIR=false#c-3ref478ks-10y7o1gmjzx60
-                     " type="linkToANFWebsite">MC/ET/LXXXIX/2352, minute du 7 mai 1917</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-3ref478ks-10y7o1gmjzx60&amp;details=true&amp;auSeinIR=false#c-3ref478ks-10y7o1gmjzx60                      " type="linkToANFWebsite">MC/ET/LXXXIX/2352, minute du 7 mai 1917</ref></p>
                </div>
             </front>
             <body>
@@ -333,8 +466,7 @@
                <!--<docAuthor><persName><forename>Albert</forename><forename>Gabriel</forename><surname>Lebaillif</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe d’<persName ref="#AGLebaillif">Albert Gabriel
-                           <surname>Lebaillif</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 27
+                           <surname>Lebaillif</surname></persName>, mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 27
                      janvier 1915.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
@@ -351,7 +483,7 @@
                   <dateline rend="centered">Bagnolet<choice>
                         <orig/>
                         <reg>,</reg>
-                     </choice> le 1<hi rend="sup">er</hi>&#xa0;<choice>
+                     </choice> le 1<hi rend="sup">er</hi> <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice> 1914</dateline>
@@ -374,7 +506,7 @@
                         <reg>.</reg>
                         <orig/>
                      </choice></p>
-                  <signed rend="centered"><seg type="signature"><persName ref="#AGLebaillif"><forename>Albert</forename>&#xa0;<forename>Gabriel</forename><lb/>&#xa0;<surname>Lebaillif</surname></persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#AGLebaillif"><forename>Albert</forename> <forename>Gabriel</forename><lb/> <surname>Lebaillif</surname></persName></seg></signed>
                  <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01459.jpg"/>
                   <pb type="whitePage_notDigitized"/>
                   <pb type="pageWithExtraNotes_notDigitized"/>
@@ -397,8 +529,7 @@
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="comments">
-                  <p>1<hi rend="sup">er</hi> testament. <ref target="#will-094">Voir le 2<hi
-                           rend="sup">nd</hi> testament</ref></p>
+                  <p>1<hi rend="sup">er</hi> testament. <ref target="#will-094">Voir le 2<hi rend="sup">nd</hi> testament</ref></p>
                </div>
                <div type="physdesc">
                   <p>Papier à lettre blanc, 2 pages, dim. 30,2 x 20 cm, encre ; enveloppe, dim. 11,5
@@ -433,9 +564,8 @@
                      </choice></p>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <p>J’institue comme ma légataire<lb/> universelle de tous mes biens venant de
-                     la<lb/> succession de mon frère<choice><reg>,</reg><orig/></choice> Louis Guillaume Driancourt,<lb/> ma sœur <hi rend="underlined">Mademoiselle <!-- FC octobre 2916 ajout app --><app><lem><add place="above"
-                        >Marguerite</add></lem><note type="comment"><term>Marguerite</term> ajouté dans l’interligne.</note></app> Reine Mercier</hi>, demeurant<lb/> actuellement avec ma
-                     mère 13 rue Montorgueil, Paris 1<hi rend="supUnderlined">er</hi>&#xa0;
+                     la<lb/> succession de mon frère<choice><reg>,</reg><orig/></choice> Louis Guillaume Driancourt,<lb/> ma sœur <hi rend="underlined">Mademoiselle <!-- FC octobre 2916 ajout app --><app><lem><add place="above">Marguerite</add></lem><note type="comment"><term>Marguerite</term> ajouté dans l’interligne.</note></app> Reine Mercier</hi>, demeurant<lb/> actuellement avec ma
+                     mère 13 rue Montorgueil, Paris 1<hi rend="supUnderlined">er</hi> 
                      <choice>
                         <abbr>ar<hi rend="sup">t</hi></abbr>
                         <expan>ar<ex>rondissemen</ex>t</expan>
@@ -460,8 +590,7 @@
                         <reg>.</reg>
                         <orig/>
                      </choice></dateline>
-                  <signed rend="right"><seg type="signature"><persName ref="#EDriancourt"
-                              ><surname>Driancourt</surname></persName></seg><lb/>
+                  <signed rend="right"><seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg><lb/>
                      <space dim="vertical" quantity="1" unit="lines"/>
                      <metamark rend="horizontalLine" function="separating"/> 
                      <persName ref="#EDriancourt">Etienne <surname>Driancourt</surname></persName>,
@@ -479,16 +608,15 @@
                      <seg rend="right"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>
                   </p>
                   <p>
-                     <address><addrLine><choice><reg>À</reg><orig>à</orig></choice> Monsieur A. Ploix<choice><reg>,</reg><orig/></choice>&#xa0;</addrLine>
-                    <addrLine rend="centered">Notaire<choice><reg>,</reg><orig/></choice>&#xa0;</addrLine>
-                    <addrLine>25 <choice><abbr>Boul<hi rend="sup">d</hi></abbr><expan>boul<ex>evar</ex>d</expan></choice> Beaumarchais<choice><reg>,</reg><orig/></choice>&#xa0;</addrLine>
+                     <address><addrLine><choice><reg>À</reg><orig>à</orig></choice> Monsieur A. Ploix<choice><reg>,</reg><orig/></choice> </addrLine>
+                    <addrLine rend="centered">Notaire<choice><reg>,</reg><orig/></choice> </addrLine>
+                    <addrLine>25 <choice><abbr>Boul<hi rend="sup">d</hi></abbr><expan>boul<ex>evar</ex>d</expan></choice> Beaumarchais<choice><reg>,</reg><orig/></choice> </addrLine>
                     <addrLine rend="right">Paris</addrLine></address>
                   </p>
                   <metamark rend="horizontalLine" function="separating"/>
                   <p>Ceci est mon testament !<lb/>
                      <cb/>
-                     <seg rend="left"><seg type="signature"><persName ref="#EDriancourt"
-                        ><surname>Driancourt</surname></persName></seg><!--<choice><reg>,</reg><orig/></choice>--><lb/>
+                     <seg rend="left"><seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg><!--<choice><reg>,</reg><orig/></choice>--><lb/>
                      le 1<hi rend="supUnderlined">er</hi> août 1914</seg> <cb/>
                      <seg rend="right"><persName ref="#EDriancourt">Etienne
                         <surname>Driancourt</surname></persName><choice><reg>,</reg><orig/></choice><lb/> caporal au 51<hi rend="supUnderlined">e</hi> d’Infanterie<lb/> 3<hi rend="supUnderlined">e</hi> C<hi rend="supUnderlined">ie</hi> à Beauvais (Oise)</seg> </p>
@@ -505,15 +633,11 @@
                      -->   
                   <!-- FC octobre 2916 -->
                   <pb facs="../images/FRAN_0045_01078.jpg" type="envelope-verso"/>
-                  <p><seg type="signature"><persName ref="#EDriancourt"
-                     ><surname>Driancourt</surname></persName></seg>
+                  <p><seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>
                     
-                     <seg type="signature"><persName ref="#EDriancourt"
-                        ><surname>Driancourt</surname></persName></seg>
-                     <seg type="signature"><persName ref="#EDriancourt"
-                        ><surname>Driancourt</surname></persName></seg>  
-                     <seg type="signature"><persName ref="#EDriancourt"
-                        ><surname>Driancourt</surname></persName></seg>    </p>
+                     <seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>
+                     <seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>  
+                     <seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg>    </p>
                      
                </div>
             </body>
@@ -544,10 +668,10 @@
                   <dateline>Paris<choice>
                         <reg>,</reg>
                         <orig/>
-                     </choice> le 1<hi rend="supUnderlined">er</hi>&#xa0;
+                     </choice> le 1<hi rend="supUnderlined">er</hi> 
                      <choice>
-                        <reg>août&#xa0;</reg>
-                        <orig>Août&#xa0;</orig>
+                        <reg>août </reg>
+                        <orig>Août </orig>
                      </choice>1914</dateline>
                   <space dim="vertical" quantity="4" unit="lines"/>
                   <p>Je soussigné <persName ref="#JBernel">Joseph
@@ -558,7 +682,7 @@
                      </choice> le fond de<lb/> commerce et le <choice><sic>mobilié</sic><corr>mobilier,</corr></choice> ses<lb/> bijoux<choice><orig/><reg>,</reg></choice> sans que
                      personne puisse<lb/> y mettre des oppositions.</p>
                   <p>Je déclare être sain d’esprit<lb/> et lègue à ma femme ce dit<lb/> testament.</p>
-                  <signed rend="centered"><seg type="signature"><persName ref="#JBernel"><forename>Joseph</forename>&#xa0;
+                  <signed rend="centered"><seg type="signature"><persName ref="#JBernel"><forename>Joseph</forename> 
                               <surname>Bernel</surname></persName></seg></signed>
                <!--   <pb type="whitePage"><!-\-ATTENTION ! pas d'image correspondant à cet élément pb-\-></pb>-->
                   <pb type="pageWithExtraNotes_notDigitized"/>
@@ -596,8 +720,7 @@
                   <p>Papier timbré, 2 pages, dim. 24,9 x 17,8 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-17f2cokmg-9v54n8iodage&amp;details=true&amp;auSeinIR=false#c-17f2cokmg-9v54n8iodage
-                     " type="linkToANFWebsite">MC/ET/LXXXIX/2342, minute du 27 octobre 1915</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-17f2cokmg-9v54n8iodage&amp;details=true&amp;auSeinIR=false#c-17f2cokmg-9v54n8iodage                      " type="linkToANFWebsite">MC/ET/LXXXIX/2342, minute du 27 octobre 1915</ref></p>
                </div>
             </front>
             <body>
@@ -613,17 +736,17 @@
                         <orig/>
                      </choice> le<lb/> premier août 1914.</dateline>
                   <signed rend="right"><seg type="signature"><persName ref="#EBurgun"><forename>Em.</forename>
-                              &#xa0;<surname>Burgun</surname></persName></seg></signed>
+                               <surname>Burgun</surname></persName></seg></signed>
                   <postscript>
                      <label>N.B.</label>
                      <p>J’entends tous mes biens en<lb/> possession ou à revenir.</p>
                   </postscript>
                   <signed rend="right"><seg type="signature"><persName ref="#EBurgun"><forename>Em.</forename>
-                     &#xa0;<surname>Burgun</surname></persName></seg></signed>
+                      <surname>Burgun</surname></persName></seg></signed>
                   <dateline>Je dis premier août <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent
                      quatorze</dateline>
                   <signed rend="right"><seg type="signature"><persName ref="#EBurgun"><forename>Em.</forename>
-                     &#xa0;<surname>Burgun</surname></persName></seg></signed>
+                      <surname>Burgun</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00743.jpg"/>
                </div>
             </body>
@@ -652,7 +775,7 @@
                <div type="will">
                   <pb facs="../images/FRAN_0045_00721.jpg"/>
                   <p>Je soussigné déclare<lb/> donner par ces présentes à<lb/> Madame Dufriche<choice><reg>,</reg><orig/></choice> née
-                     Fernande<lb/> Eugénie Pettro mon épouse<choice><reg>,</reg><orig/></choice>&#xa0;<choice><corr>tout</corr><sic>tous</sic></choice>&#xa0;<lb/> ce qui m’appartient
+                     Fernande<lb/> Eugénie Pettro mon épouse<choice><reg>,</reg><orig/></choice> <choice><corr>tout</corr><sic>tous</sic></choice> <lb/> ce qui m’appartient
                      comme<lb/> valeurs, argent et <choice><sic>mobiliers</sic><corr>mobilier</corr></choice>, ainsi<lb/> que mes droits à la
                      succession<lb/> de mon <choice>
                         <reg>père</reg>
@@ -663,11 +786,11 @@
                         <orig/>
                      </choice> le 1<hi rend="sup">er</hi>
                      <choice>
-                        <reg>&#xa0;août</reg>
-                        <orig>&#xa0;Août</orig>
+                        <reg> août</reg>
+                        <orig> Août</orig>
                      </choice><lb/> 1914</dateline>
                   <signed rend="right"><seg type="signature"><persName ref="#LDufriche"><forename>L.</forename>
-                     &#xa0;<surname>Dufriche</surname></persName></seg><lb/> 8 <choice>
+                      <surname>Dufriche</surname></persName></seg><lb/> 8 <choice>
                         <reg>bis</reg>
                         <orig><hi rend="supUnderlined">bis</hi></orig>
                      </choice> rue Sarrette </signed>
@@ -716,9 +839,9 @@
                         <reg>,</reg>
                         <orig/>
                      </choice><lb/> le premier<choice>
-                        <reg>&#xa0;août</reg>
-                        <orig>&#xa0;Août</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze </dateline>
+                        <reg> août</reg>
+                        <orig> Août</orig>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze </dateline>
                   <signed rend="centered"><seg type="signature"><persName ref="#MDumont">M.
                               <surname>Dumont</surname></persName></seg></signed>
                 <!--  <pb type="whitePage" facs="../images/FRAN_0045_01411.jpg"/>-->
@@ -758,8 +881,8 @@
                <div type="will">
                   <pb facs="../images/FRAN_0045_01039.jpg"/>
                   <dateline rend="right">Paris, le <choice>
-                     <orig>1&#xa0;</orig>
-                     <reg>1<hi rend="sup">er</hi>&#xa0;</reg>
+                     <orig>1 </orig>
+                     <reg>1<hi rend="sup">er</hi> </reg>
                      </choice>
                      <choice>
                         <reg>août</reg>
@@ -768,7 +891,7 @@
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice> 1914).</dateline>
-                  <p>Sain de corps et d’esprit, avant de partir <choice><reg/><orig><surplus>de<!--</surplus>-->&#xa0;<lb/><!-- <surplus>-->partir</surplus></orig></choice>
+                  <p>Sain de corps et d’esprit, avant de partir <choice><reg/><orig><surplus>de<!--</surplus>--> <lb/><!-- <surplus>-->partir</surplus></orig></choice>
                      pour la mobilisation française, j’écris sur<lb/> 
                      ce papier libre, faute d’avoir pu me procurer<lb/> un papier
                      timbré, mon testament et mes<lb/> dernières volontés.</p>
@@ -784,8 +907,8 @@
                            valeurs, et principalement :<list>
                               <item>2 communales 1912 entièrement libérées<choice><reg>,</reg><orig/></choice></item><!--FC octobre 2016<lb/>-->
                               <item>2 <choice>
-                                 <expan>act<ex>ions</ex>&#xa0;</expan>
-                                 <abbr>Act.&#xa0;</abbr>
+                                 <expan>act<ex>ions</ex> </expan>
+                                 <abbr>Act. </abbr>
                                  </choice>
                                  <choice>
                                     <abbr>ord.</abbr>
@@ -842,14 +965,14 @@
                                  </choice> capital <choice>
                                     <expan>C<ex>ompagn</ex>ie</expan>
                                     <abbr>C<hi rend="sup">ie</hi></abbr>
-                                 </choice>&#xa0;<choice>
+                                 </choice> <choice>
                                     <expan>g<ex>énéra</ex>le</expan>
                                     <abbr>G<hi rend="sup">le</hi></abbr>
-                                 </choice>&#xa0;Omnibus de Paris<choice><reg>,</reg><orig/></choice></item>
+                                 </choice> Omnibus de Paris<choice><reg>,</reg><orig/></choice></item>
                               <item>1 <choice>
                                     <expan>act<ex>ion</ex></expan>
                                     <abbr>act.</abbr>
-                              </choice>&#xa0;Tabacs des Philippines<choice><reg>,</reg><orig/></choice></item>
+                              </choice> Tabacs des Philippines<choice><reg>,</reg><orig/></choice></item>
                               <item>10 <choice>
                                     <expan>act<ex>ions</ex></expan>
                                     <abbr>act.</abbr>
@@ -866,7 +989,7 @@
                               <item>1 <choice>
                                  <expan>act<ex>ion</ex></expan>
                                  <abbr>act</abbr>
-                              </choice>&#xa0;<foreign xml:lang="eng">deferred</foreign><ref xml:id="will-010-001" target="#will-010-footnote001" type="note"/><!--FC octobre 2016<app>
+                              </choice> <foreign xml:lang="eng">deferred</foreign><ref xml:id="will-010-001" target="#will-010-footnote001" type="note"/><!--FC octobre 2016<app>
                                     <lem xml:lang="eng">deferred</lem>
                                     <note type="translation">Action différée</note>
                                  </app>-->
@@ -910,23 +1033,23 @@
                                  </choice> capital <choice>
                                     <expan>C<ex>ompagn</ex>ie</expan>
                                     <abbr>C<hi rend="sup">ie</hi></abbr>
-                                 </choice>&#xa0;<choice>
+                                 </choice> <choice>
                                     <expan>g<ex>énéra</ex>le</expan>
                                     <abbr>G<hi rend="sup">le</hi></abbr>
-                                 </choice>&#xa0;<choice>
+                                 </choice> <choice>
                                     <reg>omnibus</reg>
                                     <orig>Omnibus</orig>
                                  </choice> de Paris<choice><reg>,</reg><orig/></choice></item>
                               <item>1 <choice>
                                     <expan>act<ex>ion</ex></expan>
                                     <abbr>act</abbr>
-                              </choice>&#xa0;jouissance&#xa0;<choice>
+                              </choice> jouissance <choice>
                                     <expan>C<ex>ompagn</ex>ie</expan>
                                     <abbr>C<hi rend="sup">ie</hi></abbr>
-                                 </choice>&#xa0;<choice>
+                                 </choice> <choice>
                                     <expan>g<ex>énéra</ex>le</expan>
                                     <abbr>G<hi rend="sup">le</hi></abbr>
-                                 </choice>&#xa0;<choice>
+                                 </choice> <choice>
                                     <reg>omnibus</reg>
                                     <orig>Omnibus</orig>
                                  </choice><choice><reg>,</reg><orig/></choice></item>
@@ -969,8 +1092,7 @@
                               <reg>,</reg>
                            </choice></item>
                         <item>2°) de donner à la bibliothèque de l’Hospice des<lb/> Enfants
-                           <choice><reg>assistés</reg><orig>Assistés</orig></choice>, 74 rue Denfert-Rochereau<lb/> tous mes livres de <hi
-                              rend="underlined">médecine</hi><choice>
+                           <choice><reg>assistés</reg><orig>Assistés</orig></choice>, 74 rue Denfert-Rochereau<lb/> tous mes livres de <hi rend="underlined">médecine</hi><choice>
                               <orig>.</orig>
                               <reg>,</reg>
                            </choice>
@@ -1029,10 +1151,10 @@
                   <dateline rend="centered">Fait à Paris<choice>
                         <reg>,</reg>
                         <orig/>
-                  </choice> le 1<hi rend="supUnderlined">er</hi>&#xa0;<choice>
+                  </choice> le 1<hi rend="supUnderlined">er</hi> <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                     </choice>&#xa0;1914.</dateline>
+                     </choice> 1914.</dateline>
                   <postscript>
                      <p>1 dans mon bureau<choice><reg>,</reg><orig/></choice><lb/> 1 chez le notaire <choice>
                            <abbr>M<hi rend="sup">e</hi></abbr>
@@ -1044,8 +1166,7 @@
                               <orig>À</orig>
                            </choice> Paris</p>
                   </postscript>
-                  <signed rend="right"><seg type="signature"><persName ref="#EGrandjean"
-                              ><surname>Grandjean</surname></persName></seg></signed>
+                  <signed rend="right"><seg type="signature"><persName ref="#EGrandjean"><surname>Grandjean</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01045.jpg"/>
                </div>
                <pb type="envelope" facs="../images/FRAN_0045_01046.jpg"/>
@@ -1057,11 +1178,11 @@
                   <metamark rend="horizontalLine" function="separating"/>
                   <p>Testament <damage agent="ink">de</damage>
                      <choice>
-                        <expan>&#xa0;M<ex>onsieur</ex></expan>
-                        <abbr type="obsolete">&#xa0;M<hi rend="supUnderlined">r</hi></abbr>
+                        <expan> M<ex>onsieur</ex></expan>
+                        <abbr type="obsolete"> M<hi rend="supUnderlined">r</hi></abbr>
                      </choice>
                      <persName ref="#EGrandjean">
-                        Emile Jean Léon&#xa0;<lb/>
+                        Emile Jean Léon <lb/>
                         Grandjean</persName><choice><reg>,</reg><orig/></choice><lb/> 7 <choice>
                         <abbr>B<hi rend="supUnderlined">d</hi></abbr>
                         <expan>b<ex>oulevar</ex>d</expan>
@@ -1083,8 +1204,7 @@
                <!--<docAuthor><persName><forename>Auguste</forename><surname>Lacroix</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#PALacroix">Pierre Auguste
-                           <surname>Lacroix</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 23 mai
+                           <surname>Lacroix</surname></persName>, mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 23 mai
                      1915.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
@@ -1109,14 +1229,14 @@
                      biens meubles et<lb/> immeubles qui composeront ma<lb/> succession au jour de
                      mon décès. </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="centered"><seg type="signature"><persName ref="#PALacroix"><forename>Auguste</forename>&#xa0;<surname>Lacroix</surname></persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#PALacroix"><forename>Auguste</forename> <surname>Lacroix</surname></persName></seg></signed>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <dateline rend="centered">Paris<choice>
                         <reg>,</reg>
                         <orig/>
                      </choice> le <choice>
-                        <reg>1<hi rend="sup">er</hi>&#xa0;</reg>
-                        <orig>1&#xa0;</orig>
+                        <reg>1<hi rend="sup">er</hi> </reg>
+                        <orig>1 </orig>
                      </choice>
                      <choice>
                         <reg>août</reg>
@@ -1185,7 +1305,7 @@
                         <reg>,</reg>
                         <orig/>
                   </choice> premier août <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent<lb/> quatorze<lb/>
-                     <seg type="signature"><persName ref="#JLefort"><forename>Jules</forename>&#xa0;<surname>Lefort</surname></persName></seg>
+                     <seg type="signature"><persName ref="#JLefort"><forename>Jules</forename> <surname>Lefort</surname></persName></seg>
                   </p>
                </div>
             </body>
@@ -1253,7 +1373,7 @@
                         <orig/>
                      </choice>
                   </dateline>
-                  <signed rend="centered"><seg type="signature"><persName ref="#EMarchal"><forename>André</forename>&#xa0;<surname>Marchal</surname></persName></seg><lb/> 
+                  <signed rend="centered"><seg type="signature"><persName ref="#EMarchal"><forename>André</forename> <surname>Marchal</surname></persName></seg><lb/> 
                   <seg type="address">3 rue d’Anjou</seg></signed>
                   <!-- FC octobre 2016 correction n° image -->
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00697.jpg"/>
@@ -1270,7 +1390,7 @@
                      <persName ref="#EMarchal"><choice>
                            <abbr>M<hi rend="sup">r</hi></abbr>
                            <expan>M<ex>onsieu</ex>r</expan>
-                        </choice>&#xa0;<surname>Marchal</surname></persName></seg><lb/> 
+                        </choice> <surname>Marchal</surname></persName></seg><lb/> 
                      <seg type="address">3 rue d’Anjou</seg></signed>
                </div>
             </body>
@@ -1292,8 +1412,7 @@
                   <p>Papier à lettre blanc, 4 pages, dim. 16,7 x 12,2 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9dd5odna1-sw2muk3j1tlx&amp;details=true&amp;auSeinIR=false#c-9dd5odna1-sw2muk3j1tlx
-                     " type="linkToANFWebsite">MC/ET/LIX/1083, minute du 6 juillet 1915</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9dd5odna1-sw2muk3j1tlx&amp;details=true&amp;auSeinIR=false#c-9dd5odna1-sw2muk3j1tlx                      " type="linkToANFWebsite">MC/ET/LIX/1083, minute du 6 juillet 1915</ref></p>
                </div>
             </front>
             <body>
@@ -1324,8 +1443,7 @@
                      de moi aux membres<lb/> de ma famille, oncles, tantes,<lb/> cousins. Ma mère
                      gardera pour<lb/> elle ce qu’elle désirera. Je vou<lb break="no"/>drais que ma montre
                      armoriée<lb/> soit donnée à Randon, mon Christ<lb/> à Espérance. </p>
-                  <signed rend="right"><seg type="signature"><persName
-                           ref="#ChateauneufRandonTournel"><forename>Honoré</forename><lb/>
+                  <signed rend="right"><seg type="signature"><persName ref="#ChateauneufRandonTournel"><forename>Honoré</forename><lb/>
                            <choice>
                               <expan>C<ex>om</ex>te</expan>
                               <abbr>C<hi rend="sup">te</hi></abbr>
@@ -1391,7 +1509,7 @@
                      </choice> 1914</dateline>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <p>Ceci est mon testament<lb/>
-                     <seg type="signature" rend="centred"><persName ref="#CHeppe">C.&#xa0;<surname>Heppe</surname></persName></seg></p>
+                     <seg type="signature" rend="centred"><persName ref="#CHeppe">C. <surname>Heppe</surname></persName></seg></p>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <p rend="right"><persName ref="#CHeppe">Camille
                         <surname>Heppe</surname></persName></p>
@@ -1410,8 +1528,7 @@
                <!--<docAuthor><persName><forename>Jules</forename><forename>Louis</forename><surname>Legeay</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#JLLegeay">Jules Louis
-                     <surname>Legeay</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-004">Aubérive (Marne)</placeName>, le 25 septembre 1915.</p>
+                     <surname>Legeay</surname></persName>, mort pour la France à <placeName ref="#pl-004">Aubérive (Marne)</placeName>, le 25 septembre 1915.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="physdesc">
@@ -1520,7 +1637,7 @@
                         <reg>.</reg>
                         <orig/>
                      </choice></dateline>
-                  <signed rend="right"><seg type="signature"><persName ref="#EDubois"><forename>E.</forename>&#xa0;<surname>Dubois</surname></persName></seg></signed>
+                  <signed rend="right"><seg type="signature"><persName ref="#EDubois"><forename>E.</forename> <surname>Dubois</surname></persName></seg></signed>
                   <postscript rend="right">
                      <p><persName ref="#EDubois">Emile 
                         Dubois</persName><choice><reg>,</reg><orig/></choice><lb/> 47 <choice>
@@ -1577,8 +1694,8 @@
                         <orig/>
                      </choice> demeurant à Paris<lb/>
                      <choice>
-                        <reg>rue&#xa0;</reg>
-                        <orig>Rue&#xa0;</orig>
+                        <reg>rue </reg>
+                        <orig>Rue </orig>
                      </choice>
                      <choice>
                         <orig>Emilie</orig>
@@ -1590,8 +1707,7 @@
                         <add place="inline">t</add>
                      </subst>ante<choice><reg>,</reg><orig/></choice> en mémoire de ma pauvre mère et pour<lb/> aider sa sœur qui se
                      trouve dans le besoin. </p>
-                  <p>Quant au reliquat ou solde<choice><reg>,</reg><orig/></choice> celle-ci elles de<lb break="no"/>vront être remises à M<hi
-                        rend="sup">me</hi> Vasseau mon amie par<lb/> fractions de un douzième tous
+                  <p>Quant au reliquat ou solde<choice><reg>,</reg><orig/></choice> celle-ci elles de<lb break="no"/>vront être remises à M<hi rend="sup">me</hi> Vasseau mon amie par<lb/> fractions de un douzième tous
                      les mois pour l’<lb/>existence et l’éducation de mon fils Gilbert<lb/> Jules<choice><reg>,</reg><orig/></choice>
                      âgé de 2 ans et demi. Mon père devra<lb/> bien se conformer à cette volonté
                      car je ne puis<lb/> laisser dans le besoin mon pauvre petit Zizi.<lb/> Il
@@ -1636,7 +1752,7 @@
                               <orig>2o- A</orig>
                            </choice> la société des anciens élèves de <choice>
                               <expan>S<ex>ain</ex>t-</expan>
-                              <abbr>St&#xa0;</abbr>
+                              <abbr>St </abbr>
                            </choice><lb break="no"/>Nicolas au titre de fondation Gilbert Baumont<lb/> pour
                            contribution à l’œuvre de la propagation<lb/> de la foi <choice>
                               <orig> - </orig>
@@ -1681,8 +1797,7 @@
                      </choice> tu <choice>
                         <sic>prendrai</sic>
                         <corr>prendrais</corr>
-                     </choice><lb/> le tout pour toi en continuant <add place="above"
-                        type="manuscript">la rente</add> de ma tante et<lb/> en laissant <choice>
+                     </choice><lb/> le tout pour toi en continuant <add place="above" type="manuscript">la rente</add> de ma tante et<lb/> en laissant <choice>
                         <reg>à</reg>
                         <orig>à</orig>
                      </choice> M<hi rend="sup">me</hi> Vasseau mon amie, 150 francs<lb/> de rente
@@ -1700,16 +1815,14 @@
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice> 1914. </dateline>
-                  <signed><supplied><seg type="signature"><persName ref="#JBaumont"
-                                 ><surname>Baumont</surname></persName></seg></supplied></signed>
+                  <signed><supplied><seg type="signature"><persName ref="#JBaumont"><surname>Baumont</surname></persName></seg></supplied></signed>
                </div>
                <div type="envelope">
                   <pb facs="../images/FRAN_0045_01376.jpg" type="envelope"/>
                   <p><choice>
                         <orig>A</orig>
                         <reg>À</reg>
-                     </choice> n’ouvrir qu’après<lb/> ma mort et pas<lb/> avant le 1<hi rend="sup"
-                        >er</hi> avril<lb/> 1915<lb/>
+                     </choice> n’ouvrir qu’après<lb/> ma mort et pas<lb/> avant le 1<hi rend="sup">er</hi> avril<lb/> 1915<lb/>
                      <cb/> 2 <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
@@ -1778,10 +1891,10 @@
                         <reg> : </reg>
                         <orig/>
                      </choice> 4 foncières 1912<lb/> de 500 <choice>
-                        <reg>F&#xa0;</reg>
-                        <orig><hi rend="sup">fr</hi>&#xa0;</orig>
+                        <reg>F </reg>
+                        <orig><hi rend="sup">fr</hi> </orig>
                      </choice>
-                     <expan>ent<ex>ièremen</ex>t</expan>&#xa0;<choice><sic>libéré</sic><corr>libérées</corr></choice><choice>
+                     <expan>ent<ex>ièremen</ex>t</expan> <choice><sic>libéré</sic><corr>libérées</corr></choice><choice>
                         <reg>,</reg>
                         <orig/>
                      </choice> 8 communales 250 <choice>
@@ -1889,8 +2002,7 @@
                  ><forename>Marcel</forename><forename>Maurice</forename><surname>Goigoux</surname></persName><!-\- renvoi à l'index à faire -\-></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#MGoigoux">Marcel Maurice
-                     <surname>Goigoux</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-006">Baccarat (Meurthe-et-Moselle)</placeName>, le 18 novembre
+                     <surname>Goigoux</surname></persName>, mort pour la France à <placeName ref="#pl-006">Baccarat (Meurthe-et-Moselle)</placeName>, le 18 novembre
                      1914.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
@@ -1945,8 +2057,7 @@
                         <sic>sont</sic>
                         <corr>contient</corr>
                      </choice> mes dernières<lb/> volontés formelles. </p>
-                  <signed><seg type="signature"><persName ref="#MGoigoux"
-                           ><surname>Goigoux</surname></persName>
+                  <signed><seg type="signature"><persName ref="#MGoigoux"><surname>Goigoux</surname></persName>
                      </seg>
                   </signed>
                   <dateline>Paris<choice>
@@ -1964,8 +2075,7 @@
                            <orig>estre</orig>
                            <reg>être</reg>
                         </choice> considéré<lb/> comme valable et bon.</p>
-                        <signed><seg type="signature"><persName ref="#MGoigoux"
-                              ><surname>Goigoux</surname></persName></seg>
+                        <signed><seg type="signature"><persName ref="#MGoigoux"><surname>Goigoux</surname></persName></seg>
                      </signed>
                   </postscript>
                   <pb type="whitePage_notDigitized"/>
@@ -1974,8 +2084,7 @@
                   <!-- FC ajouté n° image -->
                   <pb facs="../images/FRAN_0045_00659.jpg" type="envelope"/>
                   <p>Ceci est mon<lb/> testament</p>
-                     <signed><seg type="signature"><persName ref="#MGoigoux"
-                           ><surname>Goigoux</surname></persName></seg>
+                     <signed><seg type="signature"><persName ref="#MGoigoux"><surname>Goigoux</surname></persName></seg>
                   </signed>
                </div>
             </body>
@@ -2088,7 +2197,7 @@
                            </choice>--><lb/> (<choice><sic>dessendre</sic><corr>descendre</corr></choice> à la gare de Frontenex) qui peuvent me<lb/>
                            revenir après partage ou arrangement.</item>
                         <item>3° Je rappelle que mon beau-frère<lb/> Jean Biguet demeurant à <choice>
-                              <abbr>S<hi rend="sup">t</hi>&#xa0;</abbr>
+                              <abbr>S<hi rend="sup">t</hi> </abbr>
                               <expan>S<ex>ain</ex>t<ex>-</ex></expan>
                            </choice>Vital<choice>
                               <reg>,</reg>
@@ -2116,8 +2225,7 @@
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice><lb/> 1914</dateline>
-                  <signed><seg type="signature"><persName ref="#FGonthier"
-                              ><surname>Gonthier</surname></persName><lb/> François</seg>
+                  <signed><seg type="signature"><persName ref="#FGonthier"><surname>Gonthier</surname></persName><lb/> François</seg>
                   </signed>
                   <pb type="whitePage_notDigitized"><!--ATTENTION ! pas d'image correspondant à cet élément pb--></pb>
                   <pb type="whitePage_notDigitized"><!--ATTENTION ! pas d'image correspondant à cet élément pb--></pb>
@@ -2180,7 +2288,7 @@
                      </choice> mon cousin Marcel<lb/> Aumasson.</p>
                   <!--<space dim="vertical" quantity="1" unit="lines"/>-->
                   <signed><seg type="signature" rend="left">
-                        <persName ref="#CHerpin"><forename>C.</forename>&#xa0;<surname>Herpin</surname></persName></seg></signed>
+                        <persName ref="#CHerpin"><forename>C.</forename> <surname>Herpin</surname></persName></seg></signed>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <dateline rend="left">Fait <choice>
                         <orig>a</orig>
@@ -2241,8 +2349,8 @@
                         <reg>,</reg>
                         <orig/>
                      </choice> le 2 <choice>
-                        <reg>août&#xa0;</reg>
-                        <orig>Août&#xa0;</orig>
+                        <reg>août </reg>
+                        <orig>Août </orig>
                      </choice>
                      <choice><reg>1914</reg><orig>14</orig></choice>
                      <!--<supplied resp="#editors">19</supplied>14--></dateline>
@@ -2263,16 +2371,16 @@
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice> 1914</dateline>
-                  <signed>Son <choice><orig>Mari Chéri&#xa0;</orig><reg>mari chéri&#xa0;</reg></choice><lb/>
+                  <signed>Son <choice><orig>Mari Chéri </orig><reg>mari chéri </reg></choice><lb/>
                      <seg type="signature"><persName ref="#ELandry">E.
                            <surname>Landry</surname></persName></seg><lb/> 59 rue Sedaine 59 </signed>
                   <postscript rend="left">
                      <label>P.S. <choice>
-                        <reg>&#xa0;:</reg>
+                        <reg> :</reg>
                            <orig/>
                         </choice></label>
                      <lb/>
-                     <p>Biens mobiliers, <choice><orig>&#xab;&#xa0;meubles etc&#xa0;&#xbb;</orig><reg>meubles, etc.,</reg></choice><lb/> <choice>
+                     <p>Biens mobiliers, <choice><orig>« meubles etc »</orig><reg>meubles, etc.,</reg></choice><lb/> <choice>
                            <reg>valeurs.</reg>
                            <orig>= Valeurs =</orig>
                         </choice></p>
@@ -2354,7 +2462,7 @@
                      </choice> le<lb/> deux <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze<lb/> avant de partir à la guerre<choice>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze<lb/> avant de partir à la guerre<choice>
                         <reg>.</reg>
                         <orig/>
                      </choice>
@@ -2470,8 +2578,7 @@
                         <orig>.</orig>
                      </choice> 000 francs. </p>
                   <p><choice><abbr>M<hi rend="sup">e</hi></abbr><expan>M<ex>aîtr</ex>e</expan></choice> Ploix règlera seul ma succession.</p>
-                  <signed><seg type="signature" rend="centred"><persName ref="#MRogue"
-                              ><surname>Rogue</surname></persName></seg>
+                  <signed><seg type="signature" rend="centred"><persName ref="#MRogue"><surname>Rogue</surname></persName></seg>
                   </signed>
                   <dateline rend="right">Paris, <!--FC octobre 2016<supplied resp="#editors">le</supplied>--> 2 août
                      1914</dateline>
@@ -2483,18 +2590,17 @@
                   </postscript>-->
                   <postscript>
                      <p><app><lem><choice><orig>Rayé trois mots nuls.</orig><reg/></choice></lem></app></p>
-                     <signed><app><lem><choice><orig><seg type="signature" rend="left"
-                        ><persName ref="#MRogue"><surname>Rogue</surname></persName></seg></orig><reg/></choice></lem></app>
+                     <signed><app><lem><choice><orig><seg type="signature" rend="left"><persName ref="#MRogue"><surname>Rogue</surname></persName></seg></orig><reg/></choice></lem></app>
                      </signed>
                      
                   </postscript>
-                  <app><lem><choice><orig></orig><reg/></choice></lem></app>
+                  <app><lem><choice><orig/><reg/></choice></lem></app>
                   <postscript>
                      <p>Je n’ai pu dresser ce testament sur<lb/> papier timbré, car il n’y en avait
                         plus<lb/> dans les bureaux de tabac.</p>
                   </postscript>
                   <pb facs="../images/FRAN_0045_00708.jpg" type="pageWithExtraNotes"/>
-                  <pb  type="whitePage_notDigitized"/>
+                  <pb type="whitePage_notDigitized"/>
                   <pb type="whitePage_notDigitized"/>
                </div>
               
@@ -2535,7 +2641,7 @@
                <div type="will">
                   <pb facs="../images/FRAN_0045_01352.jpg"/>
                   <p>Partant à la guerre<choice>
-                        <sic>&#xa0;et si<lb/> en cas de non retour</sic>
+                        <sic> et si<lb/> en cas de non retour</sic>
                         <corr>, dans le cas où je ne reviendrais pas</corr>
                      </choice>, je désire<lb/> que mes dernières volontés soient<lb/>
                      respectées.</p>
@@ -2546,7 +2652,7 @@
                         <lem><choice>
                               <orig><surplus>ma</surplus></orig>
                               <reg/>
-                           </choice>&#xa0;
+                           </choice> 
                            <subst>
                               <del>f</del>
                               <add>Madame</add>
@@ -2562,7 +2668,7 @@
                         <reg> : </reg>
                      </choice>
                      <list>
-                        <item>1° tous meubles<subst><del>&#xa0;et</del><add>,</add></subst>&#xa0;objets et accessoires<lb/> de ménage dans mon logement<lb/> du
+                        <item>1° tous meubles<subst><del> et</del><add>,</add></subst> objets et accessoires<lb/> de ménage dans mon logement<lb/> du
                            3, <choice>
                               <orig>Rue</orig>
                               <reg>rue</reg>
@@ -2587,7 +2693,7 @@
                      <seg type="signature"><persName ref="#ESimonnet"><choice>
                               <orig>Emil</orig>
                               <reg>Émile</reg>
-                     </choice>&#xa0;<surname>Simonnet</surname></persName></seg>
+                     </choice> <surname>Simonnet</surname></persName></seg>
                   </signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01353.jpg"/>
                </div>
@@ -2620,20 +2726,20 @@
                         <orig>Août</orig>
                      </choice> 1914</dateline>
                   <p>Je soussigné<choice>
-                     <reg>,&#xa0;</reg>
-                     <orig>&#xa0;</orig>
+                     <reg>, </reg>
+                     <orig> </orig>
                      </choice>
                      <persName ref="#JSTardy">Joseph<lb/> Tardy</persName><lb/> demeurant au n°42 <choice>
-                        <expan>f<ex>aubour</ex>g&#xa0;</expan>
-                        <abbr>fg&#xa0;</abbr>
+                        <expan>f<ex>aubour</ex>g </expan>
+                        <abbr>fg </abbr>
                      </choice>
                      <choice>
                         <orig><abbr>S<hi rend="sup">t</hi></abbr> Denis</orig>
                         <reg><expan>S<ex>ain</ex>t</expan>-Denis</reg>
                      </choice><lb/> déclare donner tout droit<lb/> à Mademoiselle Eugénie
                      Bois<lb/> pour tout ce qui concerne<lb/> notre domicile du 42 <choice>
-                        <expan>f<ex>aubour</ex>g&#xa0;</expan>
-                        <abbr>fg&#xa0;</abbr>
+                        <expan>f<ex>aubour</ex>g </expan>
+                        <abbr>fg </abbr>
                      </choice>
                      <choice>
                         <orig><abbr>S<hi rend="sup">t</hi></abbr> Denis</orig>
@@ -2651,21 +2757,19 @@
                      </choice><lb/> un livret n°75-1826.094 délivré<lb/> dans le département de la Seine<lb/> au nom de <choice>
                         <reg>M.</reg>
                         <orig>M<hi rend="sup">r</hi></orig>
-                     </choice>&#xa0;<persName ref="#JSTardy">Tardy Joseph Séraphin</persName>. </p>
+                     </choice> <persName ref="#JSTardy">Tardy Joseph Séraphin</persName>. </p>
                   <p rend="right">Fait à Paris, le 2 <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
                      </choice> 1914</p>
-                  <signed><seg type="signature"><persName ref="#JSTardy"
-                           ><surname>Tardy</surname></persName></seg><!--<lb/> Monsieur <persName
+                  <signed><seg type="signature"><persName ref="#JSTardy"><surname>Tardy</surname></persName></seg><!--<lb/> Monsieur <persName
                         ref="#JSTardy">Joseph Séraphin Tardy</persName><choice><reg>,</reg><orig/></choice><lb/> né à Curienne le 16 mai
                      1880<choice><reg>,</reg><orig/></choice><lb/> à Curienne, Savoie, fils de <lb/> Louis Tardy et de Billard Jacqueline<choice>
                         <reg>.</reg>
                         <orig/>
                      </choice>-->
                   </signed>
-                  <postscript><p>Monsieur <persName
-                     ref="#JSTardy">Joseph Séraphin Tardy</persName><choice><reg>,</reg><orig/></choice><lb/> né à Curienne le 16 mai
+                  <postscript><p>Monsieur <persName ref="#JSTardy">Joseph Séraphin Tardy</persName><choice><reg>,</reg><orig/></choice><lb/> né à Curienne le 16 mai
                      1880<choice><reg>,</reg><orig/></choice><lb/> à Curienne, Savoie, fils de <lb/> Louis Tardy et de Billard Jacqueline<choice>
                         <reg>.</reg>
                         <orig/>
@@ -2713,7 +2817,7 @@
                      dernier que<lb/> j’estime au moins 2 000 <choice>
                         <reg>F</reg>
                         <orig><hi rend="sup">f</hi></orig>
-                     </choice>, attendu que l’année <!-- FC octobre 2916--><choice><sic>précédent</sic><corr>précédente</corr></choice>&#xa0;<app><lem><add place="above">(année
+                     </choice>, attendu que l’année <!-- FC octobre 2916--><choice><sic>précédent</sic><corr>précédente</corr></choice> <app><lem><add place="above">(année
                         1912-1913)</add></lem><note>"(année
                            1912-1913)" ajouté dans l’interligne.</note></app> pour 180 000 <choice>
                         <reg>F</reg>
@@ -2858,8 +2962,8 @@
                   <pb facs="../images/FRAN_0045_00541.jpg"/>
                 <!-- FC octobre 2016 <space dim="vertical" quantity="5"/>-->
                   <p>Je soussigné<choice>
-                     <reg>,&#xa0;</reg>
-                     <orig>&#xa0;</orig>
+                     <reg>, </reg>
+                     <orig> </orig>
                      </choice>
                      <persName ref="#MMathelin">Maurice Victor<lb/> Mathelin</persName><choice><orig/><reg>,</reg></choice> demeurant au
                      17 <choice>
@@ -2867,7 +2971,7 @@
                         <orig>Avenue</orig>
                      </choice> de<lb/> Soisy à <choice>
                         <abbr>S<hi rend="sup">t</hi>. </abbr>
-                        <expan>S<ex>ain</ex>t</expan></choice><choice><reg>-</reg><orig>&#xa0;</orig></choice>Gratien (<choice>
+                        <expan>S<ex>ain</ex>t</expan></choice><choice><reg>-</reg><orig> </orig></choice>Gratien (<choice>
                         <reg>Seine-et-Oise</reg>
                         <orig>Seine et Oise</orig>
                      </choice>)<choice><reg>,</reg><orig/></choice> laisse<lb/> par testament toutes mes valeurs et<lb/> argent à ma
@@ -2881,16 +2985,16 @@
                      demeurant<lb/> à Annot (<choice>
                         <reg>Basses-Alpes</reg>
                         <orig>Basses Alpes</orig>
-                     </choice>)<choice><reg>,</reg><orig/></choice>&#xa0;<hi rend="underlined">en parties égales</hi>.<lb/> Les valeurs et
+                     </choice>)<choice><reg>,</reg><orig/></choice> <hi rend="underlined">en parties égales</hi>.<lb/> Les valeurs et
                      argent se trouvent au<lb/> Crédit lyonnais, <foreign xml:lang="eng">Cockspur
                         Street</foreign><choice><reg>,</reg><orig/></choice> Londres <foreign xml:lang="eng">W.</foreign></p>
                   <dateline>Fait à <choice>
                      <abbr>S<hi rend="sup">t</hi>. </abbr>
                         <expan>S<ex>ain</ex>t</expan>
-                     </choice><choice><orig>&#xa0;</orig><reg>-</reg></choice>Gratien<choice><reg>,</reg><orig/></choice> le deux <choice>
+                     </choice><choice><orig> </orig><reg>-</reg></choice>Gratien<choice><reg>,</reg><orig/></choice> le deux <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze</dateline>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze</dateline>
                   <signed><seg type="signature"><persName ref="#MMathelin">M.
                               <surname>Mathelin</surname></persName></seg></signed>
                   <!-- FC correction n° image octobre 2016-->
@@ -2900,7 +3004,7 @@
                   <pb facs="../images/FRAN_0045_00540.jpg" type="envelope"/>
                   <p>Ceci est mon testament.<lb/> Fait à 
                      <choice>
-                        <abbr>St&#xa0; Gratien</abbr>
+                        <abbr>St  Gratien</abbr>
                         <expan>S<ex>ain</ex>t-Gratien</expan></choice>
                      <choice>
                         <reg>,</reg>
@@ -3173,8 +3277,7 @@
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="comments">
-                  <p>2<hi rend="sup">e</hi> testament. Voir le <ref target="#will-034">1<hi
-                     rend="sup">er</hi> testament</ref></p>
+                  <p>2<hi rend="sup">e</hi> testament. Voir le <ref target="#will-034">1<hi rend="sup">er</hi> testament</ref></p>
                </div>
                <div type="physdesc">
                   <p>Papier à lettre blanc réglé, 4 pages, dim. 17,4 x 10,5 cm, encre.</p>
@@ -3449,13 +3552,13 @@
                      </choice> donne et lègue à<lb/> Marie Hechly ma femme<lb/> tout ce que je
                      possède<choice>
                         <reg>,</reg>
-                        <orig></orig>
+                        <orig/>
                      </choice> et immeubles<lb/> et meubles et argent<choice>
                         <reg>,</reg>
                         <orig> - </orig>
                      </choice> créances<choice>
                         <reg>,</reg>
-                        <orig></orig>
+                        <orig/>
                      </choice><lb/> biens <choice>
                         <sic>présent</sic>
                         <corr>présents</corr>
@@ -3469,8 +3572,7 @@
                      </choice>
                   </dateline>
                   
-                  <signed>Signé <seg type="signature"><persName ref="#AChemin"
-                              ><surname>Chemin</surname> Ange Pierre Joseph</persName></seg>
+                  <signed>Signé <seg type="signature"><persName ref="#AChemin"><surname>Chemin</surname> Ange Pierre Joseph</persName></seg>
                      <lb/>
                      <space dim="vertical" quantity="1" unit="lines"/>
                      <lb/>
@@ -3519,11 +3621,10 @@
                      </choice></head>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <p>Moi <persName ref="#AMCornillault">Armand Marcel Corni<lb break="no"/>llault</persName>
-                     <choice><orig></orig><reg>,</reg></choice> sain de corps et<lb/> d’esprit, <damage agent="dirt">je</damage> donne et
-                     lègue<lb/> à ma <damage agent="dirt">fem</damage>me<choice><orig></orig><reg>,</reg></choice> Lucienne Yvonne<lb/>
-                     Cornillau<damage agent="dirt">lt</damage> née Contrel<choice><orig></orig><reg>,</reg></choice> d’une<lb/> façon
-                     <damage agent="dirt">incessible</damage> et insaisissable<choice><orig></orig><reg>, </reg></choice><lb/>tout <damage
-                        agent="dirt">ce que</damage> je possède et à<lb/> venir. </p>
+                     <choice><orig/><reg>,</reg></choice> sain de corps et<lb/> d’esprit, <damage agent="dirt">je</damage> donne et
+                     lègue<lb/> à ma <damage agent="dirt">fem</damage>me<choice><orig/><reg>,</reg></choice> Lucienne Yvonne<lb/>
+                     Cornillau<damage agent="dirt">lt</damage> née Contrel<choice><orig/><reg>,</reg></choice> d’une<lb/> façon
+                     <damage agent="dirt">incessible</damage> et insaisissable<choice><orig/><reg>, </reg></choice><lb/>tout <damage agent="dirt">ce que</damage> je possède et à<lb/> venir. </p>
                   <dateline>Fait à Paris<choice>
                         <reg>,</reg>
                         <orig/>
@@ -3532,8 +3633,7 @@
                         <orig>Août</orig>
                      </choice><lb/> <choice><sic>mil</sic><corr>mille</corr></choice> neuf <supplied resp="#editors">cent</supplied> quatorze et
                      en<lb/> double.</dateline>
-                  <signed><seg type="signature"><persName ref="#AMCornillault"
-                              ><surname>Cornillault</surname></persName></seg>
+                  <signed><seg type="signature"><persName ref="#AMCornillault"><surname>Cornillault</surname></persName></seg>
                   </signed>
                   <pb type="whitePage_notDigitized"><!--ATTENTION ! pas d'image correspondant à cet élément pb-->
                   <!-- FC octobre 2016 corrigé @type--></pb>
@@ -3543,8 +3643,7 @@
 
          <text xml:id="will-041">
             <front>
-               <docDate><date when="1914-08-03">1914, 3 août</date>. <supplied resp="#editors"
-                        ><placeName>Paris</placeName></supplied>.</docDate>
+               <docDate><date when="1914-08-03">1914, 3 août</date>. <supplied resp="#editors"><placeName>Paris</placeName></supplied>.</docDate>
                <!--<docAuthor><persName><forename>Paul</forename><forename>Marcel</forename><surname>Dumesny</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#PMDumesny">Paul Marcel
@@ -3556,7 +3655,7 @@
                   <p>Papier timbré, 4 pages, dim. 24,9 x 17,8 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-ujuaf5q3--kueasia4d61j&amp;details=true"  type="linkToANFWebsite">MC/ET/LXXXIX/2337, minute du 7 novembre 1914</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-ujuaf5q3--kueasia4d61j&amp;details=true" type="linkToANFWebsite">MC/ET/LXXXIX/2337, minute du 7 novembre 1914</ref></p>
                </div>
             </front>
             <body>
@@ -3567,7 +3666,7 @@
                         <reg>,</reg>
                         <orig/>
                      </choice> par ce présent papier<choice><reg>,</reg><orig/></choice><lb/>
-                     <!-- FC octobre 2016--><choice><sic></sic><corr><supplied resp="#editors">déclare</supplied></corr></choice> donner à mon épouse<lb/> 
+                     <!-- FC octobre 2016--><choice><sic/><corr><supplied resp="#editors">déclare</supplied></corr></choice> donner à mon épouse<lb/> 
                      Chamblant Marie Denise tout<lb/> ce que je possède<choice><reg>,</reg><orig/></choice>
                      ceci<lb/> sans aucune réserve et la laisse<lb/> libre de toutes <choice><sic>ces</sic><corr>ses</corr></choice> actions
                      dans<lb/> l’avenir. Ceci est mon<lb/> testament fait avant le départ<lb/> pour
@@ -3586,8 +3685,7 @@
                         <orig>Août</orig>
                      </choice> 1914.</seg><!--</dateline>--></p>
                   <space dim="vertical" quantity="2" unit="lines"/>
-                  <signed><seg type="signature"><persName ref="#PMDumesny"
-                              ><surname>Dumesny</surname> Paul</persName></seg>
+                  <signed><seg type="signature"><persName ref="#PMDumesny"><surname>Dumesny</surname> Paul</persName></seg>
                   </signed>
                   <pb type="whitePage_notDigitized"/>
                   <pb type="whitePage_notDigitized"/>
@@ -3656,7 +3754,7 @@
                <div type="summary">
                   <p>Testament olographe de <persName ref="#CRLaederich">Charles Roger
                            <surname>Laederich</surname></persName>, mort pour la France à <placeName ref="#pl-102">Zillebeke
-                              (Belgique)</placeName>,&#xa0;le 29 novembre 1914.</p>
+                              (Belgique)</placeName>, le 29 novembre 1914.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="physdesc">
@@ -3720,8 +3818,8 @@
                         <reg>banquier</reg>
                         <orig>Banquier</orig>
                      </choice> à Paris<choice><reg>,</reg><orig/></choice><lb/> 372 <choice>
-                        <reg>rue&#xa0;</reg>
-                        <orig>Rue&#xa0;</orig>
+                        <reg>rue </reg>
+                        <orig>Rue </orig>
                      </choice> 
                      <choice>
                         <abbr>S<hi rend="sup">t</hi></abbr>
@@ -3730,19 +3828,18 @@
                         <reg>l’agence</reg>
                         <orig>l’Agence</orig>
                      </choice><lb/> X du Crédit lyonnais, <choice>
-                        <abbr>B<hi rend="sup">d</hi>&#xa0;</abbr>
-                        <expan>b<ex>oulevar</ex>d&#xa0;</expan>
+                        <abbr>B<hi rend="sup">d</hi> </abbr>
+                        <expan>b<ex>oulevar</ex>d </expan>
                      </choice>
                      <choice>
                         <abbr>S<hi rend="sup">t</hi><!--&#xa0;--></abbr>
                         <expan>S<ex>ain</ex>t<!--FC nov. 2016 <ex>-</ex>--></expan>
-                     </choice><choice><orig></orig><reg>-</reg></choice><lb/>Germain, en la même ville.</p>
+                     </choice><choice><orig/><reg>-</reg></choice><lb/>Germain, en la même ville.</p>
                   <p>Enfin<choice>
                         <reg>,</reg>
                         <orig/>
                      </choice> je lègue tout<lb/> spécialement à mon neveu<lb/>
-                     <ref type="noteWikipedia"
-                        target="https://fr.wikipedia.org/wiki/Georges_Laederich">Georges
+                     <ref type="noteWikipedia" target="https://fr.wikipedia.org/wiki/Georges_Laederich">Georges
                         Laederich</ref> le mobilier<lb/> de mon appartement, <choice>
                         <reg>rue</reg>
                         <orig>Rue</orig>
@@ -3811,7 +3908,7 @@
                   <p>Je soussigné<choice>
                         <reg>,</reg>
                         <orig/>
-                     </choice>&#xa0;<persName ref="#ALapraz">Lapraz Albert</persName><choice>
+                     </choice> <persName ref="#ALapraz">Lapraz Albert</persName><choice>
                         <reg>,</reg>
                         <orig/>
                      </choice><lb/> déclare <choice><sic>donné</sic><corr>donner</corr></choice> à mon<lb/> épouse<choice><reg>,</reg><orig/></choice> 
@@ -3936,7 +4033,7 @@
             <back>
                <div>
                   <note xml:id="will-045-footnote001" target="#will-045-001">Selon l’ordonnance du juge il s’agit d’une chemise cartonnée, fermée par une sangle, contenant diverses valeurs de bourse au porteur ; cette chemise était conservée dans un coffre au Crédit lyonnais, ouvert après la mort de Rouvel.</note>
-                  <note  xml:id="will-045-footnote002" target="#will-045-002">15<hi rend="sup">e</hi> arrondissement en réalité.</note>
+                  <note xml:id="will-045-footnote002" target="#will-045-002">15<hi rend="sup">e</hi> arrondissement en réalité.</note>
                </div>
             </back>
          </text>
@@ -3964,8 +4061,7 @@
                <div type="will">
                   <pb facs="../images/FRAN_0045_00116.jpg"/>
                  <!--FC nov. 2016 <space dim="vertical" quantity="5" unit="lines"/>-->
-                  <p>Je soussigné <!--<persName ref="#LVRouvrais">-->Louis Victor <hi rend="underlined"
-                           >Rouvrais</hi><!--</persName>--><choice><reg>,</reg><orig/></choice><lb/> demeurant à Paris <choice>
+                  <p>Je soussigné <!--<persName ref="#LVRouvrais">-->Louis Victor <hi rend="underlined">Rouvrais</hi><!--</persName>--><choice><reg>,</reg><orig/></choice><lb/> demeurant à Paris <choice>
                         <reg>avenue</reg>
                         <orig>Avenue</orig>
                      </choice> Richerand<lb/> n°4<choice><reg>,</reg><orig/></choice> ai fait mon <choice>
@@ -4041,8 +4137,7 @@
                      Germaine<lb/> Titard, mon épouse, tous mes biens, meubles<lb/> et immeubles,
                      mes bijoux et ma créance<lb/> Clémançon. </p>
                   <space dim="vertical" quantity="3" unit="lines"/>
-                  <signed><seg type="signature"><persName ref="#AVTitard"
-                           ><surname>Titard</surname></persName></seg></signed>
+                  <signed><seg type="signature"><persName ref="#AVTitard"><surname>Titard</surname></persName></seg></signed>
                   <space dim="vertical" quantity="3" unit="lines"/>
                   <postscript>
                      <p><list>
@@ -4063,7 +4158,7 @@
                            <item>500 <choice>
                                  <reg>F</reg>
                                  <orig>fr</orig>
-                              </choice>&#xa0;<choice><sic>déposé</sic><corr>déposés</corr></choice> en séquestre chez <choice>
+                              </choice> <choice><sic>déposé</sic><corr>déposés</corr></choice> en séquestre chez <choice>
                                  <abbr>M<hi rend="sup">e</hi></abbr>
                                  <expan>M<ex>onsi</ex>e<ex>ur</ex></expan>
                               </choice> Grosier huissier à Courbevoie</item>
@@ -4095,9 +4190,9 @@
                                  <expan>M<ex>onsieu</ex>r</expan>
                               </choice> Mestre ingénieur</item>
                            <item>90 <choice>
-                              <reg>F&#xa0;</reg>
-                              <orig>fr.&#xa0;</orig>
-                              </choice> <choice><abbr>id.</abbr><expan xml:lang="lat">id<ex>em</ex></expan></choice>&#xa0;<choice>
+                              <reg>F </reg>
+                              <orig>fr. </orig>
+                              </choice> <choice><abbr>id.</abbr><expan xml:lang="lat">id<ex>em</ex></expan></choice> <choice>
                                  <abbr type="obsolete">M<hi rend="sup">r</hi></abbr>
                                  <expan>M<ex>onsieu</ex>r</expan>
                               </choice> Parriot<choice>
@@ -4148,7 +4243,7 @@
                   <pb facs="../images/FRAN_0045_00330.jpg"/>
                   <head>Ceci est mon testament</head>
                   <p>Je soussigné <persName ref="#VNBoch">Boch Nicolas</persName> de<lb/> 
-                     <choice><orig>Val d’Isère</orig><reg>Val-d’Isère</reg></choice>&#xa0;<choice>
+                     <choice><orig>Val d’Isère</orig><reg>Val-d’Isère</reg></choice> <choice>
                         <reg>(Savoie)</reg>
                         <orig>savoie</orig>
                      </choice><choice>
@@ -4160,7 +4255,7 @@
                         </choice></hi> à <choice>
                         <corr>Moûtiers</corr>
                         <sic>Moutiers</sic>
-                        </choice> comme <choice><orig>sous&#xa0;<lb/>officier</orig><reg>sous-<lb/>officier</reg></choice>
+                        </choice> comme <choice><orig>sous <lb/>officier</orig><reg>sous-<lb/>officier</reg></choice>
                         <choice><reg>, déclare</reg>
                         <orig>. Déclare</orig>
                      </choice> donner tout ce<lb/> qui peut lui appartenir à son<lb/> épouse bien
@@ -4181,7 +4276,7 @@
                            Nicolas</persName></seg> au 97<hi rend="sup"><choice>
                            <reg>e</reg>
                            <orig>ème</orig>
-                        </choice></hi> de<lb/> ligne<choice><reg>,</reg><orig/></choice>&#xa0;<choice>
+                        </choice></hi> de<lb/> ligne<choice><reg>,</reg><orig/></choice> <choice>
                         <corr>Moûtiers (Savoie)</corr>
                         <sic>Moutiers Savoie</sic>
                      </choice>
@@ -4192,7 +4287,7 @@
                   <p><address>
                        <addrLine>Madame<lb/>
                       <persName ref="#VNBoch">Boch Nicolas</persName></addrLine>
-                     <addrLine><choice><orig>Val d’Isère</orig><reg>Val-d’Isère</reg></choice><choice><reg>,&#xa0;</reg><orig/></choice><supplied resp="#editors">La</supplied> Daille<lb/>
+                     <addrLine><choice><orig>Val d’Isère</orig><reg>Val-d’Isère</reg></choice><choice><reg>, </reg><orig/></choice><supplied resp="#editors">La</supplied> Daille<lb/>
                     (Savoie)</addrLine></address>
                   </p>
                   <p>Prière à celui qui<lb/> 
@@ -4205,8 +4300,7 @@
 
          <text xml:id="will-049">
             <front>
-               <docDate><date when="1914-08-04">1914, 4 août</date>. <supplied resp="#editors"
-                     >Paris</supplied>.</docDate>
+               <docDate><date when="1914-08-04">1914, 4 août</date>. <supplied resp="#editors">Paris</supplied>.</docDate>
                <!--<docAuthor><persName><forename>Georges</forename><forename>Ernest</forename><surname>Belgiovanni</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#GEBelgiovanni">Georges Ernest
@@ -4230,7 +4324,7 @@
                            <orig>Août</orig>
                         </choice> 1914</hi></dateline>
                   <p>Ce jour partant pour<lb/> la guerre, je lègue à<lb/> mon épouse tout ce
-                     que<lb/> je possède en argent<choice><reg>,</reg><orig/></choice> titres<choice><orig></orig><reg>,</reg></choice><lb/> bijoux et mobilier, considé<lb break="no"/>rant que c’est par son<lb/> travail que nous avons pu<lb/> avoir ces biens. </p>
+                     que<lb/> je possède en argent<choice><reg>,</reg><orig/></choice> titres<choice><orig/><reg>,</reg></choice><lb/> bijoux et mobilier, considé<lb break="no"/>rant que c’est par son<lb/> travail que nous avons pu<lb/> avoir ces biens. </p>
                   <signed><seg type="signature"><persName ref="#GEBelgiovanni">Georges
                               <surname>Belgiovanni</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01203.jpg"/>
@@ -4346,7 +4440,7 @@
                         <reg>rue</reg>
                         <orig>Rue</orig>
                      <!-- FC nov. 2016 -->
-                     </choice>&#xa0;<choice><orig>Saint <lb/>Sauveur</orig><reg>Saint-<lb/>Sauveur</reg></choice><!--<lb/>Sauveur--> à Paris<choice>
+                     </choice> <choice><orig>Saint <lb/>Sauveur</orig><reg>Saint-<lb/>Sauveur</reg></choice><!--<lb/>Sauveur--> à Paris<choice>
                         <reg>,</reg>
                         <orig>.</orig>
                      </choice><lb/>
@@ -4392,8 +4486,7 @@
                <!--<docAuthor><persName><forename>Pierre</forename><forename>Charles</forename><forename>Victor</forename><surname>Martin</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#PCVMartin">Pierre Charles Victor
-                           <surname>Martin</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-003">Andechy (Somme)</placeName>, le 14 novembre 1914.</p>
+                           <surname>Martin</surname></persName>, mort pour la France à <placeName ref="#pl-003">Andechy (Somme)</placeName>, le 14 novembre 1914.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="physdesc">
@@ -4421,7 +4514,7 @@
                   <signed><seg type="signature"><persName ref="#PCVMartin"><choice>
                               <abbr>V<hi rend="sup">or</hi></abbr>
                               <expan>V<ex>ict</ex>or</expan>
-                           </choice>&#xa0;<surname>Martin</surname></persName></seg></signed>
+                           </choice> <surname>Martin</surname></persName></seg></signed>
                   <pb type="whitePage_notDigitized"/>
                </div>
                <div type="envelope">
@@ -4434,8 +4527,7 @@
                      <choice>
                         <orig>Emilie</orig>
                         <reg>Émilie</reg>
-                     </choice> Arhel<lb/> après ma mort. <metamark rend="horizontalLine"
-                        function="separating"/>
+                     </choice> Arhel<lb/> après ma mort. <metamark rend="horizontalLine" function="separating"/>
                   </p>
                   <pb type="envelope-verso" facs="../images/FRAN_0045_00812.jpg"/>
                </div>
@@ -4471,7 +4563,7 @@
                      </choice> demeurant à <choice>
                         <reg>Savigny-le-Temple</reg>
                         <orig>Savigny-le Temple</orig>
-                     </choice>&#xa0;<choice><orig>(Seine &amp; Marne)</orig><reg>(Seine-et-Marne),</reg></choice><lb/> voulant éviter le malheur d’être surpris
+                     </choice> <choice><orig>(Seine &amp; Marne)</orig><reg>(Seine-et-Marne),</reg></choice><lb/> voulant éviter le malheur d’être surpris
                      par<lb/> la mort avant d’avoir réglé mes affaires, déclare<choice><reg>,</reg><orig/></choice><lb/> après mûres
                      réflexions, faire par le présent mon<lb/> testament olographe comme suit.</p>
                   <p>Je lègue à Noémie Maillier<choice><reg>,</reg><orig/></choice> mon<lb/> épouse bien aimée<choice><reg>,</reg><orig/></choice> l’usufruit et la
@@ -4488,13 +4580,13 @@
                      </choice> Savigny-le-Temple<choice><reg>,</reg><orig/></choice> le quatre <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                     </choice>&#xa0;<lb/><choice>
+                     </choice> <lb/><choice>
                         <corr>mille</corr>
                         <sic>Mil</sic>
                      </choice> neuf cent quatorze. </dateline>
                   <signed><seg type="signature"><persName ref="#LAPCanivenq">A.P.
                               <surname>Canivenq</surname></persName></seg></signed>
-                 <!-- FC nov. 2016 modifié image --> <pb type="whitePage_notDigitized"></pb>
+                 <!-- FC nov. 2016 modifié image --> <pb type="whitePage_notDigitized"/>
                </div>
             </body>
          </text>
@@ -4550,8 +4642,8 @@
                   <pb facs="../images/FRAN_0045_00185.jpg"/>
                   <opener>
                      <address>
-                     <addrLine>Monsieur Delafon<choice><orig></orig><reg>,</reg></choice></addrLine>
-                        <addrLine><choice><orig>Notaire</orig><reg>notaire</reg></choice> à Paris<choice><orig></orig><reg>,</reg></choice> 6 boulevard</addrLine>
+                     <addrLine>Monsieur Delafon<choice><orig/><reg>,</reg></choice></addrLine>
+                        <addrLine><choice><orig>Notaire</orig><reg>notaire</reg></choice> à Paris<choice><orig/><reg>,</reg></choice> 6 boulevard</addrLine>
                      <addrLine>de Strasbourg</addrLine>
                   </address>
                   </opener>
@@ -4601,7 +4693,7 @@
                   <pb type="envelope" facs="../images/FRAN_0045_00189.jpg"/>
                   <p>
                      <address>
-                        <addrLine>Monsieur Delafon<choice><reg>,</reg><orig/></choice>&#xa0;notaire<choice><reg>,</reg><orig/></choice></addrLine>
+                        <addrLine>Monsieur Delafon<choice><reg>,</reg><orig/></choice> notaire<choice><reg>,</reg><orig/></choice></addrLine>
                         <addrLine>6 boulevard de Strasbourg<choice><reg>,</reg><orig/></choice></addrLine>
                      <addrLine>Paris</addrLine>
                   </address>
@@ -4650,7 +4742,7 @@
                   <p>Je lègue à mon <choice>
                         <reg>frère</reg>
                         <orig>Frère</orig>
-                  </choice>&#xa0;<persName ref="#MBrivois">Maurice</persName> <!--<ref xml:id="will-056-001" target="#will-056-footnote001" type="note"/>--> ou<choice><reg>,</reg><orig/></choice>
+                  </choice> <persName ref="#MBrivois">Maurice</persName> <!--<ref xml:id="will-056-001" target="#will-056-footnote001" type="note"/>--> ou<choice><reg>,</reg><orig/></choice>
                      au<lb/> cas où il viendrait lui-même à mourir<lb/> pour la Patrie<choice><reg>,</reg><orig/></choice> à ma petite <choice>
                         <reg>nièce</reg>
                         <orig>Nièce</orig>
@@ -4660,7 +4752,7 @@
                         <reg>bois</reg>
                         <orig>Bois</orig>
                      </choice> qui se tiennent autour de la<lb/> plantation de la Fontaine à Dosseux<choice><reg>,</reg><orig/></choice>
-                     lieu-dit la Racle<choice><reg>,</reg><orig/></choice>&#xa0;<add rend="rightMargin">et cette plantation
+                     lieu-dit la Racle<choice><reg>,</reg><orig/></choice> <add rend="rightMargin">et cette plantation
                      elle-même.</add></p>
                   <!--<pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00551.jpg"/>-->
  
@@ -4704,7 +4796,7 @@
                      </choice> le sept<lb/><choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze. </dateline>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quatorze. </dateline>
                   <signed><seg type="signature"><persName ref="#LBrivois">Lucien
                               <surname>Brivois</surname></persName></seg></signed>
                   
@@ -4717,8 +4809,7 @@
                            <reg>. Ma</reg>
                            <orig> - ma</orig>
                         </choice> combinaison pour<lb/> mon coffre est le numéro 173.<lb/>
-                        <seg type="signature" rend="centred"><persName ref="#LBrivois"
-                           >L.B.</persName></seg></lem><note type="comment">Écrit perpendiculairement.</note></app></p>
+                        <seg type="signature" rend="centred"><persName ref="#LBrivois">L.B.</persName></seg></lem><note type="comment">Écrit perpendiculairement.</note></app></p>
                   </postscript>
                   
                  <!--<postscript> 
@@ -4803,10 +4894,10 @@
                   <p>Fait à Paris<choice>
                         <reg>,</reg>
                         <orig/>
-                  </choice> le <choice><reg>sept</reg><orig>Sept</orig></choice>&#xa0; <choice>
+                  </choice> le <choice><reg>sept</reg><orig>Sept</orig></choice>  <choice>
                         <reg>août</reg>
                         <orig>Août</orig>
-                  </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf<lb/> cent quatorze. </p>
+                  </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf<lb/> cent quatorze. </p>
                   <signed><seg type="signature"><persName ref="#FBoudeau">F.
                               <surname>Boudeau</surname></persName></seg></signed>
                   <pb facs="../images/FRAN_0045_00578.jpg" type="pageWithExtraNotes"/>
@@ -4952,7 +5043,7 @@
                   <p>Ceci est mon testament, écrit en<lb/> toute sérénité, la veille de mon<lb/>
                      départ pour la guerre contre l’Allemagne.</p>
                   <metamark rend="horizontalLine" function="separating"/>
-                  <p>Je soussigné<choice><orig>,</orig><reg/></choice>&#xa0;<persName ref="#LDebain">Debain Lucien Pierre<lb/>
+                  <p>Je soussigné<choice><orig>,</orig><reg/></choice> <persName ref="#LDebain">Debain Lucien Pierre<lb/>
                         Armand</persName> laisse à ma femme<choice><reg>,</reg><orig/></choice> née <choice>
                         <sic>Helene</sic>
                         <corr>Hélène</corr>
@@ -4966,8 +5057,7 @@
                               <reg>français</reg>
                            </choice>, placées au nominatif<lb/> et déposées à la Banque de France<lb/> à Nevers. Ces obligations ont<lb/> été apportées
                            en dot par ma femme.</item>
-                        <item>2°) Quelques valeurs (Russe, Roumaine <gap reason="deleted-unreadable"
-                           /><lb/> Panama, etc.) déposées au
+                        <item>2°) Quelques valeurs (Russe, Roumaine <gap reason="deleted-unreadable"/><lb/> Panama, etc.) déposées au
                            <pb facs="../images/FRAN_0045_00782.jpg"/>
                            Comptoir d’escompte à
                            Nevers.</item>
@@ -5033,8 +5123,8 @@
                         <reg>mars</reg>
                         <orig>Mars</orig>
                      </choice> 1882 à Boursault<choice>
-                        <reg>,&#xa0;</reg>
-                        <orig>&#xa0;</orig>
+                        <reg>, </reg>
+                        <orig> </orig>
                      </choice> <hi rend="underlined">Marne</hi><choice>
                         <reg>,</reg>
                         <orig/>
@@ -5042,7 +5132,7 @@
                      guerre<choice><reg>,</reg><orig/></choice> en cas de mort<choice>
                         <reg> : </reg>
                         <orig/>
-                     </choice><lb/> je tiens à <choice><sic>laissez</sic><corr>laisser</corr></choice> &#xa0;<choice><sic>tous</sic><corr>tout</corr></choice><lb/> ce que nous possédons<choice>
+                     </choice><lb/> je tiens à <choice><sic>laissez</sic><corr>laisser</corr></choice>  <choice><sic>tous</sic><corr>tout</corr></choice><lb/> ce que nous possédons<choice>
                         <reg>,</reg>
                         <orig/> 
                      </choice> biens<lb/> et argent<choice>
@@ -5054,7 +5144,7 @@
                      </choice> Bioteau<choice>
                         <reg>,</reg>
                         <orig/>
-                     </choice>&#xa0;<choice><sic>né</sic><corr>née</corr></choice><lb/> à Vallet le 23 <choice>
+                     </choice> <choice><sic>né</sic><corr>née</corr></choice><lb/> à Vallet le 23 <choice>
                         <reg>avril</reg>
                         <orig>Avril</orig>
                      </choice> 1882<lb/>
@@ -5113,23 +5203,23 @@
                         <reg>,</reg>
                         <orig/>
                      </choice><lb/> demeurant 8, <choice>
-                        <reg>rue&#xa0;</reg>
-                        <orig>Rue&#xa0;</orig>
+                        <reg>rue </reg>
+                        <orig>Rue </orig>
                      </choice>
                      <choice>
-                        <orig><abbr>N.D.</abbr> de &#xa0;</orig> 
+                        <orig><abbr>N.D.</abbr> de  </orig> 
                         <reg><expan>N<ex>otre-</ex>D<ex>ame</ex></expan>-de-</reg>
                      </choice><choice><sic>Nazarethe</sic><corr>Nazareth</corr></choice><lb/> 
                      à Paris 3<hi rend="sup">e</hi>
                      <choice>
-                        <abbr>&#xa0; arr.</abbr>
-                        <expan>&#xa0; arr<ex>ondissement</ex></expan>
+                        <abbr>  arr.</abbr>
+                        <expan>  arr<ex>ondissement</ex></expan>
                      </choice><choice>
                         <reg>,</reg>
                         <orig/>
                      </choice> déclare <choice><sic>laissé</sic><corr>laisser</corr></choice> à ma<lb/> femme<choice>
-                        <reg>,&#xa0;</reg>
-                        <orig>&#xa0;</orig> 
+                        <reg>, </reg>
+                        <orig> </orig> 
                      </choice>
                      <choice>
                         <sic>né</sic>
@@ -5144,7 +5234,7 @@
                         <corr>matériels</corr>
                      </choice>, sans <choice><sic>recourt</sic><corr>recours</corr></choice> par les ayants<lb/> droit d’intenter quoi que ce soit
                      (par autorité<lb/> de justice ou autre, abandon du <choice><sic>lègue</sic><corr>legs</corr></choice>, ou<lb/> <choice><sic>domages</sic><corr>dommages</corr></choice> et
-                     intérêt)<choice><orig>.&#xa0;</orig><reg>,&#xa0;</reg></choice><lb/> <choice><orig>La</orig><reg>la</reg></choice> laissant juge d’en faire ce que bon<lb/> lui semblera.</p>
+                     intérêt)<choice><orig>. </orig><reg>, </reg></choice><lb/> <choice><orig>La</orig><reg>la</reg></choice> laissant juge d’en faire ce que bon<lb/> lui semblera.</p>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <p>Ce papier continuera d’être valable<lb/> depuis ma mort 
                      (partant en campagne le 11<hi rend="sup">e</hi><lb/> jour de la
@@ -5165,17 +5255,17 @@
                      </choice> de ce<lb/> <choice><sic>lègue</sic><corr>legs</corr></choice>. </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <dateline>Fait en double à Paris, 8, <choice>
-                     <reg>rue&#xa0;</reg>
-                     <orig>Rue&#xa0;</orig>
+                     <reg>rue </reg>
+                     <orig>Rue </orig>
                      </choice>
                      <choice>
-                        <orig><abbr>N.D.</abbr> de&#xa0; </orig>
+                        <orig><abbr>N.D.</abbr> de  </orig>
                         <reg><expan>N<ex>otre-</ex>D<ex>ame-</ex></expan>de</reg>
                      </choice><lb/>Nazareth, 3<hi rend="sup">e</hi>
                      <choice>
-                        <abbr>&#xa0; Arr.</abbr>
-                        <expan>&#xa0; arr<ex>ondissement</ex></expan>
-                     </choice><choice><reg>,</reg><orig/></choice> le 11<hi rend="sup">e</hi>&#xa0;
+                        <abbr>  Arr.</abbr>
+                        <expan>  arr<ex>ondissement</ex></expan>
+                     </choice><choice><reg>,</reg><orig/></choice> le 11<hi rend="sup">e</hi> 
                      <choice>
                         <reg>jour</reg>
                         <orig>Jour</orig>
@@ -5184,8 +5274,7 @@
                         <orig>Août</orig>
                      </choice> 1914. </dateline>
                   <signed rend="left">Je soussigné<lb/>
-                     <seg type="signature"><persName ref="#JGodard"
-                           ><surname>Godard</surname></persName></seg></signed>
+                     <seg type="signature"><persName ref="#JGodard"><surname>Godard</surname></persName></seg></signed>
                   <!-- FC nov. 2016 corrigé image -->
                   <pb type="whitePage_notDigitized"><!--ATTENTION ! pas d'image correspondant à cet élément pb--></pb>
                </div>
@@ -5275,8 +5364,7 @@
                         <orig/>
                      </choice>
                   </dateline>
-                  <signed><seg type="signature"><persName ref="#RMGalustre"
-                              ><surname>Galustre</surname> René Marcel</persName></seg></signed>
+                  <signed><seg type="signature"><persName ref="#RMGalustre"><surname>Galustre</surname> René Marcel</persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00595.jpg"/>
                  <!-- <pb type="whitePage" facs="../images/FRAN_0045_00596.jpg"/>
                   <pb type="whitePage" facs="../images/FRAN_0045_00597.jpg"/>-->
@@ -5552,8 +5640,7 @@
                      Lainé, mon épouse, née Cécile Germaine<lb/> Clémentine Leroux, ainsi que
                      pour<lb/> tous biens à venir sans exception<lb/> ni réserves. </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed><seg type="signature" rend="right"><persName ref="#LLaine"
-                              ><surname>Lainé</surname></persName></seg>
+                  <signed><seg type="signature" rend="right"><persName ref="#LLaine"><surname>Lainé</surname></persName></seg>
                   </signed>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <dateline>Paris<choice>
@@ -5575,8 +5662,7 @@
                <!--<docAuthor><persName><forename>François</forename><forename>Marie</forename><surname>Guével</surname></persName></docAuthor>-->
                <div type="summary">
                   <p>Testament olographe de <persName ref="#FMGuevel">François Marie
-                           <surname>Guével</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-005">Auxerre (Yonne)</placeName>, le 27 avril 1917.</p>
+                           <surname>Guével</surname></persName>, mort pour la France à <placeName ref="#pl-005">Auxerre (Yonne)</placeName>, le 27 avril 1917.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="physdesc">
@@ -5714,8 +5800,8 @@
                         <reg>,</reg>
                         <orig/>
                      </choice> le 25 <choice>
-                        <expan><ex>octo</ex>bre&#xa0;</expan>
-                        <abbr>8<hi rend="sup">bre</hi>&#xa0;</abbr>
+                        <expan><ex>octo</ex>bre </expan>
+                        <abbr>8<hi rend="sup">bre</hi> </abbr>
                      </choice> <supplied resp="#editors">19</supplied>14</dateline>
                   <space dim="vertical" quantity="4" unit="lines"/>
                   <head><choice>
@@ -5931,8 +6017,8 @@
                      </choice> 1914</dateline>
                   <!--<space dim="vertical" quantity="2" unit="lines"/>-->
                   <p>Je lègue à mon neveu<lb/> et filleul André Meunier<choice>
-                     <reg>,&#xa0;</reg>
-                     <orig>&#xa0;</orig>
+                     <reg>, </reg>
+                     <orig> </orig>
                      </choice>
                      <choice>
                         <sic>deumeurant</sic>
@@ -6046,7 +6132,7 @@
                      </choice> née Revial, <choice>
                         <sic>tous se qui</sic>
                         <corr>tout ce qu’il</corr>
-                     </choice>&#xa0;
+                     </choice> 
                      <!--<supplied resp="#editors">je</supplied>-->
                      <choice>
                         <corr>possède</corr>
@@ -6054,11 +6140,11 @@
                      </choice><choice><reg>,</reg><orig/></choice><lb/> pour cause de guerre et en <choice>
                         <sic>ca</sic>
                         <corr>cas</corr>
-                     </choice>&#xa0;
+                     </choice> 
                      <choice>
                         <sic>d’accidents</sic>
                         <corr>d’accident</corr>
-                     </choice><lb/> qui lui&#xa0;
+                     </choice><lb/> qui lui 
                      <choice>
                         <sic>pourait </sic><corr>pourrait </corr></choice>
                      <choice><sic>ariver</sic><corr>arriver</corr></choice>, 
@@ -6141,7 +6227,7 @@
                      </choice> 1914</dateline>
                   <space dim="vertical" quantity="3" unit="lines"/>
                   <p>Je soussigné<choice>
-                     <orig></orig>
+                     <orig/>
                      <reg>,</reg>
                   </choice> 
                      <persName ref="#JPMetayer">Jules <choice>
@@ -6159,7 +6245,7 @@
                         <corr>demeurant</corr>
                      </choice> à Puteau n° 77<lb/> avenue de <choice>
                         <reg>Saint-Germain, </reg>
-                        <orig>Saint Germain &#xa0;</orig>
+                        <orig>Saint Germain  </orig>
                      </choice>
                      <choice>
                         <sic>saint</sic>
@@ -6271,7 +6357,7 @@
                      </choice> 1914</dateline>
                   <p>Je <choice>
                      <sic>soussgné </sic>
-                     <corr>soussigné&#xa0; </corr>
+                     <corr>soussigné  </corr>
                   </choice>
                      <!--<app>
                         <lem><choice>
@@ -6283,8 +6369,7 @@
                      <persName ref="#PAlric">Alric Pierre Calixte</persName><choice><reg>,</reg><orig/></choice><lb/>
                      <space dim="vertical" quantity="1" unit="lines"/><lb/> 
                      Hôtel 74 rue de Tolbiac<lb/>
-                     <choice><reg> - </reg><orig/></choice> 1 rue Sthrau Paris 13<choice><reg><hi rend="sup">e</hi></reg><orig><hi rend="sup"
-                           >me</hi></orig></choice> <choice>
+                     <choice><reg> - </reg><orig/></choice> 1 rue Sthrau Paris 13<choice><reg><hi rend="sup">e</hi></reg><orig><hi rend="sup">me</hi></orig></choice> <choice>
                         <sic>arondicement</sic>
                         <corr>arrondissement</corr>
                      </choice><choice><reg>,</reg><orig/></choice><lb/> actuellement <choice>
@@ -6319,16 +6404,15 @@
                         <orig>Vingt Deux</orig>
                      </choice><lb/>
                      <choice>
-                        <sic>Decembre&#xa0; </sic>
-                        <corr>décembre&#xa0; </corr>
+                        <sic>Decembre  </sic>
+                        <corr>décembre  </corr>
                      </choice>
                      <choice>
                         <sic>mile</sic>
                         <corr>mille</corr>
                      </choice> neuf cent<lb/> quatorze.</dateline>
                   <signed>Fait par moi<lb/>
-                     <seg type="signature" rend="centred"><persName
-                           ref="#PAlric">
+                     <seg type="signature" rend="centred"><persName ref="#PAlric">
                            <surname>Alric</surname> Pierre Calixte</persName></seg></signed>
                   <!--</closer>-->
                   <pb type="whitePage_notDigitized"/>
@@ -6360,7 +6444,7 @@
                   <head>Ceci est mon testament</head>
                   <p>Je soussigné<choice>
                         <reg>, </reg>
-                     <orig>&#xa0; </orig>
+                     <orig>  </orig>
                      </choice>
                      <persName ref="#HDriard">Driard Henri Victor</persName><lb/> demeurant à Paris,
                      12 bis <choice>
@@ -6438,8 +6522,8 @@
                         <reg>,</reg>
                         <orig/>
                      </choice> né le<lb/> 26 novembre 1881 <choice>
-                        <reg>à&#xa0; </reg>
-                        <orig>a&#xa0; </orig>
+                        <reg>à  </reg>
+                        <orig>a  </orig>
                      </choice>
                      <choice>
                         <reg>Dun-le-Poëlier</reg>
@@ -6454,8 +6538,7 @@
                      qu’il ait été <!-- FC nov. 2016 --><choice><orig><del>a</del>dressé</orig><reg>dressé</reg></choice> aucun contrat<choice>
                         <reg>,</reg>
                         <orig/>
-                     </choice><lb/> exerçant la profession d’épicier<lb/> et demeurant à Paris <add
-                        place="inline">37</add> rue Claude Decaen<choice><reg>,</reg><orig/></choice><lb/> sain de corps et d’esprit,
+                     </choice><lb/> exerçant la profession d’épicier<lb/> et demeurant à Paris <add place="inline">37</add> rue Claude Decaen<choice><reg>,</reg><orig/></choice><lb/> sain de corps et d’esprit,
                      déclare<lb/> que telles sont mes dernières volontés<choice>
                         <reg>.</reg>
                         <orig> : </orig>
@@ -6493,22 +6576,22 @@
                         <reg>Maison Neuve</reg>
                         <orig>maison neuve</orig>
                      </choice><lb/> commune <choice>
-                        <reg>d’Anjoin&#xa0; </reg>
-                        <orig>d’anjoin&#xa0; </orig>
+                        <reg>d’Anjoin  </reg>
+                        <orig>d’anjoin  </orig>
                      </choice>
                      <choice>
                         <orig>- (Indre -</orig>
                         <reg>(Indre),</reg>
                      </choice><lb/> le priant de veiller <choice>
-                        <reg>à&#xa0; </reg>
-                        <orig>a&#xa0; </orig>
+                        <reg>à  </reg>
+                        <orig>a  </orig>
                      </choice> la<lb/> stricte <choice>
                         <corr>exécution</corr>
                         <sic>exsécution</sic>
                      </choice> de mes<lb/> volontés et de prendre toutes<lb/> les mesures édictées
                      par les lois.<lb/> Je lui lègue <choice>
-                        <reg>à&#xa0; </reg>
-                        <orig>a&#xa0; </orig>
+                        <reg>à  </reg>
+                        <orig>a  </orig>
                      </choice>
                      <choice>
                         <sic>cette</sic>
@@ -6572,7 +6655,7 @@
                   <head>Ceci est mon testament</head>
                   <p>Je soussigné<choice>
                         <reg>, </reg>
-                     <orig> &#xa0;</orig>
+                     <orig>  </orig>
                      </choice>
                      <persName ref="#SocquetClerc">Georges Socquet-Clerc</persName>,<lb/> donne et
                      lègue <choice>
@@ -6582,7 +6665,7 @@
                         <item>(1<hi rend="sup">er</hi>) Mademoiselle<lb/> Bal Berthe ma cousine les obli<lb break="no"/>gations
                      suivantes <choice>
                         <orig>(</orig>
-                        <reg>:&#xa0;</reg>
+                        <reg>: </reg>
                      </choice>1 chemin de fer<lb/>
                      <choice>
                         <reg>nogentais</reg>
@@ -6593,13 +6676,13 @@
                      </choice>
                      <choice>
                         <orig>)</orig>
-                        <reg>&#xa0;;</reg>
+                        <reg> ;</reg>
                      </choice> 1 tramway est parisien<lb/>n° 223.473<choice>
                         <orig>.) (</orig>
-                        <reg> ;&#xa0;</reg>
+                        <reg> ; </reg>
                      </choice>1 Dombes sud est n° 10809<choice>
                         <orig>.)</orig>
-                        <reg>&#xa0;;</reg>
+                        <reg> ;</reg>
                      </choice><lb/>
                      <choice>
                         <reg/>
@@ -6609,16 +6692,16 @@
                         <corr>État</corr>
                      </choice> de Fribourg n° 21539<choice>
                         <orig>.)</orig>
-                        <reg>&#xa0;;</reg>
+                        <reg> ;</reg>
                      </choice> ¾ ville de<lb/> Paris 1910 n° 576.639<choice>
-                        <reg>, 517.543, 577.225&#xa0;;</reg>
+                        <reg>, 517.543, 577.225 ;</reg>
                         <orig>. 517543. 577225</orig>
                      </choice><lb/>
                      <del>2</del>
                      <choice>
                         <reg>2</reg>
                         <orig>(2</orig>
-                     </choice>&#xa0;chemins de fer <choice>
+                     </choice> chemins de fer <choice>
                         <reg>portugais</reg>
                         <orig>Portugais</orig>
                      </choice> n° 142521<lb/> et 142522<choice>
@@ -6643,8 +6726,8 @@
                         <reg>Socquet-Clerc</reg>
                         <orig>Socquet Clerc</orig>
                      </choice><lb/> 1 <choice>
-                        <reg>foncière 1913 3 1/2 %<ref type="note" target="#will-083-footnote001" xml:id="will-083-001"></ref>
-                       &#xa0;n° 681.908&#xa0;;</reg>
+                        <reg>foncière 1913 3 1/2 %<ref type="note" target="#will-083-footnote001" xml:id="will-083-001"/>
+                        n° 681.908 ;</reg>
                         <orig>Foncière 1913. 3% ½ n° 681,908</orig>
                      </choice></item>
                      <item><choice>
@@ -6654,10 +6737,10 @@
                      <choice>
                         <reg>à</reg>
                         <orig>a</orig>
-                     </choice>&#xa0;
+                     </choice> 
                      <choice>
-                        <reg>M.&#xa0;</reg>
-                        <orig>M<hi rend="sup">on</hi>&#xa0;</orig>
+                        <reg>M. </reg>
+                        <orig>M<hi rend="sup">on</hi> </orig>
                      </choice><lb/>Lucien <choice>
                         <reg>Socquet-Clerc</reg>
                         <orig>Socquet Clerc</orig>
@@ -6665,7 +6748,7 @@
                      Paris<choice><reg>,</reg><orig/></choice><lb/>4/4 <choice>
                         <reg>ville</reg>
                         <orig>Ville</orig>
-                     </choice> de Paris 1905 n°&#xa0;<choice>
+                     </choice> de Paris 1905 n° <choice>
                         <reg>249.022, 222.638,</reg>
                         <orig>249,022. 222,638</orig>
                      </choice><lb/>
@@ -6673,10 +6756,9 @@
                         <reg>249.021, 233.041</reg>
                         <orig>249,021. 233,041</orig>
                      </choice>.</item></list></p>
-                  <dateline>Fait, écrit, daté et signé de<lb/> ma ma<supplied resp="#editors"
-                        >in</supplied> à Garnay<choice>
+                  <dateline>Fait, écrit, daté et signé de<lb/> ma ma<supplied resp="#editors">in</supplied> à Garnay<choice>
                         <reg> (<expan>E<ex>ure</ex></expan>-et-</reg>
-                           <orig>. (<abbr>E</abbr> et&#xa0; </orig>
+                           <orig>. (<abbr>E</abbr> et  </orig>
                      </choice><choice><sic>Loire</sic><corr>Loir</corr></choice>)<choice><orig>.</orig><reg>,</reg></choice> <lb/>
                      <choice><orig>Le</orig><reg>le</reg></choice> vingt et un février 1915<choice>
                         <reg>.</reg>
@@ -6686,8 +6768,7 @@
                   <signed rend="left"><seg type="signature"><persName ref="#SocquetClerc"><surname>Socquet-Clerc</surname>
                         Georges</persName></seg></signed>
                   <postscript>
-                     <p><app><lem>Ce testament est fait de <add place="above"
-                              >ma</add> main<lb/> à Garnay qui est <subst>
+                     <p><app><lem>Ce testament est fait de <add place="above">ma</add> main<lb/> à Garnay qui est <subst>
                               <add place="inline">la</add>
                               <del>un</del>
                            </subst> garnison<lb/> de la 27<hi rend="supUnderlined">e</hi> compagnie du 67<hi rend="supUnderlined">e</hi> de ligne.</lem>
@@ -6745,7 +6826,7 @@
                            <reg/>
                            <orig>.</orig>
                         </choice> Georges</persName><lb/> au 67<hi rend="sup">e</hi> de ligne<lb/>
-                     27<hi rend="sup">e</hi>&#xa0;
+                     27<hi rend="sup">e</hi> 
                      <choice>
                         <expan>comp<ex>agnie</ex></expan>
                         <abbr>comp</abbr>
@@ -6804,7 +6885,7 @@
                   <p><choice>
                      <reg>Je</reg>
                      <orig>- Je</orig>
-                  </choice>&#xa0;
+                  </choice> 
                      <persName ref="#LWaguet">Léon Waguet</persName><choice><reg>,</reg><orig/></choice> 18 rue Gay<lb/> Lussac à Paris<choice><reg>,</reg><orig/></choice><lb/>
                      <choice>
                         <reg>désire</reg>
@@ -6814,7 +6895,7 @@
                      Storm<lb/> Albertine née Waguet ; qu’en l’absence<lb/> de l’une <!-- FC déc. 2016--><choice><sic>d’elle</sic><corr>d’elles</corr></choice><choice>
                         <reg>,</reg>
                         <orig> ;</orig>
-                     </choice>&#xa0;tout soit remis à <choice>
+                     </choice> tout soit remis à <choice>
                         <sic>leur</sic>
                         <corr>leurs</corr>
                      </choice><lb/>
@@ -6891,8 +6972,7 @@
                            <reg>,</reg>
                            <orig/>
                         </choice> le 28 février 1915</seg>. </dateline>
-                  <signed rend="right"><seg type="signature"><persName ref="#RFources"
-                        ><surname>Fourcès</surname></persName></seg></signed>
+                  <signed rend="right"><seg type="signature"><persName ref="#RFources"><surname>Fourcès</surname></persName></seg></signed>
                   <pb type="whitePage_notDigitized"/>
                </div>
               
@@ -6900,9 +6980,8 @@
                   <pb type="envelope" facs="../images/FRAN_0045_01590.jpg"/>
                   <p>Ceci est mon testament</p> 
                   <metamark rend="horizontalLine" function="separating"/>
-                  <signed rend="right"><seg type="signature"><persName ref="#RFources"
-                     ><surname>Fourcès</surname></persName></seg></signed>
-                  <pb type="envelope-verso_seals"  facs="../images/FRAN_0045_01589.jpg"/>
+                  <signed rend="right"><seg type="signature"><persName ref="#RFources"><surname>Fourcès</surname></persName></seg></signed>
+                  <pb type="envelope-verso_seals" facs="../images/FRAN_0045_01589.jpg"/>
                </div>
             </body>
          </text>
@@ -6937,20 +7016,20 @@
                         <corr>veille</corr>
                      </choice> de partir en<lb/> guerre<choice>
                         <reg>,</reg>
-                        <orig/></choice>&#xa0;<choice>
+                        <orig/></choice> <choice>
                         <sic>ci</sic>
                         <corr>si</corr>
-                     </choice>&#xa0;je me <choice><sic>fait</sic><corr>fais</corr></choice>&#xa0;<choice><sic>tué</sic><corr>tuer</corr></choice><choice>
+                     </choice> je me <choice><sic>fait</sic><corr>fais</corr></choice> <choice><sic>tué</sic><corr>tuer</corr></choice><choice>
                         <reg>,</reg>
                         <orig/>
                      </choice> je donne<lb/> tout ce qui <choice>
                         <sic>mapartient</sic>
                         <corr>m’appartient</corr>
-                     </choice>&#xa0;
+                     </choice> 
                      <choice>
                         <corr>à</corr>
                         <sic>a</sic>
-                     </choice>&#xa0;ma <choice>
+                     </choice> ma <choice>
                         <sic>conpagne</sic>
                         <corr>compagne</corr>
                      </choice><choice><reg>,</reg><orig/></choice><lb/> Blanche Jacquinot son <choice>
@@ -6965,8 +7044,8 @@
                         <orig>Par</orig>
                      </choice> moi<choice>
                         <reg>,</reg>
-                        <orig></orig>
-                     </choice>&#xa0;
+                        <orig/>
+                     </choice> 
                      <choice>
                         <sic>saint</sic>
                         <corr>sain</corr>
@@ -6980,10 +7059,10 @@
                      </choice><choice>
                         <reg>,</reg>
                         <orig/>
-                     </choice>&#xa0;à Paris<choice>
+                     </choice> à Paris<choice>
                         <reg>,</reg>
-                        <orig></orig>
-                     </choice>&#xa0;
+                        <orig/>
+                     </choice> 
                      <supplied resp="#editors">le</supplied> 3 <choice>
                         <reg>mars</reg>
                         <orig>Mars</orig>
@@ -7096,10 +7175,10 @@
               <!-- <pb facs="../images/FRAN_0045_01479.jpg"/>-->
                <pb facs="../images/FRAN_0045_01480.jpg" type="codicil"/>
                <div type="codicil">
-                  <p><choice><orig>Ce jourd’hui</orig><reg>Aujourd’hui</reg></choice> vingt-sept <choice><reg>mai</reg><orig>Mai</orig></choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent<lb/> 
+                  <p><choice><orig>Ce jourd’hui</orig><reg>Aujourd’hui</reg></choice> vingt-sept <choice><reg>mai</reg><orig>Mai</orig></choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent<lb/> 
                      seize, sain de corps et d’esprit, je révoque la donation<lb/>
                      que je fais dans le dernier paragraphe d’autre part<lb/>
-                     concernant les enfants de Madame Paul Millet&#xa0;;<!--FC déc 2016<choice><orig> ;</orig><reg>.</reg></choice>--><lb/>
+                     concernant les enfants de Madame Paul Millet ;<!--FC déc 2016<choice><orig> ;</orig><reg>.</reg></choice>--><lb/>
                      mais je désire que <choice><orig>Ma Bien</orig><reg>ma bien</reg></choice> chère compagne,<lb/>
                      si je disparais avant elle, que les biens ou valeurs<lb/>
                      quelconques venant de ma famille, <!-- FC déc. 2016--><choice><sic>retourne</sic><corr>retournent</corr></choice> aux<lb/>
@@ -7149,10 +7228,9 @@
                      qui me viennent de<lb/> ma mère (voir M<hi rend="sup">e</hi> Nicot<choice><reg>,</reg><orig/></choice> notaire
                      à<lb/> Tournus), ma part des biens de<lb/> toute nature que laissera mon<lb/>
                      père après sa mort<choice><reg>,</reg><orig/></choice> et ce qui<lb/> peut m’appartenir de l’immeuble<lb/> 18,
-                     passage des <choice><abbr>S<hi rend="sup">ts</hi> &#xa0;</abbr><expan>S<ex>ain</ex>ts-</expan></choice>Simoniens à Paris. </p>
+                     passage des <choice><abbr>S<hi rend="sup">ts</hi>  </abbr><expan>S<ex>ain</ex>ts-</expan></choice>Simoniens à Paris. </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <dateline>Fait et écrit en entier de ma<lb/> main, à Chalon-<choice><abbr>s</abbr><expan>s<ex>ur</ex></expan></choice>-Saône, le <choice><orig>vingt</orig><reg>vingt-</reg></choice><lb/>six mars mille neuf <add place="above"
-                        >cent</add> quinze<choice>
+                  <dateline>Fait et écrit en entier de ma<lb/> main, à Chalon-<choice><abbr>s</abbr><expan>s<ex>ur</ex></expan></choice>-Saône, le <choice><orig>vingt</orig><reg>vingt-</reg></choice><lb/>six mars mille neuf <add place="above">cent</add> quinze<choice>
                         <reg>.</reg>
                         <orig> -</orig>
                      </choice>
@@ -7199,7 +7277,7 @@
                         <reg>,</reg>
                         <orig/>
                      </choice><lb/> bijoutier demeurant <subst>
-                        <add place="inline">2&#xa0;</add>
+                        <add place="inline">2 </add>
                         <del>3</del>
                      </subst>
                      <choice>
@@ -7223,7 +7301,7 @@
                      </choice> dépendra de ma<lb/> succession au jour de mon décès<choice><reg>,</reg><orig/></choice><lb/> sans aucune
                      exception ni réserve. </p>
                   <space dim="vertical" quantity="2" unit="lines"/>
-                  <dateline>Fait, écrit en entier<lb/> et signé de ma main<choice><reg>,</reg><orig/></choice>&#xa0;<choice>
+                  <dateline>Fait, écrit en entier<lb/> et signé de ma main<choice><reg>,</reg><orig/></choice> <choice>
                         <corr>à</corr>
                         <sic>a</sic>
                      </choice><lb/> Paris<choice>
@@ -7295,13 +7373,13 @@
                   <p> Je <choice>
                         <corr>lègue</corr>
                         <sic>legue</sic>
-                  </choice> à ma femme<choice><reg>,</reg><orig/></choice>&#xa0;<choice>
+                  </choice> à ma femme<choice><reg>,</reg><orig/></choice> <choice>
                         <sic>né</sic>
                         <corr>née</corr>
-                  </choice> Lucie Gadet<lb/> mon épouse<choice><reg>,</reg><orig/></choice>&#xa0;<choice>
+                  </choice> Lucie Gadet<lb/> mon épouse<choice><reg>,</reg><orig/></choice> <choice>
                         <sic>né</sic>
                         <corr>née</corr>
-                     </choice>&#xa0;le 15 septembre 1878<choice><reg>,</reg><orig/></choice><lb/>
+                     </choice> le 15 septembre 1878<choice><reg>,</reg><orig/></choice><lb/>
                      <space dim="vertical" quantity="1" unit="lines"/> <lb/>
                      <choice><sic>tout</sic><corr>tous</corr></choice> mes biens qui <choice>
                         <sic>ce compose</sic>
@@ -7315,8 +7393,7 @@
                      </choice> de ma famille objecte<lb/> une moindre objection à la présente.</p>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <signed>En foi de quoi je signe<lb/>
-                     <space dim="vertical" quantity="2"
-                        unit="lines"/>
+                     <space dim="vertical" quantity="2" unit="lines"/>
                      <seg type="signature"><persName ref="#PRetteler" rend="centred">Pierre
                               <surname>Retteler</surname></persName></seg><lb/> 
                      Classe 1898<lb/><choice><orig>I</orig><reg> ; i</reg></choice>ncorporé le 29.4.1915</signed>
@@ -7330,8 +7407,7 @@
                <docDate><date when="1915-04-30">1915, 30 avril</date>. Aux Armées.</docDate>
                <div type="summary">
                   <p>Testament olographe de <persName ref="#JMurat">Jules
-                        <surname>Murat</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 23 mai
+                        <surname>Murat</surname></persName>, mort pour la France à <placeName ref="#pl-001">Ablain-Saint-Nazaire (Pas-de-Calais)</placeName>, le 23 mai
                      1915.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
@@ -7357,7 +7433,7 @@
                   <space dim="vertical" quantity="5" unit="lines"/>
                   <head>Ceci est mon testament.</head>
                   <space dim="vertical" quantity="3" unit="lines"/>
-                  <p>Je <choice><sic>sousigné</sic><corr>soussigné</corr></choice>&#xa0;<persName ref="JMurat">Jules <surname>Murat</surname></persName><choice><reg>,</reg><orig/></choice>
+                  <p>Je <choice><sic>sousigné</sic><corr>soussigné</corr></choice> <persName ref="JMurat">Jules <surname>Murat</surname></persName><choice><reg>,</reg><orig/></choice>
                      demeurant<lb/> à Paris 9 rue Trousseau<choice><reg>,</reg><orig/></choice> donne<lb/> et lègue à <choice>
                         <abbr>Mademois -</abbr>
                         <expan>Mademois<ex>elle</ex></expan>
@@ -7371,7 +7447,7 @@
                      </choice><choice><reg>,</reg><orig/></choice><lb/> le trente <choice>
                         <reg>avril</reg>
                         <orig>Avril</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quinze.</dateline>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quinze.</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <signed rend="centered"><seg type="signature"><persName ref="JMurat">Jules
                               <surname>Murat</surname></persName></seg></signed>
@@ -7418,7 +7494,7 @@
                               <surname>Foudriat</surname></persName></seg></signed>
                </div>
                <!-- FC déc. 2016 corrigé images -->
-               <pb type="whitePage_notDigitized"></pb>
+               <pb type="whitePage_notDigitized"/>
             </body>
          </text>
 
@@ -7447,7 +7523,7 @@
                   <!-- FC déc. 2016 corrigé images -->
                   <pb facs="../images/FRAN_0045_01079.jpg"/>
                  <!-- FC <space dim="vertical" quantity="10" unit="lines"/>-->
-                  <head>Ceci est mon testament<choice><orig></orig><reg>.</reg></choice></head>
+                  <head>Ceci est mon testament<choice><orig/><reg>.</reg></choice></head>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <p>Je lègue à ma sœur Reine<lb/> toute la partie de ma succession dont<lb/> je
                      puis disposer. </p>
@@ -7455,10 +7531,9 @@
                   <dateline>Paris, le onze <choice>
                         <orig>Juin</orig>
                         <reg>juin</reg>
-                  </choice>&#xa0;<choice><sic>Mil</sic><corr>mille</corr></choice> neuf cent quinze</dateline>
+                  </choice> <choice><sic>Mil</sic><corr>mille</corr></choice> neuf cent quinze</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="centered"><seg type="signature"><persName ref="#EDriancourt"
-                              ><surname>Driancourt</surname></persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#EDriancourt"><surname>Driancourt</surname></persName></seg></signed>
                </div>
                <pb type="whitePage_notDigitized"/>
             </body>
@@ -7486,8 +7561,7 @@
                   <pb facs="../images/FRAN_0045_00142.jpg"/>
                   <dateline>Beaucourt <handShift medium="fadeInk"/>L’Hallue, le <choice><orig>vingt deux</orig><reg>vingt-deux</reg></choice><lb/>
                         <handShift medium="blueInk"/>juin mille <handShift medium="fadeInk"/>neuf
-                     cent quin<handShift medium="blueInk"/>ze.<lb/> <handShift medium="fadeInk"/><seg
-                        rend="left">Fait au front.</seg>
+                     cent quin<handShift medium="blueInk"/>ze.<lb/> <handShift medium="fadeInk"/><seg rend="left">Fait au front.</seg>
                   </dateline>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <head><handShift medium="blueInk"/>Ceci est mon <handShift medium="fadeInk"/>testament<choice>
@@ -7498,20 +7572,17 @@
                   <p>Je soussigné <persName ref="MDescombes"><choice>
                            <reg>Marcelin</reg>
                            <orig>Marcellin</orig>
-                  </choice>&#xa0;<surname>Descom<handShift medium="fadeInk"/>bes</surname></persName><lb/>
+                  </choice> <surname>Descom<handShift medium="fadeInk"/>bes</surname></persName><lb/>
                      <handShift medium="blueInk"/>demeurant à Paris, 2 rue François-<lb/>Ponsard
-                     <choice><sic>actueullent</sic><corr>actuellement</corr></choice> sous les drapeaux<choice><orig>.</orig><reg>,</reg></choice><lb/> <choice><orig>Je</orig><reg>je</reg></choice> laisse après ma mort<choice><reg>,</reg><orig/></choice>&#xa0;<handShift
-                        medium="fadeInk"/>en totalité<lb/>
-                     <handShift medium="blueInk"/>et en privé donc<choice><reg>,</reg><orig/></choice> à Je<handShift medium="fadeInk"
-                     />nny <handShift medium="blueInk"/>Descombes<lb/>
+                     <choice><sic>actueullent</sic><corr>actuellement</corr></choice> sous les drapeaux<choice><orig>.</orig><reg>,</reg></choice><lb/> <choice><orig>Je</orig><reg>je</reg></choice> laisse après ma mort<choice><reg>,</reg><orig/></choice> <handShift medium="fadeInk"/>en totalité<lb/>
+                     <handShift medium="blueInk"/>et en privé donc<choice><reg>,</reg><orig/></choice> à Je<handShift medium="fadeInk"/>nny <handShift medium="blueInk"/>Descombes<lb/>
                      <choice>
                         <sic>né</sic>
                         <corr>née</corr>
                      </choice> Fauchez, mon épouse, <choice><sic>tous</sic><corr>tout</corr></choice> ce que<lb/> je possède et <choice>
                         <sic>se</sic>
                         <corr>ce</corr>
-                     </choice>&#xa0;<!-- FC déc. 2016 ajouté un choice--><choice><sic>que</sic><corr>dont</corr></choice> je pourrais<lb/> disposer soit par <handShift medium="fadeInk"
-                     />héritage <choice><sic>au</sic><corr>ou</corr></choice> don. </p>
+                     </choice> <!-- FC déc. 2016 ajouté un choice--><choice><sic>que</sic><corr>dont</corr></choice> je pourrais<lb/> disposer soit par <handShift medium="fadeInk"/>héritage <choice><sic>au</sic><corr>ou</corr></choice> don. </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <dateline><handShift medium="blueInk"/>Fait de <handShift medium="fadeInk"/>ma
                      main <choice>
@@ -7521,8 +7592,8 @@
                      <handShift medium="blueInk"/>Beaucourt <handShift medium="fadeInk"/>l’Hallue<choice><reg>,</reg><orig/></choice> le
                      vingt deux<lb/>
                      <handShift medium="blueInk"/><choice>
-                        <reg>juin&#xa0; </reg>
-                        <orig>Juin&#xa0; </orig>
+                        <reg>juin  </reg>
+                        <orig>Juin  </orig>
                      </choice>  mille <handShift medium="fadeInk"/>neuf cent quinze. </dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <signed rend="centered"><seg type="signature"><persName ref="#MDescombes">M.
@@ -7577,8 +7648,7 @@
                         <orig>Juin</orig>
                      </choice> 1915</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="right"><seg type="signature"><persName ref="#MEtienne"
-                              ><surname>Etienne</surname> Marcel</persName></seg></signed>
+                  <signed rend="right"><seg type="signature"><persName ref="#MEtienne"><surname>Etienne</surname> Marcel</persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00082.jpg"/>
                </div>
                <div type="envelope">
@@ -7621,7 +7691,7 @@
                      </choice> le vingt-huit <choice>
                         <reg>juillet</reg>
                         <orig>Juillet</orig>
-                     </choice> dix-neuf<lb/> cent<choice><orig>-</orig><reg>&#xa0;</reg></choice>quinze. </dateline>
+                     </choice> dix-neuf<lb/> cent<choice><orig>-</orig><reg> </reg></choice>quinze. </dateline>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <p>Je désire<choice><reg>,</reg><orig/></choice> en cas de <choice>
                         <sic>décé</sic>
@@ -7635,7 +7705,7 @@
                         <corr>après</corr>
                      </choice> la guerre <choice>
                         <sic>rammenée</sic><corr>ramenée</corr>
-                     </choice>&#xa0;<choice><sic>aupprès</sic>
+                     </choice> <choice><sic>aupprès</sic>
                         <corr>auprès</corr>
                      </choice><lb/>de ma femme décédée le trente <choice>
                         <reg>août</reg>
@@ -7649,8 +7719,8 @@
                         <reg>Fait</reg>
                         <orig>fait</orig>
                      </choice> à Paris le vingt-huit <choice>
-                        <reg>juillet&#xa0; </reg>
-                        <orig>Juillet&#xa0; </orig>
+                        <reg>juillet  </reg>
+                        <orig>Juillet  </orig>
                      </choice><lb/>
                      <choice>
                         <orig>dix-neuf-cent-quinze</orig>
@@ -7854,8 +7924,7 @@
                      <placeName>Bordeaux</placeName>.</docDate>
                <div type="summary">
                   <p>Testament olographe d’<persName ref="#ELaborde">Enrique
-                           <surname>Laborde</surname></persName>, mort pour la France à <placeName
-                        ref="#pl-002">Ambleny (Aisne)</placeName>, le 19 septembre 1918.</p>
+                           <surname>Laborde</surname></persName>, mort pour la France à <placeName ref="#pl-002">Ambleny (Aisne)</placeName>, le 19 septembre 1918.</p>
                </div>
                <!-- voir ultérieurement s'il y a lieu de catégoriser les testaments -->
                <div type="physdesc">
@@ -7899,7 +7968,7 @@
                         <orig/>
                      </choice>
                    <!--  <list>
-                        <item>-->&#xa0;1<hi rend="sup">er</hi><choice>
+                        <item>--> 1<hi rend="sup">er</hi><choice>
                               <reg>)</reg>
                               <orig/>
                            </choice> d’une somme de <choice>
@@ -7918,12 +7987,11 @@
                               <reg>,</reg>
                               <orig/>
                            </choice> et 270 <foreign xml:lang="esp">calle</foreign> Florida<choice><reg>,</reg><orig/></choice> Buenos Aires<choice><reg>,</reg><orig/></choice><lb/>
-                     Argentine<choice><orig/><reg> ;</reg></choice>&#xa0;<!--</item> 
+                     Argentine<choice><orig/><reg> ;</reg></choice> <!--</item> 
                         <item>--><choice><orig>2<hi rend="sup">e</hi></orig><reg>2<hi rend="sup">e</hi>)</reg></choice>
-                     <del>Ne</del>&#xa0;<!-- FC ajouté choice--><choice><sic></sic><corr>de</corr></choice> ma part d’héritage provenant de la<lb/> succession d’un
+                     <del>Ne</del> <!-- FC ajouté choice--><choice><sic/><corr>de</corr></choice> ma part d’héritage provenant de la<lb/> succession d’un
                            frère que mon père aurait eu avant son<lb/> mariage avec ma mère.<!--</item>
-                     </list>--> Cette part est déposée chez un<lb/> notaire d’Oloron <choice><orig>S<hi rend="sup"
-                        >te</hi> Marie</orig><reg>Sainte-Marie</reg></choice>. Madame veuve Charles<lb/> Mazères est au courant puisqu’elle
+                     </list>--> Cette part est déposée chez un<lb/> notaire d’Oloron <choice><orig>S<hi rend="sup">te</hi> Marie</orig><reg>Sainte-Marie</reg></choice>. Madame veuve Charles<lb/> Mazères est au courant puisqu’elle
                      est la femme de mon<lb/> ancien tuteur<choice><reg>,</reg><orig/></choice> Monsieur Mazères Charles<choice><reg>,</reg><orig/></choice> lequel
                      était<lb/> chargé de mes intérêts.</p>
                   <dateline rend="right">Fait à Bordeaux<choice>
@@ -7978,16 +8046,15 @@
                         <reg>neuf cent quinze</reg>
                         <orig>neuf-cent-quinze</orig>
                      </choice>. </dateline>
-                  <signed rend="centered"><seg type="signature"><persName ref="#JHLagarde"
-                              ><surname>Lagarde</surname> Henri</persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#JHLagarde"><surname>Lagarde</surname> Henri</persName></seg></signed>
                   <!-- FC déc. 2016 corrigé image -->
-                  <pb type="whitePage_notDigitized"></pb>
+                  <pb type="whitePage_notDigitized"/>
                </div>
             </body>
             <back>
                <div type="notes">
                   <head>Notes</head>
-                  <note xml:id="will-102-footnote001" target="#will-102-001">Comprendre &#xab;&#xa0;quotité&#xa0;&#xbb;.</note>
+                  <note xml:id="will-102-footnote001" target="#will-102-001">Comprendre « quotité ».</note>
                </div>
             </back>
          </text>
@@ -8039,13 +8106,13 @@
                   <p>Ce sont <choice>
                      <corr>là</corr>
                      <sic>la</sic>
-                  </choice>&#xa0;<choice>
+                  </choice> <choice>
                         <corr>mes</corr>
                         <sic>més</sic>
-                     </choice>&#xa0;<choice>
+                     </choice> <choice>
                         <sic>derniérres</sic>
                         <corr>dernières</corr>
-                     </choice>&#xa0;<choice><sic>volontées</sic><corr>volontés</corr></choice><choice>
+                     </choice> <choice><sic>volontées</sic><corr>volontés</corr></choice><choice>
                         <reg>.</reg>
                         <orig/>
                      </choice></p>
@@ -8054,7 +8121,7 @@
                         <sic>est</sic>
                         <corr>et</corr>
                      </choice> date<lb/> de ma main<choice><reg>,</reg><orig/></choice><lb/>
-                     <choice><sic>a</sic><corr>à</corr></choice>&#xa0;<choice>
+                     <choice><sic>a</sic><corr>à</corr></choice> <choice>
                         <reg>Estaing</reg>
                         <orig>Estaings</orig>
                      </choice> le 10 <choice>
@@ -8062,10 +8129,9 @@
                         <orig>Septembre</orig>
                      </choice> 1915</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="centered"><seg type="signature"><persName ref="#AMaurel"
-                              ><surname>Maurel</surname> Auguste</persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#AMaurel"><surname>Maurel</surname> Auguste</persName></seg></signed>
                   <!-- FC déc. 2016 corrigé image -->
-                  <pb type="whitePage_notDigitized"></pb>
+                  <pb type="whitePage_notDigitized"/>
                </div>
             </body>
          </text>
@@ -8115,8 +8181,7 @@
                         <orig>Septembre</orig>
                      </choice> 1915</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="centered"><seg type="signature"><persName ref="#LGatbois"
-                              ><surname>Gatbois</surname></persName></seg></signed>
+                  <signed rend="centered"><seg type="signature"><persName ref="#LGatbois"><surname>Gatbois</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01151.jpg"/>
                </div>
             </body>
@@ -8199,7 +8264,7 @@
                               <surname>Ravignon</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00773.jpg"/>
                   <!-- FC déc. 2016 corrigé image -->
-                  <pb type="whitePage_notDigitized"></pb>
+                  <pb type="whitePage_notDigitized"/>
                </div>
             </body>
          </text>
@@ -8289,16 +8354,15 @@
                      </choice><lb/>Monsieur Georges Grenier<choice><reg>,</reg><orig/></choice><lb/> agent retraité de la Compagnie<lb/>
                      du chemin de fer de l’Est, demeurant<lb/> à Paris, 21, rue Beaurepaire.</p>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <dateline><app><lem><choice><orig><del>Fait</del><add place="marginLeft">Mot raté<!--<lb/>--><seg
-                           type="signature"><persName ref="#LBaudu">L.
-                              <surname>Baudu</surname></persName></seg></add></orig><reg></reg></choice></lem><note type="comment">Mention "mot raté" ajoutée en marge et signée "L. Baudu".</note></app> 
+                  <dateline><app><lem><choice><orig><del>Fait</del><add place="marginLeft">Mot raté<!--<lb/>--><seg type="signature"><persName ref="#LBaudu">L.
+                              <surname>Baudu</surname></persName></seg></add></orig><reg/></choice></lem><note type="comment">Mention "mot raté" ajoutée en marge et signée "L. Baudu".</note></app> 
                      Fait à Dreux,<lb/> le
                      vingt-neuf septembre <choice><sic>mil</sic><corr>mille</corr></choice><lb/> neuf cent quinze, avant mon<lb/> départ pour le
                      front des armées<lb/> de la République.</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <signed><seg type="signature"><persName ref="#LBaudu">Louis
                               <surname>Baudu</surname></persName></seg></signed>
-                  <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00239.jpg"></pb>
+                  <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00239.jpg"/>
                </div>
             </body>
          </text>
@@ -8354,9 +8418,9 @@
                   <signed rend="right"><seg type="signature"><persName ref="#LBocquet">Louis
                               <surname>Bocquet</surname></persName></seg></signed>
                   <!-- FC déc. 2016 corrigé images -->
-                  <pb type="whitePage_notDigitized"></pb>
-                  <pb type="whitePage_notDigitized"></pb>
-                  <pb type="whitePage_notDigitized"></pb>
+                  <pb type="whitePage_notDigitized"/>
+                  <pb type="whitePage_notDigitized"/>
+                  <pb type="whitePage_notDigitized"/>
                </div>
             </body>
          </text>
@@ -8395,7 +8459,7 @@
                      </choice> à Paris,<lb/> actuellement mobilisé et au front au<lb/> 42<choice>
                         <reg><hi rend="sup">e</hi></reg>
                         <orig><hi rend="sup">me</hi></orig>
-                     </choice>&#xa0;
+                     </choice> 
                      <choice>
                         <reg>bataillon</reg>
                         <orig>Bataillon</orig>
@@ -8415,8 +8479,7 @@
                         <orig>Décembre</orig>
                      </choice> 1915.</dateline>
                   <space dim="vertical" quantity="2" unit="lines"/>
-                  <signed rend="right"><seg type="signature"><persName ref="#ALeroy"
-                              ><surname>Leroy</surname></persName></seg></signed>
+                  <signed rend="right"><seg type="signature"><persName ref="#ALeroy"><surname>Leroy</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00866.jpg"/>
                </div>
             </body>
@@ -8477,8 +8540,7 @@
                   <p>Partant au <choice>
                         <reg>front</reg>
                         <orig>Front</orig>
-                     </choice> en possession de<lb/> toutes mes facultés, moi, <persName
-                        ref="#MMartin"><surname>Martin</surname> Maurice<lb/> Louis
+                     </choice> en possession de<lb/> toutes mes facultés, moi, <persName ref="#MMartin"><surname>Martin</surname> Maurice<lb/> Louis
                         Joseph</persName>, soussigné, déclare qu’en cas de<lb/> décès survenu aux
                      Armées<choice><reg>,</reg><orig/></choice> ou à la suite de<lb/> blessure ou de maladie amenant le décès<lb/>
                      pendant la période de mobilisation, déclare<lb/> que ma <choice>
@@ -8510,11 +8572,11 @@
                      </choice> aux Armées le sept janvier 1916<lb/> comme <choice>
                         <reg>sergent major</reg>
                         <orig>Sergent Major</orig>
-                     </choice> au 328<hi rend="sup">e</hi>&#xa0;
+                     </choice> au 328<hi rend="sup">e</hi> 
                      <choice>
                         <abbr>Rég<hi rend="sup">t</hi></abbr>
                         <expan>Rég<ex>imen</ex>t</expan>
-                     </choice>&#xa0;
+                     </choice> 
                      <choice>
                         <abbr>d’Inf<hi rend="sup">ie</hi></abbr>
                         <expan>d’Inf<ex>anter</ex>ie</expan>
@@ -8527,8 +8589,7 @@
             <back>
                <div type="footnotes-will-111">
                   
-                  <note xml:id="will-111-footnote001" target="#will-111-001">Le 328<hi rend="sup"
-                     >e</hi> régiment d’infanterie a été constitué en 1914 ; il est issu du
+                  <note xml:id="will-111-footnote001" target="#will-111-001">Le 328<hi rend="sup">e</hi> régiment d’infanterie a été constitué en 1914 ; il est issu du
                         128<hi rend="sup">e</hi> RI : à la mobilisation, chaque régiment d’active
                      crée un régiment de réserve dont le numéro est le sien majoré de 200.</note>
                </div>
@@ -8556,8 +8617,7 @@
                   <pb facs="../images/FRAN_0045_01063.jpg"/>
                  <!--FC <space dim="vertical" quantity="4" unit="lines"/>-->
                   <p>Je soussigné <persName ref="#PFeugere">Paul Louis
-                        <surname>Feugère</surname></persName><choice><reg>,</reg><orig/></choice><lb/> soldat au 150<hi rend="sup"
-                        >e</hi> régiment <choice>
+                        <surname>Feugère</surname></persName><choice><reg>,</reg><orig/></choice><lb/> soldat au 150<hi rend="sup">e</hi> régiment <choice>
                         <reg>d’infanterie</reg>
                         <orig>d’Infanterie</orig>
                      </choice><lb/> en garnison à <choice>
@@ -8576,11 +8636,10 @@
                      <choice>
                         <reg>janvier</reg>
                         <orig>Janvier</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice> neuf cent seize. </dateline>
-                  <signed rend="right"><seg type="signature" rend="right"><persName ref="#PFeugere"
-                              ><surname>Feugère</surname></persName></seg></signed>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent seize. </dateline>
+                  <signed rend="right"><seg type="signature" rend="right"><persName ref="#PFeugere"><surname>Feugère</surname></persName></seg></signed>
                   <!-- FC déc. 2016 corrigé image -->
-                  <pb type="whitePage_notDigitized"></pb>
+                  <pb type="whitePage_notDigitized"/>
                </div>
             </body>
          </text>
@@ -8608,7 +8667,7 @@
                   <dateline>Paris, le <choice>
                      <reg>10</reg>
                      <orig>Dix</orig>
-                  </choice>&#xa0;<choice>
+                  </choice> <choice>
                         <reg>janvier</reg>
                         <orig>Janvier</orig>
                      </choice> 1916</dateline>
@@ -8695,8 +8754,7 @@
                      </list>
                   </p>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <dateline rend="right">Fait à Paris<choice><reg>,</reg><orig/></choice> en pleine <add place="inline"
-                        >connaissance</add><choice><reg>,</reg><orig/></choice><lb/> le <choice>
+                  <dateline rend="right">Fait à Paris<choice><reg>,</reg><orig/></choice> en pleine <add place="inline">connaissance</add><choice><reg>,</reg><orig/></choice><lb/> le <choice>
                         <reg>dix janvier</reg>
                         <orig>Dix Janvier</orig>
                      </choice> 1916. </dateline>
@@ -8704,7 +8762,7 @@
                               <surname>Dauriac</surname></persName></seg></signed>
                   <space dim="vertical" quantity="2" unit="lines"/>
                   <postscript>
-                     <p>Je dis bien pour mon amie<choice><orig>&#xa0;:&#xa0;</orig><reg>&#xa0;</reg></choice><choice>
+                     <p>Je dis bien pour mon amie<choice><orig> : </orig><reg> </reg></choice><choice>
                            <expan>M<ex>ademoise</ex>lle</expan>
                            <abbr>M<hi rend="sup">lle</hi>.</abbr>
                         </choice> Lenjeallé<lb/> Renée Léa.</p>
@@ -8768,7 +8826,7 @@
                         <reg>aux</reg>
                         <orig>Aux</orig>
                      </choice> Armées (secteur postal 168)<choice><reg>,</reg><orig/></choice><lb/> le <choice>
-                        <reg>cinq mars</reg><orig>Cinq Mars</orig></choice>&#xa0;<choice><sic>Mil</sic><corr>mille</corr></choice>&#xa0;<choice><reg>neuf cent seize</reg>
+                        <reg>cinq mars</reg><orig>Cinq Mars</orig></choice> <choice><sic>Mil</sic><corr>mille</corr></choice> <choice><reg>neuf cent seize</reg>
                         <orig>Neuf Cent Seize</orig>
                      </choice>.</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
@@ -8882,10 +8940,10 @@
                   <dateline rend="right">Fait à Paris<choice>
                         <reg>,</reg>
                         <orig/>
-                  </choice><lb/> le <choice><orig>vingt huit</orig><reg>vingt-huit</reg></choice>&#xa0;<choice>
+                  </choice><lb/> le <choice><orig>vingt huit</orig><reg>vingt-huit</reg></choice> <choice>
                         <reg>mai</reg>
                         <orig>Mai</orig>
-                     </choice>&#xa0;<choice><orig>dix neuf</orig><reg>dix-neuf</reg></choice> cent seize.</dateline>
+                     </choice> <choice><orig>dix neuf</orig><reg>dix-neuf</reg></choice> cent seize.</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
                   <signed rend="right"><seg type="signature"><persName ref="#EQuainon">E.
                               <surname>Quainon</surname></persName></seg></signed>
@@ -8921,8 +8979,7 @@
             <front>
                <docDate><date when="1916-07-14">1916, 14 juillet</date>. Aux Armées.</docDate>
                <div type="summary">
-                  <p>Codicille au testament olographe du 12 février 1909 de <persName
-                        ref="#JFeulard">Jean Marie Henri <surname>Feulard</surname></persName>, mort
+                  <p>Codicille au testament olographe du 12 février 1909 de <persName ref="#JFeulard">Jean Marie Henri <surname>Feulard</surname></persName>, mort
                      pour la France à <placeName ref="#pl-098">Villequier-Aumont (Aisne)</placeName>, le 24 mars 1918.</p>
                </div>
                <div type="physdesc">
@@ -9135,8 +9192,7 @@
                   <p rend="centred">Aux Armées<choice><reg>,</reg><orig/></choice> le<lb/> 25 août 1916</p> 
                   <p>Dernières volontés<lb/> du
                      général <hi rend="underlined">Aimé</hi><lb/>
-                     <seg type="signature" rend="right"><persName ref="#EAime"
-                        >J. <surname>Aimé</surname></persName></seg>
+                     <seg type="signature" rend="right"><persName ref="#EAime">J. <surname>Aimé</surname></persName></seg>
                         <!--<hi rend="underlined"><seg type="signature" rend="right"><persName ref="#EAime"
                               >J. <surname>Aimé</surname></persName></seg></hi>--></p>
                     <p><choice>
@@ -9215,8 +9271,8 @@
                      </choice> septembre<lb/> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent seize. </dateline>
                   <signed rend="right"><seg type="signature"><persName ref="#MDevouge">M.
                               <surname>Devouge</surname></persName></seg></signed>
-                  <pb type="whitePage_notDigitized" />
-                  <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00165.jpg"></pb>
+                  <pb type="whitePage_notDigitized"/>
+                  <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00165.jpg"/>
                </div>
             </body>
          </text>
@@ -9240,14 +9296,14 @@
             <body>
                <div type="will">
                   <pb facs="../images/FRAN_0045_01610.jpg"/>
-                  <dateline rend="centered">Nîmes<choice><reg>,</reg><orig/></choice> le 29 <choice><reg>octobre</reg><orig>Octobre</orig></choice>&#xa0;1916</dateline> 
-                  <dateline>Nîmes<choice><reg>,</reg><orig/></choice> le vingt-neuf <choice><reg>octobre</reg><orig>Octobre</orig></choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice><lb/> neuf <choice>
+                  <dateline rend="centered">Nîmes<choice><reg>,</reg><orig/></choice> le 29 <choice><reg>octobre</reg><orig>Octobre</orig></choice> 1916</dateline> 
+                  <dateline>Nîmes<choice><reg>,</reg><orig/></choice> le vingt-neuf <choice><reg>octobre</reg><orig>Octobre</orig></choice> <choice><sic>mil</sic><corr>mille</corr></choice><lb/> neuf <choice>
                         <reg>cent seize</reg>
                         <orig>cent-seize</orig>
                      </choice>. </dateline>
                   <p>Je soussigné <choice>
                         <reg/>
-                        <orig>:&#xa0;</orig>
+                        <orig>: </orig>
                      </choice>
                      <persName ref="#MJacquat">Marcelin<lb/> Adolphe
                         <surname>Jacquat</surname></persName><choice><reg>,</reg><orig/></choice> né le huit <choice>
@@ -9262,22 +9318,22 @@
                         <orig>La Baroche</orig>
                      </choice>, <choice>
                         <reg>Haute-</reg>
-                        <orig>Haute &#xa0;</orig>
+                        <orig>Haute  </orig>
                      </choice><lb/>Alsace, engagé volontaire pour la<lb/> durée de la guerre <choice>
                         <reg/>
-                        <orig> :&#xa0;</orig>
+                        <orig> : </orig>
                      </choice>au bureau de<lb/> recrutement sous le nom de <choice>
                         <reg/>
-                        <orig> :&#xa0;</orig>
-                     </choice>Bellan<lb/> Georges, actuellement au 38<hi rend="sup">e</hi>&#xa0;
+                        <orig> : </orig>
+                     </choice>Bellan<lb/> Georges, actuellement au 38<hi rend="sup">e</hi> 
                      <choice>
                         <reg>artillerie,</reg>
                         <orig>Artillerie</orig>
-                     </choice><lb/> 81<hi rend="sup">e</hi>&#xa0;
+                     </choice><lb/> 81<hi rend="sup">e</hi> 
                      <choice>
                         <reg>batterie</reg>
                         <orig>Batterie</orig>
-                     </choice>, 53<hi rend="sup">e</hi>&#xa0;
+                     </choice>, 53<hi rend="sup">e</hi> 
                      <choice>
                         <reg>section</reg>
                         <orig>Section</orig>
@@ -9302,14 +9358,12 @@
                      </choice><lb/> et <choice>
                         <corr>maternel</corr>
                         <sic>Maternelle</sic>
-                     </choice> qu’ils m’ont toujours prodigués<lb/> et à toute ma famille.<seg
-                        type="pointsLine_inline">.................</seg>
+                     </choice> qu’ils m’ont toujours prodigués<lb/> et à toute ma famille.<seg type="pointsLine_inline">.................</seg>
                   </p>
                   <signed>En <choice>
                         <sic>fois</sic>
                         <corr>foi</corr>
-                     </choice> de quoi je signe le présent<lb/> acte. <seg type="signature"
-                           ><persName ref="#MJacquat">Marcelin
+                     </choice> de quoi je signe le présent<lb/> acte. <seg type="signature"><persName ref="#MJacquat">Marcelin
                         <surname>Jacquat</surname></persName></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_01611.jpg"/>
                </div>
@@ -9346,9 +9400,7 @@
                      (Somme)<choice><reg>,</reg><orig/></choice><lb/> le douze décembre de l’année <choice><orig>dix neuf</orig><reg>dix-neuf</reg></choice> cent seize.</dateline>
                   <metamark rend="horizontalLine" function="separating"/>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <p>Je soussigné <persName ref="#GNicolon">Georges, François, Marie, Auguste <hi
-                           rend="underlined">Nicolon</hi></persName><choice><reg>,</reg><orig/></choice><lb/> sous-lieutenant au 107<hi
-                              rend="sup">e</hi>&#xa0;<choice>
+                  <p>Je soussigné <persName ref="#GNicolon">Georges, François, Marie, Auguste <hi rend="underlined">Nicolon</hi></persName><choice><reg>,</reg><orig/></choice><lb/> sous-lieutenant au 107<hi rend="sup">e</hi> <choice>
                         <orig>Régiment</orig>
                         <reg>régiment</reg>
                      </choice> d’artillerie lourde<choice><reg>,</reg><orig/></choice><lb/> déclare instituer comme mon légataire
@@ -9410,7 +9462,7 @@
                   <p>Papier timbré, 2 pages, dim. 24,9 x 17,8 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref  target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9mq14ohsm-1l7poii1tjngf&amp;details=true" type="linkToANFWebsite">MC/ET/LIX/1113, minute du 14 mars 1919</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9mq14ohsm-1l7poii1tjngf&amp;details=true" type="linkToANFWebsite">MC/ET/LIX/1113, minute du 14 mars 1919</ref></p>
                </div>
             </front>
             <body>
@@ -9451,7 +9503,7 @@
                      dites le plus tôt possible après mon décès<choice><orig/><reg>,</reg></choice> et des prières.<!-- FC --><lb/>
                      Je ne fais aucune recommandation spéciale par écrit, mon<lb/>
                      vœu le plus cher est que mes enfants soient tous de <hi rend="underlined">bons chrétiens</hi><lb/>
-                     et de bons <choice><reg>Français</reg><orig>français</orig></choice>&#xa0;<choice><reg>;</reg><orig>-</orig></choice> qu’ils restent unis dans la vie, s’entendent<lb/> 
+                     et de bons <choice><reg>Français</reg><orig>français</orig></choice> <choice><reg>;</reg><orig>-</orig></choice> qu’ils restent unis dans la vie, s’entendent<lb/> 
                      toujours bien et ne causent aucune peine à leur mère.</p>
                      <p>Fait à Paris, 5 rue de Magdebourg<choice><reg>,</reg><orig/></choice> le 7 mars <choice><sic>1916</sic><corr>1917</corr></choice>
                   </p>
@@ -9496,7 +9548,7 @@
                         <add>c</add></subst>e présent je <choice>
                         <sic>legue</sic>
                         <corr>lègue</corr>
-                     </choice>&#xa0;<choice>
+                     </choice> <choice>
                         <sic>a</sic>
                         <corr>à</corr>
                      </choice><lb/><choice><abbr>M<hi rend="sup">lle</hi></abbr><expan>M<ex>ademoise</ex>lle</expan></choice> Georgette Vizet<choice><reg>,</reg><orig/></choice> demeurant<lb/>
@@ -9513,8 +9565,8 @@
                      </choice> de<lb/> la <orig>defense</orig><reg>Défense</reg> nationale se
                      trouvant<lb/> chez mon notaire<choice>
                         <orig>.</orig>
-                        <reg></reg> 
-                     </choice>&#xa0;
+                        <reg/> 
+                     </choice> 
                      <choice>
                         <sic>maitre</sic>
                         <corr>maître</corr>
@@ -9585,7 +9637,7 @@
                         <surname>Vexiau</surname></persName><choice><reg>,</reg><orig/></choice><lb/> employé de commerce<choice>
                         <reg>,</reg>
                         <orig/>
-                        </choice> actuellement<lb/> mobilisé sous-lieutenant<lb/> au 110<hi rend="sup">e</hi>&#xa0;<supplied resp="#editors">Régiment</supplied> d’Infanterie<choice><reg>,</reg><orig/></choice>&#xa0;3<hi rend="sup">e</hi>&#xa0;
+                        </choice> actuellement<lb/> mobilisé sous-lieutenant<lb/> au 110<hi rend="sup">e</hi> <supplied resp="#editors">Régiment</supplied> d’Infanterie<choice><reg>,</reg><orig/></choice> 3<hi rend="sup">e</hi> 
                      <choice>
                         <abbr>B<hi rend="sup">on</hi></abbr>
                         <expan>b<ex>ataill</ex>on</expan>
@@ -9666,7 +9718,7 @@
                      </choice><lb/> le vingt juillet<choice>
                         <reg/>
                         <orig>,</orig>
-                     </choice>&#xa0;<choice><sic>mil</sic><corr>mille</corr></choice>
+                     </choice> <choice><sic>mil</sic><corr>mille</corr></choice>
                      <choice>
                         <orig>-</orig>
                         <reg/>
@@ -9767,14 +9819,14 @@
                   <p>Je soussigné <persName ref="#LWidhalm"><choice>
                            <reg>Léopold</reg>
                            <orig>Leopold</orig>
-                  </choice>&#xa0;
+                  </choice> 
                         <surname>Widhalm</surname></persName><choice>
                         <reg>,</reg>
                         <orig/>
                      </choice><lb/> soldat 2<choice>
                         <reg><hi rend="sup">e</hi></reg>
                         <orig><hi rend="sup">me</hi></orig>
-                     </choice> classe du <choice><orig>1</orig><reg>1<hi rend="sup">er</hi></reg></choice>&#xa0;<choice>
+                     </choice> classe du <choice><orig>1</orig><reg>1<hi rend="sup">er</hi></reg></choice> <choice>
                         <corr>régiment</corr>
                         <sic>regiment</sic>
                      </choice> étranger<choice><reg>,</reg><orig/></choice><lb/> 2<choice>
@@ -9821,7 +9873,7 @@
                   <signed rend="centered"><seg type="signature"><persName ref="#LWidhalm"><choice>
                               <reg>Léopold</reg>
                               <orig>Leopold</orig>
-                           </choice>&#xa0;
+                           </choice> 
                            <surname>Widhalm</surname></persName></seg></signed>
                   <!-- FC déc. 2916 ajouté image -->
                   <pb facs="../images/FRAN_0045_01183.jpg" type="pageWithExtraNotes"/>
@@ -9859,10 +9911,10 @@
                   <space dim="vertical" quantity="1" unit="lines" rend="horizontal-lines"/>
                   <p>J’institue ma mère pour ma<lb/> légataire universelle en pleine<lb/>
                      propriété.</p>
-                  <p>Je nomme mon oncle<choice><reg>,</reg><orig/></choice>&#xa0;<choice>
+                  <p>Je nomme mon oncle<choice><reg>,</reg><orig/></choice> <choice>
                         <reg>M.</reg>
                         <orig>M<hi rend="sup">r</hi></orig>
-                     </choice>&#xa0;Joseph<lb/> De Toledo<choice><reg>,</reg><orig/></choice> pour mon <choice>
+                     </choice> Joseph<lb/> De Toledo<choice><reg>,</reg><orig/></choice> pour mon <choice>
                         <corr>exécuteur</corr>
                         <sic>executeur</sic>
                      </choice><lb/> testamentaire. </p>
@@ -9879,7 +9931,7 @@
                         <orig/>
                      </choice>
                   </dateline>
-                  <signed rend="right"><seg type="signature"><hi rend="underlined"><persName ref="#NDeToledo"><!-- FC correction 17 mars sur dde de CN-->Nissim&#xa0; <surname><nameLink>de</nameLink>&#xa0;Toledo</surname></persName></hi></seg></signed>
+                  <signed rend="right"><seg type="signature"><hi rend="underlined"><persName ref="#NDeToledo"><!-- FC correction 17 mars sur dde de CN-->Nissim  <surname><nameLink>de</nameLink> Toledo</surname></persName></hi></seg></signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00501.jpg"/>
                </div>
             </body>
@@ -9938,8 +9990,7 @@
                   </dateline>
                   <signed rend="centered"><seg type="signature"><persName ref="#JLagache">Jules
                               <surname>Lagache</surname></persName></seg><lb/>
-                     <seg type="address" rend="right">65, <choice><orig>Rue</orig><reg>rue</reg></choice> de Saintonge<choice><reg>,</reg><orig/></choice><lb/> Paris 3<hi
-                           rend="sup">ème</hi></seg>
+                     <seg type="address" rend="right">65, <choice><orig>Rue</orig><reg>rue</reg></choice> de Saintonge<choice><reg>,</reg><orig/></choice><lb/> Paris 3<hi rend="sup">ème</hi></seg>
                   </signed>
                   <pb type="pageWithExtraNotes" facs="../images/FRAN_0045_00221.jpg"/>
                </div>
@@ -9960,8 +10011,7 @@
 
          <text xml:id="will-133">
             <front>
-               <docDate><date when="1918-07-01"><!--FC <supplied resp="#editors">1918</supplied>-->[1918], 1<hi
-                        rend="sup">er</hi> juillet</date>. S.l.</docDate>
+               <docDate><date when="1918-07-01"><!--FC <supplied resp="#editors">1918</supplied>-->[1918], 1<hi rend="sup">er</hi> juillet</date>. S.l.</docDate>
                <div type="summary">
                   <p>Lettre missive testamentaire d’<persName ref="#EDardonville">Édouard Louis
                         Charles <surname>Dardonville</surname></persName>, mort pour la France à
