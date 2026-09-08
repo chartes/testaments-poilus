@@ -325,10 +325,12 @@
   <xsl:template match="tei:listPerson[not(tei:person)]" priority="10">
     <section class="tp-index-persons">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">Index des testateurs</h2>
-      <!-- Servie sans ses lettres, qui en sont des unités citables, la liste
-           englobante n'affichait rien : la barre lui tient lieu de sommaire. -->
+      <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
+           entier. L'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
+           unité citable, elle ne reçoit de toute façon pas ses lettres ; sans
+           cette règle, la vue d'ensemble du document empilait les deux index
+           et leurs 232 notices. -->
       <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
-      <xsl:apply-templates select="tei:listPerson"/>
     </section>
   </xsl:template>
 
@@ -343,10 +345,12 @@
   <xsl:template match="tei:listPlace[not(tei:place)]" priority="10">
     <section class="tp-index-places">
       <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">Index des lieux de décès</h2>
-      <!-- Servie sans ses lettres, qui en sont des unités citables, la liste
-           englobante n'affichait rien : la barre lui tient lieu de sommaire. -->
+      <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
+           entier. L'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
+           unité citable, elle ne reçoit de toute façon pas ses lettres ; sans
+           cette règle, la vue d'ensemble du document empilait les deux index
+           et leurs 232 notices. -->
       <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
-      <xsl:apply-templates select="tei:listPlace"/>
     </section>
   </xsl:template>
 
@@ -552,6 +556,16 @@
           <xsl:attribute name="href">
             <xsl:choose>
               <xsl:when test="key('id', $anchor)"><xsl:value-of select="@ref"/></xsl:when>
+              <!-- Le @corresp inscrit par generer-liens-index.py nomme la
+                   lettre qui porte le lieu. Sans lui le renvoi visait l'index
+                   entier, dont la page d'accueil n'affiche que les deux
+                   barres de lettres : l'ancre n'y menait plus nulle part. -->
+              <xsl:when test="@corresp">
+                <xsl:call-template name="tp-href">
+                  <xsl:with-param name="anchor" select="$anchor"/>
+                  <xsl:with-param name="unite" select="@corresp"/>
+                </xsl:call-template>
+              </xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="tp-href">
                   <xsl:with-param name="anchor" select="$anchor"/>

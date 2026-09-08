@@ -14,7 +14,7 @@
       </fileDesc>
    </teiHeader>
    <text>
-      <group>
+      <group xml:id="les-testaments">
          <note type="summary" subtype="generated"><list type="summary">
             <item><ref type="linkToEdition" target="#will-001">Testament olographe de Fernand Lucien Jules Melchior Chatin, mort pour la France à Maroeuil (Pas-de-Calais), le 10 janvier 1915.</ref></item>
             <item><ref type="linkToEdition" target="#will-002">Testament olographe d’Émile Alexandre Gorand, mort pour la France au bois de la Gruerie (Meuse), le 16 novembre 1914.</ref></item>
