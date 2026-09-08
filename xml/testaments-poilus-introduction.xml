@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="testaments-poilus-introduction">
       <teiHeader>
          <fileDesc>
@@ -89,7 +89,7 @@
                   <p>L’édition inclut l’intégralité des images numériques des documents, qui ont été
                      produites par les Archives
                      nationales<!--, y compris les pages blanches éventuelles des testaments--><!-- FC juin 2016 -->.
-                     Elle est séquencée par document&#xa0;: au sein de la même page web, la
+                     Elle est séquencée par document : au sein de la même page web, la
                      transcription ou l’édition du document sont données à côté des images numériques, qu’il
                      s’agisse du testament ou de son enveloppe. On peut, en restant sur la même page
                      web, feuilleter les pages du document.</p>
@@ -104,11 +104,9 @@
                            compte ainsi de la matérialité du texte ;</item>
                         <item>Une édition du texte définitif, modernisée (orthographe) et normalisée
                            (harmonisation de l’écriture des dates, de la ponctuation et de la
-                           présentation, et résolution des abréviations&#xa0; correction des fautes de
+                           présentation, et résolution des abréviations  correction des fautes de
                            syntaxe), qui permet une lecture plus fluide. Pour cette dernière, nous
-                           avons suivi les règles d’édition de l’École des Chartes<ref
-                              xml:id="introRef001" target="#introFootnote001" type="footnote" n="1"
-                           />.</item>
+                           avons suivi les règles d’édition de l’École des Chartes<ref xml:id="introRef001" target="#introFootnote001" type="footnote" n="1"/>.</item>
                      </list></p>
                   <p>Les notes d’apparat critique, qui portent sur l’établissement du texte, ont été
                      rattachées à la transcription, tandis que l’annotation historique, très
@@ -122,18 +120,15 @@
                      les circonstances et la date du décès ; les sources utilisées pour élaborer la
                      notice.</p>
                   <p>L’index des noms de lieux de décès, qui permet de rapprocher des Poilus morts
-                     au même endroit, comprend les noms de lieux tels qu’ils figurent dans la <ref
-                        target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
-                        type="externalLink">base de données des morts pour la France de la Première
+                     au même endroit, comprend les noms de lieux tels qu’ils figurent dans la <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France de la Première
                         Guerre mondiale</ref> ou dans la minute de chaque testament. S’agissant le
                      plus souvent de lieux-dits, ils ont fait l’objet d’une identification aussi
                      précise que possible, chaque lieu-dit étant rattaché à sa commune d’origine. Le
                      cas échéant, on a précisé la localisation actuelle (cas des communes fusionnées
                      ou disparues). La géolocalisation des lieux de décès a par ailleurs été établie
                      selon la norme WGS84 (<foreign xml:lang="eng">World Geodetic System
-                        1984</foreign>), grâce à la base de données web <ref
-                        target="http://www.geonames.org/" type="externalLink">Geonames</ref>. Pour
-                     l’instant, de simples liens renvoient à cette application&#xa0;; ultérieurement nous
+                        1984</foreign>), grâce à la base de données web <ref target="http://www.geonames.org/" type="externalLink">Geonames</ref>. Pour
+                     l’instant, de simples liens renvoient à cette application ; ultérieurement nous
                      proposerons une carte interactive pour l’accès à l’index des lieux de
                      décès.</p>
                  
@@ -155,8 +150,7 @@
                </div>
                <signed><persName>Christine Nougaret</persName> et <persName>Florence
                      Clavaud</persName>,
-                     <!--<date when="1016-04-11">11 avril 2016</date>--><!-- FC juin 2016 --><date
-                     when="2016-06-11">février 2017</date>.</signed>
+                     <!--<date when="1016-04-11">11 avril 2016</date>--><!-- FC juin 2016 --><date when="2016-06-11">février 2017</date>.</signed>
             </div>
             <div xml:id="credits">
 
@@ -198,17 +192,13 @@
                         </respStmt><!--<author><persName><surname>Anfray</surname><forename>Benjamin</forename><nameLink>d’</nameLink></persName></author><author><persName><surname>Pashkeeva</surname><forename>Natalia</forename></persName></author>--><title>Testaments
                            de guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
-                           chartes</publisher><date>2017-....</date><note type="onLineAccess"
-                           >Édition numérique en ligne : <ref
-                              target="http://elec.enc.sorbonne.fr/testaments-de-poilus/"
-                              >http://elec.enc.sorbonne.fr/testaments-de-poilus/</ref> (consulté le
+                           chartes</publisher><date>2017-....</date><note type="onLineAccess">Édition numérique en ligne : <ref target="http://elec.enc.sorbonne.fr/testaments-de-poilus/">http://elec.enc.sorbonne.fr/testaments-de-poilus/</ref> (consulté le
                            [date de consultation]).</note></bibl></p>
                   <p>Pour citer une page de la présente édition, utiliser la mention suivante : <bibl><respStmt>
                            <persName><surname>Nougaret</surname><forename>Christine</forename></persName>
                            <persName><surname>Clavaud</surname><forename>Florence</forename></persName>
                            <resp>dirs.</resp>
-                        </respStmt><title level="a">[Titre de la page citée]</title><title level="j"
-                           >Testaments de guerre de Poilus parisiens (1914-1918) : une édition
+                        </respStmt><title level="a">[Titre de la page citée]</title><title level="j">Testaments de guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
                            chartes</publisher><date>2017-....</date><note type="onLineAccess">En
                            ligne : [adresse web de la page citée] (consulté le [date de
@@ -217,14 +207,11 @@
                            <persName><surname>Nougaret</surname><forename>Christine</forename></persName>
                            <persName><surname>Clavaud</surname><forename>Florence</forename></persName>
                            <resp>dirs.</resp>
-                        </respStmt><title level="a">Testament n° 5 (Étienne Joseph Driancourt, 1<hi
-                              rend="sup">er</hi> août 1914)</title><title level="j">Testaments de
+                        </respStmt><title level="a">Testament n° 5 (Étienne Joseph Driancourt, 1<hi rend="sup">er</hi> août 1914)</title><title level="j">Testaments de
                            guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title><pubPlace>Paris</pubPlace><publisher>École nationale des
                            chartes</publisher><date>2017-....</date><note type="onLineAccess">En
-                           ligne : <ref
-                              target="http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html"
-                              >http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>
+                           ligne : <ref target="http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html">http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>
                            (consulté le [date de consultation]).</note></bibl></p>
                </div>
                <div>
@@ -262,10 +249,8 @@
                      <p>L’École nationale des chartes met à disposition cette ressource électronique
                         structurée (introduction, édition proprement dite des testaments, index), protégée par le code de la propriété intellectuelle sur les
                         bases de données (L341-1), selon les termes de la licence Creative Commons :
-                        « Paternité - Pas d’Utilisation Commerciale - Pas de Modification&#xa0; 2.0
-                        France ». Cette licence est disponible en ligne : <ref
-                           target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/" type="externalLink"
-                           >http://creativecommons.org/licenses/by-nc-nd/2.0/fr/</ref> ou par
+                        « Paternité - Pas d’Utilisation Commerciale - Pas de Modification  2.0
+                        France ». Cette licence est disponible en ligne : <ref target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/" type="externalLink">http://creativecommons.org/licenses/by-nc-nd/2.0/fr/</ref> ou par
                         courrier postal à Creative Commons, 171 Second Street, Suite 300, San
                         Francisco, California 94105, USA.</p>
 
@@ -314,8 +299,7 @@
             <div xml:id="introduction">
                <div>
                   <head>Origine et nature du projet</head>
-                  <p>Lisant les <title><ref target="#poisson-etudes-notariales" type="linkToIntro"
-                           >Études notariales</ref></title> de Jean-Paul Poisson, j’avais été
+                  <p>Lisant les <title><ref target="#poisson-etudes-notariales" type="linkToIntro">Études notariales</ref></title> de Jean-Paul Poisson, j’avais été
                      frappée par son appel à une enquête sur les testaments de la Grande Guerre,
                      négligés par les historiens contemporanéistes. L’auteur, historien du notariat
                      et clerc de notaire, avait pu constater la présence de ce type d’actes à
@@ -481,8 +465,7 @@
                         </row>
                      </table>
                      <p>Tous les arrondissements parisiens sont représentés, avec une dominante pour
-                        ceux du centre-est (3<hi rend="sup">e</hi>, 4<hi rend="sup">e</hi> , 11<hi
-                           rend="sup">e</hi> et 12<hi rend="sup">e</hi>), à mettre en regard avec
+                        ceux du centre-est (3<hi rend="sup">e</hi>, 4<hi rend="sup">e</hi> , 11<hi rend="sup">e</hi> et 12<hi rend="sup">e</hi>), à mettre en regard avec
                         l’implantation des trois études notariées dépouillées.</p>
                      <table>
                         <head>Répartition par arrondissement parisien</head>
@@ -574,9 +557,8 @@
                      <p>Malgré cette domiciliation écrasante dans l’actuelle Île-de-France, les
                         testateurs sont nés pour un peu plus de la moitié d’entre eux (66) loin de
                         Paris et de sa région, deux étant même de nationalité étrangère, et donc
-                        engagés volontaires (<ref target="#NDeToledo" type="linkToPersonsIndex">De
-                           Toledo</ref>, italien né en Turquie&#xa0; <ref target="#LWidhalm"
-                           type="linkToPersonsIndex">Widhalm</ref>, autrichien).</p>
+                        engagés volontaires (<ref target="#NDeToledo" type="linkToPersonsIndex" corresp="testateurs-D">De
+                           Toledo</ref>, italien né en Turquie  <ref target="#LWidhalm" type="linkToPersonsIndex" corresp="testateurs-W">Widhalm</ref>, autrichien).</p>
                      <table cols="2">
                         <head>Répartition par lieux de naissance</head>
                         <row>
@@ -702,9 +684,7 @@
 
 
                      </table>
-                     <p>Grâce à la <ref
-                           target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
-                           type="externalLink">base de données des morts pour la France</ref> du
+                     <p>Grâce à la <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France</ref> du
                         portail « Mémoire des hommes »<!-- FC (lien ?),--> croisée avec les minutes
                         de dépôt des testaments, on peut établir à 31 ans l’âge moyen des
                         <!--FC juin 2016 testateurs--> Poilus à la rédaction de leur testament. On
@@ -939,8 +919,7 @@
                         <div>
                            <head>Bénéficiaires</head>
                            <p>Deux paramètres entrent en ligne de compte : l’état marital et la
-                              présence ou non d’enfants. En effet au début du XX<hi rend="sup"
-                                 >e</hi> siècle, le Code civil prévoit les règles de dévolution
+                              présence ou non d’enfants. En effet au début du XX<hi rend="sup">e</hi> siècle, le Code civil prévoit les règles de dévolution
                               suivantes : priorité est donnée aux enfants et descendants du défunt
                               (petits-enfants ou arrière-petits-enfants) ; à défaut à ses ascendants
                               (parents, grands-parents), et à ses collatéraux, c’est-à dire ses
@@ -985,8 +964,7 @@
                         <div>
                            <head>Quantité et nature du patrimoine</head>
                            <p>Du fait de leur âge et de leur catégorie sociale, la plupart des
-                              testateurs ont peu de patrimoine (Voir <ref
-                                 target="#testateurs-en-chiffres" type="linkToIntro">Les testateurs
+                              testateurs ont peu de patrimoine (Voir <ref target="#testateurs-en-chiffres" type="linkToIntro">Les testateurs
                                  en quelques chiffres</ref>). Pour les plus pauvres, leur actif se
                               limite au mobilier de leur chambre à coucher et à leurs effets
                               personnels (<!--<ref target="#CHerpin" type="linkToPersonsIndex">-->Herpin<!--</ref>-->, <ref target="#will-022" type="linkToEdition">testament n° 22</ref> ). Assez significativement, le terme « fortune »
@@ -1031,8 +1009,7 @@
                         <p>Les considérations religieuses sont quasi absentes de ces testaments.
                            Seul Chateauneuf-Randon ouvre le sien par le dessin d’une croix. L’appel
                            aux prières des proches n’est présent que deux fois (<!--<ref type="linkToPersonsIndex" target="#VNBoch">-->Boch<!--</ref>-->, <ref target="#will-048" type="linkToEdition">testament n° 48</ref> ; <!--<ref type="linkToPersonsIndex" target="#LeConte">-->Le Conte<!--</ref>-->, <ref target="#will-074" type="linkToEdition">testament n° 74</ref>) ;
-                           pour les funérailles religieuses, voir <ref target="#poilu-et-mort"
-                              type="linkToIntro">Le Poilu et la mort</ref>), associé chez Le Conte
+                           pour les funérailles religieuses, voir <ref target="#poilu-et-mort" type="linkToIntro">Le Poilu et la mort</ref>), associé chez Le Conte
                            au souci d’une éducation religieuse pour ses enfants en une forme de
                            testament spirituel : <cit><quote>Je ne fais aucune recommandation spéciale
                               par écrit, mon vœu le plus cher est que mes enfants soient tous de
@@ -1182,8 +1159,7 @@
                      les testaments trouvés sur les morts ont pu être adressés directement aux
                      familles, comme celui de Victor Boch indiquant au verso <quote>Prière à celui
                         qui trouvera ceci d’avoir la bonté de le faire parvenir à sa
-                        destinataire</quote>, ce qui fut fait. Ce testament (<ref target="#will-048"
-                           type="linkToEdition">n° 48</ref>) porte encore à ce jour la marque des
+                        destinataire</quote>, ce qui fut fait. Ce testament (<ref target="#will-048" type="linkToEdition">n° 48</ref>) porte encore à ce jour la marque des
                      pliures dans le portefeuille du sergent.</p>
 
                   <!--<signed><persName>Christine Nougaret</persName>, <date when="2016-06-12">12 juin
@@ -1244,25 +1220,20 @@
                                  demain</hi> 2<hi rend="sup">e</hi> jour. Pris à l’improviste je
                               n’ai plus le temps ni les moyens de faire une donation en règle à ma
                               femme bien aimée</quote>
-                           <bibl>Jules Legeay, 2 août 1914, <ref target="#will-016"
-                                 type="linkToEdition">testament n° 16</ref></bibl>
+                           <bibl>Jules Legeay, 2 août 1914, <ref target="#will-016" type="linkToEdition">testament n° 16</ref></bibl>
                         </cit></p>
                      <p>Moins fréquemment, elles figurent dans la date initiale ou les clauses
                         finales : <list>
                            <item><cit>
                                  <quote>Paris le 2 août 1914, <hi rend="bold">au moment de
                                        partir</hi> pour la guerre</quote>
-                                 <bibl>Louis Rogue, <ref target="#will-026" type="linkToEdition"
-                                       >testament n° 26</ref></bibl>
+                                 <bibl>Louis Rogue, <ref target="#will-026" type="linkToEdition">testament n° 26</ref></bibl>
                               </cit></item>
                            <item><cit>
-                                 <quote>Ce papier continuera d’être valable depuis ma mort (<hi
-                                       rend="bold">partant en campagne</hi> le 11<hi rend="sup"
-                                       >e</hi> jour de la mobilisation et ne sachant si je
+                                 <quote>Ce papier continuera d’être valable depuis ma mort (<hi rend="bold">partant en campagne</hi> le 11<hi rend="sup">e</hi> jour de la mobilisation et ne sachant si je
                                     reviendrai) qui devra être bien confirmée pour jouir de ce
                                     legs</quote>
-                                 <bibl>Jules Godard, 12 août 1914, <ref target="#will-062"
-                                       type="linkToEdition">testament n° 62</ref></bibl>
+                                 <bibl>Jules Godard, 12 août 1914, <ref target="#will-062" type="linkToEdition">testament n° 62</ref></bibl>
                               </cit></item>
                         </list></p>
                      <p>Parfois, la suscription, la souscription, la date finale ou un post-scriptum
@@ -1272,12 +1243,10 @@
                                     Travail, demeurant à Paris, 32 avenue Daumesnil, actuellement
                                     soldat au <!-- FC juin 2016-->2<hi rend="sup">e</hi> groupe
                                     d’aviation et <hi rend="bold">en permission</hi> à Paris</quote>
-                                 <bibl>Louis Bocquet, 4 novembre 1915, <ref target="#will-108"
-                                       type="linkToEdition">testament n° 108</ref></bibl>
+                                 <bibl>Louis Bocquet, 4 novembre 1915, <ref target="#will-108" type="linkToEdition">testament n° 108</ref></bibl>
                               </cit></item>
                            <item>souscription : <cit>
-                                 <quote>Léon Saulnier soldat au <!-- FC juin 2016-->12<hi rend="sup"
-                                       >e</hi> d’artillerie, <hi rend="bold">rentrant à
+                                 <quote>Léon Saulnier soldat au <!-- FC juin 2016-->12<hi rend="sup">e</hi> d’artillerie, <hi rend="bold">rentrant à
                                        l’hôpital</hi> demeurant 27 rue Mercoeur</quote>
                                  <bibl>Léon Saulnier, 17 janvier 1915<!-- FC juin 2016-->, testament
                                     non
@@ -1286,23 +1255,18 @@
                            <item>date finale : <cit>
                                  <quote>Fait à Dreux le 29 septembre 1915 <hi rend="bold">avant mon
                                        départ pour le front</hi> des armées de la République</quote>
-                                 <bibl>Louis Baudu, <ref target="#will-107" type="linkToEdition"
-                                       >testament n° 107</ref></bibl>
+                                 <bibl>Louis Baudu, <ref target="#will-107" type="linkToEdition">testament n° 107</ref></bibl>
                               </cit></item>
                            <item>post-scriptum : <cit>
-                                 <quote>Ce testament est fait de ma main à Garnay qui est la <hi
-                                       rend="bold">garnison</hi> de la 27<hi rend="sup">e</hi>
+                                 <quote>Ce testament est fait de ma main à Garnay qui est la <hi rend="bold">garnison</hi> de la 27<hi rend="sup">e</hi>
                                     compagnie du 67<hi rend="sup">e</hi> de ligne</quote>
-                                 <bibl>Georges Socquet-Clerc, 21 février 1915, <ref
-                                       target="#will-083" type="linkToEdition">testament n°
+                                 <bibl>Georges Socquet-Clerc, 21 février 1915, <ref target="#will-083" type="linkToEdition">testament n°
                                     83</ref></bibl>
                               </cit></item>
                         </list></p>
                      <p>Le dispositif est succinct (legs universel à la compagne ou la mère), d’une
-                        ligne à une page <!-- FC juin 2016-->(voir <ref
-                           target="#dispositions-testamentaires" type="linkToIntro">Les dispositions
-                           testamentaires</ref>). Les héritiers y sont toujours désignés à la 3<hi
-                           rend="sup">e</hi> personne. Une formule d’adieu explicite peut clore le
+                        ligne à une page <!-- FC juin 2016-->(voir <ref target="#dispositions-testamentaires" type="linkToIntro">Les dispositions
+                           testamentaires</ref>). Les héritiers y sont toujours désignés à la 3<hi rend="sup">e</hi> personne. Une formule d’adieu explicite peut clore le
                         dispositif.</p>
                      <p>Pressés par les événements et confrontés à un inconnu terrifiant, les
                         testateurs ont pour principal souci de garantir la force juridique de leurs
@@ -1319,20 +1283,18 @@
                      <p><cit>
                            <quote>Je n’ai pu dresser ce testament sur papier timbré car il n’y en
                               avait plus dans les bureaux de tabac</quote>
-                           <bibl>Rogue, 2 août 1914, <ref target="#will-026" type="linkToEdition"
-                                 >testament n° 26</ref></bibl>
+                           <bibl>Rogue, 2 août 1914, <ref target="#will-026" type="linkToEdition">testament n° 26</ref></bibl>
                         </cit>.</p>
                      <p><cit>
                            <quote>J’écris sur ce papier libre faute d’avoir pu me procurer du papier
                               timbré</quote>
-                           <bibl>Grandjean, 1<hi rend="sup">er</hi> août 1914, <ref
-                                 target="#will-010" type="linkToEdition">testament n°
+                           <bibl>Grandjean, 1<hi rend="sup">er</hi> août 1914, <ref target="#will-010" type="linkToEdition">testament n°
                               10</ref></bibl>
                         </cit>.</p>
                      <p>Les testateurs veillent aussi au respect des
                         <!-- FC juin 2016--><!--3-->trois règles explicites du testament
                         olographe que sont l’écriture entièrement autographe (<cit><quote>Fait en entier
-                           de ma main</quote><bibl><!--<ref type="linkToPersonsIndex" target="#JMurat">-->Murat<!--</ref>-->, <ref target="#will-092" type="linkToEdition">testament n° 92</ref></bibl></cit>)&#xa0; la date toujours présente et souvent
+                           de ma main</quote><bibl><!--<ref type="linkToPersonsIndex" target="#JMurat">-->Murat<!--</ref>-->, <ref target="#will-092" type="linkToEdition">testament n° 92</ref></bibl></cit>)  la date toujours présente et souvent
                         réitérée en lettres et en chiffres, parfois en tête et fin de testament <!-- FC octobre 2016-->(<!--<ref type="linkToPersonsIndex" target="#FLChatin">-->Chatin<!--</ref>-->, <ref target="#will-001" type="linkToEdition">testament n° 1</ref>) ;
                         enfin la signature, parfois répétée plusieurs fois (<!--<ref type="linkToPersonsIndex" target="#BLabrin">-->Labrin<!--</ref>-->, <ref target="#will-068" type="linkToEdition">testament n° 68</ref>) et reportée
                         aussi sur l’enveloppe quand le testament est clos. Mais
@@ -1407,16 +1369,13 @@
                      mort présente chez un certain nombre de Poilus. Faire son testament, c’est <cit>
                         <quote>éviter le malheur d’être surpris par la mort avant d’avoir réglé
                            [ses] affaires</quote>
-                        <bibl>Canivenq, 4 août 1914, <ref target="#will-053" type="linkToEdition"
-                              >testament n° 53</ref></bibl>
+                        <bibl>Canivenq, 4 août 1914, <ref target="#will-053" type="linkToEdition">testament n° 53</ref></bibl>
                      </cit> ; c’est aussi <cit>
                         <quote>aider le plus possible [les siens dans leur] vie nouvelle</quote>
-                        <bibl>Gatbois, 15 septembre 1915, <ref target="#will-104"
-                              type="linkToEdition">testament n° 104</ref></bibl>
+                        <bibl>Gatbois, 15 septembre 1915, <ref target="#will-104" type="linkToEdition">testament n° 104</ref></bibl>
                      </cit> ; c’est enfin <!--FC octobre 2016<cit>
                         <quote>-->dire adieu à tous ceux que l’on chérit <!--FC octobre 2016</quote>-->
-                        (<bibl>Ravignon, 18 septembre 1915, <ref target="#will-105"
-                              type="linkToEdition">testament n° 105</ref></bibl>)
+                        (<bibl>Ravignon, 18 septembre 1915, <ref target="#will-105" type="linkToEdition">testament n° 105</ref></bibl>)
                      <!--FC octobre 2016</cit>-->. Cette pratique de l’âge avancé concerne ici des hommes jeunes, puisque
                      ils ont en moyenne 31 ans lorsqu’ils rédigent leur testament. La présence d’un
                      testament écrit à 19 ans par Georges Socquet-Clerc (<ref target="#will-083" type="linkToEdition">testament n° 83</ref>) rappelle que la capacité
@@ -1470,13 +1429,11 @@
                         <item><cit>
                               <quote>…dans le cas où je serai tué dans la guerre qui va
                                  suivre</quote>
-                              <bibl>Boch, 4 août 1914, <ref target="#will-048" type="linkToEdition"
-                                    >testament n° 48</ref></bibl>
+                              <bibl>Boch, 4 août 1914, <ref target="#will-048" type="linkToEdition">testament n° 48</ref></bibl>
                            </cit></item>
                         <item><cit>
                               <quote>À la veille de partir en guerre, si je me fais tuer…</quote>
-                              <bibl>Mazurier, 3 mars 1915, <ref target="#will-086"
-                                    type="linkToEdition">testament n° 86</ref></bibl>
+                              <bibl>Mazurier, 3 mars 1915, <ref target="#will-086" type="linkToEdition">testament n° 86</ref></bibl>
                            </cit>.</item>
                      </list></p>
                   <p><term>Décès</term>, <term>mort</term>, <term>tué</term> restent l’apanage du
@@ -1491,8 +1448,7 @@
                      guerre : <cit>
                         <quote>Ceci est mon testament écrit en toute sérénité la veille de mon
                            départ pour la guerre contre l’Allemagne</quote>
-                        <bibl>capitaine Debain, 12 août 1914, <ref target="#will-060"
-                              type="linkToEdition">testament n° 60</ref></bibl>
+                        <bibl>capitaine Debain, 12 août 1914, <ref target="#will-060" type="linkToEdition">testament n° 60</ref></bibl>
                      </cit>.</p>
                   <p>Plus fréquente est l’angoisse de la mort, tempérée par le sens du devoir au
                      service du pays : <cit>
@@ -1502,8 +1458,7 @@
                            jours le 14 août d’après mon ordre de route pour Chartres d’où l’on me
                            dirigera peut-être je ne sais où. Qu’importe ! De même que tous je ferai
                            moi aussi tout mon devoir…</quote>
-                        <bibl>Henri Burret, 14 août 1914, <ref target="#will-063"
-                              type="linkToEdition">testament n° 63</ref></bibl>
+                        <bibl>Henri Burret, 14 août 1914, <ref target="#will-063" type="linkToEdition">testament n° 63</ref></bibl>
                      </cit>.</p>
                   <p>Enfin, la résignation devant une mort inévitable, sinon attendue pour échapper
                      à la « fournaise » ou à une vie décevante se manifeste dans les testaments et
@@ -1514,8 +1469,7 @@
                            d’aller vous voir… j’attends la mort d’un moment à l’autre… S’il
                            m’arrivait malheur je te lègue tout ce qui m’appartient… Malgré le
                            cafard…</quote>
-                        <bibl>Boutin, 2 juillet 1916, <ref target="#will-118" type="linkToEdition"
-                              >testament n° 118</ref></bibl>
+                        <bibl>Boutin, 2 juillet 1916, <ref target="#will-118" type="linkToEdition">testament n° 118</ref></bibl>
                      </cit>.</p>
                   <p>En revanche, quel que soit leur état d’esprit, peu de testateurs manifestent
                      des exigences pour eux-mêmes. Seuls quatre d’entre eux donnent des consignes
@@ -1523,8 +1477,7 @@
                         <quote>Pas de fleurs ni de couronnes, un enterrement simple, mais beaucoup
                            de messes, en particulier les 33 messes grégoriennes dites le plus tôt
                            possible après mon décès et des prières</quote>
-                        <bibl>Le Conte, 1<hi rend="sup">er</hi> mars 1917, <ref target="#will-074"
-                              type="linkToEdition">testament n° 74</ref></bibl>
+                        <bibl>Le Conte, 1<hi rend="sup">er</hi> mars 1917, <ref target="#will-074" type="linkToEdition">testament n° 74</ref></bibl>
                      </cit>. </p>
                   <p>Plus nombreux sont-ils à terminer leur testament par un adieu ou un pardon,
                      dans un dernier message aux proches où la sincérité le dispute à l’émotion. <cit>
@@ -1536,8 +1489,7 @@
                            sans trop de regrets car sa monotonie est trop grande et les moments
                            agréables y sont trop rares. J’ai terminé. Fait le dix-huit septembre mil
                            neuf cent quinze, étant sain de corps et d’esprit. <foreign xml:lang="lat">Vale</foreign></quote>
-                        <bibl>Jean Ravignon, 18 septembre 1915, <ref target="#will-105"
-                              type="linkToEdition">testament n° 105</ref></bibl></cit>.</p>
+                        <bibl>Jean Ravignon, 18 septembre 1915, <ref target="#will-105" type="linkToEdition">testament n° 105</ref></bibl></cit>.</p>
                   <p>Jean Ravignon <!--sera--><!-- FC juin 2016-->fut tué huit 8 jours plus tard à
                      Massiges, dans les combats de Champagne de septembre-octobre 1915 qui
                      <!--ont vu--><!-- FC juin 2016-->virent la perte de 150 000 hommes.</p>
@@ -1581,8 +1533,7 @@
                         <bibl><author><persName><surname>Carpentier</surname><forename>M.
                            A.</forename></persName></author><title>Code
                               civil</title><pubPlace>Paris</pubPlace><publisher>Sirey</publisher><date>1922</date><biblScope>XLI-940
-                                 p.</biblScope><series>Petits codes Carpentier</series><ref
-                                    target="http://gallica.bnf.fr/ark:/12148/bpt6k3798478">Version en
+                                 p.</biblScope><series>Petits codes Carpentier</series><ref target="http://gallica.bnf.fr/ark:/12148/bpt6k3798478">Version en
                                     ligne</ref>
                         </bibl>
                         <bibl><author><surname>Dalloz</surname></author><title>Guerre de 1914 :
@@ -1593,16 +1544,14 @@
                            Gallica, accessible par la notice du catalogue de la BnF</ref></bibl>
                         <bibl xml:id="DallozRepDCivil"><author><surname>Dalloz</surname></author><title>Répertoire de droit
                               civil</title>
-                           <pubPlace>Paris</pubPlace><date>1951-1955</date><biblScope unit="volume"
-                              >5 vol.</biblScope></bibl>
+                           <pubPlace>Paris</pubPlace><date>1951-1955</date><biblScope unit="volume">5 vol.</biblScope></bibl>
                      </listBibl>
                   </listBibl>
                   <listBibl>
                      <head>Bibliographie</head>
                      <bibl>
                         <author n="1"><persName><surname>Audoin-Rouzeau</surname>
-                              <forename>Stéphane</forename></persName></author><author n="2"
-                                 ><persName><surname>Becker</surname><forename>Annette</forename></persName></author><title>14-18.
+                              <forename>Stéphane</forename></persName></author><author n="2"><persName><surname>Becker</surname><forename>Annette</forename></persName></author><title>14-18.
                            Retrouver la guerre</title>
                         <pubPlace>Paris</pubPlace><publisher>Gallimard</publisher><date>2000</date>
                      </bibl>
@@ -1612,8 +1561,7 @@
                         <publisher>Presses universitaires du
                         Mirail</publisher><date>2003</date></bibl>
                      <bibl><author n="1"><persName><surname>Cochet</surname>
-                              <forename>François</forename></persName></author><author n="2"
-                                 ><persName><surname>Porte</surname>
+                              <forename>François</forename></persName></author><author n="2"><persName><surname>Porte</surname>
                               <forename>Rémy</forename></persName></author><title>Dictionnaire de la
                            Grande Guerre.
                            1914-1918</title><pubPlace>Paris</pubPlace><publisher>Robert
@@ -1650,11 +1598,9 @@
                         </respStmt><title>Archives de la Grande Guerre. Des sources pour
                            l’histoire</title><pubPlace>Rennes</pubPlace>
                         <publisher>PUR</publisher><date>2014</date></bibl>
-                     <bibl xml:id="poisson-etudes-notariales"
-                                 ><author><persName><surname>Poisson</surname>
+                     <bibl xml:id="poisson-etudes-notariales"><author><persName><surname>Poisson</surname>
                               <forename>Jean-Paul</forename></persName></author><title level="a">Les
-                           testaments de la Grande Guerre. Appel pour une enquête</title><title
-                           level="j">Études
+                           testaments de la Grande Guerre. Appel pour une enquête</title><title level="j">Études
                            notariales</title><pubPlace>Paris</pubPlace><publisher>Economica</publisher><date>1996</date><biblScope>p.
                            332-336</biblScope></bibl>
                      <bibl><author><persName><surname>Purseigle</surname>
@@ -1665,9 +1611,7 @@
                   </listBibl>
                   <listBibl xml:id="web">
                      <head>Sites internet utilisés pour les identifications</head>
-                     <bibl><author><orgName>Archives nationales</orgName></author><title><ref
-                              target="http://www.culture.gouv.fr/documentation/leonore/pres.htm"
-                              >Léonore (Légion d’honneur), dossiers nominatifs des personnes nommées
+                     <bibl><author><orgName>Archives nationales</orgName></author><title><ref target="http://www.culture.gouv.fr/documentation/leonore/pres.htm">Léonore (Légion d’honneur), dossiers nominatifs des personnes nommées
                               ou promues dans l’Ordre de la Légion d’honneur depuis 1802 et décédées
                               avant 1977</ref></title></bibl>
                      
@@ -1677,8 +1621,7 @@
                      <bibl><title><ref target="http://cassini.ehess.fr">Des villages de Cassini aux
                               communes d’aujourd’hui</ref></title></bibl>
 
-                     <bibl><author><orgName>FranceGenWeb</orgName></author><title><ref
-                              target="http://www.memorial-genweb.org">MémorialGenWeb, relevés de
+                     <bibl><author><orgName>FranceGenWeb</orgName></author><title><ref target="http://www.memorial-genweb.org">MémorialGenWeb, relevés de
                               monuments aux morts, soldats et victimes civiles, français et
                               étrangers, tués ou disparus par faits de guerre, morts en déportation,
                               « Morts pour la France »</ref></title></bibl>
@@ -1688,9 +1631,7 @@
                      <bibl><author><orgName>Ministère de la défense. Secrétariat général pour
                               l’administration. Direction de la mémoire, du patrimoine et des
                               archives</orgName></author>
-                        <title><ref
-                              target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale"
-                              >Site Mémoire des hommes : base de données des Morts pour la France de
+                        <title><ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale">Site Mémoire des hommes : base de données des Morts pour la France de
                               la Première Guerre mondiale</ref></title>
                      </bibl>
                      <bibl><title><ref target="http://www.geonames.org/">The Geonames geographical
@@ -1701,8 +1642,7 @@
                      <bibl><author><orgName>Ville de Paris. Direction des affaires culturelles.
                               Sous-Direction du patrimoine et de l’histoire. Département de
                               l’histoire, de la mémoire et des musées
-                              associatifs</orgName></author><title><ref
-                              target="http://memorial14-18.paris.fr/memorial/">14-18 Monument aux
+                              associatifs</orgName></author><title><ref target="http://memorial14-18.paris.fr/memorial/">14-18 Monument aux
                               morts de la Grande Guerre Ville de Paris</ref></title></bibl>
 
                   </listBibl>
@@ -1711,16 +1651,14 @@
          </body>
          <back>
             <div>
-               <note xml:id="introFootnote001" target="#introRef001"
-                           ><bibl><author><surname>Nougaret</surname>
+               <note xml:id="introFootnote001" target="#introRef001"><bibl><author><surname>Nougaret</surname>
                            (<forename>Christine</forename>)</author>,
                            <author><surname>Parinet</surname>
                         (<forename>Élisabeth</forename>)</author>, <respStmt>
                         <persName><surname>Clavaud</surname>
                            (<forename>Florence</forename>)</persName>
                         <resp> (collab.)</resp>
-                     </respStmt>. <title>L’édition critique des textes contemporains, XIX<hi
-                           rend="sup">e</hi>-XXI<hi rend="sup">e</hi> siècle</title>.
+                     </respStmt>. <title>L’édition critique des textes contemporains, XIX<hi rend="sup">e</hi>-XXI<hi rend="sup">e</hi> siècle</title>.
                         <pubPlace>Paris</pubPlace> : <publisher>École nationale des
                         chartes</publisher>, <date>2015</date>.</bibl></note>
             </div>

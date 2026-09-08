@@ -23,7 +23,27 @@
             <listPerson>
                <listPerson xml:id="testateurs-A">
             <head>A</head>
-            <person xml:id="EAime">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A" rend="current">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="EAime">
                   <persName>
                      <surname>Aimé</surname>, <forename>Ernest</forename>
                      <forename>Jean</forename>
@@ -108,7 +128,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-B">
             <head>B</head>
-            <person xml:id="EBarbut">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B" rend="current">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="EBarbut">
                   <persName>
                      <surname>Barbut</surname>, <forename>Marie</forename>
                      <forename>Barthélémy</forename>
@@ -584,7 +624,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-C">
             <head>C</head>
-            <person xml:id="LAPCanivenq">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C" rend="current">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="LAPCanivenq">
                   <persName>
                      <surname>Canivenq</surname>, <forename>Louis</forename>
                      <forename>Albert</forename>
@@ -914,7 +974,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-D">
             <head>D</head>
-            <person xml:id="EDardonville">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D" rend="current">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="EDardonville">
                   <persName>
                      <surname>Dardonville</surname>, <forename>Edouard</forename>
                      <forename>Louis</forename>
@@ -1398,7 +1478,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-E">
             <head>E</head>
-            <person xml:id="MEtienne">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E" rend="current">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="MEtienne">
                   <persName>
                      <surname>Etienne</surname>, <forename>Marcel</forename>
                   </persName>
@@ -1427,7 +1527,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-F">
             <head>F</head>
-            <person xml:id="LFavre">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F" rend="current">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="LFavre">
                   <persName>
                      <surname>Favre</surname>, <forename>Louis</forename>
                   </persName>
@@ -1594,7 +1714,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-G">
             <head>G</head>
-            <person xml:id="FGaillard">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G" rend="current">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="FGaillard">
                   <persName>
                      <surname>Gaillard</surname>, <forename>François</forename>
                   </persName>
@@ -1968,7 +2108,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-H">
             <head>H</head>
-            <person xml:id="FHemy">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H" rend="current">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="FHemy">
                   <persName>
                      <surname>Hémy</surname>, <forename>François</forename>
                   </persName>
@@ -2049,7 +2209,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-J">
             <head>J</head>
-            <person xml:id="MJacquat">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J" rend="current">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="MJacquat">
                   <persName>
                      <surname>Jacquat</surname>, <forename>Marcellin</forename>
                      <forename>Adolphe</forename>
@@ -2104,7 +2284,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-L">
             <head>L</head>
-            <person xml:id="ELaborde">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L" rend="current">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="ELaborde">
                   <persName>
                      <surname>Laborde</surname>,
                             <forename>Enrique</forename>
@@ -2541,7 +2741,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-M">
             <head>M</head>
-            <person xml:id="EMarchal">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M" rend="current">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="EMarchal">
                   <persName>
                      <surname>Marchal</surname>, <forename>Ernest</forename>
                      <forename>André</forename>
@@ -2784,7 +3004,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-N">
             <head>N</head>
-            <person xml:id="GNicolon">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N" rend="current">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="GNicolon">
                   <persName>
                      <surname>Nicolon</surname>, <forename>Georges</forename>
                      <forename>François</forename>
@@ -2857,7 +3097,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-P">
             <head>P</head>
-            <person xml:id="LPain">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P" rend="current">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="LPain">
                   <persName>
                      <surname>Pain</surname>, <forename>Louis</forename>
                      <forename>Ernest</forename>
@@ -2967,7 +3227,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-Q">
             <head>Q</head>
-            <person xml:id="EQuainon">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q" rend="current">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="EQuainon">
                   <persName>
                      <surname>Quainon</surname>, <forename>Emile</forename>
                   </persName>
@@ -2995,7 +3275,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-R">
             <head>R</head>
-            <person xml:id="LRavignon">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R" rend="current">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="LRavignon">
                   <persName>
                      <surname>Ravignon</surname>, <forename>Louis</forename>
                      <forename>Jean</forename>
@@ -3183,7 +3483,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-S">
             <head>S</head>
-            <person xml:id="ESimonnet">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S" rend="current">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="ESimonnet">
                   <persName>
                      <surname>Simonnet</surname>, <forename>Emile</forename>
                   </persName>
@@ -3347,7 +3667,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-T">
             <head>T</head>
-            <person xml:id="JSTardy">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T" rend="current">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="JSTardy">
                   <persName>
                      <surname>Tardy</surname>, <forename>Joseph</forename>
                      <forename>Séraphin</forename>
@@ -3428,7 +3768,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-V">
             <head>V</head>
-            <person xml:id="JEVachette">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V" rend="current">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
+            </note><person xml:id="JEVachette">
                   <persName>
                      <surname>Vachette</surname>, <forename>Joseph</forename>
                      <forename>Emile</forename>
@@ -3484,7 +3844,27 @@
                </listPerson>
          <listPerson xml:id="testateurs-W">
             <head>W</head>
-            <person xml:id="LWaguet">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
+            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
+            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
+            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
+            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
+            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
+            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
+            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
+            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
+            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
+            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
+            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
+            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
+            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
+            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
+            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
+            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
+            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
+            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W" rend="current">W</ref>
+            </note><person xml:id="LWaguet">
                   <persName>
                      <surname>Waguet</surname>, <forename>Léon</forename>
                      <forename>Auguste</forename>
@@ -3561,7 +3941,27 @@
                -->
             <listPlace xml:id="lieux-A">
             <head>A</head>
-            <place xml:id="pl-001">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A" rend="current">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-001">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Ablain-Saint-Nazaire</settlement>
                   </placeName>
@@ -3575,10 +3975,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3038763/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HGe">Gé, Henri (1883-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#PALacroix">Lacroix, Pierre Auguste (1886-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#AGLebaillif">Lebaillif, Albert Gabriel (1886-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#JMurat">Murat, Jules (1884-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#HGe" corresp="testateurs-G">Gé, Henri (1883-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#PALacroix" corresp="testateurs-L">Lacroix, Pierre Auguste (1886-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#AGLebaillif" corresp="testateurs-L">Lebaillif, Albert Gabriel (1886-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#JMurat" corresp="testateurs-M">Murat, Jules (1884-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-002">
@@ -3595,7 +3995,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3037919/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ELaborde">Laborde, Enrique (1883-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#ELaborde" corresp="testateurs-L">Laborde, Enrique (1883-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-003">
@@ -3612,7 +4012,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3037744/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#PCVMartin">Martin, Pierre Charles Victor (1880-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#PCVMartin" corresp="testateurs-M">Martin, Pierre Charles Victor (1880-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-004">
@@ -3629,7 +4029,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3036398/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JLLegeay">Legeay, Jules Louis (1882-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#JLLegeay" corresp="testateurs-L">Legeay, Jules Louis (1882-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-005">
@@ -3646,13 +4046,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035843/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FMGuevel">Guével, François Marie (1883-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#FMGuevel" corresp="testateurs-G">Guével, François Marie (1883-1917)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-B">
             <head>B</head>
-            <place xml:id="pl-006">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B" rend="current">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-006">
                   <placeName when-iso="1793/">
                      <settlement type="cantonCapital">Baccarat</settlement>
                   </placeName>
@@ -3666,7 +4086,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035498/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MGoigoux">Goigoux, Marcel Maurice (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#MGoigoux" corresp="testateurs-G">Goigoux, Marcel Maurice (1889-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-007">
@@ -3683,7 +4103,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035408/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#AMaurel">Maurel, Auguste Jules Alexandre (1883-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#AMaurel" corresp="testateurs-M">Maurel, Auguste Jules Alexandre (1883-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-008">
@@ -3706,7 +4126,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3035245/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MDescombes">Descombes, Marcelin (1885-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#MDescombes" corresp="testateurs-D">Descombes, Marcelin (1885-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-009">
@@ -3726,7 +4146,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3034911/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HEBurret">Burret, Henri Eugène (1873-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#HEBurret" corresp="testateurs-B">Burret, Henri Eugène (1873-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-010">
@@ -3743,7 +4163,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3034905/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FGonthier">Gonthier, Joseph François (1881-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#FGonthier" corresp="testateurs-G">Gonthier, Joseph François (1881-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-012">
@@ -3765,7 +4185,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3033680/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FCohendy">Cohendy, François (1872-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#FCohendy" corresp="testateurs-C">Cohendy, François (1872-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-011">
@@ -3785,7 +4205,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3033597/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MMartin">Martin, Maurice Louis Joseph (1884-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#MMartin" corresp="testateurs-M">Martin, Maurice Louis Joseph (1884-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-013">
@@ -3802,7 +4222,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3033523/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LGatbois">Gatbois, Lucien Auguste Constant (1898-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#LGatbois" corresp="testateurs-G">Gatbois, Lucien Auguste Constant (1898-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-014">
@@ -3822,7 +4242,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2990325/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JMercier">Mercier, Jean Armand Eugène (1888-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#JMercier" corresp="testateurs-M">Mercier, Jean Armand Eugène (1888-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-015">
@@ -3845,7 +4265,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2986186/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LPain">Pain, Louis Ernest Victor (1886-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#LPain" corresp="testateurs-P">Pain, Louis Ernest Victor (1886-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-016">
@@ -3865,7 +4285,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2983089/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MRoux">Roux, Marcel Amédée (1887-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#MRoux" corresp="testateurs-R">Roux, Marcel Amédée (1887-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-017">
@@ -3888,7 +4308,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3037355/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LBeaumont">Beaumont, Léon Henri (1888-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#LBeaumont" corresp="testateurs-B">Beaumont, Léon Henri (1888-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-018">
@@ -3908,8 +4328,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2992967/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EBurgun">Burgun, Émile (1885-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#MDumont">Dumont, Marcel Charles (1883-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#EBurgun" corresp="testateurs-B">Burgun, Émile (1885-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#MDumont" corresp="testateurs-D">Dumont, Marcel Charles (1883-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-019">
@@ -3929,7 +4349,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3031371/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LBaudu">Baudu, Louis (1887-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LBaudu" corresp="testateurs-B">Baudu, Louis (1887-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-020">
@@ -3946,7 +4366,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3031005/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ACharquillon">Charquillon, André (1894-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#ACharquillon" corresp="testateurs-C">Charquillon, André (1894-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-021">
@@ -3966,8 +4386,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3030509/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#PAlric">Alric, Pierre Calixte (1879-1916)</ref>
-                  <ref type="linkToPersonsIndex" target="#PCReyt">Reyt, Pierre Charles (1878-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#PAlric" corresp="testateurs-A">Alric, Pierre Calixte (1879-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#PCReyt" corresp="testateurs-R">Reyt, Pierre Charles (1878-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-022">
@@ -3987,7 +4407,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3030490/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JGodard">Godard, Jules (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#JGodard" corresp="testateurs-G">Godard, Jules (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-023">
@@ -4004,7 +4424,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3030075/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#GStofft">Stofft, Georges Louis Charles (1893-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#GStofft" corresp="testateurs-S">Stofft, Georges Louis Charles (1893-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-024">
@@ -4024,13 +4444,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3018575/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#PVRouvel">Rouvel, Paul Valentin (1878-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#PVRouvel" corresp="testateurs-R">Rouvel, Paul Valentin (1878-1916)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-C">
             <head>C</head>
-            <place xml:id="pl-025">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C" rend="current">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-025">
                   <placeName>
                      <settlement>Caisnes</settlement>
                   </placeName>
@@ -4044,7 +4484,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3029175/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#AVTitard">Titard, Alexandre Victor (1888-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#AVTitard" corresp="testateurs-T">Titard, Alexandre Victor (1888-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-026">
@@ -4067,7 +4507,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3014739/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#AFTourain">Tourain, Alcide Firmin (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#AFTourain" corresp="testateurs-T">Tourain, Alcide Firmin (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-027">
@@ -4084,7 +4524,7 @@
                      <geo>50.37891 2.70439</geo>
                   </location>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#CHerpin">Herpin, Céleste Camille (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#CHerpin" corresp="testateurs-H">Herpin, Céleste Camille (1889-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-028">
@@ -4104,7 +4544,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3027869/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FBoutin">Boutin, Francisque Léon (1882-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#FBoutin" corresp="testateurs-B">Boutin, Francisque Léon (1882-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-029">
@@ -4121,7 +4561,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3027835/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#SocquetClerc">Socquet-Clerc, Georges Alfred (1895-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#SocquetClerc" corresp="testateurs-S">Socquet-Clerc, Georges Alfred (1895-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-030">
@@ -4141,7 +4581,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3027487/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JFrager">Frager, Jean Alphonse Henri (1894-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#JFrager" corresp="testateurs-F">Frager, Jean Alphonse Henri (1894-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-031">
@@ -4158,7 +4598,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3024615/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ALeroy">Leroy, Auguste Victor (1879-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#ALeroy" corresp="testateurs-L">Leroy, Auguste Victor (1879-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-032">
@@ -4176,7 +4616,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3024086/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EGranie">Granié, Edmond (1875-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#EGranie" corresp="testateurs-G">Granié, Edmond (1875-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-033">
@@ -4193,13 +4633,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3022155/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JBaumont">Baumont, Jules Joseph (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#JBaumont" corresp="testateurs-B">Baumont, Jules Joseph (1881-1915)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-D">
             <head>D</head>
-            <place xml:id="pl-034">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D" rend="current">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-034">
                   <placeName when-iso="1793/1922" type="old">
                      <settlement>Dugny</settlement>
                   </placeName>
@@ -4216,14 +4676,34 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3020710/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JDupuis">Dupuis, Jules Emile Henri (1893-1916)</ref>
-                  <ref type="linkToPersonsIndex" target="#MEtienne">Etienne, Marcel (1894-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#JDupuis" corresp="testateurs-D">Dupuis, Jules Emile Henri (1893-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#MEtienne" corresp="testateurs-E">Etienne, Marcel (1894-1916)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-E">
             <head>E</head>
-            <place xml:id="pl-035">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E" rend="current">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-035">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Épernay</settlement>
                   </placeName>
@@ -4237,7 +4717,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3020062/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MBrivois">Brivois, Maurice Paul Anthime (1886-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#MBrivois" corresp="testateurs-B">Brivois, Maurice Paul Anthime (1886-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-036">
@@ -4254,7 +4734,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3020035/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FGaillard">Gaillard, François (1893-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#FGaillard" corresp="testateurs-G">Gaillard, François (1893-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-037">
@@ -4271,13 +4751,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3019504/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JPMetayer">Métayer, Jules Pierre (1882-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#JPMetayer" corresp="testateurs-M">Métayer, Jules Pierre (1882-1916)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-F">
             <head>F</head>
-            <place xml:id="pl-038">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F" rend="current">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-038">
                   <placeName when-iso="1793">
                      <settlement type="commune">Filain</settlement>
                   </placeName>
@@ -4291,7 +4791,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3018498/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ELandry">Landry, Eugène Louis (1883-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#ELandry" corresp="testateurs-L">Landry, Eugène Louis (1883-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-039">
@@ -4308,9 +4808,9 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/6619426/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EAime">Aimé, Ernest Jean (1858-1916)</ref>
-                  <ref type="linkToPersonsIndex" target="#LAPCanivenq">Canivenq, Louis Albert Paulin (1878-1916)</ref>
-                  <ref type="linkToPersonsIndex" target="#ECollmann">Collmann, Emile Paul Alexandre (1881-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#EAime" corresp="testateurs-A">Aimé, Ernest Jean (1858-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LAPCanivenq" corresp="testateurs-C">Canivenq, Louis Albert Paulin (1878-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#ECollmann" corresp="testateurs-C">Collmann, Emile Paul Alexandre (1881-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-040">
@@ -4326,8 +4826,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/736229/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MJacquat">Jacquat, Marcellin Adolphe (1888-1917)</ref>
-                  <ref type="linkToPersonsIndex" target="#AJolly">Jolly, Auguste Louis (1874-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#MJacquat" corresp="testateurs-J">Jacquat, Marcellin Adolphe (1888-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#AJolly" corresp="testateurs-J">Jolly, Auguste Louis (1874-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-041">
@@ -4344,13 +4844,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3017400/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel">Chateauneuf-Randon du Tournel, Roger Henri Charles Honoré (1888-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#ChateauneufRandonTournel" corresp="testateurs-C">Chateauneuf-Randon du Tournel, Roger Henri Charles Honoré (1888-1914)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-G">
             <head>G</head>
-            <place xml:id="pl-042">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G" rend="current">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-042">
                   <placeName>
                      <settlement type="commune">Gaouz</settlement>
                   </placeName>
@@ -4363,7 +4883,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2548698/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LWidhalm">Widhalm, Léopold (1877-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#LWidhalm" corresp="testateurs-W">Widhalm, Léopold (1877-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-043">
@@ -4380,7 +4900,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3015137/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JLefort">Lefort, Jules Pierre Désiré (1879-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#JLefort" corresp="testateurs-L">Lefort, Jules Pierre Désiré (1879-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-044">
@@ -4399,14 +4919,34 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2969274/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#RACellier">Cellier, Raymond Alexandre (1882-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#EAGorand">Gorand, Emile Alexandre (1888-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#RACellier" corresp="testateurs-C">Cellier, Raymond Alexandre (1882-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#EAGorand" corresp="testateurs-G">Gorand, Emile Alexandre (1888-1914)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-H">
             <head>H</head>
-            <place xml:id="pl-045">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H" rend="current">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-045">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Hargicourt</settlement>
                   </placeName>
@@ -4420,7 +4960,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3013918/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#APoy">Poy, Alphonse René (1886-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#APoy" corresp="testateurs-P">Poy, Alphonse René (1886-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-046">
@@ -4440,7 +4980,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3010480/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LVRouvrais">Rouvrais, Louis Victor (1883-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#LVRouvrais" corresp="testateurs-R">Rouvrais, Louis Victor (1883-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-047">
@@ -4462,13 +5002,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3013097/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LFavre">Favre, Louis (1876-1919)</ref>
+                  <ref type="linkToPersonsIndex" target="#LFavre" corresp="testateurs-F">Favre, Louis (1876-1919)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-J">
             <head>J</head>
-            <place xml:id="pl-048">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J" rend="current">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-048">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Jaulzy</settlement>
                   </placeName>
@@ -4482,13 +5042,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3012423/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#AMCornillault">Cornillault, Armand Marcel (1886-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#AMCornillault" corresp="testateurs-C">Cornillault, Armand Marcel (1886-1918)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-K">
             <head>K</head>
-            <place xml:id="pl-049">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K" rend="current">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-049">
                   <placeName>
                      <geogName type="mountain">Kokereel</geogName>, <geogFeat>mont</geogFeat>
                   </placeName>
@@ -4505,13 +5085,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3032146/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MDevouge">Devouge, Marcel Jules (1885-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#MDevouge" corresp="testateurs-D">Devouge, Marcel Jules (1885-1918)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-L">
             <head>L</head>
-            <place xml:id="pl-052">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L" rend="current">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-052">
                   <placeName>
                      <settlement type="hamlet">La Maison-Blanche</settlement>
                   </placeName>
@@ -4528,7 +5128,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2990526/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#VNBoch">Boch, Victor Nicolas (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#VNBoch" corresp="testateurs-B">Boch, Victor Nicolas (1889-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-053">
@@ -4548,7 +5148,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3025720/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JBregeras">Bregeras, Jean Henri Jules Auguste (1890-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#JBregeras" corresp="testateurs-B">Bregeras, Jean Henri Jules Auguste (1890-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-050">
@@ -4565,7 +5165,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3032146/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HACarrie">Carrié, Honoré Antoine (1891-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#HACarrie" corresp="testateurs-C">Carrié, Honoré Antoine (1891-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-051">
@@ -4585,7 +5185,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3007829/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LBrivois">Brivois, Lucien Jean Baptiste (1883-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LBrivois" corresp="testateurs-B">Brivois, Lucien Jean Baptiste (1883-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-067">
@@ -4605,7 +5205,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3023631/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EDriancourt">Driancourt, Etienne Joseph (1893-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#EDriancourt" corresp="testateurs-D">Driancourt, Etienne Joseph (1893-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-074">
@@ -4625,7 +5225,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3010480/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HDriard">Driard, Henri Victor (1880-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#HDriard" corresp="testateurs-D">Driard, Henri Victor (1880-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-073">
@@ -4645,13 +5245,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3000015/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#BLabrin">Labrin, Bernard (1884-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#BLabrin" corresp="testateurs-L">Labrin, Bernard (1884-1914)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-M">
             <head>M</head>
-            <place xml:id="pl-054">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M" rend="current">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-054">
                   <placeName>
                      <settlement type="commune">Mangelaëre</settlement>
                   </placeName>
@@ -4665,7 +5285,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2791795/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FLVexiau">Vexiau, Fernand Louis (1888-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#FLVexiau" corresp="testateurs-V">Vexiau, Fernand Louis (1888-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-055">
@@ -4685,7 +5305,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995995/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FABezy">Bezy, Ferdinand Albert (1889-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#FABezy" corresp="testateurs-B">Bezy, Ferdinand Albert (1889-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-057">
@@ -4702,7 +5322,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995770/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#AChemin">Chemin, Ange Pierre Joseph (1884-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#AChemin" corresp="testateurs-C">Chemin, Ange Pierre Joseph (1884-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-058">
@@ -4719,7 +5339,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995685/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LeConte">Le Conte, Louis Charles Eugène (1875-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#LeConte" corresp="testateurs-L">Le Conte, Louis Charles Eugène (1875-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-056">
@@ -4736,7 +5356,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995586/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FLChatin">Chatin, Fernand Lucien Jules Melchior (1878-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#FLChatin" corresp="testateurs-C">Chatin, Fernand Lucien Jules Melchior (1878-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-059">
@@ -4753,8 +5373,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2995224/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#RFources">Fourcès, René Maximilien (1884-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#LRavignon">Ravignon, Louis Jean (1882-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#RFources" corresp="testateurs-F">Fourcès, René Maximilien (1884-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#LRavignon" corresp="testateurs-R">Ravignon, Louis Jean (1882-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-060">
@@ -4771,7 +5391,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2994798/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#PLibouton">Libouton, Paul Louis (1883-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#PLibouton" corresp="testateurs-L">Libouton, Paul Louis (1883-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-061">
@@ -4793,7 +5413,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2994157/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#DussolierGond">Dussolier-Gond, Auguste Émile Balthazard (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#DussolierGond" corresp="testateurs-D">Dussolier-Gond, Auguste Émile Balthazard (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-062">
@@ -4816,7 +5436,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/792578/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LWaguet">Waguet, Léon Auguste Camille (1878-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LWaguet" corresp="testateurs-W">Waguet, Léon Auguste Camille (1878-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-063">
@@ -4833,7 +5453,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2992760/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EGrandjean">Grandjean, Émile Jean Léon (1887-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#EGrandjean" corresp="testateurs-G">Grandjean, Émile Jean Léon (1887-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-064">
@@ -4850,7 +5470,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2992209/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#GMazurier">Mazurier, Gustave Fernand (1871-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#GMazurier" corresp="testateurs-M">Mazurier, Gustave Fernand (1871-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-065">
@@ -4870,7 +5490,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2989733/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#NDeToledo">De Toledo, Nissim (1886-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#NDeToledo" corresp="testateurs-D">De Toledo, Nissim (1886-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-066">
@@ -4887,13 +5507,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2991297/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EBarbut">Barbut, Marie Barthélémy Emile (1875-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#EBarbut" corresp="testateurs-B">Barbut, Marie Barthélémy Emile (1875-1918)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-N">
             <head>N</head>
-            <place xml:id="pl-068">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N" rend="current">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-068">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Neuville-Vitasse</settlement>
                   </placeName>
@@ -4907,7 +5547,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2990507/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MRogue">Rogue, Maurice Charles Clément (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#MRogue" corresp="testateurs-R">Rogue, Maurice Charles Clément (1889-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-069">
@@ -4924,13 +5564,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2990474/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FBoudeau">Boudeau, François Jean Etienne (1876-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#FBoudeau" corresp="testateurs-B">Boudeau, François Jean Etienne (1876-1914)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-P">
             <head>P</head>
-            <place xml:id="pl-075">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P" rend="current">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-075">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Paissy</settlement>
                   </placeName>
@@ -4944,7 +5604,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2988784/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#GNicolon">Nicolon, Georges François Marie Auguste (1892-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#GNicolon" corresp="testateurs-N">Nicolon, Georges François Marie Auguste (1892-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-070">
@@ -4960,7 +5620,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2946821/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JECoureau">Coureau, Jules Eugène (1875-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#JECoureau" corresp="testateurs-C">Coureau, Jules Eugène (1875-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-071">
@@ -4977,10 +5637,10 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2988507/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#EDardonville">Dardonville, Edouard Louis Charles (1884-1918)</ref>
-                  <ref type="linkToPersonsIndex" target="#JGDauriac">Dauriac, Joseph Gaston (1878-1919)</ref>
-                  <ref type="linkToPersonsIndex" target="#EGerber">Gerber, Edouard Albert (1884-1918)</ref>
-                  <ref type="linkToPersonsIndex" target="#JSTardy">Tardy, Joseph Séraphin (1880-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#EDardonville" corresp="testateurs-D">Dardonville, Edouard Louis Charles (1884-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#JGDauriac" corresp="testateurs-D">Dauriac, Joseph Gaston (1878-1919)</ref>
+                  <ref type="linkToPersonsIndex" target="#EGerber" corresp="testateurs-G">Gerber, Edouard Albert (1884-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#JSTardy" corresp="testateurs-T">Tardy, Joseph Séraphin (1880-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-072">
@@ -5000,7 +5660,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974147/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ADondain">Dondain, Auguste Paul Crépin (1887-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#ADondain" corresp="testateurs-D">Dondain, Auguste Paul Crépin (1887-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-076">
@@ -5017,7 +5677,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2986284/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MRPatey">Patey, Marie René (1879-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#MRPatey" corresp="testateurs-P">Patey, Marie René (1879-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-077">
@@ -5034,13 +5694,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2788726/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JELaforet">Laforêt, Jules Emile (1884-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#JELaforet" corresp="testateurs-L">Laforêt, Jules Emile (1884-1914)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-Q">
             <head>Q</head>
-            <place xml:id="pl-078">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q" rend="current">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-078">
                   <placeName>
                      <settlement type="farm">Quennevières</settlement>
                   </placeName>
@@ -5057,13 +5737,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2972107/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#FHemy">Hémy, François (1885-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#FHemy" corresp="testateurs-H">Hémy, François (1885-1916)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-S">
             <head>S</head>
-            <place xml:id="pl-079">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S" rend="current">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-079">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Saint-Hilaire-le-Grand</settlement>
                   </placeName>
@@ -5077,7 +5777,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2979515/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HBondeux">Bondeux, Hippolyte (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#HBondeux" corresp="testateurs-B">Bondeux, Hippolyte (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-080">
@@ -5097,7 +5797,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2795100/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JEVachette">Vachette, Joseph Emile (1873-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#JEVachette" corresp="testateurs-V">Vachette, Joseph Emile (1873-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-081">
@@ -5117,7 +5817,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3023631/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#PFeugere">Feugère, Paul Louis (1891-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#PFeugere" corresp="testateurs-F">Feugère, Paul Louis (1891-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-082">
@@ -5137,7 +5837,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2976058/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#GEBelgiovanni">Belgiovanni, Georges Esnest (1885-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#GEBelgiovanni" corresp="testateurs-B">Belgiovanni, Georges Esnest (1885-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-083">
@@ -5158,7 +5858,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/3033954/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MMathelin">Mathelin, Maurice Victor (1886-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#MMathelin" corresp="testateurs-M">Mathelin, Maurice Victor (1886-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-084">
@@ -5175,7 +5875,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974361/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LLaine">Lainé, Léon Charles Pascal (1874-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LLaine" corresp="testateurs-L">Lainé, Léon Charles Pascal (1874-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-085">
@@ -5195,8 +5895,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974294/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JLagache">Lagache, Jules (1892-1919)</ref>
-                  <ref type="linkToPersonsIndex" target="#EQuainon">Quainon, Emile (1883-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#JLagache" corresp="testateurs-L">Lagache, Jules (1892-1919)</ref>
+                  <ref type="linkToPersonsIndex" target="#EQuainon" corresp="testateurs-Q">Quainon, Emile (1883-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-086">
@@ -5216,8 +5916,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974147/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JHLagarde">Lagarde, Joseph Henri (1887-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#PRetteler">Retteler, Pierre (1878-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#JHLagarde" corresp="testateurs-L">Lagarde, Joseph Henri (1887-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#PRetteler" corresp="testateurs-R">Retteler, Pierre (1878-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-087">
@@ -5234,7 +5934,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974062/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LBocquet">Bocquet, Louis (1875-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#LBocquet" corresp="testateurs-B">Bocquet, Louis (1875-1917)</ref>
                   </note>
                </place>
                <place xml:id="pl-088">
@@ -5251,14 +5951,34 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2973720/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LEGalustre">Galustre, Lucien Emile (1888-1914)</ref>
-                  <ref type="linkToPersonsIndex" target="#ALapraz">Lapraz, Albert (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#LEGalustre" corresp="testateurs-G">Galustre, Lucien Emile (1888-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#ALapraz" corresp="testateurs-L">Lapraz, Albert (1881-1915)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-T">
             <head>T</head>
-            <place xml:id="pl-089">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T" rend="current">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-089">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Toul</settlement>
                   </placeName>
@@ -5272,7 +5992,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2972350/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#RMGalustre">Galustre, René Marcel (1892-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#RMGalustre" corresp="testateurs-G">Galustre, René Marcel (1892-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-090">
@@ -5289,7 +6009,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2972107/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#MStarck">Starck, Marcel (1882-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#MStarck" corresp="testateurs-S">Starck, Marcel (1882-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-091">
@@ -5312,13 +6032,33 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2974147/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LFPegorier">Pégorier, Léon François (1890-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#LFPegorier" corresp="testateurs-P">Pégorier, Léon François (1890-1915)</ref>
                   </note>
                </place>
                </listPlace>
          <listPlace xml:id="lieux-V">
             <head>V</head>
-            <place xml:id="pl-092">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V" rend="current">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
+            </note><place xml:id="pl-092">
                   <placeName type="old" when-iso="1793/1956">
                      <settlement>Vailly</settlement>
                   </placeName>
@@ -5335,7 +6075,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2971169/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#SubletHeudicourtLenoncourt">Sublet d’Heudicourt de Lenoncourt, René Jean Marie Octave (1878-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#SubletHeudicourtLenoncourt" corresp="testateurs-S">Sublet d’Heudicourt de Lenoncourt, René Jean Marie Octave (1878-1914)</ref>
                   </note>
                </place>
                <place xml:id="pl-093">
@@ -5352,7 +6092,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2970598/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#CHeppe">Heppe, Joseph Camille Marcel (1888-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#CHeppe" corresp="testateurs-H">Heppe, Joseph Camille Marcel (1888-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-094">
@@ -5369,8 +6109,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2970436/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ECheiney">Cheiney, Edouard Louis (1881-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#AFoudriat">Foudriat, Albert Alexandre (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#ECheiney" corresp="testateurs-C">Cheiney, Edouard Louis (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#AFoudriat" corresp="testateurs-F">Foudriat, Albert Alexandre (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-095">
@@ -5390,7 +6130,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2970355/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HBattmann">Battmann, Henri (1882-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#HBattmann" corresp="testateurs-B">Battmann, Henri (1882-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-096">
@@ -5410,11 +6150,11 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2969958/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#APAndry">Andry, Albert Prudent (1879-1916)</ref>
-                  <ref type="linkToPersonsIndex" target="#JBernel">Bernel, Joseph (1886-1917)</ref>
-                  <ref type="linkToPersonsIndex" target="#PMDumesny">Dumesny, Paul Marcel (1889-1914)</ref>
-                  <ref type="linkToPersonsIndex" target="#JNicouleau">Nicouleau, Jean (1881-1914)</ref>
-                  <ref type="linkToPersonsIndex" target="#HSimonnot">Simonnot, Henri Etienne (1871-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#APAndry" corresp="testateurs-A">Andry, Albert Prudent (1879-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#JBernel" corresp="testateurs-B">Bernel, Joseph (1886-1917)</ref>
+                  <ref type="linkToPersonsIndex" target="#PMDumesny" corresp="testateurs-D">Dumesny, Paul Marcel (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#JNicouleau" corresp="testateurs-N">Nicouleau, Jean (1881-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#HSimonnot" corresp="testateurs-S">Simonnot, Henri Etienne (1871-1916)</ref>
                   </note>
                </place>
                <place xml:id="pl-097">
@@ -5434,8 +6174,8 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2969274/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LDufriche">Dufriche, Lucien Eléonor Victor (1884-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#EMarchal">Marchal, Ernest André (1881-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#LDufriche" corresp="testateurs-D">Dufriche, Lucien Eléonor Victor (1884-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#EMarchal" corresp="testateurs-M">Marchal, Ernest André (1881-1915)</ref>
                   </note>
                </place>
                <place xml:id="pl-098">
@@ -5455,7 +6195,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2968471/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JFeulard">Feulard, Jean Marie Henry (1888-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#JFeulard" corresp="testateurs-F">Feulard, Jean Marie Henry (1888-1918)</ref>
                   </note>
                </place>
                <place xml:id="pl-104">
@@ -5472,7 +6212,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2968373/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#HDelepine">Delépine, Henri Louis (1889-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#HDelepine" corresp="testateurs-D">Delépine, Henri Louis (1889-1914)</ref>
                   </note>
                </place>
                
@@ -5496,7 +6236,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2989951/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#JDDuffourc">Duffourc, Jules Dominique Zéphirin (1882-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#JDDuffourc" corresp="testateurs-D">Duffourc, Jules Dominique Zéphirin (1882-1914)</ref>
                   </note>
                </place>
                
@@ -5517,15 +6257,35 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2967856/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#LDebain">Debain, Lucien Pierre Armand (1874-1915)</ref>
-                  <ref type="linkToPersonsIndex" target="#EDubois">Dubois, Emile Charles (1881-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#LDebain" corresp="testateurs-D">Debain, Lucien Pierre Armand (1874-1915)</ref>
+                  <ref type="linkToPersonsIndex" target="#EDubois" corresp="testateurs-D">Dubois, Emile Charles (1881-1916)</ref>
                   </note>
                </place>
                
                </listPlace>
          <listPlace xml:id="lieux-Z">
             <head>Z</head>
-            <place xml:id="pl-101">
+            <note type="letter-nav" subtype="generated">
+            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
+            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
+            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
+            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
+            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
+            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
+            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
+            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
+            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
+            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
+            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
+            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
+            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
+            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
+            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
+            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
+            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
+            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
+            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z" rend="current">Z</ref>
+            </note><place xml:id="pl-101">
                   <placeName>
                      <settlement type="commune">Zeitenlik</settlement>
                   </placeName>
@@ -5542,7 +6302,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/734077/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#ESimonnet">Simonnet, Emile (1890-1916)</ref>
+                  <ref type="linkToPersonsIndex" target="#ESimonnet" corresp="testateurs-S">Simonnet, Emile (1890-1916)</ref>
                   </note>
                </place>
                
@@ -5563,7 +6323,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2783222/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#CRLaederich">Laederich, Charles Roger (1860-1914)</ref>
+                  <ref type="linkToPersonsIndex" target="#CRLaederich" corresp="testateurs-L">Laederich, Charles Roger (1860-1914)</ref>
                   </note>
                </place>
                
@@ -5581,7 +6341,7 @@
                   </location>
                   <idno type="geonamesURI">http://sws.geonames.org/2967110/</idno>
                <note type="linksToEdition" subtype="generated">
-                  <ref type="linkToPersonsIndex" target="#RGillon">Gillon, Édouard Julien René (1895-1918)</ref>
+                  <ref type="linkToPersonsIndex" target="#RGillon" corresp="testateurs-G">Gillon, Édouard Julien René (1895-1918)</ref>
                   </note>
                </place>
                
