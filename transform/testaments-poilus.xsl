@@ -98,8 +98,132 @@
       <xsl:when test="self::tei:ref[@type = 'linkToEdition']
         | parent::tei:ref[@type = 'linkToEdition']">testaments-poilus-edition</xsl:when>
       <!-- sinon la cible est ailleurs dans le document courant -->
-      <xsl:otherwise><xsl:value-of select="$dts_resource"/></xsl:otherwise>
+      <xsl:otherwise><xsl:call-template name="tp-current-resource"/></xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <!-- Route du visualiseur. Les trois ressources du corpus étant connues, la
+       feuille les nomme elle-même : rien n'a besoin de transiter par
+       routes.xqm. Le seul réglage est la racine de l'application, à changer
+       si elle n'est pas montée à la racine du domaine. -->
+  <xsl:param name="tp_app_base">/</xsl:param>
+  <xsl:variable name="tp_collection">testaments-poilus</xsl:variable>
+
+  <!-- Document servi, déduit de son contenu : les trois ressources ont des
+       structures disjointes — l'index seul porte des person/place, l'édition
+       seule des divisions de testament. -->
+  <xsl:template name="tp-current-resource">
+    <xsl:choose>
+      <xsl:when test="//tei:listPerson | //tei:listPlace | //tei:person | //tei:place">testaments-poilus-index</xsl:when>
+      <xsl:when test="//tei:div[@type = 'will'] | //tei:text[starts-with(@xml:id, 'will-')]">testaments-poilus-edition</xsl:when>
+      <xsl:otherwise>testaments-poilus-introduction</xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="tp-href">
+    <xsl:param name="anchor"/>
+    <xsl:variable name="res">
+      <xsl:call-template name="dts-resource-for-anchor">
+        <xsl:with-param name="anchor" select="$anchor"/>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:value-of select="concat($tp_app_base, $tp_collection, '/document/', $res, '#', $anchor)"/>
+  </xsl:template>
+
+  <!-- ====================================================================
+       Correctifs repris dans la feuille de corpus plutôt que dans hteiml.
+
+       teiHeader2html.xsl est *incluse* par tei2html.xsl : elle a donc la même
+       précédence d'import que la générique, et ses motifs — plus spécifiques —
+       l'emportent partout, en-tête ou non. Redéclarer ces motifs ici les
+       neutralise, la précédence d'import primant sur la priorité, et laisse la
+       générique intacte pour les autres corpus.
+       ==================================================================== -->
+
+  <!-- Une ancre dont la cible est hors du fragment servi ne recevait aucun
+       href : le renvoi devenait muet. -->
+  <xsl:template match="@ref | @target | @lemmaRef" priority="1">
+    <xsl:param name="path" select="."/>
+    <xsl:choose>
+      <xsl:when test="starts-with($path, '#')">
+        <xsl:variable name="cible" select="key('id', substring($path, 2))"/>
+        <xsl:choose>
+          <xsl:when test="$cible">
+            <xsl:for-each select="$cible[1]">
+              <xsl:attribute name="href"><xsl:call-template name="href"/></xsl:attribute>
+            </xsl:for-each>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="href">
+              <xsl:call-template name="tp-href">
+                <xsl:with-param name="anchor" select="substring($path, 2)"/>
+              </xsl:call-template>
+            </xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- « *[tei:surname] », de priorité 0,5, l'emportait sur le gabarit général
+       et ne parcourait que les éléments enfants : un persName du corps perdait
+       son lien vers l'index et ses nœuds de texte — « Fernand Lucien Jules
+       Melchior <surname>Chatin</surname> » ne rendait que « Chatin ». 477 des
+       533 persName du corpus sont dans ce cas. -->
+  <xsl:template match="tei:persName | tei:placeName" priority="1">
+    <xsl:choose>
+      <xsl:when test="@ref and starts-with(@ref, '#')">
+        <a>
+          <xsl:attribute name="property">
+            <xsl:choose>
+              <xsl:when test="self::tei:persName">dbo:person</xsl:when>
+              <xsl:otherwise>dbo:place</xsl:otherwise>
+            </xsl:choose>
+          </xsl:attribute>
+          <xsl:call-template name="atts"/>
+          <xsl:variable name="cible" select="key('id', substring-after(@ref, '#'))"/>
+          <xsl:if test="$cible">
+            <xsl:attribute name="title">
+              <xsl:apply-templates select="$cible[1]" mode="txt"/>
+            </xsl:attribute>
+          </xsl:if>
+          <xsl:apply-templates/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <span><xsl:call-template name="atts"/><xsl:apply-templates/></span>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- Les cinq notes logées dans une <bibl> tombaient sous le motif
+       « tei:bibl//tei:note » de teiHeader2html : rendues en ligne, sans appel. -->
+  <xsl:template match="tei:bibl//tei:note">
+    <xsl:call-template name="noteref"/>
+  </xsl:template>
+
+  <!-- L'appel déporté <ref type="note" xml:id="x"> est visé par le @target de
+       sa note, sans suffixe ; la générique suffixait son ancre d'un « _ », ce
+       qui rendait muets les onze liens de retour du corpus. -->
+  <xsl:template match="tei:ref[@type = 'note'][@xml:id]" priority="1">
+    <a class="noteref" id="{@xml:id}" href="{@target}">
+      <sup><xsl:call-template name="note-n"/></sup>
+    </a>
+  </xsl:template>
+
+  <!-- Une note logée sous un lem ou un rdg relève de l'apparat : la ramasser
+       en note de fin produisait une entrée dont l'appel n'est jamais rendu,
+       l'édition n'affichant pas cette branche de la leçon. -->
+  <xsl:template match="tei:note[ancestor::tei:app]" mode="fn" priority="30"/>
+
+  <!-- Seule section à ne pas porter son identifiant : le lien « § » que son
+       propre titre engendre visait donc une ancre absente. -->
+  <xsl:template match="tei:div[@type = 'notes' or @type = 'footnotes']" priority="1">
+    <section class="footnotes">
+      <xsl:attribute name="id"><xsl:call-template name="id"/></xsl:attribute>
+      <xsl:apply-templates/>
+    </section>
   </xsl:template>
 
   <!-- <ref type="email"> ne porte pas de @target : la générique produisait donc
@@ -335,7 +459,7 @@
             <xsl:choose>
               <xsl:when test="key('id', $anchor)"><xsl:value-of select="@ref"/></xsl:when>
               <xsl:otherwise>
-                <xsl:call-template name="dts-href">
+                <xsl:call-template name="tp-href">
                   <xsl:with-param name="anchor" select="$anchor"/>
                 </xsl:call-template>
               </xsl:otherwise>
