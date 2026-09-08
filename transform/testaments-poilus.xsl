@@ -327,21 +327,15 @@
        notices, seulement le nom de chaque index. Deux barres de lettres côte à
        côte n'y apprennent rien, et le sommaire de gauche les donne déjà. -->
   <xsl:template match="tei:listPerson[tei:listPerson]" priority="11">
-    <section class="tp-index-persons">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">
-        <a href="{concat($tp_app_base, $tp_collection, '/document/', 'testaments-poilus-index', '?refId=', @xml:id)}"
-           style="color:inherit;text-decoration:none">Index des testateurs</a>
-      </h2>
-    </section>
+    <section class="tp-index-persons"><xsl:apply-templates select="tei:head[@type = 'index']"/></section>
   </xsl:template>
 
+  <!-- La barre seule : cette page est l'accueil de l'index, pas l'index entier
+       — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme unité
+       citable, la liste ne reçoit de toute façon pas ses lettres. -->
   <xsl:template match="tei:listPerson[not(tei:person)]" priority="10">
     <section class="tp-index-persons">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">Index des testateurs</h2>
-      <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
-           entier — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
-           unité citable, la liste ne reçoit de toute façon pas ses lettres. -->
-      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
+      <xsl:apply-templates select="tei:head[@type = 'index'] | tei:note[@type = 'letter-nav']"/>
     </section>
   </xsl:template>
 
@@ -357,21 +351,15 @@
        notices, seulement le nom de chaque index. Deux barres de lettres côte à
        côte n'y apprennent rien, et le sommaire de gauche les donne déjà. -->
   <xsl:template match="tei:listPlace[tei:listPlace]" priority="11">
-    <section class="tp-index-places">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
-        <a href="{concat($tp_app_base, $tp_collection, '/document/', 'testaments-poilus-index', '?refId=', @xml:id)}"
-           style="color:inherit;text-decoration:none">Index des lieux de décès</a>
-      </h2>
-    </section>
+    <section class="tp-index-places"><xsl:apply-templates select="tei:head[@type = 'index']"/></section>
   </xsl:template>
 
+  <!-- La barre seule : cette page est l'accueil de l'index, pas l'index entier
+       — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme unité
+       citable, la liste ne reçoit de toute façon pas ses lettres. -->
   <xsl:template match="tei:listPlace[not(tei:place)]" priority="10">
     <section class="tp-index-places">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">Index des lieux de décès</h2>
-      <!-- La barre seule : cette page est l'accueil de l'index, pas l'index
-           entier — l'ÉLEC n'a d'ailleurs que des pages-lettres. Servie comme
-           unité citable, la liste ne reçoit de toute façon pas ses lettres. -->
-      <xsl:apply-templates select="tei:note[@type = 'letter-nav']"/>
+      <xsl:apply-templates select="tei:head[@type = 'index'] | tei:note[@type = 'letter-nav']"/>
     </section>
   </xsl:template>
 
@@ -383,6 +371,29 @@
     </section>
   </xsl:template>
 
+  <!-- Titre d'un index. Il est dans la source (generer-liens-index.py) parce
+       que DoTS ne sert d'un fragment que ses enfants : servie seule, la liste
+       englobante s'evanouit et les deux gabarits ci-dessus ne s'appliquent
+       plus. Le <head>, lui, traverse. Dans la vue d'ensemble du document il
+       devient le lien vers l'accueil de son index. -->
+  <xsl:template match="tei:head[@type = 'index']" priority="12">
+    <h2 class="tp-index-title">
+      <xsl:attribute name="style">
+        <xsl:choose>
+          <xsl:when test="parent::tei:listPlace">font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem</xsl:when>
+          <xsl:otherwise>font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="../@xml:id and (../tei:listPerson or ../tei:listPlace)">
+          <a href="{concat($tp_app_base, $tp_collection, '/document/', 'testaments-poilus-index', '?refId=', ../@xml:id)}"
+             style="color:inherit;text-decoration:none"><xsl:value-of select="normalize-space(.)"/></a>
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="normalize-space(.)"/></xsl:otherwise>
+      </xsl:choose>
+    </h2>
+  </xsl:template>
+
   <xsl:template name="tp-index-lettre">
     <h3 class="tp-index-initial" style="font-size:1.6rem;color:#a73136;font-weight:bold;margin:1.2rem 0 .4rem">
       <xsl:value-of select="normalize-space(tei:head)"/>
@@ -391,6 +402,17 @@
 
   <!-- La lettre est déjà rendue en titre de section. -->
   <xsl:template match="tei:listPerson/tei:head | tei:listPlace/tei:head" priority="10"/>
+
+  <!-- Servie seule, une lettre n'arrive pas dans sa <listPerson> : DoTS ne
+       livre que les enfants du fragment, rangés dans un <dts:wrapper>. Les
+       deux gabarits ci-dessus ne s'appliquent alors pas, et le <head> de la
+       lettre retombait sur la générique — un h1 suivi d'une ancre — au lieu de
+       l'initiale rouge. On le reconnaît à la barre des lettres qui le suit. -->
+  <xsl:template match="tei:head[following-sibling::*[1][self::tei:note][@type = 'letter-nav']]" priority="11">
+    <h3 class="tp-index-initial" style="font-size:1.6rem;color:#a73136;font-weight:bold;margin:1.2rem 0 .4rem">
+      <xsl:value-of select="normalize-space(.)"/>
+    </h3>
+  </xsl:template>
 
   <!-- testateur -->
   <xsl:template match="tei:person" priority="9">
