@@ -7433,7 +7433,7 @@
                   <space dim="vertical" quantity="5" unit="lines"/>
                   <head>Ceci est mon testament.</head>
                   <space dim="vertical" quantity="3" unit="lines"/>
-                  <p>Je <choice><sic>sousigné</sic><corr>soussigné</corr></choice> <persName ref="JMurat">Jules <surname>Murat</surname></persName><choice><reg>,</reg><orig/></choice>
+                  <p>Je <choice><sic>sousigné</sic><corr>soussigné</corr></choice> <persName ref="#JMurat" corresp="testateurs-M">Jules <surname>Murat</surname></persName><choice><reg>,</reg><orig/></choice>
                      demeurant<lb/> à Paris 9 rue Trousseau<choice><reg>,</reg><orig/></choice> donne<lb/> et lègue à <choice>
                         <abbr>Mademois -</abbr>
                         <expan>Mademois<ex>elle</ex></expan>
@@ -7449,7 +7449,7 @@
                         <orig>Avril</orig>
                      </choice> <choice><sic>mil</sic><corr>mille</corr></choice> neuf cent quinze.</dateline>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <signed rend="centered"><seg type="signature"><persName ref="JMurat">Jules
+                  <signed rend="centered"><seg type="signature"><persName ref="#JMurat" corresp="testateurs-M">Jules
                               <surname>Murat</surname></persName></seg></signed>
                </div>
                <pb type="whitePage_notDigitized"/>
@@ -7569,7 +7569,7 @@
                         <orig> :</orig>
                      </choice></head>
                   <space dim="vertical" quantity="1" unit="lines"/>
-                  <p>Je soussigné <persName ref="MDescombes"><choice>
+                  <p>Je soussigné <persName ref="#MDescombes" corresp="testateurs-D"><choice>
                            <reg>Marcelin</reg>
                            <orig>Marcellin</orig>
                   </choice> <surname>Descom<handShift medium="fadeInk"/>bes</surname></persName><lb/>
