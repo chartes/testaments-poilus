@@ -626,11 +626,32 @@
        mois/jours est le meme dispositif.
 
        Christofle a ces listes PRE-CALCULEES DANS SON TEI (build_indexes.py les
-       ecrit dans chaque minute). Ici on n'ecrit pas dans la base : DoTS servant
-       chaque testament SEUL dans un <dts:wrapper>, sans ses freres, la feuille
-       ne peut pas connaitre les 133 autres dates. D'ou un side-car a cote de la
-       feuille — meme motif que delescluze-persons.xml — engendre par
-       dots-autopilot/scripts/agentwill_nav_sidecar.py.
+       ecrit dans chaque minute). Ici, DoTS sert chaque testament SEUL dans un
+       <dts:wrapper>, sans ses freres : depuis le fragment courant la feuille ne
+       voit pas les 133 autres dates.
+
+       2026-09-25 : ce manque etait comble par un fichier compagnon
+       (testaments-poilus-nav.xml) qui n'a JAMAIS ete dans le depot — il n'etait
+       que deploye, et engendre par un script Python. Qui clonait le depot et le
+       deployait cassait donc la barre sans le voir. Il est remplace par une
+       lecture des TROIS XML DU CORPUS eux-memes : plus rien n'est precalcule,
+       plus aucun fichier engendre a maintenir, et la barre suit le TEI.
+
+       Tout ce que portait le compagnon vient du TEI, verifie attribut par
+       attribut contre ses 134 <will> et ses 133 <unite> (0 ecart) :
+         @when       front/docDate/date/@when
+         @y @m       les quatre et les deux chiffres de @when
+         @mois @jour @when et le nom du mois ; « 1er » pour le quantieme 1,
+                     comme l'ecrivait le compagnon. Les <head> des <group> du TEI
+                     disent la meme chose (« 31 juillet 1914 » = @jour + @y,
+                     134/134) : ils corroborent sans servir de source.
+         @n          le numero de @xml:id (will-004 -> 4)
+         @nom        premier <persName> du resume (134/134 ; repli sur le front)
+         @fy @fm @fd premier testament de son <group> annee / mois / jour
+         <unite>     les unites que DoTS-vue ne sait pas ouvrir : <person> d'une
+                     lettre de l'index (128) et sous-partie de l'introduction (5) ;
+                     @ouvrable est l'element englobant, celui-la meme que donnait
+                     le champ `parent` du registre DTS.
 
        Semantique relevee sur les captures de l'ELEC, et non devinee :
          annees  : les 5, chacune vers son PREMIER testament ;
@@ -644,12 +665,108 @@
        Piege DoTS-vue : un <a> vers la route COURANTE vide la page. L'element
        courant sort donc en <strong>, jamais en <a> — ce qui est aussi plus juste.
        =================================================================== -->
-  <xsl:variable name="tp-nav" select="document('testaments-poilus-nav.xml')/tp-nav"/>
+  <!-- LES TROIS XML DU CORPUS, a cote de la feuille. Ce sont les fichiers de
+       data/ eux-memes, deposes par le deploiement comme ils sont verses dans
+       BaseX : ni extrait, ni fichier engendre, rien a regenerer quand le TEI
+       change. `document()` se resout sur l'URI de base de la feuille.
+
+       Pourquoi pas l'API DoTS. On a essaye de lire la ressource servie par
+       `document('http://localhost:8080/api/dts/document?resource=...')`. Cela
+       FONCTIONNE hors ligne (Saxon seul) mais INTERBLOQUE l'application :
+       routes.xqm enveloppe le rendu dans cache:cache, qui ecrit dans le store
+       de BaseX ; la requete que la feuille adresse a l'application se met en
+       file derriere le verrou que detient la requete en cours et n'en sort
+       jamais. Mesure du 2026-09-25 : job en cours 6 min 51 s, sa propre
+       sous-requete « queued », serveur a redemarrer. Une feuille de style ne
+       rappelle pas l'application qui l'execute. -->
+  <xsl:variable name="tp-uri-edition" select="'testaments-poilus-edition.xml'"/>
+  <xsl:variable name="tp-uri-index" select="'testaments-poilus-index.xml'"/>
+  <xsl:variable name="tp-uri-introduction" select="'testaments-poilus-introduction.xml'"/>
+  <!-- Les noms de mois ne se deduisent pas d'un numero, et les tirer du <head>
+       du <group> ferait dependre la barre d'un libelle redigeable. -->
+  <xsl:variable name="tp-mois"
+    select="'|01:janvier|02:février|03:mars|04:avril|05:mai|06:juin|07:juillet|08:août|09:septembre|10:octobre|11:novembre|12:décembre|'"/>
+
+  <!-- Saxon n'evalue une variable globale qu'a son premier emploi : une page qui
+       ne porte ni barre de navigation ni renvoi inter-ressources ne lit aucun
+       des trois fichiers — d'ou deux arbres separes. `doc-available` les met
+       dans le meme cache que `document` (une seule lecture) et, si un fichier
+       manque au deploiement, laisse la page se rendre sans sa barre plutot
+       qu'en 500. -->
+  <xsl:variable name="tp-wills-arbre">
+    <xsl:if test="doc-available($tp-uri-edition)">
+      <xsl:for-each select="document($tp-uri-edition)//tei:text[starts-with(@xml:id, 'will-')]">
+        <xsl:variable name="when" select="string(tei:front/tei:docDate/tei:date/@when)"/>
+        <xsl:variable name="m" select="substring($when, 6, 2)"/>
+        <xsl:variable name="quantieme" select="substring($when, 9, 2)"/>
+        <xsl:variable name="mois" select="substring-before(substring-after($tp-mois, concat('|', $m, ':')), '|')"/>
+        <xsl:element name="will" namespace="">
+          <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+          <xsl:attribute name="n"><xsl:value-of select="number(substring-after(@xml:id, 'will-'))"/></xsl:attribute>
+          <xsl:attribute name="when"><xsl:value-of select="$when"/></xsl:attribute>
+          <xsl:attribute name="y"><xsl:value-of select="substring($when, 1, 4)"/></xsl:attribute>
+          <xsl:attribute name="m"><xsl:value-of select="$m"/></xsl:attribute>
+          <xsl:attribute name="mois"><xsl:value-of select="$mois"/></xsl:attribute>
+          <xsl:attribute name="jour">
+            <xsl:choose>
+              <xsl:when test="$quantieme = '01'">1er</xsl:when>
+              <xsl:otherwise><xsl:value-of select="number($quantieme)"/></xsl:otherwise>
+            </xsl:choose>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$mois"/>
+          </xsl:attribute>
+          <xsl:attribute name="nom">
+            <xsl:choose>
+              <xsl:when test="tei:front/tei:div[@type = 'summary']/tei:p/tei:persName">
+                <xsl:value-of select="normalize-space((tei:front/tei:div[@type = 'summary']/tei:p/tei:persName)[1])"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="normalize-space((tei:front//tei:persName)[1])"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:attribute>
+          <xsl:attribute name="fy">
+            <xsl:if test="generate-id(.) = generate-id((ancestor::tei:group[@type = 'year'][1]//tei:text[starts-with(@xml:id, 'will-')])[1])">1</xsl:if>
+          </xsl:attribute>
+          <xsl:attribute name="fm">
+            <xsl:if test="generate-id(.) = generate-id((ancestor::tei:group[@type = 'month'][1]//tei:text[starts-with(@xml:id, 'will-')])[1])">1</xsl:if>
+          </xsl:attribute>
+          <xsl:attribute name="fd">
+            <xsl:if test="generate-id(.) = generate-id((ancestor::tei:group[@type = 'day'][1]//tei:text[starts-with(@xml:id, 'will-')])[1])">1</xsl:if>
+          </xsl:attribute>
+        </xsl:element>
+      </xsl:for-each>
+    </xsl:if>
+  </xsl:variable>
+  <xsl:variable name="tp-wills" select="$tp-wills-arbre"/>
+
+  <xsl:variable name="tp-unites-arbre">
+    <xsl:if test="doc-available($tp-uri-index)">
+      <xsl:for-each select="document($tp-uri-index)//tei:listPerson[@xml:id]/tei:person[@xml:id]">
+        <xsl:element name="unite" namespace="">
+          <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+          <xsl:attribute name="res">testaments-poilus-index</xsl:attribute>
+          <xsl:attribute name="ouvrable"><xsl:value-of select="../@xml:id"/></xsl:attribute>
+        </xsl:element>
+      </xsl:for-each>
+    </xsl:if>
+    <xsl:if test="doc-available($tp-uri-introduction)">
+      <xsl:for-each select="document($tp-uri-introduction)//tei:div[@xml:id = 'introduction']/tei:div[@xml:id]/tei:div[@xml:id]">
+        <xsl:element name="unite" namespace="">
+          <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+          <xsl:attribute name="res">testaments-poilus-introduction</xsl:attribute>
+          <xsl:attribute name="ouvrable"><xsl:value-of select="../@xml:id"/></xsl:attribute>
+        </xsl:element>
+      </xsl:for-each>
+    </xsl:if>
+  </xsl:variable>
+  <xsl:variable name="tp-unites" select="$tp-unites-arbre"/>
+
   <xsl:variable name="tp-route">/testaments-poilus/document/testaments-poilus-edition?refId=</xsl:variable>
 
   <xsl:template name="tp-will-nav">
     <xsl:variable name="id" select="string(@xml:id)"/>
-    <xsl:variable name="me" select="$tp-nav/will[@id = $id]"/>
+    <xsl:variable name="me" select="$tp-wills/will[@id = $id]"/>
     <xsl:if test="$me">
       <!-- 2026-09-14 (renvoistp) : l'annee, le mois et le jour de cette barre visaient
            encore le PREMIER TESTAMENT de la periode (`?refId=will-XXX`), faute d'unites
@@ -667,7 +784,7 @@
       <xsl:variable name="cour-jour" select="concat('jour-', $me/@when)"/>
       <nav class="tp-will-nav" aria-label="Navigation par année, mois, jour et testament">
         <ul class="tp-years-list">
-          <xsl:for-each select="$tp-nav/will[@fy = '1']">
+          <xsl:for-each select="$tp-wills/will[@fy = '1']">
             <li>
               <xsl:if test="@y = $me/@y"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
               <xsl:call-template name="tp-nav-item">
@@ -679,7 +796,7 @@
           </xsl:for-each>
         </ul>
         <ul class="tp-months-list">
-          <xsl:for-each select="$tp-nav/will[@fm = '1'][@y = $me/@y]">
+          <xsl:for-each select="$tp-wills/will[@fm = '1'][@y = $me/@y]">
             <li>
               <xsl:if test="@m = $me/@m"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
               <xsl:call-template name="tp-nav-item">
@@ -691,7 +808,7 @@
           </xsl:for-each>
         </ul>
         <ul class="tp-days-list">
-          <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $me/@y][number(@m) &lt; number($me/@m)][last()]">
+          <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $me/@y][number(@m) &lt; number($me/@m)][last()]">
             <li class="tp-nav-prev">
               <xsl:call-template name="tp-nav-item">
                 <xsl:with-param name="cible" select="concat('jour-', @when)"/>
@@ -701,7 +818,7 @@
               <span class="tp-nav-sep"> «</span>
             </li>
           </xsl:for-each>
-          <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $me/@y][@m = $me/@m]">
+          <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $me/@y][@m = $me/@m]">
             <li>
               <xsl:if test="@when = $me/@when"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
               <xsl:call-template name="tp-nav-item">
@@ -711,7 +828,7 @@
               </xsl:call-template>
             </li>
           </xsl:for-each>
-          <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $me/@y][number(@m) &gt; number($me/@m)][1]">
+          <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $me/@y][number(@m) &gt; number($me/@m)][1]">
             <li class="tp-nav-next">
               <span class="tp-nav-sep">» </span>
               <xsl:call-template name="tp-nav-item">
@@ -729,9 +846,9 @@
                sous année → mois → jour dans le sommaire de gauche (registre 135 → 254),
                et la barre de dates ci-dessus donne déjà les voisins du même jour. Deux
                flèches de plus étaient le doublon d'une navigation qui dit mieux où l'on est.
-               Les attributs @pw et @nw restent dans le side-car : rien à régénérer si l'on
+               Les voisins @pw et @nw ne sont plus calculés : rien à rétablir si l'on
                voulait les rétablir. -->
-          <xsl:for-each select="$tp-nav/will[@when = $me/@when]">
+          <xsl:for-each select="$tp-wills/will[@when = $me/@when]">
             <li>
               <xsl:if test="@id = $id"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
               <xsl:call-template name="tp-nav-item">
@@ -798,11 +915,11 @@
   <xsl:template match="tei:ref[@type = 'linkToEdition'] | tei:ref[@type = 'linkToPersonsIndex'] | tei:ref[@type = 'linkToIntro'] | tei:ref[@type = 'linkToBibl']" priority="26">
     <xsl:variable name="cible" select="substring-after(normalize-space(@target), '#')"/>
     <xsl:variable name="co" select="normalize-space(@corresp)"/>
-    <!-- Si la cible n'est pas une unite OUVRABLE, le side-car donne l'ancetre a
+    <!-- Si la cible n'est pas une unite OUVRABLE, $tp-unites donne l'ancetre a
          mettre en refId ; la cible devient alors l'ancre. Voir le commentaire de
-         `unites_non_ouvrables` dans agentwill_nav_sidecar.py : la correction que
+         `tp-unites-arbre` ci-dessus : la correction que
          DoTS-vue fait lui-meme ne joue qu'au chargement, jamais au clic. -->
-    <xsl:variable name="ouvr" select="string($tp-nav/unite[@id = $cible]/@ouvrable)"/>
+    <xsl:variable name="ouvr" select="string($tp-unites/unite[@id = $cible]/@ouvrable)"/>
     <xsl:choose>
       <xsl:when test="$cible = ''">
         <xsl:apply-templates/>
@@ -1123,19 +1240,19 @@
        DANS le TEI, qui n'a pas d'@xml:id et survit donc au filtrage (sa
        page mois-01 : 12 616 caractères, mesurés au navigateur le
        2026-09-14). Il faudrait pour cela écrire 119 index de plus en base,
-       dans une requête déjà validée à blanc. Le side-car
-       testaments-poilus-nav.xml contient déjà tout ce qu'il faut
+       dans une requête déjà validée à blanc. $tp-wills, lu dans le TEI,
+       contient déjà tout ce qu'il faut
        (@y, @m, @jour, @mois, @nom) : rien de plus à écrire en base.
 
        COMMENT LA PAGE EST RECONNUE
        routes.xqm l. 273 ne passe à la feuille que {static_path, resource} :
        le refId n'est PAS transmis. La page ne peut donc être identifiée que
        par son contenu — ici l'unique <head> restant. Son libellé est celui
-       que fabrique la requête, et le side-car le reconstitue exactement :
+       que fabrique la requête, et $tp-wills le reconstitue exactement :
          année : @y                          → « 1914 »
          mois  : concat(@mois, ' ', @y)      → « juillet 1914 »
          jour  : concat(@jour, ' ', @y)      → « 1er août 1914 »
-       (la requête écrit « 1er » pour le quantième 1, le side-car aussi).
+       (la requête écrit « 1er » pour le quantième 1, $tp-wills aussi).
 
        PREUVE D'INNOCUITÉ AVANT VERSEMENT
        Le modèle ne se déclenche que sur un <dts:wrapper> dont le SEUL enfant
@@ -1160,9 +1277,9 @@
     <!-- « seul enfant élément du wrapper » : la signature exacte d'une page
          de groupe servie en excludeFragments, et d'elle seule. -->
     <xsl:variable name="seul" select="count(../*) = 1"/>
-    <xsl:variable name="wj" select="$tp-nav/will[concat(@jour, ' ', @y) = $lbl]"/>
-    <xsl:variable name="wm" select="$tp-nav/will[concat(@mois, ' ', @y) = $lbl]"/>
-    <xsl:variable name="wy" select="$tp-nav/will[@y = $lbl]"/>
+    <xsl:variable name="wj" select="$tp-wills/will[concat(@jour, ' ', @y) = $lbl]"/>
+    <xsl:variable name="wm" select="$tp-wills/will[concat(@mois, ' ', @y) = $lbl]"/>
+    <xsl:variable name="wy" select="$tp-wills/will[@y = $lbl]"/>
     <xsl:choose>
       <!-- JOUR — testé en premier : « 31 juillet 1914 » ne peut pas être pris
            pour un mois ni pour une année, mais l'ordre le garantit. -->
@@ -1233,10 +1350,10 @@
          comparer a une chaine dans tp-nav-item doit rester une comparaison
          de chaines quel que soit le moteur. -->
     <xsl:variable name="cour" select="string($courant)"/>
-    <!-- Les testaments couverts par la page, dans l'ordre du side-car (= celui
+    <!-- Les testaments couverts par la page, dans l'ordre du TEI (celui
          du TEI, chronologique strict : 0 inversion mesurée le 2026-09-14). -->
     <xsl:variable name="dedans"
-      select="$tp-nav/will[$niveau = 'portail'
+      select="$tp-wills/will[$niveau = 'portail'
                            or ($niveau = 'annee' and @y = $y)
                            or ($niveau = 'mois' and @y = $y and @m = $m)
                            or ($niveau = 'jour' and @when = $when)]"/>
@@ -1246,7 +1363,7 @@
            aucune règle nouvelle à écrire. -->
       <nav class="tp-will-nav" aria-label="Navigation par année, mois et jour">
         <ul class="tp-years-list">
-          <xsl:for-each select="$tp-nav/will[@fy = '1']">
+          <xsl:for-each select="$tp-wills/will[@fy = '1']">
             <li>
               <xsl:if test="@y = $y"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
               <xsl:call-template name="tp-nav-item">
@@ -1259,7 +1376,7 @@
         </ul>
         <xsl:if test="$y != ''">
           <ul class="tp-months-list">
-            <xsl:for-each select="$tp-nav/will[@fm = '1'][@y = $y]">
+            <xsl:for-each select="$tp-wills/will[@fm = '1'][@y = $y]">
               <li>
                 <xsl:if test="@m = $m"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
                 <xsl:call-template name="tp-nav-item">
@@ -1273,7 +1390,7 @@
         </xsl:if>
         <xsl:if test="$m != ''">
           <ul class="tp-days-list">
-            <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $y][@m = $m]">
+            <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $y][@m = $m]">
               <li>
                 <xsl:if test="@when = $when"><xsl:attribute name="class">selected</xsl:attribute></xsl:if>
                 <xsl:call-template name="tp-nav-item">
@@ -1299,19 +1416,19 @@
           <xsl:when test="$niveau = 'jour'"><xsl:text>. Cliquez un nom pour lire le testament.</xsl:text></xsl:when>
           <xsl:when test="$niveau = 'mois'">
             <xsl:text>, </xsl:text>
-            <xsl:value-of select="count($tp-nav/will[@fd = '1'][@y = $y][@m = $m])"/>
+            <xsl:value-of select="count($tp-wills/will[@fd = '1'][@y = $y][@m = $m])"/>
             <xsl:text> jour</xsl:text>
-            <xsl:if test="count($tp-nav/will[@fd = '1'][@y = $y][@m = $m]) &gt; 1">s</xsl:if>
+            <xsl:if test="count($tp-wills/will[@fd = '1'][@y = $y][@m = $m]) &gt; 1">s</xsl:if>
             <xsl:text>. Choisissez un jour ou un testament.</xsl:text>
           </xsl:when>
           <xsl:when test="$niveau = 'annee'">
             <xsl:text>, </xsl:text>
-            <xsl:value-of select="count($tp-nav/will[@fm = '1'][@y = $y])"/>
+            <xsl:value-of select="count($tp-wills/will[@fm = '1'][@y = $y])"/>
             <xsl:text> mois. Choisissez un mois.</xsl:text>
           </xsl:when>
           <xsl:otherwise>
             <xsl:text>, </xsl:text>
-            <xsl:value-of select="count($tp-nav/will[@fy = '1'])"/>
+            <xsl:value-of select="count($tp-wills/will[@fy = '1'])"/>
             <xsl:text> années. Choisissez une année.</xsl:text>
           </xsl:otherwise>
         </xsl:choose>
@@ -1321,12 +1438,12 @@
         <!-- Portail : les cinq années. -->
         <xsl:when test="$niveau = 'portail'">
           <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
-            <xsl:for-each select="$tp-nav/will[@fy = '1']">
+            <xsl:for-each select="$tp-wills/will[@fy = '1']">
               <li style="padding:.3rem 0;border-bottom:1px solid #efeceb">
                 <a class="internalLink" href="{concat($tp-route, 'annee-', @y)}"
                    style="color:#28211f;text-decoration:none;font-weight:700"><xsl:value-of select="@y"/></a>
                 <xsl:call-template name="tp-groupe-compte">
-                  <xsl:with-param name="k" select="count($tp-nav/will[@y = current()/@y])"/>
+                  <xsl:with-param name="k" select="count($tp-wills/will[@y = current()/@y])"/>
                 </xsl:call-template>
               </li>
             </xsl:for-each>
@@ -1337,16 +1454,16 @@
              1914) : c'est le rôle des pages de mois et de jour. -->
         <xsl:when test="$niveau = 'annee'">
           <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
-            <xsl:for-each select="$tp-nav/will[@fm = '1'][@y = $y]">
+            <xsl:for-each select="$tp-wills/will[@fm = '1'][@y = $y]">
               <xsl:variable name="mm" select="@m"/>
               <li style="padding:.45rem 0;border-bottom:1px solid #efeceb">
                 <a class="internalLink" href="{concat($tp-route, 'mois-', @y, '-', $mm)}"
                    style="color:#28211f;text-decoration:none;font-weight:700"><xsl:value-of select="@mois"/></a>
                 <xsl:call-template name="tp-groupe-compte">
-                  <xsl:with-param name="k" select="count($tp-nav/will[@y = $y][@m = $mm])"/>
+                  <xsl:with-param name="k" select="count($tp-wills/will[@y = $y][@m = $mm])"/>
                 </xsl:call-template>
                 <div style="padding:.15rem 0 0 1.2rem;color:#6b6260;font-size:.92rem">
-                  <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $y][@m = $mm]">
+                  <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $y][@m = $mm]">
                     <xsl:if test="position() &gt; 1"><span style="color:#c9bcbc"> | </span></xsl:if>
                     <a class="internalLink" href="{concat($tp-route, 'jour-', @when)}"
                        style="color:#28211f;text-decoration:none"><xsl:value-of select="@jour"/></a>
@@ -1360,16 +1477,16 @@
              disposition de la page de mois de christofle. -->
         <xsl:when test="$niveau = 'mois'">
           <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
-            <xsl:for-each select="$tp-nav/will[@fd = '1'][@y = $y][@m = $m]">
+            <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $y][@m = $m]">
               <xsl:variable name="w" select="@when"/>
               <li style="padding:.45rem 0;border-bottom:1px solid #efeceb">
                 <a class="internalLink" href="{concat($tp-route, 'jour-', $w)}"
                    style="color:#28211f;text-decoration:none;font-weight:700"><xsl:value-of select="@jour"/></a>
                 <xsl:call-template name="tp-groupe-compte">
-                  <xsl:with-param name="k" select="count($tp-nav/will[@when = $w])"/>
+                  <xsl:with-param name="k" select="count($tp-wills/will[@when = $w])"/>
                 </xsl:call-template>
                 <ul style="list-style:none;padding:0 0 0 1.2rem;margin:.2rem 0 0">
-                  <xsl:for-each select="$tp-nav/will[@when = $w]">
+                  <xsl:for-each select="$tp-wills/will[@when = $w]">
                     <li style="padding:.1rem 0">
                       <xsl:call-template name="tp-groupe-testament"/>
                     </li>
@@ -1405,8 +1522,8 @@
   </xsl:template>
 
   <!-- Une entrée de testament : le numéro puis le nom du testateur. Le nom
-       vient de @nom (ajouté au side-car le 2026-09-14) ; s'il manque — side-car
-       régénéré par une version antérieure du script — on retombe sur le seul
+       vient de @nom, tiré du premier <persName> du résumé ; s'il manque — un
+       testament sans nom dans son résumé — on retombe sur le seul
        numéro, sans jamais produire un lien vide. -->
   <xsl:template name="tp-groupe-testament">
     <a class="internalLink" href="{concat($tp-route, @id)}"
