@@ -78,7 +78,7 @@
           charge ; on ne double donc jamais ;
         - tei:div : les notices d'index arrivent dans un <person> ou un
           <listPerson>, jamais dans un <div> ; elles gardent leur rendu
-          dédié (modes tp-bio / tp-letter-nav) ;
+          dédié (mode tp-bio) ;
         - not(tei:teiHeader) : le rendu racine est traité l. 42.
 
        FIDÉLITÉ DU CONTEXTE : le <xsl:for-each select="/"> n'est pas
@@ -213,8 +213,9 @@
        de gauche les liste toutes. La barre « A | B | C … » répétée dans la
        page était donc le doublon : elle est retirée des TROIS chemins de
        rendu (page d'une lettre, section d'index, index complet).
-       Le <note type="letter-nav"> reste dans le TEI, intact : il n'est plus
-       rendu, c'est tout.
+       2026-09-28 : le <note type="letter-nav"> a quitté le TEI (tei_all
+       n'admet pas de <note> dans <listPerson>/<listPlace>) ; les 38 lettres
+       restent dans le sommaire DoTS. La règle vide est gardée en garde-fou.
        CE QUI N'EST PAS RETIRÉ : la liste des noms (nav.tp-entry-nav). Le
        sommaire ne la contient PAS — les personnes et les lieux ne sont pas
        des unités citables. La retirer ferait disparaître un contenu sans
@@ -276,30 +277,6 @@
         <p class="tp-backtotop"><a href="#tp-top-{@xml:id}">Haut de page</a></p>
       </xsl:if>
     </section>
-  </xsl:template>
-
-  <!-- 2026-09-14 (agent_tp) : PLUS APPELÉ. Conservé tel quel pour pouvoir
-       rétablir la barre en une ligne (un apply-templates mode="tp-letter-nav")
-       si la décision était revue. Aucun chemin de rendu ne l'invoque. -->
-  <xsl:template match="tei:note[@type = 'letter-nav']" mode="tp-letter-nav">
-    <nav class="tp-letter-nav" style="margin:.2rem 0 1rem;font-size:1rem">
-      <xsl:for-each select="tei:ref[@type = 'letterNav']">
-        <xsl:if test="position() &gt; 1">
-          <span style="color:#777"> | </span>
-        </xsl:if>
-        <!-- D14e-1 (2026-09-12) : sur l'ancien site, chaque lettre etait une page
-             (lettre-B.html). Les lettres sont des unites citables de DoTS
-             (?refId=testateurs-B, verifie : HTTP 200) : l'ancre locale #testateurs-B
-             etait morte des qu'une seule lettre etait servie (18 liens morts sur 19
-             par page-lettre). On pointe donc la route de l'unite. -->
-        <a class="tp-letter-link" href="/testaments-poilus/document/testaments-poilus-index?refId={normalize-space(@corresp)}" style="color:#a73136;text-decoration:none">
-          <xsl:if test="@rend = 'current'">
-            <xsl:attribute name="style">color:#a73136;text-decoration:none;font-weight:bold</xsl:attribute>
-          </xsl:if>
-          <xsl:value-of select="normalize-space(.)"/>
-        </a>
-      </xsl:for-each>
-    </nav>
   </xsl:template>
 
   <!-- testateur -->

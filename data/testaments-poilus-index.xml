@@ -34,49 +34,9 @@
       <body><!-- ajout de l'index par F. Clavaud le 4 août 2015 --><!-- FC 9 mars 2016<div type="index">-->
          <div>
             <listPerson>
-               <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><listPerson xml:id="testateurs-A">
+               <listPerson xml:id="testateurs-A">
             <head>A</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A" rend="current">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="EAime">
+            <person xml:id="EAime">
                   <persName>
                      <surname>Aimé</surname>, <forename>Ernest</forename>
                      <forename>Jean</forename>
@@ -161,27 +121,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-B">
             <head>B</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B" rend="current">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="EBarbut">
+            <person xml:id="EBarbut">
                   <persName>
                      <surname>Barbut</surname>, <forename>Marie</forename>
                      <forename>Barthélémy</forename>
@@ -657,27 +597,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-C">
             <head>C</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C" rend="current">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="LAPCanivenq">
+            <person xml:id="LAPCanivenq">
                   <persName>
                      <surname>Canivenq</surname>, <forename>Louis</forename>
                      <forename>Albert</forename>
@@ -1007,27 +927,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-D">
             <head>D</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D" rend="current">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="EDardonville">
+            <person xml:id="EDardonville">
                   <persName>
                      <surname>Dardonville</surname>, <forename>Edouard</forename>
                      <forename>Louis</forename>
@@ -1511,27 +1411,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-E">
             <head>E</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E" rend="current">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="MEtienne">
+            <person xml:id="MEtienne">
                   <persName>
                      <surname>Etienne</surname>, <forename>Marcel</forename>
                   </persName>
@@ -1560,27 +1440,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-F">
             <head>F</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F" rend="current">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="LFavre">
+            <person xml:id="LFavre">
                   <persName>
                      <surname>Favre</surname>, <forename>Louis</forename>
                   </persName>
@@ -1747,27 +1607,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-G">
             <head>G</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G" rend="current">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="FGaillard">
+            <person xml:id="FGaillard">
                   <persName>
                      <surname>Gaillard</surname>, <forename>François</forename>
                   </persName>
@@ -2141,27 +1981,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-H">
             <head>H</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H" rend="current">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="FHemy">
+            <person xml:id="FHemy">
                   <persName>
                      <surname>Hémy</surname>, <forename>François</forename>
                   </persName>
@@ -2242,27 +2062,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-J">
             <head>J</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J" rend="current">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="MJacquat">
+            <person xml:id="MJacquat">
                   <persName>
                      <surname>Jacquat</surname>, <forename>Marcellin</forename>
                      <forename>Adolphe</forename>
@@ -2317,27 +2117,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-L">
             <head>L</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L" rend="current">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="ELaborde">
+            <person xml:id="ELaborde">
                   <persName>
                      <surname>Laborde</surname>,
                             <forename>Enrique</forename>
@@ -2774,27 +2554,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-M">
             <head>M</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M" rend="current">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="EMarchal">
+            <person xml:id="EMarchal">
                   <persName>
                      <surname>Marchal</surname>, <forename>Ernest</forename>
                      <forename>André</forename>
@@ -3037,27 +2797,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-N">
             <head>N</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N" rend="current">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="GNicolon">
+            <person xml:id="GNicolon">
                   <persName>
                      <surname>Nicolon</surname>, <forename>Georges</forename>
                      <forename>François</forename>
@@ -3130,27 +2870,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-P">
             <head>P</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P" rend="current">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="LPain">
+            <person xml:id="LPain">
                   <persName>
                      <surname>Pain</surname>, <forename>Louis</forename>
                      <forename>Ernest</forename>
@@ -3260,27 +2980,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-Q">
             <head>Q</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q" rend="current">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="EQuainon">
+            <person xml:id="EQuainon">
                   <persName>
                      <surname>Quainon</surname>, <forename>Emile</forename>
                   </persName>
@@ -3308,27 +3008,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-R">
             <head>R</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R" rend="current">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="LRavignon">
+            <person xml:id="LRavignon">
                   <persName>
                      <surname>Ravignon</surname>, <forename>Louis</forename>
                      <forename>Jean</forename>
@@ -3516,27 +3196,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-S">
             <head>S</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S" rend="current">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="ESimonnet">
+            <person xml:id="ESimonnet">
                   <persName>
                      <surname>Simonnet</surname>, <forename>Emile</forename>
                   </persName>
@@ -3700,27 +3360,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-T">
             <head>T</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T" rend="current">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="JSTardy">
+            <person xml:id="JSTardy">
                   <persName>
                      <surname>Tardy</surname>, <forename>Joseph</forename>
                      <forename>Séraphin</forename>
@@ -3801,27 +3441,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-V">
             <head>V</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V" rend="current">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W">W</ref>
-            </note><person xml:id="JEVachette">
+            <person xml:id="JEVachette">
                   <persName>
                      <surname>Vachette</surname>, <forename>Joseph</forename>
                      <forename>Emile</forename>
@@ -3877,27 +3497,7 @@
                </listPerson>
          <listPerson xml:id="testateurs-W">
             <head>W</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#testateurs-A" corresp="testateurs-A">A</ref>
-            <ref type="letterNav" target="#testateurs-B" corresp="testateurs-B">B</ref>
-            <ref type="letterNav" target="#testateurs-C" corresp="testateurs-C">C</ref>
-            <ref type="letterNav" target="#testateurs-D" corresp="testateurs-D">D</ref>
-            <ref type="letterNav" target="#testateurs-E" corresp="testateurs-E">E</ref>
-            <ref type="letterNav" target="#testateurs-F" corresp="testateurs-F">F</ref>
-            <ref type="letterNav" target="#testateurs-G" corresp="testateurs-G">G</ref>
-            <ref type="letterNav" target="#testateurs-H" corresp="testateurs-H">H</ref>
-            <ref type="letterNav" target="#testateurs-J" corresp="testateurs-J">J</ref>
-            <ref type="letterNav" target="#testateurs-L" corresp="testateurs-L">L</ref>
-            <ref type="letterNav" target="#testateurs-M" corresp="testateurs-M">M</ref>
-            <ref type="letterNav" target="#testateurs-N" corresp="testateurs-N">N</ref>
-            <ref type="letterNav" target="#testateurs-P" corresp="testateurs-P">P</ref>
-            <ref type="letterNav" target="#testateurs-Q" corresp="testateurs-Q">Q</ref>
-            <ref type="letterNav" target="#testateurs-R" corresp="testateurs-R">R</ref>
-            <ref type="letterNav" target="#testateurs-S" corresp="testateurs-S">S</ref>
-            <ref type="letterNav" target="#testateurs-T" corresp="testateurs-T">T</ref>
-            <ref type="letterNav" target="#testateurs-V" corresp="testateurs-V">V</ref>
-            <ref type="letterNav" target="#testateurs-W" corresp="testateurs-W" rend="current">W</ref>
-            </note><person xml:id="LWaguet">
+            <person xml:id="LWaguet">
                   <persName>
                      <surname>Waguet</surname>, <forename>Léon</forename>
                      <forename>Auguste</forename>
@@ -3955,27 +3555,7 @@
          </listPerson>
             <!--</div>-->
             <listPlace>
-               <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><head>Lieux de décès</head>
+               <head>Lieux de décès</head>
                <!--Reprise de l'encodage de l'index par NP-->
                <!-- FC janvier 2017 : n'est pas un lieu de décès <place xml:id="pl-105">
                   <placeName when-iso="-700/">
@@ -3994,27 +3574,7 @@
                -->
             <listPlace xml:id="lieux-A">
             <head>A</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A" rend="current">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-001">
+            <place xml:id="pl-001">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Ablain-Saint-Nazaire</settlement>
                   </placeName>
@@ -4105,27 +3665,7 @@
                </listPlace>
          <listPlace xml:id="lieux-B">
             <head>B</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B" rend="current">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-006">
+            <place xml:id="pl-006">
                   <placeName when-iso="1793/">
                      <settlement type="cantonCapital">Baccarat</settlement>
                   </placeName>
@@ -4503,27 +4043,7 @@
                </listPlace>
          <listPlace xml:id="lieux-C">
             <head>C</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C" rend="current">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-025">
+            <place xml:id="pl-025">
                   <placeName>
                      <settlement>Caisnes</settlement>
                   </placeName>
@@ -4692,27 +4212,7 @@
                </listPlace>
          <listPlace xml:id="lieux-D">
             <head>D</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D" rend="current">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-034">
+            <place xml:id="pl-034">
                   <placeName when-iso="1793/1922" type="old">
                      <settlement>Dugny</settlement>
                   </placeName>
@@ -4736,27 +4236,7 @@
                </listPlace>
          <listPlace xml:id="lieux-E">
             <head>E</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E" rend="current">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-035">
+            <place xml:id="pl-035">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Épernay</settlement>
                   </placeName>
@@ -4810,27 +4290,7 @@
                </listPlace>
          <listPlace xml:id="lieux-F">
             <head>F</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F" rend="current">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-038">
+            <place xml:id="pl-038">
                   <placeName when-iso="1793">
                      <settlement type="commune">Filain</settlement>
                   </placeName>
@@ -4903,27 +4363,7 @@
                </listPlace>
          <listPlace xml:id="lieux-G">
             <head>G</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G" rend="current">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-042">
+            <place xml:id="pl-042">
                   <placeName>
                      <settlement type="commune">Gaouz</settlement>
                   </placeName>
@@ -4979,27 +4419,7 @@
                </listPlace>
          <listPlace xml:id="lieux-H">
             <head>H</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H" rend="current">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-045">
+            <place xml:id="pl-045">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Hargicourt</settlement>
                   </placeName>
@@ -5061,27 +4481,7 @@
                </listPlace>
          <listPlace xml:id="lieux-J">
             <head>J</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J" rend="current">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-048">
+            <place xml:id="pl-048">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Jaulzy</settlement>
                   </placeName>
@@ -5101,27 +4501,7 @@
                </listPlace>
          <listPlace xml:id="lieux-K">
             <head>K</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K" rend="current">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-049">
+            <place xml:id="pl-049">
                   <placeName>
                      <geogName type="mountain">Kokereel</geogName>, <geogFeat>mont</geogFeat>
                   </placeName>
@@ -5144,27 +4524,7 @@
                </listPlace>
          <listPlace xml:id="lieux-L">
             <head>L</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L" rend="current">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-052">
+            <place xml:id="pl-052">
                   <placeName>
                      <settlement type="hamlet">La Maison-Blanche</settlement>
                   </placeName>
@@ -5304,27 +4664,7 @@
                </listPlace>
          <listPlace xml:id="lieux-M">
             <head>M</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M" rend="current">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-054">
+            <place xml:id="pl-054">
                   <placeName>
                      <settlement type="commune">Mangelaëre</settlement>
                   </placeName>
@@ -5566,27 +4906,7 @@
                </listPlace>
          <listPlace xml:id="lieux-N">
             <head>N</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N" rend="current">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-068">
+            <place xml:id="pl-068">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Neuville-Vitasse</settlement>
                   </placeName>
@@ -5623,27 +4943,7 @@
                </listPlace>
          <listPlace xml:id="lieux-P">
             <head>P</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P" rend="current">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-075">
+            <place xml:id="pl-075">
                   <placeName when-iso="1793/">
                      <settlement type="commune">Paissy</settlement>
                   </placeName>
@@ -5753,27 +5053,7 @@
                </listPlace>
          <listPlace xml:id="lieux-Q">
             <head>Q</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q" rend="current">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-078">
+            <place xml:id="pl-078">
                   <placeName>
                      <settlement type="farm">Quennevières</settlement>
                   </placeName>
@@ -5796,27 +5076,7 @@
                </listPlace>
          <listPlace xml:id="lieux-S">
             <head>S</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S" rend="current">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-079">
+            <place xml:id="pl-079">
                   <placeName when-iso="1801/">
                      <settlement type="commune">Saint-Hilaire-le-Grand</settlement>
                   </placeName>
@@ -6011,27 +5271,7 @@
                </listPlace>
          <listPlace xml:id="lieux-T">
             <head>T</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T" rend="current">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-089">
+            <place xml:id="pl-089">
                   <placeName when-iso="1793/">
                      <settlement type="districtCapital">Toul</settlement>
                   </placeName>
@@ -6091,27 +5331,7 @@
                </listPlace>
          <listPlace xml:id="lieux-V">
             <head>V</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V" rend="current">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z">Z</ref>
-            </note><place xml:id="pl-092">
+            <place xml:id="pl-092">
                   <placeName type="old" when-iso="1793/1956">
                      <settlement>Vailly</settlement>
                   </placeName>
@@ -6318,27 +5538,7 @@
                </listPlace>
          <listPlace xml:id="lieux-Z">
             <head>Z</head>
-            <note type="letter-nav" subtype="generated">
-            <ref type="letterNav" target="#lieux-A" corresp="lieux-A">A</ref>
-            <ref type="letterNav" target="#lieux-B" corresp="lieux-B">B</ref>
-            <ref type="letterNav" target="#lieux-C" corresp="lieux-C">C</ref>
-            <ref type="letterNav" target="#lieux-D" corresp="lieux-D">D</ref>
-            <ref type="letterNav" target="#lieux-E" corresp="lieux-E">E</ref>
-            <ref type="letterNav" target="#lieux-F" corresp="lieux-F">F</ref>
-            <ref type="letterNav" target="#lieux-G" corresp="lieux-G">G</ref>
-            <ref type="letterNav" target="#lieux-H" corresp="lieux-H">H</ref>
-            <ref type="letterNav" target="#lieux-J" corresp="lieux-J">J</ref>
-            <ref type="letterNav" target="#lieux-K" corresp="lieux-K">K</ref>
-            <ref type="letterNav" target="#lieux-L" corresp="lieux-L">L</ref>
-            <ref type="letterNav" target="#lieux-M" corresp="lieux-M">M</ref>
-            <ref type="letterNav" target="#lieux-N" corresp="lieux-N">N</ref>
-            <ref type="letterNav" target="#lieux-P" corresp="lieux-P">P</ref>
-            <ref type="letterNav" target="#lieux-Q" corresp="lieux-Q">Q</ref>
-            <ref type="letterNav" target="#lieux-S" corresp="lieux-S">S</ref>
-            <ref type="letterNav" target="#lieux-T" corresp="lieux-T">T</ref>
-            <ref type="letterNav" target="#lieux-V" corresp="lieux-V">V</ref>
-            <ref type="letterNav" target="#lieux-Z" corresp="lieux-Z" rend="current">Z</ref>
-            </note><place xml:id="pl-101">
+            <place xml:id="pl-101">
                   <placeName>
                      <settlement type="commune">Zeitenlik</settlement>
                   </placeName>
