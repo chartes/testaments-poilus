@@ -35,12 +35,12 @@
                  `/TEI[@xml:id = 'testaments-poilus-introduction']` : évaluées depuis
                  `-edition` ou `-index`, elles ne peuvent désigner aucun nœud (la racine y est
                  un autre TEI) ; évaluées depuis ce document, elles désignent les six divisions
-                 de son <body> et leurs sous-divisions. Les déclarations « Les testaments » et
+                 de son <body> et leurs sous-divisions. Les déclarations « testaments » et
                  « lettre » ne sont PAS reprises : elles ne visent que l'édition et les index. -->
             <citeStructure unit="Accueil" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'homePageAbstract']" use="@xml:id">
                <citeData property="dct:title" use="'Accueil'"/>
             </citeStructure>
-            <citeStructure unit="Le projet" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'projet']" use="@xml:id">
+            <citeStructure unit="projet" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'projet']" use="@xml:id">
                <citeData property="dct:title" use="'Le projet'"/>
                <citeStructure unit="section" match="div[@xml:id]" use="@xml:id">
                   <citeData property="dct:title" use="normalize-space(string((head)[1]))"/>
@@ -55,13 +55,13 @@
                   </citeStructure>
                </citeStructure>
             </citeStructure>
-            <citeStructure unit="Nous contacter" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'contact']" use="@xml:id">
+            <citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'contact']" use="@xml:id">
                <citeData property="dct:title" use="'Nous contacter'"/>
             </citeStructure>
             <citeStructure unit="Crédits" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'credits']" use="@xml:id">
                <citeData property="dct:title" use="'Crédits'"/>
             </citeStructure>
-            <citeStructure unit="Mentions légales" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'mentionsLegales']" use="@xml:id">
+            <citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'mentionsLegales']" use="@xml:id">
                <citeData property="dct:title" use="'Mentions légales'"/>
                <citeStructure unit="section" match="div[@xml:id]" use="@xml:id">
                   <citeData property="dct:title" use="normalize-space(string((head)[1]))"/>
