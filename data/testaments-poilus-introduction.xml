@@ -1557,32 +1557,32 @@
       <div xml:id="mentionsLegales"><head>Mentions légales</head><div xml:id="cite">
                   <head>Citer la présente édition</head>
                   <p>Pour citer la présente édition dans son ensemble, utiliser la mention
-                     suivante : <author>
+                     suivante : <bibl><author>
                         <surname>Nougaret</surname> (<forename>Christine</forename>)</author>, <author>
                         <surname>Clavaud</surname> (<forename>Florence</forename>)</author> (dirs.), <title>Testaments
                            de guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title>. <pubPlace>Paris</pubPlace> : <publisher>École nationale des
-                           chartes</publisher>, <date>2017-....</date>
+                           chartes</publisher>, <date>2017-....</date></bibl>
                      <note>Édition numérique en ligne : 
                            <ref type="externalLink" target="http://elec.enc.sorbonne.fr/testaments-de-poilus/">http://elec.enc.sorbonne.fr/testaments-de-poilus/</ref>
                          (consulté le
                            [date de consultation]).</note>
                   </p>
-                  <p>Pour citer une page de la présente édition, utiliser la mention suivante : <author>
+                  <p>Pour citer une page de la présente édition, utiliser la mention suivante : <bibl><author>
                         <surname>Nougaret</surname> (<forename>Christine</forename>)</author>, <author>
                         <surname>Clavaud</surname> (<forename>Florence</forename>)</author> (dirs.), <title level="a">[Titre de la page citée]</title>, dans <title level="j">Testaments de guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title>. <pubPlace>Paris</pubPlace> : <publisher>École nationale des
-                           chartes</publisher>, <date>2017-....</date>
+                           chartes</publisher>, <date>2017-....</date></bibl>
                      <note>En
                            ligne : [adresse web de la page citée] (consulté le [date de
                            consultation]).</note>
                   </p>
-                  <p>Exemple : pour citer le testament n° 5 : <author>
+                  <p>Exemple : pour citer le testament n° 5 : <bibl><author>
                         <surname>Nougaret</surname> (<forename>Christine</forename>)</author>, <author>
                         <surname>Clavaud</surname> (<forename>Florence</forename>)</author> (dirs.), <title level="a">Testament n° 5 (Étienne Joseph Driancourt, 1er août 1914)</title>, dans <title level="j">Testaments de
                            guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title>. <pubPlace>Paris</pubPlace> : <publisher>École nationale des
-                           chartes</publisher>, <date>2017-....</date>
+                           chartes</publisher>, <date>2017-....</date></bibl>
                      <note>En
                            ligne : 
                            <ref type="externalLink" target="http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html">http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>

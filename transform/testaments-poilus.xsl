@@ -1525,4 +1525,16 @@
     </span>
   </xsl:template>
 
+  <!-- 2026-09-28 — conformité tei_all. Les trois mentions « Citer la
+       présente édition » (Mentions légales) alignaient <author>, <pubPlace>
+       et <publisher> à même le <p>, ce que tei_all refuse ; elles sont
+       désormais enveloppées dans un <bibl>. hteiml rendrait ce <bibl> par un
+       <span class="bibl"> de plus : on le rend transparent pour que la page
+       reste identique. Le motif ne vise que ces trois <bibl> (seuls <bibl>
+       enfants d'un <p> dans le corpus), y compris quand le <p> arrive sans
+       sa <div> (excludeFragments). -->
+  <xsl:template match="tei:p/tei:bibl[tei:pubPlace][tei:publisher]">
+    <xsl:apply-templates/>
+  </xsl:template>
+
 </xsl:transform>
