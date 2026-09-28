@@ -1514,4 +1514,15 @@
     </a>
   </xsl:template>
 
+  <!-- 2026-09-28 — conformité tei_all. Les signatures de l'introduction
+       (« par Christine Nougaret ») étaient un <author> dans <byline>, que
+       tei_all refuse ; elles sont devenues <docAuthor>. hteiml rend les deux
+       par le même <span>, mais sa classe suit le nom de l'élément : on garde
+       « author » pour que la page reste identique. -->
+  <xsl:template match="tei:byline/tei:docAuthor">
+    <span class="author">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
 </xsl:transform>
