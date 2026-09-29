@@ -1811,4 +1811,22 @@
     </xsl:if>
   </xsl:template>
 
+  <!-- 2026-09-29 — will-045, seul testament à deux pièces : une lettre
+       testamentaire (div type="letter" xml:id="will-045-A") et un testament
+       (div type="will" xml:id="will-045-B"). L'ÉLEC les intitulait
+       « Lettre testamentaire A » et « Testament B », la seconde précédée d'un
+       filet (<hr/>). Seules ces deux <div> du corpus portent un @xml:id. -->
+  <xsl:template match="tei:body/tei:div[@xml:id][@type = 'letter' or @type = 'will']" priority="20">
+    <!-- niveau reçu du parent, transmis tel quel au modèle de hteiml -->
+    <xsl:param name="level" select="count(ancestor::*) - 2"/>
+    <xsl:variable name="lettre" select="substring(@xml:id, string-length(@xml:id))"/>
+    <xsl:if test="preceding-sibling::tei:div[@type = 'letter' or @type = 'will']"><hr/></xsl:if>
+    <p class="editorialComment tp-piece">
+      <xsl:value-of select="concat(if (@type = 'letter') then 'Lettre testamentaire ' else 'Testament ', $lettre)"/>
+    </p>
+    <xsl:next-match>
+      <xsl:with-param name="level" select="$level"/>
+    </xsl:next-match>
+  </xsl:template>
+
 </xsl:transform>
