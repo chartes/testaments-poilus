@@ -1785,4 +1785,30 @@
     <span class="author"><xsl:apply-templates/></span>
   </xsl:template>
 
+  <!-- 2026-09-29 — MENTIONS DES <metamark> (22 dans 18 testaments). L'ÉLEC les
+       rendait en toutes lettres dans la transcription seule : « (trait
+       horizontal) », « (croix) », « (trait ondulé) » (22 mentions relevées sur
+       ses pages, 0 ici jusqu'alors). Le libellé suit @rend :
+         cross                                   (croix)
+         *WavyLine                               (trait ondulé)
+         horizontalLine, shortHorizontalLine     (trait horizontal)
+       Seul écart voulu : will-056 (horizontalWavyLine) est « (trait
+       horizontal) » sur l'ÉLEC, dont la règle ne reconnaissait que
+       shortHorizontalWavyLine ; le TEI dit un trait ondulé.
+       Classe tp-tr : masquée en mode Édition, comme les formes du document. -->
+  <xsl:template match="tei:metamark" priority="20">
+    <xsl:variable name="r" select="normalize-space(@rend)"/>
+    <xsl:variable name="lib">
+      <xsl:choose>
+        <xsl:when test="$r = 'cross'">croix</xsl:when>
+        <xsl:when test="contains($r, 'Wavy')">trait ondulé</xsl:when>
+        <xsl:when test="contains($r, 'orizontalLine')">trait horizontal</xsl:when>
+        <xsl:when test="contains($r, 'erticalLine')">trait vertical</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:if test="string($lib) != ''">
+      <span class="metamark tp-tr"><xsl:value-of select="concat('(', $lib, ')')"/></span>
+    </xsl:if>
+  </xsl:template>
+
 </xsl:transform>
