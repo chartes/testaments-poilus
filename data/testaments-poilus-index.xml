@@ -542,7 +542,7 @@
                                     Brivois</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-034">034</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-034">034</ref><ref type="linkToEdition" target="#will-035">035</ref></note>
                </person>
                <person xml:id="EBurgun">
                   <persName>
@@ -698,7 +698,7 @@
                                 Charquillon</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-026">026</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-120">120</ref></note>
                </person>
                
                <person xml:id="ChateauneufRandonTournel">
@@ -1140,7 +1140,7 @@
                                     Dondain</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-054">054</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-054">054</ref><ref type="linkToEdition" target="#will-087">087</ref></note>
                </person>
                <person xml:id="EDriancourt">
                   <persName>
@@ -1166,7 +1166,7 @@
                                     Driancourt</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-005">005</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-005">005</ref><ref type="linkToEdition" target="#will-094">094</ref></note>
                </person>
                <person xml:id="HDriard">
                   <persName>
@@ -2406,7 +2406,7 @@
                                     Conte</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-074">074</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-074">074</ref><ref type="linkToEdition" target="#will-125">125</ref></note>
                </person>
                <person xml:id="AGLebaillif">
                   <persName>
@@ -3086,7 +3086,7 @@
                                     Reyt</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-058">058</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-058">058</ref><ref type="linkToEdition" target="#will-114">114</ref></note>
                </person>
                <person xml:id="MRogue">
                   <persName>
@@ -3521,7 +3521,7 @@
                                     Waguet</ref>
                      </title>
                   </bibl>
-               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-084">084</ref></note>
+               <note type="linkToEdition" subtype="generated"><ref type="linkToEdition" target="#will-084">084</ref><ref type="linkToEdition" target="#will-116">116</ref></note>
                </person>
                <person xml:id="LWidhalm">
                   <persName>

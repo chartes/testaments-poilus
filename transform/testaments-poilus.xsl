@@ -316,8 +316,45 @@
         </xsl:if>
       </h4>
       <xsl:apply-templates select="tei:note[@type = 'biography']" mode="tp-bio"/>
-      <xsl:apply-templates select="tei:bibl" mode="tp-bibl"/>
+      <!-- 2026-09-29 — « Références bibliographiques : » puis une ligne « - » par
+           référence, comme l'ÉLEC (relevé sur ses 19 pages de testateurs). -->
+      <xsl:if test="tei:bibl">
+        <p class="bibl" style="font-size:.88rem;color:#666;margin:.2rem 0 0">
+          <span class="biblLabel">Références bibliographiques&#160;: </span>
+          <xsl:apply-templates select="tei:bibl" mode="tp-bibl"/>
+        </p>
+      </xsl:if>
+      <!-- 2026-09-29 — « Auteur du testament NNN (date) » : la note générée
+           (linkToEdition) voyage avec la notice ; la date vient du TEI de
+           l'édition, lu à côté de la feuille ($tp-wills). -->
+      <xsl:variable name="tp-w" select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]"/>
+      <xsl:if test="$tp-w">
+        <section class="linksToEdition" style="font-size:.9rem">
+          <ul style="margin:.2rem 0;padding-left:1.2rem">
+            <li>
+              <xsl:value-of select="if (count($tp-w) &gt; 1) then 'Auteur des testaments ' else 'Auteur du testament&#160;'"/>
+              <xsl:for-each select="$tp-w">
+                <xsl:variable name="wid" select="substring-after(@target, '#')"/>
+                <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+                <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, $wid)}"><xsl:value-of select="normalize-space(.)"/></a>
+                <xsl:call-template name="tp-date-testament">
+                  <xsl:with-param name="wid" select="$wid"/>
+                </xsl:call-template>
+              </xsl:for-each>
+            </li>
+          </ul>
+        </section>
+      </xsl:if>
     </article>
+  </xsl:template>
+
+  <!-- « (02 août 1914) » : quantième sur deux chiffres, comme l'ÉLEC -->
+  <xsl:template name="tp-date-testament">
+    <xsl:param name="wid"/>
+    <xsl:variable name="w" select="$tp-wills/will[@id = $wid]"/>
+    <xsl:if test="$w/@when != ''">
+      <xsl:value-of select="concat(' (', substring($w/@when, 9, 2), ' ', $w/@mois, ' ', $w/@y, ')')"/>
+    </xsl:if>
   </xsl:template>
 
   <!-- nom en vedette : Surname, Forename(s) -->
@@ -333,6 +370,11 @@
       </span>
     </xsl:if>
     <xsl:if test="tei:nameLink"><xsl:text> </xsl:text><xsl:value-of select="normalize-space(tei:nameLink)"/></xsl:if>
+    <!-- 2026-09-29 — surnom : « Bezy, Ferdinand Albert, dit André », comme l'ÉLEC -->
+    <xsl:for-each select="tei:addName[@type = 'nickname']">
+      <xsl:text>, dit </xsl:text>
+      <span class="addName"><xsl:value-of select="normalize-space(.)"/></span>
+    </xsl:for-each>
   </xsl:template>
 
   <!-- notice biographique -->
@@ -343,10 +385,41 @@
   </xsl:template>
 
   <!-- bibliographie -->
+  <!-- 2026-09-29 — une référence par ligne, « - Auteur. Titre » ou, pour une
+       source d'archives, « - Institution, Fonds : Pièce (cote). Note », comme
+       l'ÉLEC (notices JDDuffourc, JNicouleau). -->
   <xsl:template match="tei:bibl" mode="tp-bibl">
-    <p class="bibl" style="font-size:.88rem;color:#666;margin:.2rem 0 0">
-      <xsl:apply-templates mode="tp-inline"/>
-    </p>
+    <br/>
+    <span class="bibl">
+      <xsl:text>- </xsl:text>
+      <xsl:choose>
+        <xsl:when test="tei:msIdentifier">
+          <xsl:for-each select="tei:msIdentifier">
+            <xsl:for-each select="tei:institution | tei:repository | tei:collection">
+              <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+              <span class="{local-name()}"><xsl:value-of select="normalize-space(.)"/></span>
+            </xsl:for-each>
+            <xsl:if test="tei:msName">
+              <xsl:text> : </xsl:text>
+              <span class="msName"><xsl:value-of select="normalize-space(tei:msName)"/></span>
+            </xsl:if>
+            <xsl:if test="tei:idno">
+              <xsl:text> (</xsl:text>
+              <span class="idno"><xsl:value-of select="normalize-space(tei:idno)"/></span>
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+            <xsl:text>. </xsl:text>
+          </xsl:for-each>
+          <xsl:apply-templates select="*[not(self::tei:msIdentifier)]" mode="tp-inline"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="tei:author">
+            <span class="author"><xsl:value-of select="normalize-space(string-join(tei:author, ', '))"/><xsl:text>. </xsl:text></span>
+          </xsl:if>
+          <xsl:apply-templates select="*[not(self::tei:author)]" mode="tp-inline"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </span>
   </xsl:template>
 
   <!-- lieu de deces -->
