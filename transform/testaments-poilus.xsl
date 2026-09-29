@@ -1537,4 +1537,74 @@
     <xsl:apply-templates/>
   </xsl:template>
 
+  <!-- ====================================================================
+       2026-09-29 — INTRODUCTION : RETOUR AU TEI D'ORIGINE (2018)
+       Le fichier des paratextes n'est plus la transcription des pages HTML
+       de l'ÉLEC (D36) : c'est le TEI de Florence Clavaud (teiCorpus de 2018),
+       avec ses <cit>/<quote>, ses <listBibl>, ses <respStmt> et ses
+       <msIdentifier>. hteiml les rend en blocs (blockquote, div, listes
+       imbriquées dans des div) et en rouge (<msName>). Les règles ci-dessous
+       reproduisent la présentation relevée sur les pages de l'ÉLEC :
+         - citation en ligne : <span class="cit"><q>…</q> <span class="bibl">(…)</span></span> ;
+         - responsables d'une référence : « Nom (Prénom), Nom (Prénom) (dir.) » ;
+         - cote d'archives : « MC/ET/… : Étude … » ;
+         - sous-listes de sources : un item titré et sa liste, comme l'ÉLEC
+           (« Sources manuscrites » > « Archives nationales… » > cotes).
+       Aucune de ces balises n'existe dans l'édition ni dans l'index (0 <cit>,
+       0 <respStmt>, 0 <listBibl> ; les 4 <msIdentifier> de l'index passent par
+       le mode tp-inline), les règles ne touchent donc que l'introduction. -->
+  <xsl:template match="tei:cit" priority="12">
+    <span class="cit">
+      <xsl:for-each select="*">
+        <xsl:if test="position() != 1"><xsl:text> </xsl:text></xsl:if>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:cit/tei:quote" priority="12">
+    <q class="quote"><xsl:apply-templates/></q>
+  </xsl:template>
+
+  <xsl:template match="tei:cit/tei:bibl" priority="12">
+    <span class="bibl"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:bibl/tei:respStmt" priority="12">
+    <span class="respStmt">
+      <xsl:for-each select="tei:persName | tei:orgName | tei:name">
+        <xsl:if test="position() != 1"><xsl:text>, </xsl:text></xsl:if>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+      <xsl:for-each select="tei:resp">
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="normalize-space(translate(., '()', ''))"/>
+        <xsl:text>)</xsl:text>
+      </xsl:for-each>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:bibl/tei:msIdentifier" priority="12">
+    <span class="idno"><xsl:apply-templates select="tei:idno/node()"/></span>
+    <xsl:if test="tei:msName">
+      <xsl:text> : </xsl:text>
+      <span class="msName"><xsl:apply-templates select="tei:msName/node()"/></span>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="tei:listBibl[parent::tei:listBibl]" priority="12">
+    <li class="listBibl">
+      <xsl:apply-templates select="tei:head/node()"/>
+      <ul>
+        <xsl:apply-templates select="*[not(self::tei:head)]"/>
+      </ul>
+    </li>
+  </xsl:template>
+
+  <!-- <author><surname>…</surname> (<forename>…</forename>)</author> : la règle
+       *[tei:surname] de teiHeader2html jette le texte (parenthèses) ; on le garde. -->
+  <xsl:template match="tei:author[tei:surname]" priority="12">
+    <span class="author"><xsl:apply-templates/></span>
+  </xsl:template>
+
 </xsl:transform>
