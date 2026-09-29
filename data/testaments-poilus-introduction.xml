@@ -97,6 +97,7 @@
             <change when="2026-09-28">Signatures des parties en docAuthor (commit cf84979) ; références « Citer » dans un bibl (commit 662b520) ; @unit sans espace (commit 2a4b9e5) ; publisher lié au seul site de l’École (commit 04f4619).</change>
             <change when="2026-09-29">Retour au TEI d’origine des paratextes, avec les 21 unités, leurs identifiants et le rendu de l’ÉLEC (commit da3458e).</change>
             <change when="2026-09-29">teiHeader : licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
+            <change when="2026-09-29">Liens Mémoire des hommes : les 4 renvois à la base des morts pour la France (ancienne page article.php, disparue) visent sa page de recherche actuelle.</change>
          </listChange>
       </revisionDesc>
    </teiHeader>
@@ -200,7 +201,7 @@
                      les circonstances et la date du décès ; les sources utilisées pour élaborer la
                      notice.</p>
                   <p>L’index des noms de lieux de décès, qui permet de rapprocher des Poilus morts
-                     au même endroit, comprend les noms de lieux tels qu’ils figurent dans la <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France de la Première
+                     au même endroit, comprend les noms de lieux tels qu’ils figurent dans la <ref target="https://www.memoiredeshommes.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche" type="externalLink">base de données des morts pour la France de la Première
                         Guerre mondiale</ref> ou dans la minute de chaque testament. S’agissant le
                      plus souvent de lieux-dits, ils ont fait l’objet d’une identification aussi
                      précise que possible, chaque lieu-dit étant rattaché à sa commune d’origine. Le
@@ -266,7 +267,7 @@
                      la disparition a été reconnue par jugement. En l’absence de répertoires,
                      ceux-ci n’ayant pas été versés, 320 cartons ont été compulsés et 708 testaments
                      masculins repérés. Les mentions portées sur les minutes, croisées avec les
-                     données de la <!-- FC ajout lien octobre 2016--><ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France de la Première Guerre
+                     données de la <!-- FC ajout lien octobre 2016--><ref target="https://www.memoiredeshommes.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche" type="externalLink">base de données des morts pour la France de la Première Guerre
                      mondiale</ref> (au sein du portail « Mémoire des hommes » du ministère de la Défense), ont
                      permis d’identifier 167 testaments olographes de Poilus (23 %), dont 155 sont
                      morts pour la France.</p>
@@ -624,7 +625,7 @@
 
 
                      </table>
-                     <p>Grâce à la <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale" type="externalLink">base de données des morts pour la France</ref> du
+                     <p>Grâce à la <ref target="https://www.memoiredeshommes.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche" type="externalLink">base de données des morts pour la France</ref> du
                         portail « Mémoire des hommes »<!-- FC (lien ?),--> croisée avec les minutes
                         de dépôt des testaments, on peut établir à 31 ans l’âge moyen des
                         <!--FC juin 2016 testateurs--> Poilus à la rédaction de leur testament. On
@@ -1565,7 +1566,7 @@
                      <bibl type="bibliographicReference"><author><orgName>Ministère de la défense. Secrétariat général pour
                               l’administration. Direction de la mémoire, du patrimoine et des
                               archives</orgName></author>, <title>Site Mémoire des hommes : base de données des Morts pour la France de
-                              la Première Guerre mondiale</title>. En ligne : <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale">http://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=24&amp;titre=morts-pour-la-france-de-la-premiere-guerre-mondiale</ref></bibl>
+                              la Première Guerre mondiale</title>. En ligne : <ref target="https://www.memoiredeshommes.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche">https://www.memoiredeshommes.defense.gouv.fr/conflits-et-operations-2/premiere-guerre-mondiale/morts-pour-la-france-de-la-premiere-guerre-mondiale/faire-une-recherche</ref></bibl>
                      <bibl type="bibliographicReference"><title>The Geonames geographical
                               database</title>. En ligne : <ref target="http://www.geonames.org/">http://www.geonames.org/</ref></bibl>
                      <bibl type="bibliographicReference"><author><orgName>Ville de Paris. Direction des affaires culturelles.

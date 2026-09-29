@@ -52,6 +52,7 @@
             <change when="2026-09-28">Barre des lettres (40 note type="letter-nav") retirée du TEI (commit 7c10dfb) ; @unit sans espace (commit 2a4b9e5).</change>
             <change when="2026-09-29">@target à espace initiale (Balthazard) corrigé (commit a1e4d7c) ; notes générées : surnom de Bezy (commit 0ee3083), testaments manquants de six testateurs et testament de Charquillon (commit 61b67b5).</change>
             <change when="2026-09-29">teiHeader complété : publisher, date et sourceDesc repris de l’édition, licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
+            <change when="2026-09-29">Liens Mémoire des hommes : les 128 notices (ark:/40699/…) passent de http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ à https://www.memoiredeshommes.defense.gouv.fr/fr/, seul hôte qui résout encore.</change>
          </listChange>
       </revisionDesc>
            nom. --><tei:citeStructure unit="Accueil" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'homePageAbstract']" use="@xml:id"><tei:citeData property="dct:title" use="'Accueil'"/></tei:citeStructure><tei:citeStructure unit="projet" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'projet']" use="@xml:id"><tei:citeData property="dct:title" use="'Le projet'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="Introduction" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'introduction']" use="@xml:id"><tei:citeData property="dct:title" use="'Introduction'"/><tei:citeStructure unit="partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/><tei:citeStructure unit="sous-partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'contact']" use="@xml:id"><tei:citeData property="dct:title" use="'Nous contacter'"/></tei:citeStructure><tei:citeStructure unit="Crédits" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'credits']" use="@xml:id"><tei:citeData property="dct:title" use="'Crédits'"/></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'mentionsLegales']" use="@xml:id"><tei:citeData property="dct:title" use="'Mentions légales'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:refsDecl></tei:encodingDesc></teiHeader>
@@ -84,7 +85,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523ac0159d345">Mémoire des hommes : notice relative à Ernest Jean
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523ac0159d345">Mémoire des hommes : notice relative à Ernest Jean
                                 Aimé</ref>
                      </title>
                   </bibl>
@@ -111,7 +112,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d59025ab5">Mémoire des hommes : notice relative à Pierre Calixte
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d59025ab5">Mémoire des hommes : notice relative à Pierre Calixte
                                     Alric</ref>
                      </title>
                   </bibl>
@@ -137,7 +138,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d5d71f927">Mémoire des hommes : notice relative à Albert Prudent
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d5d71f927">Mémoire des hommes : notice relative à Albert Prudent
                                     Andry</ref>
                      </title>
                   </bibl>
@@ -166,7 +167,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d74743618">Mémoire des hommes : notice relative à Marie Barthélémy Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d74743618">Mémoire des hommes : notice relative à Marie Barthélémy Emile
                                     Barbut</ref>
                      </title>
                   </bibl>
@@ -190,7 +191,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d7b6bdfb4">Mémoire des hommes : notice relative à Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d7b6bdfb4">Mémoire des hommes : notice relative à Henri
                                 Battmann</ref>
                      </title>
                   </bibl>
@@ -215,7 +216,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d7ccb7a31">Mémoire des hommes : notice relative à Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d7ccb7a31">Mémoire des hommes : notice relative à Louis
                                 Baudu</ref>
                      </title>
                   </bibl>
@@ -241,7 +242,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d7d375055">Mémoire des hommes : notice relative à Jules Joseph
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d7d375055">Mémoire des hommes : notice relative à Jules Joseph
                                     Beaumont</ref>
                      </title>
                   </bibl>
@@ -268,7 +269,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d8051c428">Mémoire des hommes : notice relative à Léon Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d8051c428">Mémoire des hommes : notice relative à Léon Henri
                                     Beaumont</ref>
                      </title>
                   </bibl>
@@ -293,7 +294,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d83ad1954">Mémoire des hommes : notice relative à Georges Ernest
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d83ad1954">Mémoire des hommes : notice relative à Georges Ernest
                                     Belgiovanni</ref>
                      </title>
                   </bibl>
@@ -319,7 +320,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d8e8340b5">Mémoire des hommes : notice relative à Joseph
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d8e8340b5">Mémoire des hommes : notice relative à Joseph
                                 Bernel</ref>
                      </title>
                   </bibl>
@@ -346,7 +347,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d9639a602">Mémoire des hommes : notice relative à Ferdinand Albert dit
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d9639a602">Mémoire des hommes : notice relative à Ferdinand Albert dit
                                     André Bezy</ref>
                      </title>
                   </bibl>
@@ -372,7 +373,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d9fa20aff">Mémoire des hommes : notice relative à Victor Nicolas
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d9fa20aff">Mémoire des hommes : notice relative à Victor Nicolas
                                     Boch</ref>
                      </title>
                   </bibl>
@@ -397,7 +398,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239d9fc96957">Mémoire des hommes : notice relative à Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239d9fc96957">Mémoire des hommes : notice relative à Louis
                                 Bocquet</ref>
                      </title>
                   </bibl>
@@ -424,7 +425,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239da3a1ad46">Mémoire des hommes : notice relative à Hippolyte
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239da3a1ad46">Mémoire des hommes : notice relative à Hippolyte
                                 Bondeux</ref>
                      </title>
                   </bibl>
@@ -451,7 +452,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dad8ea05a">Mémoire des hommes : notice relative à François Jean Etienne
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dad8ea05a">Mémoire des hommes : notice relative à François Jean Etienne
                                     Boudeau</ref>
                      </title>
                   </bibl>
@@ -478,7 +479,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239db77eff9e">Mémoire des hommes : notice relative à Francisque Léon
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239db77eff9e">Mémoire des hommes : notice relative à Francisque Léon
                                     Boutin</ref>
                      </title>
                   </bibl>
@@ -508,7 +509,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dbc3f0e12">Mémoire des hommes : notice relative à Jean Henri Jules Auguste
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dbc3f0e12">Mémoire des hommes : notice relative à Jean Henri Jules Auguste
                                     Bregeras</ref>
                      </title>
                   </bibl>
@@ -535,7 +536,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc04abf3f">Mémoire des hommes : notice relative à Lucien Jean Baptiste
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dc04abf3f">Mémoire des hommes : notice relative à Lucien Jean Baptiste
                                     Brivois</ref>
                      </title>
                   </bibl>
@@ -563,7 +564,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc04ac742">Mémoire des hommes : notice relative à Maurice Paul Anthime
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dc04ac742">Mémoire des hommes : notice relative à Maurice Paul Anthime
                                     Brivois</ref>
                      </title>
                   </bibl>
@@ -587,7 +588,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc80dedb0">Mémoire des hommes : notice relative à Émile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dc80dedb0">Mémoire des hommes : notice relative à Émile
                                 Burgun</ref>
                      </title>
                   </bibl>
@@ -613,7 +614,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dc85da542">Mémoire des hommes : notice relative à Henri Eugène
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dc85da542">Mémoire des hommes : notice relative à Henri Eugène
                                     Burret</ref>
                      </title>
                   </bibl>
@@ -642,7 +643,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dce9e28a3">Mémoire des hommes : notice relative à Louis Albert Paulin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dce9e28a3">Mémoire des hommes : notice relative à Louis Albert Paulin
                                     Canivenq</ref>
                      </title>
                   </bibl>
@@ -668,7 +669,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dd4d1333b">Mémoire des hommes : notice relative à Antoine Honoré
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dd4d1333b">Mémoire des hommes : notice relative à Antoine Honoré
                                     Carrié</ref>
                      </title>
                   </bibl>
@@ -694,7 +695,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ddc3ef7b4">Mémoire des hommes : notice relative à Raymond Alexandre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ddc3ef7b4">Mémoire des hommes : notice relative à Raymond Alexandre
                                     Cellier</ref>
                      </title>
                   </bibl>
@@ -719,7 +720,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239de77e4d3a">Mémoire des hommes : notice relative à André
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239de77e4d3a">Mémoire des hommes : notice relative à André
                                 Charquillon</ref>
                      </title>
                   </bibl>
@@ -755,7 +756,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dea46ae68">Mémoire des hommes : notice relative à Roger Henri Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dea46ae68">Mémoire des hommes : notice relative à Roger Henri Charles
                                     Honoré de Chateauneuf-Randon</ref>
                      </title>
                   </bibl>
@@ -784,7 +785,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239deaa31041">Mémoire des hommes : notice relative à Fernand Lucien Jules
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239deaa31041">Mémoire des hommes : notice relative à Fernand Lucien Jules
                                     Melchior Chatin</ref>
                      </title>
                   </bibl>
@@ -810,7 +811,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dee953299">Mémoire des hommes : notice relative à Edouard Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dee953299">Mémoire des hommes : notice relative à Edouard Louis
                                     Cheiney</ref>
                      </title>
                   </bibl>
@@ -837,7 +838,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239deef4e6f8">Mémoire des hommes : notice relative à Ange Pierre Joseph
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239deef4e6f8">Mémoire des hommes : notice relative à Ange Pierre Joseph
                                     Chemin</ref>
                      </title>
                   </bibl>
@@ -862,7 +863,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239dfe5d2ee4">Mémoire des hommes : notice relative à François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239dfe5d2ee4">Mémoire des hommes : notice relative à François
                                 Cohendy</ref>
                      </title>
                   </bibl>
@@ -889,7 +890,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e01bdc2f4">Mémoire des hommes : notice relative à Emile Paul Alexandre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e01bdc2f4">Mémoire des hommes : notice relative à Emile Paul Alexandre
                                     Collmann</ref>
                      </title>
                   </bibl>
@@ -916,7 +917,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e09aa1646">Mémoire des hommes : notice relative à Armand Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e09aa1646">Mémoire des hommes : notice relative à Armand Marcel
                                     Cornillault</ref>
                      </title>
                   </bibl>
@@ -943,7 +944,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e10b0464d">Mémoire des hommes : notice relative à Jules Eugène
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e10b0464d">Mémoire des hommes : notice relative à Jules Eugène
                                     Coureau</ref>
                      </title>
                   </bibl>
@@ -974,7 +975,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e20b8159d">Mémoire des hommes : notice relative à Edouard Louis Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e20b8159d">Mémoire des hommes : notice relative à Edouard Louis Charles
                                     Dardonville</ref>
                      </title>
                   </bibl>
@@ -1002,7 +1003,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e23658024">Mémoire des hommes : notice relative à Joseph Gaston
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e23658024">Mémoire des hommes : notice relative à Joseph Gaston
                                     Dauriac</ref>
                      </title>
                   </bibl>
@@ -1031,7 +1032,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a024bf335e">Mémoire des hommes : notice relative à Nissim De
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a024bf335e">Mémoire des hommes : notice relative à Nissim De
                                 Toledo</ref>
                      </title>
                   </bibl>
@@ -1060,7 +1061,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e264c01a9">Mémoire des hommes : notice relative à Lucien Pierre Armand
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e264c01a9">Mémoire des hommes : notice relative à Lucien Pierre Armand
                                     Debain</ref>
                      </title>
                   </bibl>
@@ -1086,7 +1087,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e3177136b">Mémoire des hommes : notice relative à Henri Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e3177136b">Mémoire des hommes : notice relative à Henri Louis
                                     Delépine</ref>
                      </title>
                   </bibl>
@@ -1110,7 +1111,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e3e2d7c02">Mémoire des hommes : notice relative à Marcelin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e3e2d7c02">Mémoire des hommes : notice relative à Marcelin
                                 Descombes</ref>
                      </title>
                   </bibl>
@@ -1135,7 +1136,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e449324d8">Mémoire des hommes : notice relative à Marcel Jules
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e449324d8">Mémoire des hommes : notice relative à Marcel Jules
                                     Devouge</ref>
                      </title>
                   </bibl>
@@ -1161,7 +1162,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e4c121c3f">Mémoire des hommes : notice relative à Auguste Paul
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e4c121c3f">Mémoire des hommes : notice relative à Auguste Paul
                                     Dondain</ref>
                      </title>
                   </bibl>
@@ -1187,7 +1188,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e50a9c25a">Mémoire des hommes : notice relative à Etienne Joseph
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e50a9c25a">Mémoire des hommes : notice relative à Etienne Joseph
                                     Driancourt</ref>
                      </title>
                   </bibl>
@@ -1214,7 +1215,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e50ae4eda">Mémoire des hommes : notice relative à Henri Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e50ae4eda">Mémoire des hommes : notice relative à Henri Victor
                                     Driard</ref>
                      </title>
                   </bibl>
@@ -1241,7 +1242,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e53364136">Mémoire des hommes : notice relative à Émile Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e53364136">Mémoire des hommes : notice relative à Émile Charles
                                     Dubois</ref>
                      </title>
                   </bibl>
@@ -1268,7 +1269,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e591cbe22">Mémoire des hommes : notice relative à Jules Dominique Zéphirin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e591cbe22">Mémoire des hommes : notice relative à Jules Dominique Zéphirin
                                     Duffourc</ref>
                      </title>
                   </bibl>
@@ -1309,7 +1310,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5a42e560">Mémoire des hommes : notice relative à Lucien Eléonor Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e5a42e560">Mémoire des hommes : notice relative à Lucien Eléonor Victor
                                     Dufriche</ref>
                      </title>
                   </bibl>
@@ -1336,7 +1337,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5d48b825">Mémoire des hommes : notice relative à Paul Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e5d48b825">Mémoire des hommes : notice relative à Paul Marcel
                                     Dumesny</ref>
                         <!--Natalia Pashkeeva, le 8 janvier 2016 : le lien ne fonctionne pas -->
                      </title>
@@ -1363,7 +1364,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e5e29db09">Mémoire des hommes : notice relative à Marcel Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e5e29db09">Mémoire des hommes : notice relative à Marcel Charles
                                     Dumont</ref>
                      </title>
                   </bibl>
@@ -1392,7 +1393,7 @@
                      <title><!--<ref target="">Mémoire des hommes : notice
                                     relative à Jules Émile Henri
                                 Dupuis</ref>--><!-- Natalia Pashkeeva, le 8 janvier 2016 : je ne le trouve pas dans la base. FClavaud, 9 mars 2016 : trouvé -->
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e591cbe22">Mémoire des hommes : notice relative à Jules Émile Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e591cbe22">Mémoire des hommes : notice relative à Jules Émile Henri
                                     Dupuis</ref>
                      </title>
                   </bibl>
@@ -1427,7 +1428,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e6c464397">Mémoire des hommes : notice relative à Auguste Émile Balthazard
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e6c464397">Mémoire des hommes : notice relative à Auguste Émile Balthazard
                                     Dussolier-Gond</ref>
                      </title>
                   </bibl>
@@ -1456,7 +1457,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e74a86124">Mémoire des hommes : notice relative à Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e74a86124">Mémoire des hommes : notice relative à Marcel
                                 Etienne</ref>
                      </title>
                   </bibl>
@@ -1487,7 +1488,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e7e2e3242">Mémoire des hommes : notice relative à Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e7e2e3242">Mémoire des hommes : notice relative à Louis
                                 Favre</ref>
                      </title>
                   </bibl>
@@ -1513,7 +1514,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e82d431a7">Mémoire des hommes : notice relative à Paul Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e82d431a7">Mémoire des hommes : notice relative à Paul Louis
                                 Feugère</ref>
                      </title>
                   </bibl>
@@ -1540,7 +1541,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e83102307">Mémoire des hommes : notice relative à Jean Marie Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e83102307">Mémoire des hommes : notice relative à Jean Marie Henri
                                     Feulard</ref>
                      </title>
                   </bibl>
@@ -1566,7 +1567,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e8c756f5c">Mémoire des hommes : notice relative à Albert Alexandre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e8c756f5c">Mémoire des hommes : notice relative à Albert Alexandre
                                     Foudriat</ref>
                      </title>
                   </bibl>
@@ -1594,7 +1595,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e8df698f8">Mémoire des hommes : notice relative à René Macimilien
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e8df698f8">Mémoire des hommes : notice relative à René Macimilien
                                     Fourcès</ref>
                      </title>
                   </bibl>
@@ -1623,7 +1624,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e91134640">Mémoire des hommes : notice relative à Jean Alphonse Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e91134640">Mémoire des hommes : notice relative à Jean Alphonse Henri
                                     Frager</ref>
                      </title>
                   </bibl>
@@ -1651,7 +1652,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e99057b98">Mémoire des hommes : notice relative à François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e99057b98">Mémoire des hommes : notice relative à François
                                 Gaillard</ref>
                      </title>
                   </bibl>
@@ -1678,7 +1679,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e9bf5bee6">Mémoire des hommes : notice relative à Lucien Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e9bf5bee6">Mémoire des hommes : notice relative à Lucien Emile
                                     Galustre</ref>
                      </title>
                   </bibl>
@@ -1705,7 +1706,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239e9bf5d2fb">Mémoire des hommes : notice relative à René Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239e9bf5d2fb">Mémoire des hommes : notice relative à René Marcel
                                     Galustre</ref>
                      </title>
                   </bibl>
@@ -1738,7 +1739,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ea26f3e31">Mémoire des hommes : notice relative à Lucien Auguste Constant
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ea26f3e31">Mémoire des hommes : notice relative à Lucien Auguste Constant
                                     Gatbois</ref>
                      </title>
                   </bibl>
@@ -1763,7 +1764,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ea811a7e2">Mémoire des hommes : notice relative à Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ea811a7e2">Mémoire des hommes : notice relative à Henri
                             Gé</ref>
                      </title>
                   </bibl>
@@ -1788,7 +1789,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523ac616176af">Mémoire des hommes : notice relative à Edouard Albert
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523ac616176af">Mémoire des hommes : notice relative à Edouard Albert
                                     Gerber</ref>
                      </title>
                   </bibl>
@@ -1817,7 +1818,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239eb17524c0">Mémoire des hommes : notice relative à Édouard Julien René
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239eb17524c0">Mémoire des hommes : notice relative à Édouard Julien René
                                     Gillon</ref>
                      </title>
                   </bibl>
@@ -1842,7 +1843,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239eb8228ed8">Mémoire des hommes : notice relative à Jules
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239eb8228ed8">Mémoire des hommes : notice relative à Jules
                                 Godard</ref>
                      </title>
                   </bibl>
@@ -1869,7 +1870,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239eb9a54e9c">Mémoire des hommes : notice relative à Marcel Maurice Goigoux
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239eb9a54e9c">Mémoire des hommes : notice relative à Marcel Maurice Goigoux
                                 </ref>
                      </title>
                   </bibl>
@@ -1895,7 +1896,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ebafc69e6">Mémoire des hommes : notice relative à Joseph François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ebafc69e6">Mémoire des hommes : notice relative à Joseph François
                                     Gonthier</ref>
                      </title>
                   </bibl>
@@ -1921,7 +1922,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ebb4af8ed">Mémoire des hommes : notice relative à Emile Alexandre Gorand
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ebb4af8ed">Mémoire des hommes : notice relative à Emile Alexandre Gorand
                                 </ref>
                      </title>
                   </bibl>
@@ -1948,7 +1949,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ec25365cb">Mémoire des hommes : notice relative à Émile Jean Léon
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ec25365cb">Mémoire des hommes : notice relative à Émile Jean Léon
                                     Grandjean</ref>
                      </title>
                   </bibl>
@@ -1972,7 +1973,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ec349970a">Mémoire des hommes : notice relative à Edmond
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ec349970a">Mémoire des hommes : notice relative à Edmond
                                 Granié</ref>
                      </title>
                   </bibl>
@@ -1997,7 +1998,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239eceed6c24">Mémoire des hommes : notice relative à Marie François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239eceed6c24">Mémoire des hommes : notice relative à Marie François
                                     Guével</ref>
                      </title>
                   </bibl>
@@ -2024,7 +2025,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ee1327a97">Mémoire des hommes : notice relative à François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ee1327a97">Mémoire des hommes : notice relative à François
                                 Hémy</ref>
                      </title>
                   </bibl>
@@ -2052,7 +2053,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ee2beab42">Mémoire des hommes : notice relative à Joseph Camille Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ee2beab42">Mémoire des hommes : notice relative à Joseph Camille Marcel
                                     Heppe</ref>
                      </title>
                   </bibl>
@@ -2078,7 +2079,7 @@
                      <author>Ministère de la défense, Secrétariat général pour l’administration, Direction de la mémoire,du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ee4b22ddb">
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ee4b22ddb">
                                 Mémoire des hommes : notice relative à Céleste Camille Herpin</ref>
                      </title>
                   </bibl>
@@ -2106,7 +2107,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ef3b5304e">Mémoire des hommes : notice relative à Marcellin Adolphe
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ef3b5304e">Mémoire des hommes : notice relative à Marcellin Adolphe
                                     Jacquat</ref>
                      </title>
                   </bibl>
@@ -2133,7 +2134,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a04f966c91">Mémoire des hommes : notice relative à Auguste Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a04f966c91">Mémoire des hommes : notice relative à Auguste Louis
                                     Jolly</ref>
                      </title>
                   </bibl>
@@ -2163,7 +2164,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f07ff0dcf">Mémoire des hommes : notice relative à Enrique
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f07ff0dcf">Mémoire des hommes : notice relative à Enrique
                                 Laborde</ref>
                      </title>
                   </bibl>
@@ -2189,7 +2190,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f087868b8">Mémoire des hommes : notice relative à Bernard
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f087868b8">Mémoire des hommes : notice relative à Bernard
                                 Labrin</ref>
                      </title>
                   </bibl>
@@ -2215,7 +2216,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f0b1d1d85">Mémoire des hommes : notice relative à Pierre Auguste
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f0b1d1d85">Mémoire des hommes : notice relative à Pierre Auguste
                                     Lacroix</ref>
                      </title>
                   </bibl>
@@ -2241,7 +2242,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f0b959a4e">Mémoire des hommes : notice relative à Charles Roger
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f0b959a4e">Mémoire des hommes : notice relative à Charles Roger
                                     Laederich</ref>
                      </title>
                   </bibl>
@@ -2267,7 +2268,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f0cf79455">Mémoire des hommes : notice relative à Jules Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f0cf79455">Mémoire des hommes : notice relative à Jules Emile
                                     Laforêt</ref>
                      </title>
                   </bibl>
@@ -2292,7 +2293,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f0d3b5b03">Mémoire des hommes : notice relative à Jules
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f0d3b5b03">Mémoire des hommes : notice relative à Jules
                                 Lagache</ref>
                      </title>
                   </bibl>
@@ -2319,7 +2320,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523abe2359f6d">Mémoire des hommes : notice relative à Joseph Henri
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523abe2359f6d">Mémoire des hommes : notice relative à Joseph Henri
                                     Lagarde</ref>
                      </title>
                   </bibl>
@@ -2347,7 +2348,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f0f40679e">Mémoire des hommes : notice relative à Léon Charles Pascal
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f0f40679e">Mémoire des hommes : notice relative à Léon Charles Pascal
                                     Lainé</ref>
                      </title>
                   </bibl>
@@ -2373,7 +2374,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f1570d7e7">Mémoire des hommes : notice relative à Eugène Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f1570d7e7">Mémoire des hommes : notice relative à Eugène Louis
                                     Landry</ref>
                      </title>
                   </bibl>
@@ -2399,7 +2400,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f18af14bc">Mémoire des hommes : notice relative à Albert
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f18af14bc">Mémoire des hommes : notice relative à Albert
                                 Lapraz</ref>
                      </title>
                   </bibl>
@@ -2427,7 +2428,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f281d88e5">Mémoire des hommes : notice relative à Louis Charles Eugène Le
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f281d88e5">Mémoire des hommes : notice relative à Louis Charles Eugène Le
                                     Conte</ref>
                      </title>
                   </bibl>
@@ -2463,7 +2464,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f211b1366">Mémoire des hommes : notice relative à Albert Gabriel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f211b1366">Mémoire des hommes : notice relative à Albert Gabriel
                                     Lebaillif</ref>
                      </title>
                   </bibl>
@@ -2492,7 +2493,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f2deec76d">Mémoire des hommes : notice relative à Jules Pierre Désiré
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f2deec76d">Mémoire des hommes : notice relative à Jules Pierre Désiré
                                     Lefort</ref>
                      </title>
                   </bibl>
@@ -2517,7 +2518,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f2f54bb83">Mémoire des hommes : notice relative à Jules Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f2f54bb83">Mémoire des hommes : notice relative à Jules Louis
                                 Legeay</ref>
                      </title>
                   </bibl>
@@ -2543,7 +2544,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f3d0d8538">Mémoire des hommes : notice relative à Auguste Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f3d0d8538">Mémoire des hommes : notice relative à Auguste Victor
                                     Leroy</ref>
                      </title>
                   </bibl>
@@ -2570,7 +2571,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f44faa5d9">Mémoire des hommes : notice relative à Paul Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f44faa5d9">Mémoire des hommes : notice relative à Paul Louis
                                     Libouton</ref>
                      </title>
                   </bibl>
@@ -2600,7 +2601,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f5b9aa46e">Mémoire des hommes : notice relative à Ernest André
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f5b9aa46e">Mémoire des hommes : notice relative à Ernest André
                                     Marchal</ref>
                      </title>
                   </bibl>
@@ -2626,7 +2627,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f6416e13c">Mémoire des hommes : notice relative à Maurice Louis Joseph
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f6416e13c">Mémoire des hommes : notice relative à Maurice Louis Joseph
                                     Martin</ref>
                      </title>
                   </bibl>
@@ -2653,7 +2654,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f646baa9a">Mémoire des hommes : notice relative à Pierre Charles Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f646baa9a">Mémoire des hommes : notice relative à Pierre Charles Victor
                                     Martin</ref>
                      </title>
                   </bibl>
@@ -2678,7 +2679,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f69e06375">Mémoire des hommes : notice relative à Maurice Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f69e06375">Mémoire des hommes : notice relative à Maurice Victor
                                     Mathelin</ref>
                      </title>
                   </bibl>
@@ -2707,7 +2708,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f6c58390e">Mémoire des hommes : notice relative à Auguste Jules Alexandre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f6c58390e">Mémoire des hommes : notice relative à Auguste Jules Alexandre
                                     Maurel</ref>
                      </title>
                   </bibl>
@@ -2733,7 +2734,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f6f67848f">Mémoire des hommes : notice relative à Gustave Fernand
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f6f67848f">Mémoire des hommes : notice relative à Gustave Fernand
                                     Mazurier</ref>
                      </title>
                   </bibl>
@@ -2761,7 +2762,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a051ae3908">Mémoire des hommes : notice relative à Jean Armand Eugène
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a051ae3908">Mémoire des hommes : notice relative à Jean Armand Eugène
                                     Mercier</ref>
                      </title>
                   </bibl>
@@ -2787,7 +2788,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523acfcd3eafa">Mémoire des hommes : notice relative à Jules Pierre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523acfcd3eafa">Mémoire des hommes : notice relative à Jules Pierre
                                     Métayer</ref>
                      </title>
                   </bibl>
@@ -2813,7 +2814,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f9128b2a0">Mémoire des hommes : notice relative à Jules
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f9128b2a0">Mémoire des hommes : notice relative à Jules
                                 Murat</ref>
                      </title>
                   </bibl>
@@ -2845,7 +2846,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523aa17c4e105">Mémoire des hommes : notice relative à Georges François Marie
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523aa17c4e105">Mémoire des hommes : notice relative à Georges François Marie
                                     Auguste Nicolon</ref>
                      </title>
                   </bibl>
@@ -2873,7 +2874,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239f9a50dfe3">Mémoire des hommes : notice relative à Jean
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239f9a50dfe3">Mémoire des hommes : notice relative à Jean
                                 Nicouleau</ref>
                      </title>
                   </bibl>
@@ -2916,7 +2917,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fa96461c8">Mémoire des hommes : notice relative à Louis Ernest Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fa96461c8">Mémoire des hommes : notice relative à Louis Ernest Victor
                                     Pain</ref>
                      </title>
                   </bibl>
@@ -2942,7 +2943,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239faea01bc2">Mémoire des hommes : notice relative à Marie René
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239faea01bc2">Mémoire des hommes : notice relative à Marie René
                                 Patey</ref>
                      </title>
                   </bibl>
@@ -2969,7 +2970,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fb1773538">Mémoire des hommes : notice relative à Léon François
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fb1773538">Mémoire des hommes : notice relative à Léon François
                                     Pégorier</ref>
                      </title>
                   </bibl>
@@ -2996,7 +2997,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0533d7f92">Mémoire des hommes : notice relative à Alphonse René
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0533d7f92">Mémoire des hommes : notice relative à Alphonse René
                                 Poy</ref>
                      </title>
                   </bibl>
@@ -3024,7 +3025,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fd4d8a9b8">Mémoire des hommes : notice relative à Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fd4d8a9b8">Mémoire des hommes : notice relative à Emile
                                 Quainon</ref>
                      </title>
                   </bibl>
@@ -3054,7 +3055,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fde0801ad">Mémoire des hommes : notice relative à Louis Jean
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fde0801ad">Mémoire des hommes : notice relative à Louis Jean
                                     Ravignon</ref>
                      </title>
                   </bibl>
@@ -3080,7 +3081,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fe42821d4">Mémoire des hommes : notice relative à Pierre
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fe42821d4">Mémoire des hommes : notice relative à Pierre
                                 Retteler</ref>
                      </title>
                   </bibl>
@@ -3107,7 +3108,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239fe5fd1bf9">Mémoire des hommes : notice relative à Pierre Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239fe5fd1bf9">Mémoire des hommes : notice relative à Pierre Charles
                                     Reyt</ref>
                      </title>
                   </bibl>
@@ -3134,7 +3135,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ff09bd553">Mémoire des hommes : notice relative à Maurice
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ff09bd553">Mémoire des hommes : notice relative à Maurice
                                 Rogue</ref>
                      </title>
                   </bibl>
@@ -3161,7 +3162,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ff8c62c4c">Mémoire des hommes : notice relative à Paul Valentin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ff8c62c4c">Mémoire des hommes : notice relative à Paul Valentin
                                     Rouvel</ref>
                      </title>
                   </bibl>
@@ -3187,7 +3188,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ff8e7fb18">Mémoire des hommes : notice relative à Louis Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ff8e7fb18">Mémoire des hommes : notice relative à Louis Victor
                                     Rouvrais</ref>
                      </title>
                   </bibl>
@@ -3212,7 +3213,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m005239ff9bc9e2b">Mémoire des hommes : notice relative à Marcel Amédée
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m005239ff9bc9e2b">Mémoire des hommes : notice relative à Marcel Amédée
                                 Roux</ref>
                      </title>
                   </bibl>
@@ -3241,7 +3242,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a00f55e954">Mémoire des hommes : notice relative à Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a00f55e954">Mémoire des hommes : notice relative à Emile
                                 Simonnet</ref>
                      </title>
                   </bibl>
@@ -3268,7 +3269,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a00f63ff03">Mémoire des hommes : notice relative à Etienne
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a00f63ff03">Mémoire des hommes : notice relative à Etienne
                                 Simonnot</ref>
                      </title>
                   </bibl>
@@ -3294,7 +3295,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a01079ed78">Mémoire des hommes : notice relative à Georges Alfred
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a01079ed78">Mémoire des hommes : notice relative à Georges Alfred
                                     Socquet-Clerc</ref>
                      </title>
                   </bibl>
@@ -3320,7 +3321,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a013641d40">Mémoire des hommes : notice relative à Marcel
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a013641d40">Mémoire des hommes : notice relative à Marcel
                                 Starck</ref>
                      </title>
                   </bibl>
@@ -3348,7 +3349,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a013f5c006">Mémoire des hommes : notice relative à Georges Louis Charles
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a013f5c006">Mémoire des hommes : notice relative à Georges Louis Charles
                                     Stofft</ref>
                      </title>
                   </bibl>
@@ -3376,7 +3377,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a01456e5c9">Mémoire des hommes : notice relative à René Jean Marie Octave
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a01456e5c9">Mémoire des hommes : notice relative à René Jean Marie Octave
                                     Sublet d’Heudicourt de Lenoncourt</ref>
                      </title>
                   </bibl>
@@ -3406,7 +3407,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0187acd40">Mémoire des hommes : notice relative à Joseph Séraphin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0187acd40">Mémoire des hommes : notice relative à Joseph Séraphin
                                     Tardy</ref>
                      </title>
                   </bibl>
@@ -3431,7 +3432,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0247d9beb">Mémoire des hommes : notice relative à Alexandre Victor
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0247d9beb">Mémoire des hommes : notice relative à Alexandre Victor
                                     Titard</ref>
                      </title>
                   </bibl>
@@ -3457,7 +3458,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0268782ef">Mémoire des hommes : notice relative à Alcide Firmin
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0268782ef">Mémoire des hommes : notice relative à Alcide Firmin
                                     Tourain</ref>
                      </title>
                   </bibl>
@@ -3486,7 +3487,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a03027fe2e">Mémoire des hommes : notice relative à Joseph Emile
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a03027fe2e">Mémoire des hommes : notice relative à Joseph Emile
                                     Vachette</ref>
                      </title>
                   </bibl>
@@ -3513,7 +3514,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a05535170d">Mémoire des hommes : notice relative à Fernand Louis
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a05535170d">Mémoire des hommes : notice relative à Fernand Louis
                                     Vexiau</ref>
                      </title>
                   </bibl>
@@ -3542,7 +3543,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0437ca0ea">Mémoire des hommes : notice relative à Léon Auguste Camille
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0437ca0ea">Mémoire des hommes : notice relative à Léon Auguste Camille
                                     Waguet</ref>
                      </title>
                   </bibl>
@@ -3570,7 +3571,7 @@
                                 l’administration, Direction de la mémoire, du patrimoine et des
                                 archives</author>
                      <title>
-                        <ref target="http://www.memoiredeshommes.sga.defense.gouv.fr/fr/ark:/40699/m00523a0451e2532">Mémoire des hommes : notice relative à Léopold
+                        <ref target="https://www.memoiredeshommes.defense.gouv.fr/fr/ark:/40699/m00523a0451e2532">Mémoire des hommes : notice relative à Léopold
                                 Widhalm</ref>
                      </title>
                   </bibl>
