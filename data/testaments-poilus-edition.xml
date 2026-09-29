@@ -10,12 +10,23 @@
          <publicationStmt>
             <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
             <date>2016</date>
+            <idno type="URI">http://elec.enc.sorbonne.fr/testaments-de-poilus/</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">Creative Commons « Paternité - Pas d’Utilisation Commerciale - Pas de Modification 2.0 France » (CC BY-NC-ND 2.0 FR) : licence sous laquelle l’École nationale des chartes met à disposition l’édition (introduction, édition des testaments, index), selon ses mentions légales.</licence>
+               <p>Les reproductions des documents des Archives nationales sont destinées à un usage privé. Toute utilisation pour une publication, une exposition, une diffusion plus large doit faire l’objet d’une demande de réutilisation des données publiques auprès des Archives nationales.</p>
+            </availability>
          </publicationStmt>
+         <notesStmt>
+            <note type="citation">Nougaret (Christine), Clavaud (Florence) (dirs.), Testaments de guerre de Poilus parisiens (1914-1918) : une édition critique. Paris : École nationale des chartes, 2017-.... Édition numérique en ligne : http://elec.enc.sorbonne.fr/testaments-de-poilus/</note>
+         </notesStmt>
          <sourceDesc>
             <p>Édition électronique de testaments rédigés par des soldats parisiens morts pour la France entre 1914 et 1918.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <projectDesc>
+            <p>Édition critique de 134 testaments olographes de Poilus parisiens morts pour la France, écrits entre le 31 juillet 1914 et le 2 septembre 1918, issus de trois études notariales parisiennes (XXXIII, LIX, LXXXIX) et conservés aux Archives nationales (Minutier central des notaires de Paris). Chaque testament est donné en transcription imitative et en édition normalisée, avec les images numériques des documents.</p>
+         </projectDesc>
          <tei:refsDecl xmlns:tei="http://www.tei-c.org/ns/1.0"><!-- Les unités reprennent une à une les pages de l'ELEC historique :
            Accueil, Introduction, Les testaments, Index des testateurs, Index
            des lieux de décès, Nous contacter, et leur donnent le libellé du
@@ -29,6 +40,26 @@
            par page, sur le modèle de christofle, pour que chacune porte son
            nom. --><tei:citeStructure unit="Accueil" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'homePageAbstract']" use="@xml:id"><tei:citeData property="dct:title" use="'Accueil'"/></tei:citeStructure><tei:citeStructure unit="projet" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'projet']" use="@xml:id"><tei:citeData property="dct:title" use="'Le projet'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="Introduction" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'introduction']" use="@xml:id"><tei:citeData property="dct:title" use="'Introduction'"/><tei:citeStructure unit="partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/><tei:citeStructure unit="sous-partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'contact']" use="@xml:id"><tei:citeData property="dct:title" use="'Nous contacter'"/></tei:citeStructure><tei:citeStructure unit="Crédits" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'credits']" use="@xml:id"><tei:citeData property="dct:title" use="'Crédits'"/></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'mentionsLegales']" use="@xml:id"><tei:citeData property="dct:title" use="'Mentions légales'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:refsDecl>
       </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date from="1914-07-31" to="1918-09-02">Testaments écrits entre le 31 juillet 1914 et le 2 septembre 1918</date>
+         </creation>
+         <langUsage>
+            <language ident="fr">français</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <listChange>
+            <change when="2018-03-28">Versement dans le dépôt chartes/testaments-poilus du TEI de l’édition des 134 testaments (Florence Clavaud) et du teiCorpus qui l’incluait (commit bb0b5bc).</change>
+            <change when="2026-09-12">Ajout de 492 @corresp (lettre d’index de la notice visée) sur les persName et placeName, par script dans la base DoTS (tâche E5).</change>
+            <change when="2026-09-14">Hiérarchie de group année, mois, jour (5, 35, 79) autour des testaments et refsDecl correspondant, écrits dans la base DoTS (tâche D35).</change>
+            <change when="2026-09-22">teiHeader : titre, principal, editor et funder liés à Wikidata, BnF et IdRef.</change>
+            <change when="2026-09-23">Branche migration : état de la base DoTS versé dans l’arborescence data/, metadata/, transform/ (commit 580925c).</change>
+            <change when="2026-09-28">refsDecl : @unit sans espace (commit 2a4b9e5) ; publisher lié au seul site de l’École (commit 04f4619).</change>
+            <change when="2026-09-29">Renvois : 13 @ref corrigés (EDriancourt, ChateauneufRandonTournel, ECheiney, JMurat, MDescombes) d’après la branche master, et leurs 14 @corresp (commit a1e4d7c).</change>
+            <change when="2026-09-29">teiHeader : licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
+         </listChange>
+      </revisionDesc>
    </teiHeader>
    <text>
       <group xml:id="les-testaments"><head>Les testaments</head><group type="year" xml:id="annee-1914" n="1914"><head>1914</head><group type="month" xml:id="mois-1914-07" n="1914-07"><head>juillet 1914</head><group type="day" xml:id="jour-1914-07-31" n="1914-07-31"><head>31 juillet 1914</head><text xml:id="will-001">

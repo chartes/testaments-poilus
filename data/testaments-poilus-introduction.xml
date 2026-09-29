@@ -21,13 +21,24 @@
          <publicationStmt>
             <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
             <date>2017</date>
+            <idno type="URI">http://elec.enc.sorbonne.fr/testaments-de-poilus/</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">Creative Commons « Paternité - Pas d’Utilisation Commerciale - Pas de Modification 2.0 France » (CC BY-NC-ND 2.0 FR) : licence sous laquelle l’École nationale des chartes met à disposition l’édition (introduction, édition des testaments, index), selon ses mentions légales.</licence>
+               <p>Les reproductions des documents des Archives nationales sont destinées à un usage privé. Toute utilisation pour une publication, une exposition, une diffusion plus large doit faire l’objet d’une demande de réutilisation des données publiques auprès des Archives nationales.</p>
+            </availability>
          </publicationStmt>
+         <notesStmt>
+            <note type="citation">Nougaret (Christine), Clavaud (Florence) (dirs.), Testaments de guerre de Poilus parisiens (1914-1918) : une édition critique. Paris : École nationale des chartes, 2017-.... Édition numérique en ligne : http://elec.enc.sorbonne.fr/testaments-de-poilus/</note>
+         </notesStmt>
          <sourceDesc>
             <p>TEI d'origine des paratextes de l'édition ÉLEC « Testaments de guerre de Poilus parisiens (1914-1918) : une édition critique » (Florence Clavaud, 2016-2017), inclus dans le teiCorpus testaments-poilus.xml versé le 28 mars 2018 (dépôt chartes/testaments-poilus, commit bb0b5bc ; extrait en fichier propre par 6e96982).</p>
             <p>Reportés depuis les pages HTML du site <ref target="http://elec.enc.sorbonne.fr/testaments-de-poilus/">http://elec.enc.sorbonne.fr/testaments-de-poilus/</ref> (2026), sans équivalent dans le TEI d'origine : les intitulés des pages (Accueil, Introduction, Nous contacter, Crédits, Mentions légales), la figure et la date de mise à jour de l'accueil, les signatures « par Christine Nougaret (juin 2016) » des parties de l'introduction, les légendes des figures et la ponctuation des références bibliographiques. La deuxième partie de l'introduction (introduction/partie-2.html) n'a jamais eu de page propre sur l'ÉLEC (HTTP 500).</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <projectDesc>
+            <p>Paratextes de l’édition « Testaments de guerre de Poilus parisiens (1914-1918) » : accueil, présentation du projet, introduction historique en six parties par Christine Nougaret, contact, crédits et mentions légales.</p>
+         </projectDesc>
          <refsDecl>
             <!-- Ce document porte son propre refsDecl, et il le doit :
                  `fragments:getFragments` (repo/backend/fragments_register_builder.xqm) ne
@@ -72,6 +83,22 @@
             </citeStructure>
          </refsDecl>
       </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">français</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <listChange>
+            <change when="2018-03-28">Paratextes versés dans le teiCorpus testaments-poilus.xml (commit bb0b5bc).</change>
+            <change when="2026-09-07">Paratextes extraits du teiCorpus en fichier propre (commit 6e96982).</change>
+            <change when="2026-09-14">Fichier remplacé par une transcription des pages HTML de l’ÉLEC, découpée en 21 unités (tâche D36), puis versé dans la branche migration (commit 580925c).</change>
+            <change when="2026-09-22">teiHeader : principal, editor et funder liés à Wikidata, BnF et IdRef.</change>
+            <change when="2026-09-28">Signatures des parties en docAuthor (commit cf84979) ; références « Citer » dans un bibl (commit 662b520) ; @unit sans espace (commit 2a4b9e5) ; publisher lié au seul site de l’École (commit 04f4619).</change>
+            <change when="2026-09-29">Retour au TEI d’origine des paratextes, avec les 21 unités, leurs identifiants et le rendu de l’ÉLEC (commit da3458e).</change>
+            <change when="2026-09-29">teiHeader : licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
+         </listChange>
+      </revisionDesc>
    </teiHeader>
 
    <text>

@@ -7,18 +7,26 @@
             <editor ref="https://www.wikidata.org/wiki/Q42346625 https://data.bnf.fr/fr/ark:/12148/cb169702205 https://www.idref.fr/149350279">Florence Clavaud</editor>
             <funder ref="https://www.wikidata.org/wiki/Q182542 https://data.bnf.fr/fr/ark:/12148/cb11862272t https://www.idref.fr/026359421">Archives nationales</funder>
          </titleStmt>
-         <editionStmt>
-            <p/>
-         </editionStmt>
-         <extent/>
          <publicationStmt>
-            <p/>
+            <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
+            <date>2016</date>
+            <idno type="URI">http://elec.enc.sorbonne.fr/testaments-de-poilus/</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-nc-nd/2.0/fr/">Creative Commons « Paternité - Pas d’Utilisation Commerciale - Pas de Modification 2.0 France » (CC BY-NC-ND 2.0 FR) : licence sous laquelle l’École nationale des chartes met à disposition l’édition (introduction, édition des testaments, index), selon ses mentions légales.</licence>
+               <p>Les reproductions des documents des Archives nationales sont destinées à un usage privé. Toute utilisation pour une publication, une exposition, une diffusion plus large doit faire l’objet d’une demande de réutilisation des données publiques auprès des Archives nationales.</p>
+            </availability>
          </publicationStmt>
+         <notesStmt>
+            <note type="citation">Nougaret (Christine), Clavaud (Florence) (dirs.), Testaments de guerre de Poilus parisiens (1914-1918) : une édition critique. Paris : École nationale des chartes, 2017-.... Édition numérique en ligne : http://elec.enc.sorbonne.fr/testaments-de-poilus/</note>
+         </notesStmt>
          <sourceDesc>
-            <p/>
+            <p>Index des testateurs et des lieux de décès de l’édition électronique de testaments rédigés par des soldats parisiens morts pour la France entre 1914 et 1918.</p>
          </sourceDesc>
       </fileDesc>
-   <tei:encodingDesc xmlns:tei="http://www.tei-c.org/ns/1.0"><tei:refsDecl><!-- Les unités reprennent une à une les pages de l'ELEC historique :
+   <tei:encodingDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
+         <projectDesc>
+            <p>Index de l’édition « Testaments de guerre de Poilus parisiens (1914-1918) » : index des 128 testateurs (identité, domicile, état matrimonial, grade, circonstances du décès, sources) et index des 104 lieux de décès, identifiés et géolocalisés.</p>
+         </projectDesc><tei:refsDecl><!-- Les unités reprennent une à une les pages de l'ELEC historique :
            Accueil, Introduction, Les testaments, Index des testateurs, Index
            des lieux de décès, Nous contacter, et leur donnent le libellé du
            site. Plusieurs divisions des paratextes n'ayant pas d'élément head,
@@ -29,6 +37,23 @@
            credits, nous-contacter, mentions-legales, et dix pages
            d'introduction dont partie-2-1..3 et partie-4-1..2. Une déclaration
            par page, sur le modèle de christofle, pour que chacune porte son
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">français</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <listChange>
+            <change when="2018-03-28">Versement de l’index des testateurs et des lieux de décès (Florence Clavaud, commit a47cb54).</change>
+            <change when="2026-09-07">Index découpé par lettre (19 + 19 sous-listes) et 232 notes de renvoi générées (linkToEdition, linksToEdition) ; correction d’un @target (commits 6e96982 et suivants, branche master).</change>
+            <change when="2026-09-14">refsDecl : niveaux testateur et lieu, les 232 notices deviennent des unités citables (tâche D28).</change>
+            <change when="2026-09-22">teiHeader : titre, principal, editor et funder liés à Wikidata, BnF et IdRef.</change>
+            <change when="2026-09-23">Branche migration : état de la base DoTS versé dans l’arborescence data/, metadata/, transform/ (commit 580925c).</change>
+            <change when="2026-09-28">Barre des lettres (40 note type="letter-nav") retirée du TEI (commit 7c10dfb) ; @unit sans espace (commit 2a4b9e5).</change>
+            <change when="2026-09-29">@target à espace initiale (Balthazard) corrigé (commit a1e4d7c) ; notes générées : surnom de Bezy (commit 0ee3083), testaments manquants de six testateurs et testament de Charquillon (commit 61b67b5).</change>
+            <change when="2026-09-29">teiHeader complété : publisher, date et sourceDesc repris de l’édition, licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
+         </listChange>
+      </revisionDesc>
            nom. --><tei:citeStructure unit="Accueil" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'homePageAbstract']" use="@xml:id"><tei:citeData property="dct:title" use="'Accueil'"/></tei:citeStructure><tei:citeStructure unit="projet" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'projet']" use="@xml:id"><tei:citeData property="dct:title" use="'Le projet'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="Introduction" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'introduction']" use="@xml:id"><tei:citeData property="dct:title" use="'Introduction'"/><tei:citeStructure unit="partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/><tei:citeStructure unit="sous-partie" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'contact']" use="@xml:id"><tei:citeData property="dct:title" use="'Nous contacter'"/></tei:citeStructure><tei:citeStructure unit="Crédits" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'credits']" use="@xml:id"><tei:citeData property="dct:title" use="'Crédits'"/></tei:citeStructure><tei:citeStructure unit="section" match="/TEI[@xml:id = 'testaments-poilus-introduction']/text/body/div[@xml:id = 'mentionsLegales']" use="@xml:id"><tei:citeData property="dct:title" use="'Mentions légales'"/><tei:citeStructure unit="section" match="div[@xml:id]" use="@xml:id"><tei:citeData property="dct:title" use="normalize-space(string((head)[1]))"/></tei:citeStructure></tei:citeStructure></tei:refsDecl></tei:encodingDesc></teiHeader>
    <text>
       <body><!-- ajout de l'index par F. Clavaud le 4 août 2015 --><!-- FC 9 mars 2016<div type="index">-->
