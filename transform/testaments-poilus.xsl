@@ -195,8 +195,26 @@
            (croisement via les <placeName ref="#pl-…"> des notices biographiques)
        =================================================================== -->
 
-  <!-- clef lieu -> testateurs qui y sont morts -->
-  <xsl:key name="tp-deces" match="tei:person" use=".//tei:placeName/@ref"/>
+  <!-- clef lieu -> testateurs qui y sont morts : RETIRÉE le 2026-09-29 (elle ne
+       trouvait rien dans une unité servie seule ; voir le modèle tei:place). -->
+  <!-- testateur -> ses testaments, d'après les notes linkToEdition de l'index
+       déposé à côté de la feuille (même mécanisme que $tp-wills). -->
+  <xsl:variable name="tp-index-personnes-arbre">
+    <xsl:if test="doc-available($tp-uri-index)">
+      <xsl:for-each select="document($tp-uri-index)//tei:person[@xml:id]">
+        <xsl:element name="p" namespace="">
+          <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+          <xsl:for-each select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]">
+            <xsl:element name="w" namespace="">
+              <xsl:attribute name="id"><xsl:value-of select="substring-after(@target, '#')"/></xsl:attribute>
+              <xsl:value-of select="normalize-space(.)"/>
+            </xsl:element>
+          </xsl:for-each>
+        </xsl:element>
+      </xsl:for-each>
+    </xsl:if>
+  </xsl:variable>
+  <xsl:variable name="tp-index-personnes" select="$tp-index-personnes-arbre"/>
 
   <xsl:template match="tei:div[@type = 'index']" priority="9">
     <section class="tp-index" style="max-width:62rem;margin:0 auto;color:#222;font-family:Georgia,'Times New Roman',serif;line-height:1.55">
@@ -257,7 +275,10 @@
   <xsl:template match="tei:listPerson[@xml:id][not(tei:listPerson)] | tei:listPlace[@xml:id][not(tei:listPlace)]" priority="10">
     <section id="{@xml:id}" class="tp-index-letter" style="scroll-margin-top:90px">
       <span class="tp-anchor" id="tp-top-{@xml:id}"></span>
-      <h3 style="font-size:1.1rem;color:#a73136;margin:1.5rem 0 .5rem"><xsl:value-of select="normalize-space(tei:head)"/></h3>
+      <!-- 2026-09-29 — titre de page de l'ÉLEC : « Index des testateurs : lettre A » -->
+      <h3 style="font-size:1.1rem;color:#a73136;margin:1.5rem 0 .5rem">
+        <xsl:value-of select="concat(if (self::tei:listPerson) then 'Index des testateurs' else 'Index des lieux de décès', '&#160;: lettre ', normalize-space(tei:head))"/>
+      </h3>
       <!-- 2026-09-14 (agent_tp) : la barre « A | B | C … » de la lettre affichée
            seule est retirée — les 19 lettres sont dans le sommaire de gauche. -->
       <!-- 2026-09-14 (D28) : le sommaire des noms de la lettre est RETIRÉ de la page.
@@ -332,11 +353,51 @@
   <xsl:template match="tei:place" priority="9">
     <article id="{@xml:id}" class="index-entry" style="border-bottom:1px dotted #e0dcd5;padding:.6rem 0;margin:0">
       <h4 class="placeName-Entry" style="margin:0 0 .3rem;font-size:1.05rem">
+        <!-- 2026-09-29 — vedette complète de l'ÉLEC (relevée sur ses 104 notices,
+             103 reproduites à l'identique, Houilles à une espace près) :
+               nom en 1914-1918, « auj. » nom actuel     Belloy, auj. Belloy-en-Santerre
+               département (France) ou pays (étranger)   (Somme) / (Belgique)
+               commune de rattachement d'un lieu-dit     (Meuse, com. Apremont, auj. Apremont-la-Forêt)
+               changement de rattachement                (Empire d’Allemagne ; auj. Haut-Rhin, France)
+             Un nom ancien n'est retenu que s'il avait cours pendant la guerre
+             (fin de @when-iso postérieure à 1913) : « Bar sur Ornain » (1793-1801)
+             n'apparaît pas. -->
         <span class="placeName-entry">
-          <xsl:value-of select="normalize-space(tei:placeName/tei:settlement | tei:placeName)"/>
-          <xsl:variable name="dep" select="tei:location[not(@type)]/tei:district[@type = 'departement']"/>
-          <xsl:if test="$dep">
-            <span class="displayedLocation" style="font-weight:normal;color:#555"> (<span class="departement"><xsl:value-of select="normalize-space($dep)"/></span>)</span>
+          <xsl:call-template name="tp-lieu-nom"/>
+          <xsl:variable name="locs" select="tei:location[not(@type)]"/>
+          <xsl:variable name="loc">
+            <xsl:choose>
+              <xsl:when test="count($locs) &gt; 1 and not($locs/tei:country[normalize-space(.) != 'France'])">
+                <xsl:for-each select="$locs">
+                  <xsl:if test="position() &gt; 1"><xsl:text>, auj. </xsl:text></xsl:if>
+                  <xsl:value-of select="normalize-space(tei:district[@type = 'departement'][normalize-space(.) != ''][1])"/>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:when test="count($locs) &gt; 1">
+                <xsl:for-each select="$locs">
+                  <xsl:if test="position() &gt; 1"><xsl:text> ; auj. </xsl:text></xsl:if>
+                  <xsl:value-of select="string-join((tei:district[@type = 'departement'][normalize-space(.) != ''], tei:country)/normalize-space(.), ', ')"/>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:when test="$locs">
+                <xsl:variable name="pays" select="normalize-space($locs[1]/tei:country[1])"/>
+                <xsl:choose>
+                  <xsl:when test="$pays = 'France' or $pays = ''">
+                    <xsl:value-of select="string-join($locs[1]/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.), ', ')"/>
+                  </xsl:when>
+                  <xsl:otherwise><xsl:value-of select="$pays"/></xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="$locs[1]/tei:placeName">
+                  <xsl:text>, com. </xsl:text>
+                  <xsl:for-each select="$locs[1]">
+                    <xsl:call-template name="tp-lieu-nom"/>
+                  </xsl:for-each>
+                </xsl:if>
+              </xsl:when>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:if test="normalize-space($loc) != ''">
+            <span class="displayedLocation" style="font-weight:normal;color:#555"> (<span class="departement"><xsl:value-of select="$loc"/></span>)</span>
           </xsl:if>
         </span>
       </h4>
@@ -347,21 +408,65 @@
           <a class="externalLink" href="{normalize-space($geo)}" target="_blank" style="color:#a73136"><xsl:value-of select="normalize-space($geo)"/></a>
         </p>
       </xsl:if>
-      <!-- testateurs morts à ce lieu (croisement via les notices biographiques) -->
-      <xsl:variable name="morts" select="key('tp-deces', concat('#', @xml:id))"/>
+      <!-- 2026-09-29 — testateurs morts à ce lieu. La clé tp-deces cherchait les
+           <person> dans le MÊME document : servie seule, une unité « lieu » ou
+           « lettre » n'en contient aucune, et les 104 notices sortaient sans
+           liste. On lit la note générée (linksToEdition) que chaque <place>
+           porte et qui voyage avec elle ; le numéro de testament vient de la
+           notice du testateur (sa note linkToEdition), lue dans le TEI de
+           l'index déposé à côté de la feuille. Format de l'ÉLEC :
+           « Lieu de décès des testateurs suivants : Nom, Prénom (dates)
+           (testament n° 033) ; … (testaments n° 034, 035) ». -->
+      <xsl:variable name="morts" select="tei:note[@type = 'linksToEdition']/tei:ref[starts-with(@target, '#')]"/>
       <xsl:if test="$morts">
         <section class="linksToEdition" style="font-size:.9rem">
           <ul style="margin:.2rem 0;padding-left:1.2rem">
-            <xsl:for-each select="$morts">
-              <li>Lieu de décès de <a class="internalLink" href="#{@xml:id}" style="color:#a73136;text-decoration:none;border-bottom:1px dotted #a73136">
-                <xsl:apply-templates select="tei:persName" mode="tp-name"/>
-                <xsl:if test="tei:birth or tei:death"><xsl:text> (</xsl:text><xsl:value-of select="normalize-space(tei:birth)"/><xsl:text>-</xsl:text><xsl:value-of select="normalize-space(tei:death)"/><xsl:text>)</xsl:text></xsl:if>
-              </a></li>
-            </xsl:for-each>
+            <li>
+              <xsl:value-of select="if (count($morts) &gt; 1) then 'Lieu de décès des testateurs suivants&#160;: ' else 'Lieu de décès du testateur suivant&#160;: '"/>
+              <xsl:for-each select="$morts">
+                <xsl:variable name="pid" select="substring-after(normalize-space(@target), '#')"/>
+                <xsl:if test="position() &gt; 1"><xsl:text> ; </xsl:text></xsl:if>
+                <a class="internalLink" title="Consulter la notice sur ce testateur dans l’index des testateurs">
+                  <xsl:attribute name="href">
+                    <xsl:text>/testaments-poilus/document/testaments-poilus-index</xsl:text>
+                    <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
+                    <xsl:value-of select="concat('#', $pid)"/>
+                  </xsl:attribute>
+                  <xsl:value-of select="normalize-space(.)"/>
+                </a>
+                <xsl:variable name="tw" select="$tp-index-personnes/p[@id = $pid]/w"/>
+                <xsl:if test="$tw">
+                  <xsl:value-of select="if (count($tw) &gt; 1) then ' (testaments n° ' else ' (testament n° '"/>
+                  <xsl:for-each select="$tw">
+                    <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+                    <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, @id)}"><xsl:value-of select="."/></a>
+                  </xsl:for-each>
+                  <xsl:text>)</xsl:text>
+                </xsl:if>
+              </xsl:for-each>
+            </li>
           </ul>
         </section>
       </xsl:if>
     </article>
+  </xsl:template>
+
+  <!-- nom d'un lieu (ou de sa commune de rattachement) : le nom en usage pendant
+       la guerre, suivi de « auj. » et du nom actuel s'il a changé depuis. -->
+  <xsl:template name="tp-lieu-nom">
+    <xsl:variable name="anciens" select="tei:placeName[@type = 'old'][not(contains(@when-iso, '/')) or substring-after(@when-iso, '/') = '' or number(substring(substring-after(@when-iso, '/'), 1, 4)) &gt;= 1914]"/>
+    <xsl:variable name="actuels" select="tei:placeName[not(@type = 'old')]"/>
+    <xsl:choose>
+      <xsl:when test="$anciens and $actuels">
+        <xsl:value-of select="concat(normalize-space($anciens[1]), ', auj. ', normalize-space($actuels[1]))"/>
+      </xsl:when>
+      <xsl:when test="$actuels">
+        <xsl:value-of select="normalize-space($actuels[1])"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="normalize-space(tei:placeName[1])"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- contenu inline sur (bio, bibl) : aucune balise rouge -->
