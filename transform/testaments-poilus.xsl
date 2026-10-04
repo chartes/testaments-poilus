@@ -5,7 +5,13 @@
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="tei">
 
-  <xsl:import href="../hteiml/xsl/tei2html.xsl"/>
+  <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+
+  <!-- 2026-10-04 (C7) — racine de l'application : '' en local, '/elec' sur le serveur de dev
+       (copie du dépôt). Préfixe les liens internes, les fac-similés et, par le paramètre
+       $images de hteiml, les images de l'introduction (graphic/@url absolus). -->
+  <xsl:variable name="elec-base" select="'/elec'"/>
+  <xsl:param name="images" select="$elec-base"/>
   <xsl:output indent="no"/><!-- autopilote 2026-09-11 : sinon DoTS-vue colle les mots (condense) -->
 
   <!-- Certaines métadonnées DTS (dct:title/schema:type) peuvent être reprises
@@ -26,16 +32,17 @@
     <dts:wrapper> SANS teiHeader : ils ne sont pas touches.
     Priorite 15 pour dominer proprement les templates priorite 10 de ce fichier.
   -->
-  <!-- L'index complet est une page d'accueil d'index : deux barres, pas les
-       notices. -->
-  <xsl:template match="tei:TEI[@xml:id = 'testaments-poilus-index']/tei:text" priority="20">
-    <section class="tp-index" style="max-width:62rem;margin:0 auto;color:#222;font-family:Georgia,'Times New Roman',serif;line-height:1.55">
-      <xsl:apply-templates select=".//tei:body/tei:div/tei:listPerson[tei:listPerson] | .//tei:body/tei:div/tei:listPlace[tei:listPlace]"/>
-    </section>
-  </xsl:template>
 
   <!-- Cas 1 : rendu du TEI complet (racine) : masquer le corps <text>. -->
-  <xsl:template match="tei:TEI[tei:teiHeader][@xml:id != 'testaments-poilus-index']/tei:text" priority="15"/>
+  <xsl:template match="tei:TEI[tei:teiHeader]/tei:text" priority="15"/>
+
+  <!-- 2026-10-02 (C5) — le hteiml du serveur n'a pas de modèle pour
+       <dts:wrapper> et l'affiche comme une balise inconnue, en rouge. On le
+       rend transparent ici, comme le fait le hteiml local ; les cas propres
+       au corpus (ci-dessous) ont une priorité plus haute. -->
+  <xsl:template match="*[local-name() = 'wrapper']" priority="10">
+    <xsl:apply-templates/>
+  </xsl:template>
 
   <!-- Cas 2 : contenu servi dans un <dts:wrapper> embarquant le teiHeader
        (rendu racine via excludeFragments) : ne produire que la page de garde. -->
@@ -88,7 +95,7 @@
        depuis la racine, conteneur passé en paramètre. On reproduit ce couple
        à l'identique. -->
   <xsl:template match="*[local-name() = 'wrapper'][tei:div][not(.//tei:text)][not(tei:teiHeader)]" priority="12">
-    <xsl:apply-imports/>
+    <xsl:apply-templates/>
     <xsl:variable name="notes-cont" select="."/>
     <xsl:for-each select="/">
       <xsl:call-template name="footnotes">
@@ -200,8 +207,8 @@
   <!-- testateur -> ses testaments, d'après les notes linkToEdition de l'index
        déposé à côté de la feuille (même mécanisme que $tp-wills). -->
   <xsl:variable name="tp-index-personnes-arbre">
-    <xsl:if test="doc-available($tp-uri-index)">
-      <xsl:for-each select="document($tp-uri-index)//tei:person[@xml:id]">
+    <xsl:if test="doc-available($tp-uri-edition)">
+      <xsl:for-each select="document($tp-uri-edition)//tei:person[@xml:id]">
         <xsl:element name="p" namespace="">
           <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
           <xsl:for-each select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]">
@@ -501,7 +508,7 @@
                 <xsl:if test="position() &gt; 1"><xsl:text> ; </xsl:text></xsl:if>
                 <a class="internalLink" title="Consulter la notice sur ce testateur dans l’index des testateurs">
                   <xsl:attribute name="href">
-                    <xsl:text>/testaments-poilus/document/testaments-poilus-index</xsl:text>
+                    <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
                     <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
                     <xsl:value-of select="concat('#', $pid)"/>
                   </xsl:attribute>
@@ -553,7 +560,7 @@
       <xsl:when test="@ref[starts-with(., '#')]">
         <a class="linkToIndex" style="color:inherit;border-bottom:1px dotted #a73136;text-decoration:none">
           <xsl:attribute name="href">
-            <xsl:text>/testaments-poilus/document/testaments-poilus-index</xsl:text>
+            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
             <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
             <xsl:value-of select="@ref"/>
           </xsl:attribute>
@@ -671,7 +678,7 @@
        (dots-autopilot/scripts/e2_vignettes_manquantes.py). -->
   <xsl:template name="tp-facs-src">
     <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
-    <xsl:value-of select="concat('/testaments-poilus/images/vignettes/', substring-before($fn, '.jpg'), '_ptt.jpg')"/>
+    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/vignettes/', substring-before($fn, '.jpg'), '_ptt.jpg')"/>
   </xsl:template>
 
   <!-- Image PLEINE TAILLE locale. E2 (2026-09-12) : les 312 sources citees ont ete
@@ -680,7 +687,7 @@
        1 500 px de large pour 2 000 a 17 250 px de haut. -->
   <xsl:template name="tp-facs-src-full">
     <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
-    <xsl:value-of select="concat('/testaments-poilus/images/sources/', $fn)"/>
+    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/sources/', $fn)"/>
   </xsl:template>
 
   <!-- Nom de fichier nu, quel que soit le prefixe porte par @facs. -->
@@ -820,8 +827,9 @@
        Piege DoTS-vue : un <a> vers la route COURANTE vide la page. L'element
        courant sort donc en <strong>, jamais en <a> — ce qui est aussi plus juste.
        =================================================================== -->
-  <!-- LES TROIS XML DU CORPUS, a cote de la feuille. Ce sont les fichiers de
-       data/ eux-memes, deposes par le deploiement comme ils sont verses dans
+  <!-- LE XML DU CORPUS, a cote de la feuille (un seul fichier depuis le
+       2026-10-02 : paratextes, testaments et index reunis). C'est le fichier de
+       data/ lui-meme, depose par le deploiement comme il est verse dans
        BaseX : ni extrait, ni fichier engendre, rien a regenerer quand le TEI
        change. `document()` se resout sur l'URI de base de la feuille.
 
@@ -835,8 +843,6 @@
        sous-requete « queued », serveur a redemarrer. Une feuille de style ne
        rappelle pas l'application qui l'execute. -->
   <xsl:variable name="tp-uri-edition" select="'testaments-poilus-edition.xml'"/>
-  <xsl:variable name="tp-uri-index" select="'testaments-poilus-index.xml'"/>
-  <xsl:variable name="tp-uri-introduction" select="'testaments-poilus-introduction.xml'"/>
   <!-- Les noms de mois ne se deduisent pas d'un numero, et les tirer du <head>
        du <group> ferait dependre la barre d'un libelle redigeable. -->
   <xsl:variable name="tp-mois"
@@ -896,20 +902,20 @@
   <xsl:variable name="tp-wills" select="$tp-wills-arbre"/>
 
   <xsl:variable name="tp-unites-arbre">
-    <xsl:if test="doc-available($tp-uri-index)">
-      <xsl:for-each select="document($tp-uri-index)//tei:listPerson[@xml:id]/tei:person[@xml:id]">
+    <xsl:if test="doc-available($tp-uri-edition)">
+      <xsl:for-each select="document($tp-uri-edition)//tei:listPerson[@xml:id]/tei:person[@xml:id]">
         <xsl:element name="unite" namespace="">
           <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-          <xsl:attribute name="res">testaments-poilus-index</xsl:attribute>
+          <xsl:attribute name="res">testaments-poilus-edition</xsl:attribute>
           <xsl:attribute name="ouvrable"><xsl:value-of select="../@xml:id"/></xsl:attribute>
         </xsl:element>
       </xsl:for-each>
     </xsl:if>
-    <xsl:if test="doc-available($tp-uri-introduction)">
-      <xsl:for-each select="document($tp-uri-introduction)//tei:div[@xml:id = 'introduction']/tei:div[@xml:id]/tei:div[@xml:id]">
+    <xsl:if test="doc-available($tp-uri-edition)">
+      <xsl:for-each select="document($tp-uri-edition)//tei:div[@xml:id = 'introduction']/tei:div[@xml:id]/tei:div[@xml:id]">
         <xsl:element name="unite" namespace="">
           <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-          <xsl:attribute name="res">testaments-poilus-introduction</xsl:attribute>
+          <xsl:attribute name="res">testaments-poilus-edition</xsl:attribute>
           <xsl:attribute name="ouvrable"><xsl:value-of select="../@xml:id"/></xsl:attribute>
         </xsl:element>
       </xsl:for-each>
@@ -917,7 +923,7 @@
   </xsl:variable>
   <xsl:variable name="tp-unites" select="$tp-unites-arbre"/>
 
-  <xsl:variable name="tp-route">/testaments-poilus/document/testaments-poilus-edition?refId=</xsl:variable>
+  <xsl:variable name="tp-route" select="concat($elec-base, '/testaments-poilus/document/testaments-poilus-edition?refId=')"/>
 
   <xsl:template name="tp-will-nav">
     <xsl:variable name="id" select="string(@xml:id)"/>
@@ -1051,7 +1057,7 @@
        Aucune cible n'est devinee : le TEI les porte toutes, et les 320 ont ete
        verifiees une a une contre le registre des trois ressources (0 orpheline).
          @target  = l'identifiant vise (« #will-124 », « #NDeToledo »)
-         @corresp = soit la RESSOURCE (« testaments-poilus-edition|-index »),
+         @corresp = soit la RESSOURCE (« testaments-poilus-edition », la seule depuis la fusion du 2026-10-02),
                     soit, pour une cible interne a l'introduction, l'UNITE qui
                     la contient (« introduction-partie-6 » pour #DallozRepDCivil).
          @n       = l'infobulle de l'ancien site (« Consulter le testament »).
@@ -1088,7 +1094,7 @@
             <xsl:attribute name="title"><xsl:value-of select="normalize-space(@n)"/></xsl:attribute>
           </xsl:if>
           <xsl:attribute name="href">
-            <xsl:text>/testaments-poilus/document/</xsl:text>
+            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/</xsl:text>
             <xsl:choose>
               <!-- @corresp nomme une ressource (edition, index) : la cible y est une
                    unite. Ouvrable (un testament), on la vise ; non ouvrable (une
@@ -1102,14 +1108,14 @@
               <!-- @corresp nomme l'unite de l'introduction qui contient la cible
                    (une entree de bibliographie, qui n'est pas une unite citable) -->
               <xsl:when test="$co != ''">
-                <xsl:value-of select="concat('testaments-poilus-introduction?refId=', $co, '#', $cible)"/>
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $co, '#', $cible)"/>
               </xsl:when>
               <!-- Pas de @corresp : la cible EST une unite de l'introduction -->
               <xsl:when test="$ouvr != ''">
-                <xsl:value-of select="concat('testaments-poilus-introduction?refId=', $ouvr, '#', $cible)"/>
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $ouvr, '#', $cible)"/>
               </xsl:when>
               <xsl:otherwise>
-                <xsl:value-of select="concat('testaments-poilus-introduction?refId=', $cible)"/>
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $cible)"/>
               </xsl:otherwise>
             </xsl:choose>
           </xsl:attribute>
@@ -1220,7 +1226,7 @@
        deja sauve par le modele de renvoi ci-dessous (priorite 25).
        On ne corrige ici que ce corpus : la meme faute atteint les 23 corpus qui
        importent cette feuille, ce qui est une decision, pas une retouche. -->
-  <xsl:template match="tei:persName[tei:surname] | tei:placeName[tei:surname] | tei:name[tei:surname] | tei:orgName[tei:surname]" priority="8">
+  <xsl:template match="tei:persName[tei:surname] | tei:placeName[tei:surname] | tei:name[tei:surname] | tei:orgName[tei:surname] | tei:author[tei:surname]" priority="12">
     <span class="{local-name()}"><xsl:apply-templates/></span>
   </xsl:template>
 
@@ -1326,7 +1332,7 @@
            on retombe sur l'unité-lettre plutôt que sur une adresse sans cible. -->
       <xsl:variable name="unite" select="substring-after(normalize-space(@ref), '#')"/>
       <xsl:attribute name="href">
-        <xsl:text>/testaments-poilus/document/testaments-poilus-index</xsl:text>
+        <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
         <xsl:choose>
           <xsl:when test="$unite != ''">
             <xsl:value-of select="concat('?refId=', $unite)"/>
@@ -1703,17 +1709,6 @@
     </span>
   </xsl:template>
 
-  <!-- 2026-09-28 — conformité tei_all. Les trois mentions « Citer la
-       présente édition » (Mentions légales) alignaient <author>, <pubPlace>
-       et <publisher> à même le <p>, ce que tei_all refuse ; elles sont
-       désormais enveloppées dans un <bibl>. hteiml rendrait ce <bibl> par un
-       <span class="bibl"> de plus : on le rend transparent pour que la page
-       reste identique. Le motif ne vise que ces trois <bibl> (seuls <bibl>
-       enfants d'un <p> dans le corpus), y compris quand le <p> arrive sans
-       sa <div> (excludeFragments). -->
-  <xsl:template match="tei:p/tei:bibl[tei:pubPlace][tei:publisher]">
-    <xsl:apply-templates/>
-  </xsl:template>
 
   <!-- ====================================================================
        2026-09-29 — INTRODUCTION : RETOUR AU TEI D'ORIGINE (2018)
@@ -1779,11 +1774,6 @@
     </li>
   </xsl:template>
 
-  <!-- <author><surname>…</surname> (<forename>…</forename>)</author> : la règle
-       *[tei:surname] de teiHeader2html jette le texte (parenthèses) ; on le garde. -->
-  <xsl:template match="tei:author[tei:surname]" priority="12">
-    <span class="author"><xsl:apply-templates/></span>
-  </xsl:template>
 
   <!-- 2026-09-29 — MENTIONS DES <metamark> (22 dans 18 testaments). L'ÉLEC les
        rendait en toutes lettres dans la transcription seule : « (trait
