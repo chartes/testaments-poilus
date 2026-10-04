@@ -79,6 +79,7 @@
             <change when="2026-09-29">Paratextes : Retour au TEI d’origine des paratextes, avec les 21 unités, leurs identifiants et le rendu de l’ÉLEC (commit da3458e).</change>
             <change when="2026-09-29">Paratextes : teiHeader : licence, identifiant, citation, projectDesc, profileDesc et revisionDesc.</change>
             <change when="2026-09-29">Paratextes : Liens Mémoire des hommes : les 4 renvois à la base des morts pour la France (ancienne page article.php, disparue) visent sa page de recherche actuelle.</change>
+            <change when="2026-10-04">Mentions légales : l'exemple de citation du testament n° 5 renvoie au testament dans l'édition (#will-005) au lieu de l'ancienne page ÉLEC (adresse affichée inchangée) ; 3 adresses du SIV des Archives nationales sans leurs blancs finaux. Le lien Mémoire des hommes d'Alphonse René Poy (ARK m00523a0533d7f92, 404) est laissé : site en maintenance le 04/10, fiche non retrouvée.</change>
             <change when="2026-10-02">Les trois fichiers testaments-poilus-edition, -index et -introduction sont réunis en un seul TEI, sous l’identifiant de l’édition : paratextes, testaments et index sont trois parties du même &lt;text&gt;, un seul refsDecl les déclare, et les deux listes englobantes de l’index deviennent des unités citables (index-testateurs, index-lieux), titrées comme dans le sommaire : « Index des testateurs » (head ajouté) et « Index des lieux de décès » (au lieu de « Lieux de décès »).</change>
          </listChange>
       </revisionDesc>
@@ -1619,7 +1620,7 @@
                            guerre de Poilus parisiens (1914-1918) : une édition
                            critique</title>. <pubPlace>Paris</pubPlace> : <publisher>École nationale des
                            chartes</publisher>, <date>2017-....</date> <note type="onLineAccess">En
-                           ligne : <ref target="http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html">http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>
+                           ligne : <ref target="#will-005">http://elec.enc.sorbonne.fr/testaments-de-poilus/testaments/testament-005.html</ref>
                            (consulté le [date de consultation]).</note></bibl></p>
                </div>
                <div xml:id="mentionsLegales-licence">
@@ -1929,7 +1930,7 @@
                   <p>Papier à lettre blanc, 4 pages, dim. 17,3 x 12,7 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-3ref478ks-10y7o1gmjzx60&amp;details=true&amp;auSeinIR=false#c-3ref478ks-10y7o1gmjzx60                      " type="linkToANFWebsite">MC/ET/LXXXIX/2352, minute du 7 mai 1917</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-3ref478ks-10y7o1gmjzx60&amp;details=true&amp;auSeinIR=false#c-3ref478ks-10y7o1gmjzx60" type="linkToANFWebsite">MC/ET/LXXXIX/2352, minute du 7 mai 1917</ref></p>
                </div>
             </front>
             <body>
@@ -2264,7 +2265,7 @@
                   <p>Papier timbré, 2 pages, dim. 24,9 x 17,8 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-17f2cokmg-9v54n8iodage&amp;details=true&amp;auSeinIR=false#c-17f2cokmg-9v54n8iodage                      " type="linkToANFWebsite">MC/ET/LXXXIX/2342, minute du 27 octobre 1915</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050160&amp;udId=c-17f2cokmg-9v54n8iodage&amp;details=true&amp;auSeinIR=false#c-17f2cokmg-9v54n8iodage" type="linkToANFWebsite">MC/ET/LXXXIX/2342, minute du 27 octobre 1915</ref></p>
                </div>
             </front>
             <body>
@@ -2942,7 +2943,7 @@
                   <p>Papier à lettre blanc, 4 pages, dim. 16,7 x 12,2 cm, encre.</p>
                </div>
                <div type="reference">
-                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9dd5odna1-sw2muk3j1tlx&amp;details=true&amp;auSeinIR=false#c-9dd5odna1-sw2muk3j1tlx                      " type="linkToANFWebsite">MC/ET/LIX/1083, minute du 6 juillet 1915</ref></p>
+                  <p><ref target="http://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/consultationIR.action?irId=FRAN_IR_050355&amp;udId=c-9dd5odna1-sw2muk3j1tlx&amp;details=true&amp;auSeinIR=false#c-9dd5odna1-sw2muk3j1tlx" type="linkToANFWebsite">MC/ET/LIX/1083, minute du 6 juillet 1915</ref></p>
                </div>
             </front>
             <body>
