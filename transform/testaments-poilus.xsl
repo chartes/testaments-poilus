@@ -1230,6 +1230,16 @@
     <span class="{local-name()}"><xsl:apply-templates/></span>
   </xsl:template>
 
+  <!-- 2026-10-05 — substitution (15 subst, 8 testaments) : hteiml la rend en un seul
+       <span title="…">, qui ne garde que l'ajout et met la rature en infobulle. L'ÉLEC
+       montrait la rature barrée en transcription (« ~~Temple~~ Turenne », will-010).
+       On laisse del et add passer par leurs modèles ci-dessous : barré en transcription
+       seulement (tp-tr), ajout dans les deux états. Seuls les éléments enfants : les
+       blancs d'indentation du TEI entre del et add ne sont pas du texte. -->
+  <xsl:template match="tei:subst" priority="20">
+    <span class="subst"><xsl:apply-templates select="*"/></span>
+  </xsl:template>
+
   <!-- rature : transcription seulement (l'edition normalisee l'omet) -->
   <xsl:template match="tei:del" priority="20">
     <del class="tp-tr tp-del"><xsl:apply-templates/></del>
