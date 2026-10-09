@@ -249,20 +249,6 @@
        =================================================================== -->
   <xsl:template match="tei:note[@type = 'letter-nav']" priority="11"/>
 
-  <xsl:template match="tei:listPerson" priority="9">
-    <section class="tp-index-persons">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:0 0 1rem">Index des testateurs</h2>
-      <xsl:apply-templates select="tei:person"/>
-    </section>
-  </xsl:template>
-
-  <xsl:template match="tei:listPlace" priority="9">
-    <section class="tp-index-places">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">Index des lieux de décès</h2>
-      <xsl:apply-templates select="tei:place"/>
-    </section>
-  </xsl:template>
-
   <!--
     Sous-listes par lettre (<listPerson xml:id="testateurs-H">, <listPlace
     xml:id="lieux-H">). Elles ne sont pas des passages DTS : un lien
@@ -552,7 +538,6 @@
   <!-- contenu inline sur (bio, bibl) : aucune balise rouge -->
   <xsl:template match="tei:p" mode="tp-inline"><p style="margin:.25rem 0"><xsl:apply-templates mode="tp-inline"/></p></xsl:template>
   <xsl:template match="tei:hi[@rend = 'sup' or @rend = 'super']" mode="tp-inline"><sup><xsl:apply-templates mode="tp-inline"/></sup></xsl:template>
-  <xsl:template match="tei:hi" mode="tp-inline"><span><xsl:apply-templates mode="tp-inline"/></span></xsl:template>
   <xsl:template match="tei:placeName" mode="tp-inline">
     <xsl:choose>
       <!-- D14e-1 : l'ancre locale #pl-039 est morte quand une seule lettre est servie
@@ -574,9 +559,6 @@
     <a class="externalLink" href="{@target}" target="_blank" style="color:#a73136"><xsl:apply-templates mode="tp-inline"/></a>
   </xsl:template>
   <xsl:template match="tei:title" mode="tp-inline"><span style="font-style:italic"><xsl:apply-templates mode="tp-inline"/></span></xsl:template>
-  <xsl:template match="tei:author" mode="tp-inline"><xsl:apply-templates mode="tp-inline"/></xsl:template>
-  <xsl:template match="text()" mode="tp-inline"><xsl:value-of select="."/></xsl:template>
-  <xsl:template match="*" mode="tp-inline"><xsl:apply-templates mode="tp-inline"/></xsl:template>
 
   <!-- ================================================================
        Re-branchement du comportement historique ELEC : facsimilés de folio.
