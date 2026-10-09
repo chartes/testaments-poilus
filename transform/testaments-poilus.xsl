@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:transform version="1.1"
+<xsl:transform version="1.1" xmlns:ord="urn:ordinaux"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="tei">
 
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+  <xsl:include href="ordinaux.xsl"/> <!-- chantier ordinaux 2026-10-08 -->
 
   <!-- 2026-10-04 (C7) — racine de l'application : '' en local, '/elec' sur le serveur de dev
        (copie du dépôt). Préfixe les liens internes, les fac-similés et, par le paramètre
@@ -1014,10 +1015,10 @@
     <xsl:param name="libelle"/>
     <xsl:choose>
       <xsl:when test="$cible = $courant">
-        <strong class="tp-nav-courant"><xsl:value-of select="$libelle"/></strong>
+        <strong class="tp-nav-courant"><xsl:sequence select="ord:html(string($libelle))"/></strong>
       </xsl:when>
       <xsl:otherwise>
-        <a class="internalLink" href="{concat($tp-route, $cible)}"><xsl:value-of select="$libelle"/></a>
+        <a class="internalLink" href="{concat($tp-route, $cible)}"><xsl:sequence select="ord:html(string($libelle))"/></a>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -1619,7 +1620,7 @@
                   <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $y][@m = $mm]">
                     <xsl:if test="position() &gt; 1"><span style="color:#c9bcbc"> | </span></xsl:if>
                     <a class="internalLink" href="{concat($tp-route, 'jour-', @when)}"
-                       style="color:#28211f;text-decoration:none"><xsl:value-of select="@jour"/></a>
+                       style="color:#28211f;text-decoration:none"><xsl:sequence select="ord:html(string(@jour))"/></a>
                   </xsl:for-each>
                 </div>
               </li>
@@ -1634,7 +1635,7 @@
               <xsl:variable name="w" select="@when"/>
               <li style="padding:.45rem 0;border-bottom:1px solid #efeceb">
                 <a class="internalLink" href="{concat($tp-route, 'jour-', $w)}"
-                   style="color:#28211f;text-decoration:none;font-weight:700"><xsl:value-of select="@jour"/></a>
+                   style="color:#28211f;text-decoration:none;font-weight:700"><xsl:sequence select="ord:html(string(@jour))"/></a>
                 <xsl:call-template name="tp-groupe-compte">
                   <xsl:with-param name="k" select="count($tp-wills/will[@when = $w])"/>
                 </xsl:call-template>
