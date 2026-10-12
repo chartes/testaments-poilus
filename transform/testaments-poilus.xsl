@@ -1426,7 +1426,11 @@
        filtrage) suffit à déclencher la branche « portail » ci-dessous. Tant
        que ce <head> n'existe pas, la branche ne se déclenche jamais. -->
 
-  <xsl:template match="*[local-name() = 'wrapper']/tei:head" priority="40">
+  <!-- 2026-10-12 : depuis DoTS 0fb0c43 (utils:excludeFragments garde le nœud cité), la page
+       de groupe arrive en <dts:wrapper><group><head/></group> : le <head> seul est sous le
+       <group>, plus sous le wrapper. Les deux formes sont visées ; « seul » (count(../*) = 1)
+       vaut pour l'une comme pour l'autre. -->
+  <xsl:template match="*[local-name() = 'wrapper']/tei:head | *[local-name() = 'wrapper']/tei:group[count(*) = 1]/tei:head" priority="40">
     <xsl:variable name="lbl" select="normalize-space(.)"/>
     <!-- « seul enfant élément du wrapper » : la signature exacte d'une page
          de groupe servie en excludeFragments, et d'elle seule. -->
