@@ -3,7 +3,10 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
-  exclude-result-prefixes="tei">
+  xmlns:tf="urn:elec:tableau-filtrable"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:tp="urn:testaments-poilus:xsl"
+  exclude-result-prefixes="tei tf xs tp ord">
   <!-- Testaments de poilus : surcharge de hteiml, reconstruite le 13/10/2026 en partant du
        rendu hteiml nu. Tous les modèles de la version précédente sont repris tels quels
        (sortie identique) : barres de navigation année / mois / jour / testament, bascule
@@ -13,6 +16,7 @@
        ordinaux.xsl restent nécessaires. La mise en page du site historique (fac-similé à
        gauche, texte à droite) est portée par la CSS. -->
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+  <xsl:import href="tableau-filtrable.xsl"/>
   <xsl:include href="ordinaux.xsl"/> 
   <xsl:variable name="elec-base" select="'/elec'"/>
   <xsl:param name="images" select="$elec-base"/>
@@ -1099,4 +1103,209 @@
       <xsl:with-param name="level" select="$level"/>
     </xsl:next-match>
   </xsl:template>
+
+  <!-- ====================================================================
+       Index des testateurs et des lieux de décès en tableaux triables et filtrables
+       (2026-10-13 ; module commun tableau-filtrable.xsl, comportement dans
+       testaments-poilus.customJs.js des settings dots-vue).
+       - Page d'une lettre (testateurs-A, lieux-B…) : le tableau des entrées de la lettre.
+       - Page de l'index entier (index-testateurs, index-lieux) : DoTS n'y donne que le
+         titre (les lettres sont des pages du sommaire) ; le tableau complet est lu dans
+         le fichier compagnon $tp-uri-edition, comme les autres renvois de cette feuille.
+       Chaque ligne garde l'@xml:id de l'entrée : les liens existants vers #EAime, #pl-039…
+       tombent sur elle.
+       ==================================================================== -->
+  <xsl:template version="3.0" match="tei:listPerson[@xml:id = 'index-testateurs'] | tei:listPlace[@xml:id = 'index-lieux']" priority="12">
+    <xsl:variable name="personnes" select="self::tei:listPerson"/>
+    <xsl:variable name="entrees" select="if (.//tei:person | .//tei:place) then (.//tei:person | .//tei:place)
+        else if (doc-available($tp-uri-edition)) then document($tp-uri-edition)//*[@xml:id = current()/@xml:id]//(tei:person | tei:place)
+        else ()"/>
+    <section id="{@xml:id}" class="{if ($personnes) then 'tp-index-persons' else 'tp-index-places'}">
+      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
+        <xsl:value-of select="if ($personnes) then 'Index des testateurs' else 'Index des lieux de décès'"/>
+      </h2>
+      <xsl:choose>
+        <xsl:when test="$personnes"><xsl:call-template name="tp-tableau-testateurs"><xsl:with-param name="entrees" select="$entrees"/><xsl:with-param name="nom-csv" select="'testaments-testateurs'"/></xsl:call-template></xsl:when>
+        <xsl:otherwise><xsl:call-template name="tp-tableau-lieux"><xsl:with-param name="entrees" select="$entrees"/><xsl:with-param name="nom-csv" select="'testaments-lieux-deces'"/></xsl:call-template></xsl:otherwise>
+      </xsl:choose>
+    </section>
+  </xsl:template>
+
+  <xsl:template version="3.0" match="tei:listPerson[starts-with(@xml:id, 'testateurs-')][not(tei:listPerson)] | tei:listPlace[starts-with(@xml:id, 'lieux-')][not(tei:listPlace)]" priority="12">
+    <xsl:variable name="personnes" select="self::tei:listPerson"/>
+    <section id="{@xml:id}" class="tp-index-letter" style="scroll-margin-top:90px">
+      <h3 style="font-size:1.1rem;color:#a73136;margin:1.5rem 0 .5rem">
+        <xsl:value-of select="concat(if ($personnes) then 'Index des testateurs' else 'Index des lieux de décès', '&#160;: lettre ', normalize-space(tei:head))"/>
+      </h3>
+      <xsl:choose>
+        <xsl:when test="$personnes"><xsl:call-template name="tp-tableau-testateurs"><xsl:with-param name="entrees" select="tei:person"/><xsl:with-param name="nom-csv" select="concat('testaments-testateurs-', normalize-space(tei:head))"/></xsl:call-template></xsl:when>
+        <xsl:otherwise><xsl:call-template name="tp-tableau-lieux"><xsl:with-param name="entrees" select="tei:place"/><xsl:with-param name="nom-csv" select="concat('testaments-lieux-deces-', normalize-space(tei:head))"/></xsl:call-template></xsl:otherwise>
+      </xsl:choose>
+    </section>
+  </xsl:template>
+
+  <!-- Testateurs : Nom · Dates · Notice (domicile, mariage, état ; références) · Décès (le
+       paragraphe qui nomme le lieu de décès) · Testament. -->
+  <xsl:template version="3.0" name="tp-tableau-testateurs">
+    <xsl:param name="entrees"/>
+    <xsl:param name="nom-csv"/>
+    <xsl:variable name="uca" select="'http://www.w3.org/2013/collation/UCA?lang=fr;strength=primary'"/>
+    <div class="tf-cadre tp-tableau-cadre">
+      <xsl:call-template name="tf-barre">
+        <xsl:with-param name="total" select="count($entrees)"/>
+        <xsl:with-param name="unite" select="'testateurs'"/>
+      </xsl:call-template>
+      <table class="tf-tableau tp-tableau tp-testateurs" data-csv-nom="{$nom-csv}" data-csv-entetes="Nom|Dates|Notice|Décès|Testament">
+        <caption class="tf-legende">Cliquer sur un en-tête de colonne pour trier (un second clic inverse l’ordre).</caption>
+        <thead>
+          <tr>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-nom'"/><xsl:with-param name="libelle" select="'Nom'"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-dates'"/><xsl:with-param name="libelle" select="'Dates'"/><xsl:with-param name="numerique" select="true()"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-notice'"/><xsl:with-param name="libelle" select="'Notice'"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-deces'"/><xsl:with-param name="libelle" select="'Décès'"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-testament'"/><xsl:with-param name="libelle" select="'Testament'"/><xsl:with-param name="numerique" select="true()"/></xsl:call-template>
+          </tr>
+          <tr class="tf-filtres">
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="0"/><xsl:with-param name="libelle" select="'Nom'"/><xsl:with-param name="liste" select="concat($nom-csv, '-noms')"/><xsl:with-param name="suggestions" select="sort(distinct-values($entrees/tei:persName/tei:surname ! normalize-space(.)), $uca)"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="1"/><xsl:with-param name="libelle" select="'Dates'"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="2"/><xsl:with-param name="libelle" select="'Notice'"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="3"/><xsl:with-param name="libelle" select="'Décès'"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="4"/><xsl:with-param name="libelle" select="'Testament'"/><xsl:with-param name="placeholder" select="'n°'"/></xsl:call-template>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:for-each select="$entrees">
+            <xsl:variable name="nom" select="normalize-space(string-join((tei:persName/tei:surname, tei:persName/tei:forename), ' '))"/>
+            <xsl:variable name="bio" select="tei:note[@type = 'biography']/tei:p"/>
+            <xsl:variable name="deces" select="($bio[tei:placeName])[last()]"/>
+            <xsl:variable name="autres" select="$bio except $deces"/>
+            <xsl:variable name="dates" select="if (tei:birth or tei:death) then concat(normalize-space(tei:birth), '-', normalize-space(tei:death)) else ''"/>
+            <xsl:variable name="ws" select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]"/>
+            <tr id="{@xml:id}" data-o="{position()}">
+              <td class="tp-c-nom" data-sort="{$nom}" data-f="{tf:plat($nom)}"><xsl:apply-templates select="tei:persName" mode="tp-name"/></td>
+              <td class="tp-c-dates" data-sort="{normalize-space(tei:birth)}" data-f="{tf:plat($dates)}">
+                <xsl:choose>
+                  <xsl:when test="$dates != ''"><xsl:value-of select="$dates"/></xsl:when>
+                  <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
+                </xsl:choose>
+              </td>
+              <td class="tp-c-notice" data-sort="{normalize-space(string-join($autres, ' '))}" data-f="{tf:plat(string-join($autres, ' '))}" data-csv="{normalize-space(string-join($autres, ' '))}">
+                <xsl:apply-templates select="$autres" mode="tp-inline"/>
+                <xsl:if test="tei:bibl">
+                  <p class="bibl tp-refs"><span class="biblLabel">Références&#160;: </span><xsl:apply-templates select="tei:bibl" mode="tp-bibl"/></p>
+                </xsl:if>
+              </td>
+              <td class="tp-c-deces" data-sort="{normalize-space(string-join($deces/tei:placeName, ' '))}" data-f="{tf:plat(string($deces))}" data-csv="{normalize-space($deces)}">
+                <xsl:choose>
+                  <xsl:when test="$deces"><xsl:apply-templates select="$deces" mode="tp-inline"/></xsl:when>
+                  <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
+                </xsl:choose>
+              </td>
+              <td class="tp-c-testament" data-sort="{normalize-space($ws[1])}" data-f="{string-join($ws ! normalize-space(.), ' ')}" data-csv="{string-join($ws ! normalize-space(.), ', ')}">
+                <xsl:choose>
+                  <xsl:when test="$ws">
+                    <xsl:for-each select="$ws">
+                      <xsl:variable name="wid" select="substring-after(@target, '#')"/>
+                      <xsl:if test="position() &gt; 1"><br/></xsl:if>
+                      <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, $wid)}"><xsl:value-of select="concat('n° ', normalize-space(.))"/></a>
+                      <xsl:call-template name="tp-date-testament"><xsl:with-param name="wid" select="$wid"/></xsl:call-template>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
+                </xsl:choose>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </div>
+  </xsl:template>
+
+  <!-- Lieux de décès : Lieu (et Geonames) · Département ou pays · Testateurs morts en ce lieu
+       (avec leur testament). Filtre en liste sur le département, ou le pays hors de France. -->
+  <xsl:template version="3.0" name="tp-tableau-lieux">
+    <xsl:param name="entrees"/>
+    <xsl:param name="nom-csv"/>
+    <xsl:variable name="uca" select="'http://www.w3.org/2013/collation/UCA?lang=fr;strength=primary'"/>
+    <div class="tf-cadre tp-tableau-cadre">
+      <xsl:call-template name="tf-barre">
+        <xsl:with-param name="total" select="count($entrees)"/>
+        <xsl:with-param name="unite" select="'lieux'"/>
+      </xsl:call-template>
+      <table class="tf-tableau tp-tableau tp-lieux" data-csv-nom="{$nom-csv}" data-csv-entetes="Lieu|Département ou pays|Testateurs">
+        <caption class="tf-legende">Cliquer sur un en-tête de colonne pour trier (un second clic inverse l’ordre).</caption>
+        <thead>
+          <tr>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-nom'"/><xsl:with-param name="libelle" select="'Lieu'"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-dep'"/><xsl:with-param name="libelle" select="'Département ou pays'"/></xsl:call-template>
+            <xsl:call-template name="tf-th"><xsl:with-param name="classe" select="'tp-c-morts'"/><xsl:with-param name="libelle" select="'Testateurs'"/><xsl:with-param name="numerique" select="true()"/></xsl:call-template>
+          </tr>
+          <tr class="tf-filtres">
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="0"/><xsl:with-param name="libelle" select="'Lieu'"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="1"/><xsl:with-param name="libelle" select="'Département ou pays'"/><xsl:with-param name="type" select="'liste'"/><xsl:with-param name="tous" select="'Tous'"/>
+              <xsl:with-param name="options" select="sort(distinct-values(for $p in $entrees return tp:lieu-cles($p)), $uca)" xmlns:tp="urn:testaments-poilus:xsl"/></xsl:call-template>
+            <xsl:call-template name="tf-filtre"><xsl:with-param name="col" select="2"/><xsl:with-param name="libelle" select="'Testateurs'"/></xsl:call-template>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:for-each select="$entrees">
+            <xsl:variable name="lieu"><xsl:call-template name="tp-lieu-nom"/></xsl:variable>
+            <xsl:variable name="cles" select="tp:lieu-cles(.)" xmlns:tp="urn:testaments-poilus:xsl"/>
+            <xsl:variable name="locs" select="tei:location[not(@type)]"/>
+            <xsl:variable name="dep" select="string-join(distinct-values(for $l in $locs return string-join(($l/tei:district[@type = 'departement'][normalize-space(.) != ''], $l/tei:country[normalize-space(.) != 'France'])/normalize-space(.), ', ')), ' ; auj. ')"/>
+            <xsl:variable name="morts" select="tei:note[@type = 'linksToEdition']/tei:ref[starts-with(@target, '#')]"/>
+            <xsl:variable name="geo" select="tei:idno[@type = 'geonamesURI']"/>
+            <tr id="{@xml:id}" data-o="{position()}">
+              <td class="tp-c-nom" data-sort="{normalize-space($lieu)}" data-f="{tf:plat(string($lieu))}" data-csv="{normalize-space($lieu)}">
+                <xsl:value-of select="normalize-space($lieu)"/>
+                <xsl:if test="$geo"><span class="tp-geonames"><a class="externalLink" href="{normalize-space($geo)}" target="_blank" rel="noopener">Geonames</a></span></xsl:if>
+              </td>
+              <td class="tp-c-dep" data-sort="{$cles[1]}" data-f="{tf:plat(string-join($cles, ' ; '))}">
+                <xsl:choose>
+                  <xsl:when test="$dep != ''"><xsl:value-of select="$dep"/></xsl:when>
+                  <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
+                </xsl:choose>
+              </td>
+              <td class="tp-c-morts" data-sort="{count($morts)}" data-f="{tf:plat(string-join($morts, ' '))}" data-csv="{string-join($morts ! normalize-space(.), ' ; ')}">
+                <xsl:choose>
+                  <xsl:when test="$morts">
+                    <xsl:for-each select="$morts">
+                      <xsl:variable name="pid" select="substring-after(normalize-space(@target), '#')"/>
+                      <xsl:if test="position() &gt; 1"><br/></xsl:if>
+                      <a class="internalLink" title="Consulter la notice sur ce testateur dans l’index des testateurs">
+                        <xsl:attribute name="href">
+                          <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
+                          <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
+                          <xsl:value-of select="concat('#', $pid)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(.)"/>
+                      </a>
+                      <xsl:variable name="tw" select="$tp-index-personnes/p[@id = $pid]/w"/>
+                      <xsl:if test="$tw">
+                        <xsl:text> (</xsl:text>
+                        <xsl:for-each select="$tw">
+                          <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+                          <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, @id)}"><xsl:value-of select="concat('n° ', .)"/></a>
+                        </xsl:for-each>
+                        <xsl:text>)</xsl:text>
+                      </xsl:if>
+                    </xsl:for-each>
+                  </xsl:when>
+                  <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
+                </xsl:choose>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </div>
+  </xsl:template>
+
+  <!-- Clés du filtre Département ou pays : les départements, ou le pays hors de France. -->
+  <xsl:function version="3.0" name="tp:lieu-cles" as="xs:string*" xmlns:tp="urn:testaments-poilus:xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xsl:param name="place" as="element()"/>
+    <xsl:sequence select="distinct-values(for $l in $place/tei:location[not(@type)]
+        return (if (normalize-space($l/tei:country) = ('France', '')) then $l/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.) else normalize-space($l/tei:country)))"/>
+  </xsl:function>
+
 </xsl:transform>
