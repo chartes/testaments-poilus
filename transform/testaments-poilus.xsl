@@ -15,87 +15,13 @@
        Le fichier compagnon testaments-poilus-edition.xml (lu par document()) et
        ordinaux.xsl restent nécessaires. La mise en page du site historique (fac-similé à
        gauche, texte à droite) est portée par la CSS. -->
+  <!-- ==== 0. DÉCLARATIONS : imports, sortie, paramètres, variables, clés, fonctions ==== -->
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
   <xsl:import href="tableau-filtrable.xsl"/>
   <xsl:include href="ordinaux.xsl"/> 
   <xsl:variable name="elec-base" select="'/elec'"/>
   <xsl:param name="images" select="$elec-base"/>
   <xsl:output indent="no"/>
-  <xsl:template match="*[local-name() = 'title']" mode="a" priority="20">
-    <span class="metadata-title"><xsl:apply-templates/></span>
-  </xsl:template>
-  <xsl:template match="*[local-name() = 'type']" mode="a" priority="20"/>
-  <xsl:template match="tei:TEI[tei:teiHeader]/tei:text" priority="15"/>
-  <xsl:template match="*[local-name() = 'wrapper']" priority="10">
-    <xsl:apply-templates/>
-  </xsl:template>
-  <xsl:template match="*[local-name() = 'wrapper'][tei:teiHeader]" priority="20">
-    <xsl:choose>
-      <xsl:when test="tei:text">
-        <xsl:apply-templates select="tei:teiHeader"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:apply-templates select="node()[not(self::tei:teiHeader)]"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template match="*[local-name() = 'wrapper'][tei:div][not(.//tei:text)][not(tei:teiHeader)]" priority="12">
-    <xsl:apply-templates/>
-    <xsl:variable name="notes-cont" select="."/>
-    <xsl:for-each select="/">
-      <xsl:call-template name="footnotes">
-        <xsl:with-param name="cont" select="$notes-cont"/>
-      </xsl:call-template>
-    </xsl:for-each>
-  </xsl:template>
-  <xsl:template match="tei:note[@type = 'biography' or @type = 'letter-nav'
-                              or @type = 'linkToEdition' or @type = 'linksToEdition']"
-                mode="fn" priority="20"/>
-  <xsl:template match="*[local-name() = 'wrapper']/tei:text[@xml:id]" priority="30">
-    <article id="{@xml:id}" class="testament">
-      <xsl:call-template name="tp-will-nav"/>
-      <xsl:call-template name="tp-mode-bar"/>
-      <xsl:call-template name="tp-facs-gallery"/>
-      <xsl:apply-templates/>
-      <xsl:variable name="tp-apps" select=".//tei:app[not(@rend = 'table')]"/>
-      <xsl:variable name="tp-notes-app"
-                    select=".//tei:app[not(@rend = 'table')]//tei:note[not(parent::tei:app)]"/>
-      <xsl:if test="$tp-apps or $tp-notes-app">
-        <section class="footnotes tp-apparat">
-          <p class="apparatus">
-            <xsl:for-each select="$tp-notes-app">
-              <xsl:call-template name="note-inline"/>
-            </xsl:for-each>
-            <xsl:for-each select="$tp-apps">
-              <xsl:call-template name="note-inline"/>
-            </xsl:for-each>
-          </p>
-        </section>
-      </xsl:if>
-    </article>
-  </xsl:template>
-  <xsl:template match="tei:ref[@type = 'note'][@xml:id][starts-with(normalize-space(@target), '#')]" priority="10">
-    <xsl:variable name="cible" select="substring-after(substring-before(concat(normalize-space(@target), ' '), ' '), '#')"/>
-    <xsl:variable name="appel-id" select="string(@xml:id)"/>
-    <xsl:variable name="appel">
-      <xsl:next-match/>
-    </xsl:variable>
-    <xsl:for-each select="$appel/node()">
-      <xsl:choose>
-        <xsl:when test="self::*[local-name() = 'a'][contains(@class, 'noteref')]">
-          <xsl:copy>
-            <xsl:copy-of select="@*[not(local-name() = 'href' or local-name() = 'id')]"/>
-            <xsl:attribute name="href"><xsl:value-of select="concat('#', $cible)"/></xsl:attribute>
-            <xsl:attribute name="id"><xsl:value-of select="$appel-id"/></xsl:attribute>
-            <xsl:copy-of select="node()"/>
-          </xsl:copy>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:copy-of select="."/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:for-each>
-  </xsl:template>
   <xsl:variable name="tp-index-personnes-arbre">
     <xsl:if test="doc-available($tp-uri-edition)">
       <xsl:for-each select="document($tp-uri-edition)//tei:person[@xml:id]">
@@ -112,365 +38,6 @@
     </xsl:if>
   </xsl:variable>
   <xsl:variable name="tp-index-personnes" select="$tp-index-personnes-arbre"/>
-  <xsl:template match="tei:div[@type = 'index']" priority="9">
-    <section class="tp-index" style="max-width:62rem;margin:0 auto;color:#222;font-family:Georgia,'Times New Roman',serif;line-height:1.55">
-      <xsl:apply-templates/>
-    </section>
-  </xsl:template>
-  <xsl:template match="tei:note[@type = 'letter-nav']" priority="11"/>
-  <xsl:template match="tei:listPerson[tei:listPerson] | tei:listPlace[tei:listPlace]" priority="10">
-    <section class="{if (self::tei:listPerson) then 'tp-index-persons' else 'tp-index-places'}">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
-        <xsl:value-of select="if (self::tei:listPerson) then 'Index des testateurs' else 'Index des lieux de décès'"/>
-      </h2>
-      <xsl:apply-templates select="tei:listPerson | tei:listPlace"/>
-    </section>
-  </xsl:template>
-  <xsl:template match="tei:listPerson[@xml:id][not(tei:listPerson)] | tei:listPlace[@xml:id][not(tei:listPlace)]" priority="10">
-    <section id="{@xml:id}" class="tp-index-letter" style="scroll-margin-top:90px">
-      <span class="tp-anchor" id="tp-top-{@xml:id}"></span>
-      <h3 style="font-size:1.1rem;color:#a73136;margin:1.5rem 0 .5rem">
-        <xsl:value-of select="concat(if (self::tei:listPerson) then 'Index des testateurs' else 'Index des lieux de décès', '&#160;: lettre ', normalize-space(tei:head))"/>
-      </h3>
-      <xsl:apply-templates select="tei:person | tei:place"/>
-      <xsl:if test="tei:person | tei:place">
-        <p class="tp-backtotop"><a href="#tp-top-{@xml:id}">Haut de page</a></p>
-      </xsl:if>
-    </section>
-  </xsl:template>
-  <xsl:template match="tei:person" priority="9">
-    <article id="{@xml:id}" class="index-entry" style="border-bottom:1px dotted #e0dcd5;padding:.6rem 0;margin:0">
-      <h4 class="persName-Entry" style="margin:0 0 .3rem;font-size:1.05rem">
-        <xsl:apply-templates select="tei:persName" mode="tp-name"/>
-        <xsl:if test="tei:birth or tei:death">
-          <span class="dates" style="font-weight:normal;color:#555">
-            <xsl:text> (</xsl:text>
-            <xsl:value-of select="normalize-space(tei:birth)"/>
-            <xsl:text>-</xsl:text>
-            <xsl:value-of select="normalize-space(tei:death)"/>
-            <xsl:text>)</xsl:text>
-          </span>
-        </xsl:if>
-      </h4>
-      <xsl:apply-templates select="tei:note[@type = 'biography']" mode="tp-bio"/>
-      <xsl:if test="tei:bibl">
-        <p class="bibl" style="font-size:.88rem;color:#666;margin:.2rem 0 0">
-          <span class="biblLabel">Références bibliographiques&#160;: </span>
-          <xsl:apply-templates select="tei:bibl" mode="tp-bibl"/>
-        </p>
-      </xsl:if>
-      <xsl:variable name="tp-w" select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]"/>
-      <xsl:if test="$tp-w">
-        <section class="linksToEdition" style="font-size:.9rem">
-          <ul style="margin:.2rem 0;padding-left:1.2rem">
-            <li>
-              <xsl:value-of select="if (count($tp-w) &gt; 1) then 'Auteur des testaments ' else 'Auteur du testament&#160;'"/>
-              <xsl:for-each select="$tp-w">
-                <xsl:variable name="wid" select="substring-after(@target, '#')"/>
-                <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
-                <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, $wid)}"><xsl:value-of select="normalize-space(.)"/></a>
-                <xsl:call-template name="tp-date-testament">
-                  <xsl:with-param name="wid" select="$wid"/>
-                </xsl:call-template>
-              </xsl:for-each>
-            </li>
-          </ul>
-        </section>
-      </xsl:if>
-    </article>
-  </xsl:template>
-  <xsl:template name="tp-date-testament">
-    <xsl:param name="wid"/>
-    <xsl:variable name="w" select="$tp-wills/will[@id = $wid]"/>
-    <xsl:if test="$w/@when != ''">
-      <xsl:value-of select="concat(' (', substring($w/@when, 9, 2), ' ', $w/@mois, ' ', $w/@y, ')')"/>
-    </xsl:if>
-  </xsl:template>
-  <xsl:template match="tei:persName" mode="tp-name">
-    <span class="surname" style="font-variant:small-caps;font-weight:bold"><xsl:value-of select="normalize-space(tei:surname)"/></span>
-    <xsl:if test="tei:forename">
-      <xsl:text>, </xsl:text>
-      <span class="forename">
-        <xsl:for-each select="tei:forename">
-          <xsl:if test="position() &gt; 1"><xsl:text> </xsl:text></xsl:if>
-          <xsl:value-of select="normalize-space(.)"/>
-        </xsl:for-each>
-      </span>
-    </xsl:if>
-    <xsl:if test="tei:nameLink"><xsl:text> </xsl:text><xsl:value-of select="normalize-space(tei:nameLink)"/></xsl:if>
-    <xsl:for-each select="tei:addName[@type = 'nickname']">
-      <xsl:text>, dit </xsl:text>
-      <span class="addName"><xsl:value-of select="normalize-space(.)"/></span>
-    </xsl:for-each>
-  </xsl:template>
-  <xsl:template match="tei:note[@type = 'biography']" mode="tp-bio">
-    <div class="bio" style="font-size:.96rem;color:#333;margin:0 0 .3rem">
-      <xsl:apply-templates mode="tp-inline"/>
-    </div>
-  </xsl:template>
-  <xsl:template match="tei:bibl" mode="tp-bibl">
-    <br/>
-    <span class="bibl">
-      <xsl:text>- </xsl:text>
-      <xsl:choose>
-        <xsl:when test="tei:msIdentifier">
-          <xsl:for-each select="tei:msIdentifier">
-            <xsl:for-each select="tei:institution | tei:repository | tei:collection">
-              <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
-              <span class="{local-name()}"><xsl:value-of select="normalize-space(.)"/></span>
-            </xsl:for-each>
-            <xsl:if test="tei:msName">
-              <xsl:text> : </xsl:text>
-              <span class="msName"><xsl:value-of select="normalize-space(tei:msName)"/></span>
-            </xsl:if>
-            <xsl:if test="tei:idno">
-              <xsl:text> (</xsl:text>
-              <span class="idno"><xsl:value-of select="normalize-space(tei:idno)"/></span>
-              <xsl:text>)</xsl:text>
-            </xsl:if>
-            <xsl:text>. </xsl:text>
-          </xsl:for-each>
-          <xsl:apply-templates select="*[not(self::tei:msIdentifier)]" mode="tp-inline"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:if test="tei:author">
-            <span class="author"><xsl:value-of select="normalize-space(string-join(tei:author, ', '))"/><xsl:text>. </xsl:text></span>
-          </xsl:if>
-          <xsl:apply-templates select="*[not(self::tei:author)]" mode="tp-inline"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </span>
-  </xsl:template>
-  <xsl:template match="tei:place" priority="9">
-    <article id="{@xml:id}" class="index-entry" style="border-bottom:1px dotted #e0dcd5;padding:.6rem 0;margin:0">
-      <h4 class="placeName-Entry" style="margin:0 0 .3rem;font-size:1.05rem">
-        <span class="placeName-entry">
-          <xsl:call-template name="tp-lieu-nom"/>
-          <xsl:variable name="locs" select="tei:location[not(@type)]"/>
-          <xsl:variable name="loc">
-            <xsl:choose>
-              <xsl:when test="count($locs) &gt; 1 and not($locs/tei:country[normalize-space(.) != 'France'])">
-                <xsl:for-each select="$locs">
-                  <xsl:if test="position() &gt; 1"><xsl:text>, auj. </xsl:text></xsl:if>
-                  <xsl:value-of select="normalize-space(tei:district[@type = 'departement'][normalize-space(.) != ''][1])"/>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:when test="count($locs) &gt; 1">
-                <xsl:for-each select="$locs">
-                  <xsl:if test="position() &gt; 1"><xsl:text> ; auj. </xsl:text></xsl:if>
-                  <xsl:value-of select="string-join((tei:district[@type = 'departement'][normalize-space(.) != ''], tei:country)/normalize-space(.), ', ')"/>
-                </xsl:for-each>
-              </xsl:when>
-              <xsl:when test="$locs">
-                <xsl:variable name="pays" select="normalize-space($locs[1]/tei:country[1])"/>
-                <xsl:choose>
-                  <xsl:when test="$pays = 'France' or $pays = ''">
-                    <xsl:value-of select="string-join($locs[1]/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.), ', ')"/>
-                  </xsl:when>
-                  <xsl:otherwise><xsl:value-of select="$pays"/></xsl:otherwise>
-                </xsl:choose>
-                <xsl:if test="$locs[1]/tei:placeName">
-                  <xsl:text>, com. </xsl:text>
-                  <xsl:for-each select="$locs[1]">
-                    <xsl:call-template name="tp-lieu-nom"/>
-                  </xsl:for-each>
-                </xsl:if>
-              </xsl:when>
-            </xsl:choose>
-          </xsl:variable>
-          <xsl:if test="normalize-space($loc) != ''">
-            <span class="displayedLocation" style="font-weight:normal;color:#555"> (<span class="departement"><xsl:value-of select="$loc"/></span>)</span>
-          </xsl:if>
-        </span>
-      </h4>
-      <xsl:variable name="geo" select="tei:idno[@type = 'geonamesURI']"/>
-      <xsl:if test="$geo">
-        <p class="geonamesURI" style="font-size:.85rem;margin:.15rem 0">
-          <span style="color:#666">Dans la base Geonames&#160;: </span>
-          <a class="externalLink" href="{normalize-space($geo)}" target="_blank" style="color:#a73136"><xsl:value-of select="normalize-space($geo)"/></a>
-        </p>
-      </xsl:if>
-      <xsl:variable name="morts" select="tei:note[@type = 'linksToEdition']/tei:ref[starts-with(@target, '#')]"/>
-      <xsl:if test="$morts">
-        <section class="linksToEdition" style="font-size:.9rem">
-          <ul style="margin:.2rem 0;padding-left:1.2rem">
-            <li>
-              <xsl:value-of select="if (count($morts) &gt; 1) then 'Lieu de décès des testateurs suivants&#160;: ' else 'Lieu de décès du testateur suivant&#160;: '"/>
-              <xsl:for-each select="$morts">
-                <xsl:variable name="pid" select="substring-after(normalize-space(@target), '#')"/>
-                <xsl:if test="position() &gt; 1"><xsl:text> ; </xsl:text></xsl:if>
-                <a class="internalLink" title="Consulter la notice sur ce testateur dans l’index des testateurs">
-                  <xsl:attribute name="href">
-                    <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
-                    <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
-                    <xsl:value-of select="concat('#', $pid)"/>
-                  </xsl:attribute>
-                  <xsl:value-of select="normalize-space(.)"/>
-                </a>
-                <xsl:variable name="tw" select="$tp-index-personnes/p[@id = $pid]/w"/>
-                <xsl:if test="$tw">
-                  <xsl:value-of select="if (count($tw) &gt; 1) then ' (testaments n° ' else ' (testament n° '"/>
-                  <xsl:for-each select="$tw">
-                    <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
-                    <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, @id)}"><xsl:value-of select="."/></a>
-                  </xsl:for-each>
-                  <xsl:text>)</xsl:text>
-                </xsl:if>
-              </xsl:for-each>
-            </li>
-          </ul>
-        </section>
-      </xsl:if>
-    </article>
-  </xsl:template>
-  <xsl:template name="tp-lieu-nom">
-    <xsl:variable name="anciens" select="tei:placeName[@type = 'old'][not(contains(@when-iso, '/')) or substring-after(@when-iso, '/') = '' or number(substring(substring-after(@when-iso, '/'), 1, 4)) &gt;= 1914]"/>
-    <xsl:variable name="actuels" select="tei:placeName[not(@type = 'old')]"/>
-    <xsl:choose>
-      <xsl:when test="$anciens and $actuels">
-        <xsl:value-of select="concat(normalize-space($anciens[1]), ', auj. ', normalize-space($actuels[1]))"/>
-      </xsl:when>
-      <xsl:when test="$actuels">
-        <xsl:value-of select="normalize-space($actuels[1])"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:value-of select="normalize-space(tei:placeName[1])"/>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template match="tei:p" mode="tp-inline"><p style="margin:.25rem 0"><xsl:apply-templates mode="tp-inline"/></p></xsl:template>
-  <xsl:template match="tei:hi[@rend = 'sup' or @rend = 'super']" mode="tp-inline"><sup><xsl:apply-templates mode="tp-inline"/></sup></xsl:template>
-  <xsl:template match="tei:placeName" mode="tp-inline">
-    <xsl:choose>
-      <xsl:when test="@ref[starts-with(., '#')]">
-        <a class="linkToIndex" style="color:inherit;border-bottom:1px dotted #a73136;text-decoration:none">
-          <xsl:attribute name="href">
-            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
-            <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
-            <xsl:value-of select="@ref"/>
-          </xsl:attribute>
-          <xsl:apply-templates mode="tp-inline"/>
-        </a>
-      </xsl:when>
-      <xsl:otherwise><xsl:apply-templates mode="tp-inline"/></xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template match="tei:ref" mode="tp-inline">
-    <a class="externalLink" href="{@target}" target="_blank" style="color:#a73136"><xsl:apply-templates mode="tp-inline"/></a>
-  </xsl:template>
-  <xsl:template match="tei:title" mode="tp-inline"><span style="font-style:italic"><xsl:apply-templates mode="tp-inline"/></span></xsl:template>
-  <xsl:template match="tei:pb" priority="10">
-    <span class="tp-pb"><xsl:call-template name="tp-page-label"/></span>
-    <xsl:call-template name="tp-page-comment"/>
-  </xsl:template>
-  <xsl:template match="tei:pb[ancestor::tei:div[@subtype = 'edited-from-notary-transcription']]" priority="12"/>
-  <xsl:template name="tp-page-comment">
-    <xsl:variable name="t" select="normalize-space(@type)"/>
-    <xsl:variable name="txt">
-      <xsl:choose>
-        <xsl:when test="$t = 'whitePage_notDigitized'">(Page blanche, non numérisée)</xsl:when>
-        <xsl:when test="$t = 'whitePage'">(Page blanche)</xsl:when>
-        <xsl:when test="$t = 'pageWithExtraNotes_notDigitized'">(Page non numérisée, portant des mentions hors teneur postérieures au testament, non éditées)</xsl:when>
-        <xsl:when test="contains($t, 'xtraNotes')">(Mentions hors teneur postérieures au testament, non éditées)</xsl:when>
-        <xsl:when test="contains($t, 'seals')">(Cachets)</xsl:when>
-        <xsl:when test="$t = 'codicil'">(Codicille)</xsl:when>
-      </xsl:choose>
-    </xsl:variable>
-    <xsl:if test="string($txt) != ''">
-      <span class="editorialComment tp-pb-comment"><xsl:value-of select="$txt"/></span>
-    </xsl:if>
-  </xsl:template>
-  <xsl:template name="tp-page-label">
-    <xsl:choose>
-      <xsl:when test="starts-with(@type, 'envelope-verso')">Verso de l’enveloppe</xsl:when>
-      <xsl:when test="starts-with(@type, 'envelope')">Enveloppe</xsl:when>
-      <xsl:otherwise>
-        <xsl:variable name="n">
-          <xsl:number count="tei:pb[not(starts-with(@type, 'envelope'))]" level="any" from="tei:text | tei:div[@xml:id]"/>
-        </xsl:variable>
-        <xsl:choose>
-          <xsl:when test="$n = '1'">Première page</xsl:when>
-          <xsl:when test="$n = '2'">Deuxième page</xsl:when>
-          <xsl:when test="$n = '3'">Troisième page</xsl:when>
-          <xsl:when test="$n = '4'">Quatrième page</xsl:when>
-          <xsl:when test="$n = '5'">Cinquième page</xsl:when>
-          <xsl:when test="$n = '6'">Sixième page</xsl:when>
-          <xsl:when test="$n = '7'">Septième page</xsl:when>
-          <xsl:when test="$n = '8'">Huitième page</xsl:when>
-          <xsl:otherwise>Page <xsl:value-of select="$n"/></xsl:otherwise>
-        </xsl:choose>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template name="tp-facs-src">
-    <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
-    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/vignettes/', substring-before($fn, '.jpg'), '_ptt.jpg')"/>
-  </xsl:template>
-  <xsl:template name="tp-facs-src-full">
-    <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
-    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/sources/', $fn)"/>
-  </xsl:template>
-  <xsl:template name="tp-facs-nom">
-    <xsl:choose>
-      <xsl:when test="contains(@facs, '../images/')"><xsl:value-of select="substring-after(@facs, '../images/')"/></xsl:when>
-      <xsl:otherwise><xsl:value-of select="tokenize(@facs, '/')[last()]"/></xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template name="tp-facs-gallery">
-    <xsl:variable name="w" select="@xml:id"/>
-    <xsl:variable name="ref" select="normalize-space(tei:front/tei:div[@type = 'reference'])"/>
-    <xsl:variable name="pbs" select=".//tei:pb[@facs]"/>
-    <xsl:if test="$pbs">
-      <section class="tp-facs">
-        <xsl:for-each select="$pbs">
-          <input type="radio" class="tp-facs-r tp-facs-r{position()}" name="tp-facs-{$w}" id="tp-facs-{$w}-{position()}">
-            <xsl:if test="position() = 1"><xsl:attribute name="checked">checked</xsl:attribute></xsl:if>
-          </input>
-        </xsl:for-each>
-        <nav class="tp-facs-nav">
-          <xsl:for-each select="$pbs">
-            <xsl:if test="position() &gt; 1"><span class="tp-facs-sep"> | </span></xsl:if>
-            <label class="tp-facs-lab tp-facs-l{position()}" for="tp-facs-{$w}-{position()}">
-              <xsl:attribute name="title">
-                <xsl:if test="$ref != ''"><xsl:value-of select="concat('Archives nationales, ', $ref, ' : ')"/></xsl:if>
-                <xsl:call-template name="tp-page-label"/>
-              </xsl:attribute>
-              <xsl:call-template name="tp-page-label"/>
-            </label>
-          </xsl:for-each>
-        </nav>
-        <div class="tp-facs-imgs">
-          <xsl:for-each select="$pbs">
-            <figure class="tp-facs-fig tp-facs-f{position()}">
-              <details class="tp-facs-zoom">
-                <summary title="Voir l'image en pleine taille">
-                  <img class="tp-facsimile" alt="">
-                    <xsl:attribute name="src"><xsl:call-template name="tp-facs-src"/></xsl:attribute>
-                    <xsl:attribute name="alt"><xsl:call-template name="tp-page-label"/></xsl:attribute>
-                    <xsl:attribute name="loading">lazy</xsl:attribute>
-                  </img>
-                  <span class="tp-facs-ouvrir">Voir en pleine taille</span>
-                  <span class="tp-facs-fermer">Revenir a la vignette</span>
-                </summary>
-                <img class="tp-facs-full" alt="">
-                  <xsl:attribute name="src"><xsl:call-template name="tp-facs-src-full"/></xsl:attribute>
-                  <xsl:attribute name="alt"><xsl:call-template name="tp-page-label"/></xsl:attribute>
-                  <xsl:attribute name="loading">lazy</xsl:attribute>
-                </img>
-              </details>
-              <figcaption>
-                <xsl:if test="$ref != ''">
-                  <span class="tp-facs-ref"><xsl:value-of select="concat('Archives nationales, ', $ref)"/></span>
-                  <br/>
-                </xsl:if>
-                <span class="tp-facs-page"><xsl:call-template name="tp-page-label"/> du testament</span>
-              </figcaption>
-            </figure>
-          </xsl:for-each>
-        </div>
-      </section>
-    </xsl:if>
-  </xsl:template>
   <xsl:variable name="tp-uri-edition" select="'testaments-poilus-edition.xml'"/>
   <xsl:variable name="tp-mois"
     select="'|01:janvier|02:février|03:mars|04:avril|05:mai|06:juin|07:juillet|08:août|09:septembre|10:octobre|11:novembre|12:décembre|'"/>
@@ -542,6 +109,182 @@
   </xsl:variable>
   <xsl:variable name="tp-unites" select="$tp-unites-arbre"/>
   <xsl:variable name="tp-route" select="concat($elec-base, '/testaments-poilus/document/testaments-poilus-edition?refId=')"/>
+
+  <!-- Clés du filtre Département ou pays : les départements, ou le pays hors de France. -->
+  <xsl:function version="3.0" name="tp:lieu-cles" as="xs:string*" xmlns:tp="urn:testaments-poilus:xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xsl:param name="place" as="element()"/>
+    <xsl:sequence select="distinct-values(for $l in $place/tei:location[not(@type)]
+        return (if (normalize-space($l/tei:country) = ('France', '')) then $l/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.) else normalize-space($l/tei:country)))"/>
+  </xsl:function>
+
+  <!-- ==== 1. HISTORIQUE : surcharge reprise de la feuille de l'ÉLEC (rendu du texte de l'édition) ==== -->
+  <!-- (aucun) -->
+
+  <!-- ==== 2. BLOCS HTEIML GÉNÉRIQUES : enveloppe dts:wrapper, notes, apparat critique, bibliographie (listBibl) ==== -->
+  <xsl:template match="*[local-name() = 'wrapper']" priority="10">
+    <xsl:apply-templates/>
+  </xsl:template>
+  <xsl:template match="*[local-name() = 'wrapper'][tei:teiHeader]" priority="20">
+    <xsl:choose>
+      <xsl:when test="tei:text">
+        <xsl:apply-templates select="tei:teiHeader"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="node()[not(self::tei:teiHeader)]"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="*[local-name() = 'wrapper'][tei:div][not(.//tei:text)][not(tei:teiHeader)]" priority="12">
+    <xsl:apply-templates/>
+    <xsl:variable name="notes-cont" select="."/>
+    <xsl:for-each select="/">
+      <xsl:call-template name="footnotes">
+        <xsl:with-param name="cont" select="$notes-cont"/>
+      </xsl:call-template>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:note[@type = 'biography' or @type = 'letter-nav'
+                              or @type = 'linkToEdition' or @type = 'linksToEdition']"
+                mode="fn" priority="20"/>
+  <xsl:template match="*[local-name() = 'wrapper']/tei:text[@xml:id]" priority="30">
+    <article id="{@xml:id}" class="testament">
+      <xsl:call-template name="tp-will-nav"/>
+      <xsl:call-template name="tp-mode-bar"/>
+      <xsl:call-template name="tp-facs-gallery"/>
+      <xsl:apply-templates/>
+      <xsl:variable name="tp-apps" select=".//tei:app[not(@rend = 'table')]"/>
+      <xsl:variable name="tp-notes-app"
+                    select=".//tei:app[not(@rend = 'table')]//tei:note[not(parent::tei:app)]"/>
+      <xsl:if test="$tp-apps or $tp-notes-app">
+        <section class="footnotes tp-apparat">
+          <p class="apparatus">
+            <xsl:for-each select="$tp-notes-app">
+              <xsl:call-template name="note-inline"/>
+            </xsl:for-each>
+            <xsl:for-each select="$tp-apps">
+              <xsl:call-template name="note-inline"/>
+            </xsl:for-each>
+          </p>
+        </section>
+      </xsl:if>
+    </article>
+  </xsl:template>
+  <xsl:template match="tei:ref[@type = 'note'][@xml:id][starts-with(normalize-space(@target), '#')]" priority="10">
+    <xsl:variable name="cible" select="substring-after(substring-before(concat(normalize-space(@target), ' '), ' '), '#')"/>
+    <xsl:variable name="appel-id" select="string(@xml:id)"/>
+    <xsl:variable name="appel">
+      <xsl:next-match/>
+    </xsl:variable>
+    <xsl:for-each select="$appel/node()">
+      <xsl:choose>
+        <xsl:when test="self::*[local-name() = 'a'][contains(@class, 'noteref')]">
+          <xsl:copy>
+            <xsl:copy-of select="@*[not(local-name() = 'href' or local-name() = 'id')]"/>
+            <xsl:attribute name="href"><xsl:value-of select="concat('#', $cible)"/></xsl:attribute>
+            <xsl:attribute name="id"><xsl:value-of select="$appel-id"/></xsl:attribute>
+            <xsl:copy-of select="node()"/>
+          </xsl:copy>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:copy-of select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:note[@type = 'letter-nav']" priority="11"/>
+  <xsl:template match="tei:note[@type = 'biography']" mode="tp-bio">
+    <div class="bio" style="font-size:.96rem;color:#333;margin:0 0 .3rem">
+      <xsl:apply-templates mode="tp-inline"/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:bibl" mode="tp-bibl">
+    <br/>
+    <span class="bibl">
+      <xsl:text>- </xsl:text>
+      <xsl:choose>
+        <xsl:when test="tei:msIdentifier">
+          <xsl:for-each select="tei:msIdentifier">
+            <xsl:for-each select="tei:institution | tei:repository | tei:collection">
+              <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+              <span class="{local-name()}"><xsl:value-of select="normalize-space(.)"/></span>
+            </xsl:for-each>
+            <xsl:if test="tei:msName">
+              <xsl:text> : </xsl:text>
+              <span class="msName"><xsl:value-of select="normalize-space(tei:msName)"/></span>
+            </xsl:if>
+            <xsl:if test="tei:idno">
+              <xsl:text> (</xsl:text>
+              <span class="idno"><xsl:value-of select="normalize-space(tei:idno)"/></span>
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+            <xsl:text>. </xsl:text>
+          </xsl:for-each>
+          <xsl:apply-templates select="*[not(self::tei:msIdentifier)]" mode="tp-inline"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="tei:author">
+            <span class="author"><xsl:value-of select="normalize-space(string-join(tei:author, ', '))"/><xsl:text>. </xsl:text></span>
+          </xsl:if>
+          <xsl:apply-templates select="*[not(self::tei:author)]" mode="tp-inline"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </span>
+  </xsl:template>
+  <xsl:template name="tp-facs-gallery">
+    <xsl:variable name="w" select="@xml:id"/>
+    <xsl:variable name="ref" select="normalize-space(tei:front/tei:div[@type = 'reference'])"/>
+    <xsl:variable name="pbs" select=".//tei:pb[@facs]"/>
+    <xsl:if test="$pbs">
+      <section class="tp-facs">
+        <xsl:for-each select="$pbs">
+          <input type="radio" class="tp-facs-r tp-facs-r{position()}" name="tp-facs-{$w}" id="tp-facs-{$w}-{position()}">
+            <xsl:if test="position() = 1"><xsl:attribute name="checked">checked</xsl:attribute></xsl:if>
+          </input>
+        </xsl:for-each>
+        <nav class="tp-facs-nav">
+          <xsl:for-each select="$pbs">
+            <xsl:if test="position() &gt; 1"><span class="tp-facs-sep"> | </span></xsl:if>
+            <label class="tp-facs-lab tp-facs-l{position()}" for="tp-facs-{$w}-{position()}">
+              <xsl:attribute name="title">
+                <xsl:if test="$ref != ''"><xsl:value-of select="concat('Archives nationales, ', $ref, ' : ')"/></xsl:if>
+                <xsl:call-template name="tp-page-label"/>
+              </xsl:attribute>
+              <xsl:call-template name="tp-page-label"/>
+            </label>
+          </xsl:for-each>
+        </nav>
+        <div class="tp-facs-imgs">
+          <xsl:for-each select="$pbs">
+            <figure class="tp-facs-fig tp-facs-f{position()}">
+              <details class="tp-facs-zoom">
+                <summary title="Voir l'image en pleine taille">
+                  <img class="tp-facsimile" alt="">
+                    <xsl:attribute name="src"><xsl:call-template name="tp-facs-src"/></xsl:attribute>
+                    <xsl:attribute name="alt"><xsl:call-template name="tp-page-label"/></xsl:attribute>
+                    <xsl:attribute name="loading">lazy</xsl:attribute>
+                  </img>
+                  <span class="tp-facs-ouvrir">Voir en pleine taille</span>
+                  <span class="tp-facs-fermer">Revenir a la vignette</span>
+                </summary>
+                <img class="tp-facs-full" alt="">
+                  <xsl:attribute name="src"><xsl:call-template name="tp-facs-src-full"/></xsl:attribute>
+                  <xsl:attribute name="alt"><xsl:call-template name="tp-page-label"/></xsl:attribute>
+                  <xsl:attribute name="loading">lazy</xsl:attribute>
+                </img>
+              </details>
+              <figcaption>
+                <xsl:if test="$ref != ''">
+                  <span class="tp-facs-ref"><xsl:value-of select="concat('Archives nationales, ', $ref)"/></span>
+                  <br/>
+                </xsl:if>
+                <span class="tp-facs-page"><xsl:call-template name="tp-page-label"/> du testament</span>
+              </figcaption>
+            </figure>
+          </xsl:for-each>
+        </div>
+      </section>
+    </xsl:if>
+  </xsl:template>
   <xsl:template name="tp-will-nav">
     <xsl:variable name="id" select="string(@xml:id)"/>
     <xsl:variable name="me" select="$tp-wills/will[@id = $id]"/>
@@ -621,122 +364,12 @@
       </nav>
     </xsl:if>
   </xsl:template>
-  <xsl:template name="tp-nav-item">
-    <xsl:param name="cible"/>
-    <xsl:param name="courant"/>
-    <xsl:param name="libelle"/>
-    <xsl:choose>
-      <xsl:when test="$cible = $courant">
-        <strong class="tp-nav-courant"><xsl:sequence select="ord:html(string($libelle))"/></strong>
-      </xsl:when>
-      <xsl:otherwise>
-        <a class="internalLink" href="{concat($tp-route, $cible)}"><xsl:sequence select="ord:html(string($libelle))"/></a>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template match="tei:ref[@type = 'linkToEdition'] | tei:ref[@type = 'linkToPersonsIndex'] | tei:ref[@type = 'linkToIntro'] | tei:ref[@type = 'linkToBibl']" priority="26">
-    <xsl:variable name="cible" select="substring-after(normalize-space(@target), '#')"/>
-    <xsl:variable name="co" select="normalize-space(@corresp)"/>
-    <xsl:variable name="ouvr" select="string($tp-unites/unite[@id = $cible]/@ouvrable)"/>
-    <xsl:choose>
-      <xsl:when test="$cible = ''">
-        <xsl:apply-templates/>
-      </xsl:when>
-      <xsl:otherwise>
-        <a>
-          <xsl:attribute name="class"><xsl:value-of select="concat(@type, ' tp-renvoi')"/></xsl:attribute>
-          <xsl:if test="normalize-space(@n) != ''">
-            <xsl:attribute name="title"><xsl:value-of select="normalize-space(@n)"/></xsl:attribute>
-          </xsl:if>
-          <xsl:attribute name="href">
-            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/</xsl:text>
-            <xsl:choose>
-              <xsl:when test="starts-with($co, 'testaments-poilus-') and $ouvr != ''">
-                <xsl:value-of select="concat($co, '?refId=', $ouvr, '#', $cible)"/>
-              </xsl:when>
-              <xsl:when test="starts-with($co, 'testaments-poilus-')">
-                <xsl:value-of select="concat($co, '?refId=', $cible)"/>
-              </xsl:when>
-              <xsl:when test="$co != ''">
-                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $co, '#', $cible)"/>
-              </xsl:when>
-              <xsl:when test="$ouvr != ''">
-                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $ouvr, '#', $cible)"/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $cible)"/>
-              </xsl:otherwise>
-            </xsl:choose>
-          </xsl:attribute>
-          <xsl:apply-templates/>
-        </a>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <xsl:template match="tei:ref[not(@type)][starts-with(normalize-space(@target), '#will-')]" priority="26">
-    <a class="tp-renvoi-testament internalLink">
-      <xsl:attribute name="href">
-        <xsl:value-of select="concat($tp-route, substring-after(normalize-space(@target), '#'))"/>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
-  <xsl:template match="tei:persName[not(tei:surname)]" priority="9">
-    <span class="persName"><xsl:apply-templates/></span>
-  </xsl:template>
   <xsl:template name="tp-mode-bar">
     <xsl:variable name="w" select="@xml:id"/>
     <input type="radio" class="tp-mode tp-mode-tr" name="tp-mode-{$w}" id="tp-mode-tr-{$w}" checked="checked"/>
     <label class="tp-mode-label" for="tp-mode-tr-{$w}">Transcription</label>
     <input type="radio" class="tp-mode tp-mode-ed" name="tp-mode-{$w}" id="tp-mode-ed-{$w}"/>
     <label class="tp-mode-label" for="tp-mode-ed-{$w}">Édition</label>
-  </xsl:template>
-  <xsl:template match="tei:choice[tei:orig and tei:reg] | tei:choice[tei:abbr and tei:expan] | tei:choice[tei:sic and tei:corr]" priority="30">
-    <span class="tp-tr tp-var"><xsl:apply-templates select="tei:orig/node() | tei:abbr/node() | tei:sic/node()"/></span>
-    <span class="tp-ed tp-var"><xsl:apply-templates select="tei:reg/node() | tei:expan/node() | tei:corr/node()"/></span>
-  </xsl:template>
-  <xsl:template match="tei:ex" priority="20">
-    <span class="tp-ex"><xsl:apply-templates/></span>
-  </xsl:template>
-  <xsl:template match="tei:lb[not(@n)]" priority="20">
-    <xsl:if test="@break = 'no'">
-      <span class="tp-tr tp-lb-hyph">-</span>
-    </xsl:if>
-    <br class="tp-tr tp-lb"/>
-    <xsl:if test="not(@break = 'no')">
-      <span class="tp-ed tp-lb-sp"><xsl:text> </xsl:text></span>
-    </xsl:if>
-  </xsl:template>
-  <xsl:template match="tei:space[@dim = 'vertical']" priority="20">
-    <span class="tp-tr space tp-space">
-      <span class="editorialComment tp-space-comment">
-        <xsl:choose>
-          <xsl:when test="@quantity = '1' or not(@quantity)">(Espace d’une ligne laissé blanc)</xsl:when>
-          <xsl:otherwise>(Espace de <xsl:value-of select="@quantity"/> lignes environ laissé blanc)</xsl:otherwise>
-        </xsl:choose>
-      </span>
-    </span>
-  </xsl:template>
-  <xsl:template match="tei:persName[tei:surname] | tei:placeName[tei:surname] | tei:name[tei:surname] | tei:orgName[tei:surname] | tei:author[tei:surname]" priority="12">
-    <span class="{local-name()}"><xsl:apply-templates/></span>
-  </xsl:template>
-  <xsl:template match="tei:subst" priority="20">
-    <span class="subst"><xsl:apply-templates select="*"/></span>
-  </xsl:template>
-  <xsl:template match="tei:del" priority="20">
-    <del class="tp-tr tp-del"><xsl:apply-templates/></del>
-  </xsl:template>
-  <xsl:template match="tei:add" priority="20">
-    <ins>
-      <xsl:attribute name="class">
-        <xsl:text>tp-add</xsl:text>
-        <xsl:if test="normalize-space(@place) != ''"><xsl:value-of select="concat(' tp-add-', normalize-space(@place))"/></xsl:if>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </ins>
-  </xsl:template>
-  <xsl:template match="tei:supplied[not(parent::tei:choice)]" priority="20">
-    <span class="tp-ed tp-supplied"><xsl:apply-templates/></span>
   </xsl:template>
   <xsl:template match="tei:app[not(@rend = 'table')]" priority="20">
     <span class="tp-app">
@@ -752,57 +385,6 @@
         </span>
       </span>
     </span>
-  </xsl:template>
-  <xsl:template match="tei:front/tei:docDate" priority="20">
-    <xsl:variable name="id" select="string(ancestor::tei:text[@xml:id][1]/@xml:id)"/>
-    <xsl:variable name="n" select="number(substring-after($id, 'will-'))"/>
-    <h2 class="tp-num">
-      <xsl:if test="string($n) != 'NaN'">
-        <span class="tp-num-n"><xsl:value-of select="$n"/></span>
-        <br/>
-      </xsl:if>
-      <span class="docDate tp-docDate"><xsl:apply-templates/></span>
-    </h2>
-  </xsl:template>
-  <xsl:template match="tei:front/tei:div[@type = 'reference']/tei:p" priority="20">
-    <p class="p tp-reference">
-      <xsl:if test="tei:ref">
-        <span class="referenceLabel tp-referenceLabel">Cote aux Archives nationales : </span>
-      </xsl:if>
-      <xsl:apply-templates/>
-    </p>
-  </xsl:template>
-  <xsl:template match="tei:front//tei:persName[@ref[starts-with(., '#')]] | tei:front//tei:placeName[@ref[starts-with(., '#')]]" priority="25">
-    <a>
-      <xsl:attribute name="class">
-        <xsl:value-of select="concat('tp-linkToIndex linkToIndex ', local-name(), '-linked')"/>
-      </xsl:attribute>
-      <xsl:variable name="unite" select="substring-after(normalize-space(@ref), '#')"/>
-      <xsl:attribute name="href">
-        <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
-        <xsl:choose>
-          <xsl:when test="$unite != ''">
-            <xsl:value-of select="concat('?refId=', $unite)"/>
-          </xsl:when>
-          <xsl:when test="normalize-space(@corresp) != ''">
-            <xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/>
-          </xsl:when>
-        </xsl:choose>
-      </xsl:attribute>
-      <xsl:attribute name="title">
-        <xsl:choose>
-          <xsl:when test="self::tei:persName">Consulter la notice de ce testateur dans l’index</xsl:when>
-          <xsl:otherwise>Consulter la notice de ce lieu dans l’index des lieux de décès</xsl:otherwise>
-        </xsl:choose>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
-  <xsl:template match="tei:handShift">
-    <span class="tp-handshift" data-medium="{@medium}"/>
-  </xsl:template>
-  <xsl:template match="tei:opener">
-    <div class="opener"><xsl:apply-templates/></div>
   </xsl:template>
   <xsl:template match="*[local-name() = 'wrapper']/tei:head | *[local-name() = 'wrapper']/tei:group[count(*) = 1]/tei:head" priority="40">
     <xsl:variable name="lbl" select="normalize-space(.)"/>
@@ -1031,22 +613,6 @@
       </xsl:if>
     </a>
   </xsl:template>
-  <xsl:template match="tei:byline/tei:docAuthor">
-    <span class="author">
-      <xsl:apply-templates/>
-    </span>
-  </xsl:template>
-  <xsl:template match="tei:cit" priority="12">
-    <span class="cit">
-      <xsl:for-each select="*">
-        <xsl:if test="position() != 1"><xsl:text> </xsl:text></xsl:if>
-        <xsl:apply-templates select="."/>
-      </xsl:for-each>
-    </span>
-  </xsl:template>
-  <xsl:template match="tei:cit/tei:quote" priority="12">
-    <q class="quote"><xsl:apply-templates/></q>
-  </xsl:template>
   <xsl:template match="tei:cit/tei:bibl" priority="12">
     <span class="bibl"><xsl:apply-templates/></span>
   </xsl:template>
@@ -1078,6 +644,408 @@
       </ul>
     </li>
   </xsl:template>
+
+  <!-- ==== 3. PROPRE AU PROJET ==== -->
+  <xsl:template match="*[local-name() = 'title']" mode="a" priority="20">
+    <span class="metadata-title"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="*[local-name() = 'type']" mode="a" priority="20"/>
+  <xsl:template match="tei:TEI[tei:teiHeader]/tei:text" priority="15"/>
+  <xsl:template match="tei:div[@type = 'index']" priority="9">
+    <section class="tp-index" style="max-width:62rem;margin:0 auto;color:#222;font-family:Georgia,'Times New Roman',serif;line-height:1.55">
+      <xsl:apply-templates/>
+    </section>
+  </xsl:template>
+  <xsl:template match="tei:listPerson[tei:listPerson] | tei:listPlace[tei:listPlace]" priority="10">
+    <section class="{if (self::tei:listPerson) then 'tp-index-persons' else 'tp-index-places'}">
+      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
+        <xsl:value-of select="if (self::tei:listPerson) then 'Index des testateurs' else 'Index des lieux de décès'"/>
+      </h2>
+      <xsl:apply-templates select="tei:listPerson | tei:listPlace"/>
+    </section>
+  </xsl:template>
+  <xsl:template match="tei:listPerson[@xml:id][not(tei:listPerson)] | tei:listPlace[@xml:id][not(tei:listPlace)]" priority="10">
+    <section id="{@xml:id}" class="tp-index-letter" style="scroll-margin-top:90px">
+      <span class="tp-anchor" id="tp-top-{@xml:id}"></span>
+      <h3 style="font-size:1.1rem;color:#a73136;margin:1.5rem 0 .5rem">
+        <xsl:value-of select="concat(if (self::tei:listPerson) then 'Index des testateurs' else 'Index des lieux de décès', '&#160;: lettre ', normalize-space(tei:head))"/>
+      </h3>
+      <xsl:apply-templates select="tei:person | tei:place"/>
+      <xsl:if test="tei:person | tei:place">
+        <p class="tp-backtotop"><a href="#tp-top-{@xml:id}">Haut de page</a></p>
+      </xsl:if>
+    </section>
+  </xsl:template>
+  <xsl:template match="tei:person" priority="9">
+    <article id="{@xml:id}" class="index-entry" style="border-bottom:1px dotted #e0dcd5;padding:.6rem 0;margin:0">
+      <h4 class="persName-Entry" style="margin:0 0 .3rem;font-size:1.05rem">
+        <xsl:apply-templates select="tei:persName" mode="tp-name"/>
+        <xsl:if test="tei:birth or tei:death">
+          <span class="dates" style="font-weight:normal;color:#555">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="normalize-space(tei:birth)"/>
+            <xsl:text>-</xsl:text>
+            <xsl:value-of select="normalize-space(tei:death)"/>
+            <xsl:text>)</xsl:text>
+          </span>
+        </xsl:if>
+      </h4>
+      <xsl:apply-templates select="tei:note[@type = 'biography']" mode="tp-bio"/>
+      <xsl:if test="tei:bibl">
+        <p class="bibl" style="font-size:.88rem;color:#666;margin:.2rem 0 0">
+          <span class="biblLabel">Références bibliographiques&#160;: </span>
+          <xsl:apply-templates select="tei:bibl" mode="tp-bibl"/>
+        </p>
+      </xsl:if>
+      <xsl:variable name="tp-w" select="tei:note[@type = 'linkToEdition']/tei:ref[starts-with(@target, '#will-')]"/>
+      <xsl:if test="$tp-w">
+        <section class="linksToEdition" style="font-size:.9rem">
+          <ul style="margin:.2rem 0;padding-left:1.2rem">
+            <li>
+              <xsl:value-of select="if (count($tp-w) &gt; 1) then 'Auteur des testaments ' else 'Auteur du testament&#160;'"/>
+              <xsl:for-each select="$tp-w">
+                <xsl:variable name="wid" select="substring-after(@target, '#')"/>
+                <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+                <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, $wid)}"><xsl:value-of select="normalize-space(.)"/></a>
+                <xsl:call-template name="tp-date-testament">
+                  <xsl:with-param name="wid" select="$wid"/>
+                </xsl:call-template>
+              </xsl:for-each>
+            </li>
+          </ul>
+        </section>
+      </xsl:if>
+    </article>
+  </xsl:template>
+  <xsl:template name="tp-date-testament">
+    <xsl:param name="wid"/>
+    <xsl:variable name="w" select="$tp-wills/will[@id = $wid]"/>
+    <xsl:if test="$w/@when != ''">
+      <xsl:value-of select="concat(' (', substring($w/@when, 9, 2), ' ', $w/@mois, ' ', $w/@y, ')')"/>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="tei:persName" mode="tp-name">
+    <span class="surname" style="font-variant:small-caps;font-weight:bold"><xsl:value-of select="normalize-space(tei:surname)"/></span>
+    <xsl:if test="tei:forename">
+      <xsl:text>, </xsl:text>
+      <span class="forename">
+        <xsl:for-each select="tei:forename">
+          <xsl:if test="position() &gt; 1"><xsl:text> </xsl:text></xsl:if>
+          <xsl:value-of select="normalize-space(.)"/>
+        </xsl:for-each>
+      </span>
+    </xsl:if>
+    <xsl:if test="tei:nameLink"><xsl:text> </xsl:text><xsl:value-of select="normalize-space(tei:nameLink)"/></xsl:if>
+    <xsl:for-each select="tei:addName[@type = 'nickname']">
+      <xsl:text>, dit </xsl:text>
+      <span class="addName"><xsl:value-of select="normalize-space(.)"/></span>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:place" priority="9">
+    <article id="{@xml:id}" class="index-entry" style="border-bottom:1px dotted #e0dcd5;padding:.6rem 0;margin:0">
+      <h4 class="placeName-Entry" style="margin:0 0 .3rem;font-size:1.05rem">
+        <span class="placeName-entry">
+          <xsl:call-template name="tp-lieu-nom"/>
+          <xsl:variable name="locs" select="tei:location[not(@type)]"/>
+          <xsl:variable name="loc">
+            <xsl:choose>
+              <xsl:when test="count($locs) &gt; 1 and not($locs/tei:country[normalize-space(.) != 'France'])">
+                <xsl:for-each select="$locs">
+                  <xsl:if test="position() &gt; 1"><xsl:text>, auj. </xsl:text></xsl:if>
+                  <xsl:value-of select="normalize-space(tei:district[@type = 'departement'][normalize-space(.) != ''][1])"/>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:when test="count($locs) &gt; 1">
+                <xsl:for-each select="$locs">
+                  <xsl:if test="position() &gt; 1"><xsl:text> ; auj. </xsl:text></xsl:if>
+                  <xsl:value-of select="string-join((tei:district[@type = 'departement'][normalize-space(.) != ''], tei:country)/normalize-space(.), ', ')"/>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:when test="$locs">
+                <xsl:variable name="pays" select="normalize-space($locs[1]/tei:country[1])"/>
+                <xsl:choose>
+                  <xsl:when test="$pays = 'France' or $pays = ''">
+                    <xsl:value-of select="string-join($locs[1]/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.), ', ')"/>
+                  </xsl:when>
+                  <xsl:otherwise><xsl:value-of select="$pays"/></xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="$locs[1]/tei:placeName">
+                  <xsl:text>, com. </xsl:text>
+                  <xsl:for-each select="$locs[1]">
+                    <xsl:call-template name="tp-lieu-nom"/>
+                  </xsl:for-each>
+                </xsl:if>
+              </xsl:when>
+            </xsl:choose>
+          </xsl:variable>
+          <xsl:if test="normalize-space($loc) != ''">
+            <span class="displayedLocation" style="font-weight:normal;color:#555"> (<span class="departement"><xsl:value-of select="$loc"/></span>)</span>
+          </xsl:if>
+        </span>
+      </h4>
+      <xsl:variable name="geo" select="tei:idno[@type = 'geonamesURI']"/>
+      <xsl:if test="$geo">
+        <p class="geonamesURI" style="font-size:.85rem;margin:.15rem 0">
+          <span style="color:#666">Dans la base Geonames&#160;: </span>
+          <a class="externalLink" href="{normalize-space($geo)}" target="_blank" style="color:#a73136"><xsl:value-of select="normalize-space($geo)"/></a>
+        </p>
+      </xsl:if>
+      <xsl:variable name="morts" select="tei:note[@type = 'linksToEdition']/tei:ref[starts-with(@target, '#')]"/>
+      <xsl:if test="$morts">
+        <section class="linksToEdition" style="font-size:.9rem">
+          <ul style="margin:.2rem 0;padding-left:1.2rem">
+            <li>
+              <xsl:value-of select="if (count($morts) &gt; 1) then 'Lieu de décès des testateurs suivants&#160;: ' else 'Lieu de décès du testateur suivant&#160;: '"/>
+              <xsl:for-each select="$morts">
+                <xsl:variable name="pid" select="substring-after(normalize-space(@target), '#')"/>
+                <xsl:if test="position() &gt; 1"><xsl:text> ; </xsl:text></xsl:if>
+                <a class="internalLink" title="Consulter la notice sur ce testateur dans l’index des testateurs">
+                  <xsl:attribute name="href">
+                    <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
+                    <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
+                    <xsl:value-of select="concat('#', $pid)"/>
+                  </xsl:attribute>
+                  <xsl:value-of select="normalize-space(.)"/>
+                </a>
+                <xsl:variable name="tw" select="$tp-index-personnes/p[@id = $pid]/w"/>
+                <xsl:if test="$tw">
+                  <xsl:value-of select="if (count($tw) &gt; 1) then ' (testaments n° ' else ' (testament n° '"/>
+                  <xsl:for-each select="$tw">
+                    <xsl:if test="position() &gt; 1"><xsl:text>, </xsl:text></xsl:if>
+                    <a class="internalLink" title="Consulter le testament" href="{concat($tp-route, @id)}"><xsl:value-of select="."/></a>
+                  </xsl:for-each>
+                  <xsl:text>)</xsl:text>
+                </xsl:if>
+              </xsl:for-each>
+            </li>
+          </ul>
+        </section>
+      </xsl:if>
+    </article>
+  </xsl:template>
+  <xsl:template name="tp-lieu-nom">
+    <xsl:variable name="anciens" select="tei:placeName[@type = 'old'][not(contains(@when-iso, '/')) or substring-after(@when-iso, '/') = '' or number(substring(substring-after(@when-iso, '/'), 1, 4)) &gt;= 1914]"/>
+    <xsl:variable name="actuels" select="tei:placeName[not(@type = 'old')]"/>
+    <xsl:choose>
+      <xsl:when test="$anciens and $actuels">
+        <xsl:value-of select="concat(normalize-space($anciens[1]), ', auj. ', normalize-space($actuels[1]))"/>
+      </xsl:when>
+      <xsl:when test="$actuels">
+        <xsl:value-of select="normalize-space($actuels[1])"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="normalize-space(tei:placeName[1])"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:p" mode="tp-inline"><p style="margin:.25rem 0"><xsl:apply-templates mode="tp-inline"/></p></xsl:template>
+  <xsl:template match="tei:hi[@rend = 'sup' or @rend = 'super']" mode="tp-inline"><sup><xsl:apply-templates mode="tp-inline"/></sup></xsl:template>
+  <xsl:template match="tei:placeName" mode="tp-inline">
+    <xsl:choose>
+      <xsl:when test="@ref[starts-with(., '#')]">
+        <a class="linkToIndex" style="color:inherit;border-bottom:1px dotted #a73136;text-decoration:none">
+          <xsl:attribute name="href">
+            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
+            <xsl:if test="normalize-space(@corresp) != ''"><xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/></xsl:if>
+            <xsl:value-of select="@ref"/>
+          </xsl:attribute>
+          <xsl:apply-templates mode="tp-inline"/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise><xsl:apply-templates mode="tp-inline"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:ref" mode="tp-inline">
+    <a class="externalLink" href="{@target}" target="_blank" style="color:#a73136"><xsl:apply-templates mode="tp-inline"/></a>
+  </xsl:template>
+  <xsl:template match="tei:title" mode="tp-inline"><span style="font-style:italic"><xsl:apply-templates mode="tp-inline"/></span></xsl:template>
+  <xsl:template match="tei:pb" priority="10">
+    <span class="tp-pb"><xsl:call-template name="tp-page-label"/></span>
+    <xsl:call-template name="tp-page-comment"/>
+  </xsl:template>
+  <xsl:template match="tei:pb[ancestor::tei:div[@subtype = 'edited-from-notary-transcription']]" priority="12"/>
+  <xsl:template name="tp-page-comment">
+    <xsl:variable name="t" select="normalize-space(@type)"/>
+    <xsl:variable name="txt">
+      <xsl:choose>
+        <xsl:when test="$t = 'whitePage_notDigitized'">(Page blanche, non numérisée)</xsl:when>
+        <xsl:when test="$t = 'whitePage'">(Page blanche)</xsl:when>
+        <xsl:when test="$t = 'pageWithExtraNotes_notDigitized'">(Page non numérisée, portant des mentions hors teneur postérieures au testament, non éditées)</xsl:when>
+        <xsl:when test="contains($t, 'xtraNotes')">(Mentions hors teneur postérieures au testament, non éditées)</xsl:when>
+        <xsl:when test="contains($t, 'seals')">(Cachets)</xsl:when>
+        <xsl:when test="$t = 'codicil'">(Codicille)</xsl:when>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:if test="string($txt) != ''">
+      <span class="editorialComment tp-pb-comment"><xsl:value-of select="$txt"/></span>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template name="tp-page-label">
+    <xsl:choose>
+      <xsl:when test="starts-with(@type, 'envelope-verso')">Verso de l’enveloppe</xsl:when>
+      <xsl:when test="starts-with(@type, 'envelope')">Enveloppe</xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="n">
+          <xsl:number count="tei:pb[not(starts-with(@type, 'envelope'))]" level="any" from="tei:text | tei:div[@xml:id]"/>
+        </xsl:variable>
+        <xsl:choose>
+          <xsl:when test="$n = '1'">Première page</xsl:when>
+          <xsl:when test="$n = '2'">Deuxième page</xsl:when>
+          <xsl:when test="$n = '3'">Troisième page</xsl:when>
+          <xsl:when test="$n = '4'">Quatrième page</xsl:when>
+          <xsl:when test="$n = '5'">Cinquième page</xsl:when>
+          <xsl:when test="$n = '6'">Sixième page</xsl:when>
+          <xsl:when test="$n = '7'">Septième page</xsl:when>
+          <xsl:when test="$n = '8'">Huitième page</xsl:when>
+          <xsl:otherwise>Page <xsl:value-of select="$n"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template name="tp-facs-src">
+    <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
+    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/vignettes/', substring-before($fn, '.jpg'), '_ptt.jpg')"/>
+  </xsl:template>
+  <xsl:template name="tp-facs-src-full">
+    <xsl:variable name="fn"><xsl:call-template name="tp-facs-nom"/></xsl:variable>
+    <xsl:value-of select="concat($elec-base, '/testaments-poilus/images/sources/', $fn)"/>
+  </xsl:template>
+  <xsl:template name="tp-facs-nom">
+    <xsl:choose>
+      <xsl:when test="contains(@facs, '../images/')"><xsl:value-of select="substring-after(@facs, '../images/')"/></xsl:when>
+      <xsl:otherwise><xsl:value-of select="tokenize(@facs, '/')[last()]"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template name="tp-nav-item">
+    <xsl:param name="cible"/>
+    <xsl:param name="courant"/>
+    <xsl:param name="libelle"/>
+    <xsl:choose>
+      <xsl:when test="$cible = $courant">
+        <strong class="tp-nav-courant"><xsl:sequence select="ord:html(string($libelle))"/></strong>
+      </xsl:when>
+      <xsl:otherwise>
+        <a class="internalLink" href="{concat($tp-route, $cible)}"><xsl:sequence select="ord:html(string($libelle))"/></a>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:persName[not(tei:surname)]" priority="9">
+    <span class="persName"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="tei:choice[tei:orig and tei:reg] | tei:choice[tei:abbr and tei:expan] | tei:choice[tei:sic and tei:corr]" priority="30">
+    <span class="tp-tr tp-var"><xsl:apply-templates select="tei:orig/node() | tei:abbr/node() | tei:sic/node()"/></span>
+    <span class="tp-ed tp-var"><xsl:apply-templates select="tei:reg/node() | tei:expan/node() | tei:corr/node()"/></span>
+  </xsl:template>
+  <xsl:template match="tei:ex" priority="20">
+    <span class="tp-ex"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="tei:lb[not(@n)]" priority="20">
+    <xsl:if test="@break = 'no'">
+      <span class="tp-tr tp-lb-hyph">-</span>
+    </xsl:if>
+    <br class="tp-tr tp-lb"/>
+    <xsl:if test="not(@break = 'no')">
+      <span class="tp-ed tp-lb-sp"><xsl:text> </xsl:text></span>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="tei:space[@dim = 'vertical']" priority="20">
+    <span class="tp-tr space tp-space">
+      <span class="editorialComment tp-space-comment">
+        <xsl:choose>
+          <xsl:when test="@quantity = '1' or not(@quantity)">(Espace d’une ligne laissé blanc)</xsl:when>
+          <xsl:otherwise>(Espace de <xsl:value-of select="@quantity"/> lignes environ laissé blanc)</xsl:otherwise>
+        </xsl:choose>
+      </span>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:persName[tei:surname] | tei:placeName[tei:surname] | tei:name[tei:surname] | tei:orgName[tei:surname] | tei:author[tei:surname]" priority="12">
+    <span class="{local-name()}"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="tei:subst" priority="20">
+    <span class="subst"><xsl:apply-templates select="*"/></span>
+  </xsl:template>
+  <xsl:template match="tei:del" priority="20">
+    <del class="tp-tr tp-del"><xsl:apply-templates/></del>
+  </xsl:template>
+  <xsl:template match="tei:add" priority="20">
+    <ins>
+      <xsl:attribute name="class">
+        <xsl:text>tp-add</xsl:text>
+        <xsl:if test="normalize-space(@place) != ''"><xsl:value-of select="concat(' tp-add-', normalize-space(@place))"/></xsl:if>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </ins>
+  </xsl:template>
+  <xsl:template match="tei:supplied[not(parent::tei:choice)]" priority="20">
+    <span class="tp-ed tp-supplied"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="tei:front/tei:docDate" priority="20">
+    <xsl:variable name="id" select="string(ancestor::tei:text[@xml:id][1]/@xml:id)"/>
+    <xsl:variable name="n" select="number(substring-after($id, 'will-'))"/>
+    <h2 class="tp-num">
+      <xsl:if test="string($n) != 'NaN'">
+        <span class="tp-num-n"><xsl:value-of select="$n"/></span>
+        <br/>
+      </xsl:if>
+      <span class="docDate tp-docDate"><xsl:apply-templates/></span>
+    </h2>
+  </xsl:template>
+  <xsl:template match="tei:front/tei:div[@type = 'reference']/tei:p" priority="20">
+    <p class="p tp-reference">
+      <xsl:if test="tei:ref">
+        <span class="referenceLabel tp-referenceLabel">Cote aux Archives nationales : </span>
+      </xsl:if>
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+  <xsl:template match="tei:front//tei:persName[@ref[starts-with(., '#')]] | tei:front//tei:placeName[@ref[starts-with(., '#')]]" priority="25">
+    <a>
+      <xsl:attribute name="class">
+        <xsl:value-of select="concat('tp-linkToIndex linkToIndex ', local-name(), '-linked')"/>
+      </xsl:attribute>
+      <xsl:variable name="unite" select="substring-after(normalize-space(@ref), '#')"/>
+      <xsl:attribute name="href">
+        <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/testaments-poilus-edition</xsl:text>
+        <xsl:choose>
+          <xsl:when test="$unite != ''">
+            <xsl:value-of select="concat('?refId=', $unite)"/>
+          </xsl:when>
+          <xsl:when test="normalize-space(@corresp) != ''">
+            <xsl:value-of select="concat('?refId=', normalize-space(@corresp))"/>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:choose>
+          <xsl:when test="self::tei:persName">Consulter la notice de ce testateur dans l’index</xsl:when>
+          <xsl:otherwise>Consulter la notice de ce lieu dans l’index des lieux de décès</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+  <xsl:template match="tei:handShift">
+    <span class="tp-handshift" data-medium="{@medium}"/>
+  </xsl:template>
+  <xsl:template match="tei:opener">
+    <div class="opener"><xsl:apply-templates/></div>
+  </xsl:template>
+  <xsl:template match="tei:byline/tei:docAuthor">
+    <span class="author">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:cit" priority="12">
+    <span class="cit">
+      <xsl:for-each select="*">
+        <xsl:if test="position() != 1"><xsl:text> </xsl:text></xsl:if>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:cit/tei:quote" priority="12">
+    <q class="quote"><xsl:apply-templates/></q>
+  </xsl:template>
   <xsl:template match="tei:metamark" priority="20">
     <xsl:variable name="r" select="normalize-space(@rend)"/>
     <xsl:variable name="lib">
@@ -1102,6 +1070,55 @@
     <xsl:next-match>
       <xsl:with-param name="level" select="$level"/>
     </xsl:next-match>
+  </xsl:template>
+
+  <!-- ==== 4. MÉCANISMES COMMUNS : tableau filtrable (tf-*), liens vers l'ancien site (D5), liens internes entre fragments ==== -->
+  <xsl:template match="tei:ref[@type = 'linkToEdition'] | tei:ref[@type = 'linkToPersonsIndex'] | tei:ref[@type = 'linkToIntro'] | tei:ref[@type = 'linkToBibl']" priority="26">
+    <xsl:variable name="cible" select="substring-after(normalize-space(@target), '#')"/>
+    <xsl:variable name="co" select="normalize-space(@corresp)"/>
+    <xsl:variable name="ouvr" select="string($tp-unites/unite[@id = $cible]/@ouvrable)"/>
+    <xsl:choose>
+      <xsl:when test="$cible = ''">
+        <xsl:apply-templates/>
+      </xsl:when>
+      <xsl:otherwise>
+        <a>
+          <xsl:attribute name="class"><xsl:value-of select="concat(@type, ' tp-renvoi')"/></xsl:attribute>
+          <xsl:if test="normalize-space(@n) != ''">
+            <xsl:attribute name="title"><xsl:value-of select="normalize-space(@n)"/></xsl:attribute>
+          </xsl:if>
+          <xsl:attribute name="href">
+            <xsl:value-of select="$elec-base"/><xsl:text>/testaments-poilus/document/</xsl:text>
+            <xsl:choose>
+              <xsl:when test="starts-with($co, 'testaments-poilus-') and $ouvr != ''">
+                <xsl:value-of select="concat($co, '?refId=', $ouvr, '#', $cible)"/>
+              </xsl:when>
+              <xsl:when test="starts-with($co, 'testaments-poilus-')">
+                <xsl:value-of select="concat($co, '?refId=', $cible)"/>
+              </xsl:when>
+              <xsl:when test="$co != ''">
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $co, '#', $cible)"/>
+              </xsl:when>
+              <xsl:when test="$ouvr != ''">
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $ouvr, '#', $cible)"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="concat('testaments-poilus-edition?refId=', $cible)"/>
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:attribute>
+          <xsl:apply-templates/>
+        </a>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:ref[not(@type)][starts-with(normalize-space(@target), '#will-')]" priority="26">
+    <a class="tp-renvoi-testament internalLink">
+      <xsl:attribute name="href">
+        <xsl:value-of select="concat($tp-route, substring-after(normalize-space(@target), '#'))"/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
   </xsl:template>
 
   <!-- ====================================================================
@@ -1300,12 +1317,5 @@
       </table>
     </div>
   </xsl:template>
-
-  <!-- Clés du filtre Département ou pays : les départements, ou le pays hors de France. -->
-  <xsl:function version="3.0" name="tp:lieu-cles" as="xs:string*" xmlns:tp="urn:testaments-poilus:xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xsl:param name="place" as="element()"/>
-    <xsl:sequence select="distinct-values(for $l in $place/tei:location[not(@type)]
-        return (if (normalize-space($l/tei:country) = ('France', '')) then $l/tei:district[@type = 'departement'][normalize-space(.) != '']/normalize-space(.) else normalize-space($l/tei:country)))"/>
-  </xsl:function>
 
 </xsl:transform>
