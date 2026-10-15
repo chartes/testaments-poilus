@@ -3,7 +3,7 @@
   Module générique (2026-10-15) des bibliographies, allure de la page « Références »
   des chroniques latines : une rubrique repliable par listBibl titré (« ● Titre (N) »),
   une ligne par référence, entière, l'année en gris à droite ; au-delà de 30 références,
-  le nombre et un champ de filtre (comportement dans le customJs du corpus).
+  un champ de filtre (comportement dans le customJs du corpus).
   Import APRÈS hteiml : les règles du corpus gardent la priorité. Le mode « biblio-texte »
   rend le contenu d'une référence ; un corpus le surcharge (sigle de Montferrand, liens des
   chroniques).
@@ -43,7 +43,6 @@
   <xsl:template name="biblio-liste">
     <xsl:if test="count(.//tei:bibl) gt $biblio-seuil-filtre">
       <p class="biblio-barre">
-        <span><span class="biblio-nb"><xsl:value-of select="count(.//tei:bibl)"/></span> références</span>
         <input type="search" class="biblio-filtre" placeholder="Filtrer (auteur, titre, sigle…)" aria-label="Filtrer la bibliographie"/>
       </p>
     </xsl:if>
