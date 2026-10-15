@@ -18,6 +18,7 @@
   <!-- ==== 0. DÉCLARATIONS : imports, sortie, paramètres, variables, clés, fonctions ==== -->
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
   <xsl:import href="tableau-filtrable.xsl"/>
+  <xsl:import href="bibliographie.xsl"/><!-- bibliographies : module commun (2026-10-15) -->
   <xsl:include href="ordinaux.xsl"/> 
   <xsl:variable name="elec-base" select="'/elec'"/>
   <xsl:param name="images" select="$elec-base"/>
@@ -635,14 +636,6 @@
       <xsl:text> : </xsl:text>
       <span class="msName"><xsl:apply-templates select="tei:msName/node()"/></span>
     </xsl:if>
-  </xsl:template>
-  <xsl:template match="tei:listBibl[parent::tei:listBibl]" priority="12">
-    <li class="listBibl">
-      <xsl:apply-templates select="tei:head/node()"/>
-      <ul>
-        <xsl:apply-templates select="*[not(self::tei:head)]"/>
-      </ul>
-    </li>
   </xsl:template>
 
   <!-- ==== 3. PROPRE AU PROJET ==== -->
