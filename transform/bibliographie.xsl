@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Module générique (2026-10-15) des bibliographies, allure de la page « Références »
-  des chroniques latines : une rubrique repliable par listBibl titré (« ● Titre (N) »),
-  une ligne par référence, entière, l'année en gris à droite ; au-delà de 30 références,
-  un champ de filtre (comportement dans le customJs du corpus).
+  des chroniques latines : une rubrique repliable par listBibl titré (« Titre (N) »),
+  une ligne par référence, entière, l'année en gris à droite.
   Import APRÈS hteiml : les règles du corpus gardent la priorité. Le mode « biblio-texte »
   rend le contenu d'une référence ; un corpus le surcharge (sigle de Montferrand, liens des
   chroniques).
@@ -16,7 +15,6 @@
   xmlns:bib="urn:elec:bibliographie"
   exclude-result-prefixes="tei xs bib">
 
-  <xsl:param name="biblio-seuil-filtre" as="xs:integer" select="30"/>
 
   <xsl:template match="tei:listBibl">
     <xsl:choose>
@@ -24,9 +22,14 @@
         <details class="biblio" open="open">
           <xsl:if test="@xml:id"><xsl:attribute name="id" select="@xml:id"/></xsl:if>
           <summary>
-            <span class="biblio-rubrique"><xsl:apply-templates select="tei:head[1]/node()"/></span>
-            <xsl:text> </xsl:text>
-            <span class="biblio-compte">(<xsl:value-of select="count(.//tei:bibl)"/>)</span>
+            <!-- Titre de rubrique en vrai intertitre (h2, h3 pour une liste dans une liste) :
+                 tailles et espacements de hteiml, comme les intertitres des autres pages. -->
+            <xsl:element name="h{min((6, count(ancestor::tei:listBibl) + 2))}">
+              <xsl:attribute name="class">head biblio-rubrique</xsl:attribute>
+              <xsl:apply-templates select="tei:head[1]/node()"/>
+              <xsl:text> </xsl:text>
+              <span class="biblio-compte">(<xsl:value-of select="count(.//tei:bibl)"/>)</span>
+            </xsl:element>
           </summary>
           <xsl:call-template name="biblio-liste"/>
         </details>
@@ -41,11 +44,6 @@
   </xsl:template>
 
   <xsl:template name="biblio-liste">
-    <xsl:if test="count(.//tei:bibl) gt $biblio-seuil-filtre">
-      <p class="biblio-barre">
-        <input type="search" class="biblio-filtre" placeholder="Filtrer (auteur, titre, sigle…)" aria-label="Filtrer la bibliographie"/>
-      </p>
-    </xsl:if>
     <!-- Références en lignes ; une liste imbriquée (« Sources » > « Sources manuscrites »)
          devient une rubrique dans la rubrique, à sa place ; le reste (p, note…) par hteiml. -->
     <xsl:for-each-group select="* except tei:head[1]" group-adjacent="boolean(self::tei:bibl)">
