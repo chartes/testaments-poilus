@@ -421,14 +421,10 @@
           <xsl:with-param name="when" select="''"/>
         </xsl:call-template>
       </xsl:when>
+      <!-- 2026-10-19 : page « Les testaments » : son titre, puis le sommaire de DoTS (années), sans la barre
+           d'années ni la liste refaites à la main (décision de Maxime) -->
       <xsl:when test="$seul and $lbl = 'Les testaments'">
-        <xsl:call-template name="tp-groupe-page">
-          <xsl:with-param name="niveau" select="'portail'"/>
-          <xsl:with-param name="lbl" select="$lbl"/>
-          <xsl:with-param name="y" select="''"/>
-          <xsl:with-param name="m" select="''"/>
-          <xsl:with-param name="when" select="''"/>
-        </xsl:call-template>
+        <h1 class="head">Les testaments</h1>
       </xsl:when>
       <xsl:otherwise>
         <xsl:apply-imports/>
@@ -1131,9 +1127,8 @@
         else if (doc-available($tp-uri-edition)) then document($tp-uri-edition)//*[@xml:id = current()/@xml:id]//(tei:person | tei:place)
         else ()"/>
     <section id="{@xml:id}" class="{if ($personnes) then 'tp-index-persons' else 'tp-index-places'}">
-      <h2 style="font-size:1.25rem;color:#a73136;border-bottom:1px solid #d7d1ca;padding-bottom:.3rem;margin:2rem 0 1rem">
-        <xsl:value-of select="if ($personnes) then 'Index des testateurs' else 'Index des lieux de décès'"/>
-      </h2>
+      <!-- 2026-10-19 : titre de page (h1.head) comme les autres corpus, et non un h2 en style en ligne -->
+      <h1 class="head"><xsl:value-of select="if ($personnes) then 'Index des testateurs' else 'Index des lieux de décès'"/></h1>
       <xsl:choose>
         <xsl:when test="$personnes"><xsl:call-template name="tp-tableau-testateurs"><xsl:with-param name="entrees" select="$entrees"/><xsl:with-param name="nom-csv" select="'testaments-testateurs'"/></xsl:call-template></xsl:when>
         <xsl:otherwise><xsl:call-template name="tp-tableau-lieux"><xsl:with-param name="entrees" select="$entrees"/><xsl:with-param name="nom-csv" select="'testaments-lieux-deces'"/></xsl:call-template></xsl:otherwise>
