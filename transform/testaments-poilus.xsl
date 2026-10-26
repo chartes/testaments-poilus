@@ -461,6 +461,7 @@
                 <xsl:with-param name="cible" select="concat('annee-', @y)"/>
                 <xsl:with-param name="courant" select="$cour"/>
                 <xsl:with-param name="libelle" select="string(@y)"/>
+                <xsl:with-param name="ancetre" select="@y = $y"/>
               </xsl:call-template>
             </li>
           </xsl:for-each>
@@ -474,6 +475,7 @@
                   <xsl:with-param name="cible" select="concat('mois-', @y, '-', @m)"/>
                   <xsl:with-param name="courant" select="$cour"/>
                   <xsl:with-param name="libelle" select="string(@mois)"/>
+                  <xsl:with-param name="ancetre" select="@m = $m"/>
                 </xsl:call-template>
               </li>
             </xsl:for-each>
@@ -494,9 +496,18 @@
           </ul>
         </xsl:if>
       </nav>
+      <!-- niveau jour : la page du jour affiche le premier testament du jour (pas de page de jour vide) -->
+      <xsl:if test="$niveau = 'jour' and $dedans[1]">
+        <div class="tp-jour-testament">
+          <xsl:apply-templates select="document($tp-uri-edition)//tei:text[@xml:id = string($dedans[1]/@id)]"/>
+        </div>
+      </xsl:if>
+      <xsl:if test="$niveau != 'jour' and $niveau != 'mois'">
       <h1 style="font-size:1.5rem;color:#a73136;margin:0 0 .4rem;font-weight:400">
         <xsl:value-of select="$lbl"/>
       </h1>
+      </xsl:if>
+      <xsl:if test="$niveau != 'jour' and $niveau != 'mois'">
       <p style="margin:0 0 1.1rem;color:#6b6260;font-size:.95rem">
         <xsl:value-of select="count($dedans)"/>
         <xsl:text> testament</xsl:text>
@@ -522,6 +533,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </p>
+      </xsl:if>
       <xsl:choose>
         <xsl:when test="$niveau = 'portail'">
           <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
@@ -557,36 +569,10 @@
             </xsl:for-each>
           </ul>
         </xsl:when>
-        <xsl:when test="$niveau = 'mois'">
-          <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
-            <xsl:for-each select="$tp-wills/will[@fd = '1'][@y = $y][@m = $m]">
-              <xsl:variable name="w" select="@when"/>
-              <li style="padding:.45rem 0;border-bottom:1px solid #efeceb">
-                <a class="internalLink" href="{concat($tp-route, 'jour-', $w)}"
-                   style="color:#28211f;text-decoration:none;font-weight:700"><xsl:sequence select="ord:html(string(@jour))"/></a>
-                <xsl:call-template name="tp-groupe-compte">
-                  <xsl:with-param name="k" select="count($tp-wills/will[@when = $w])"/>
-                </xsl:call-template>
-                <ul style="list-style:none;padding:0 0 0 1.2rem;margin:.2rem 0 0">
-                  <xsl:for-each select="$tp-wills/will[@when = $w]">
-                    <li style="padding:.1rem 0">
-                      <xsl:call-template name="tp-groupe-testament"/>
-                    </li>
-                  </xsl:for-each>
-                </ul>
-              </li>
-            </xsl:for-each>
-          </ul>
-        </xsl:when>
-        <xsl:otherwise>
-          <ul class="tp-groupe-liste" style="list-style:none;padding:0;margin:0">
-            <xsl:for-each select="$dedans">
-              <li style="padding:.3rem 0;border-bottom:1px solid #efeceb">
-                <xsl:call-template name="tp-groupe-testament"/>
-              </li>
-            </xsl:for-each>
-          </ul>
-        </xsl:otherwise>
+        <!-- niveau mois : pas de liste des jours et testaments dans le document (la TOC de dots-vue) -->
+        <xsl:when test="$niveau = 'mois'"/>
+        <!-- niveau jour : pas de liste des testaments dans le document (la TOC de dots-vue suffit) -->
+        <xsl:otherwise/>
       </xsl:choose>
     </section>
   </xsl:template>
@@ -909,8 +895,10 @@
     <xsl:param name="cible"/>
     <xsl:param name="courant"/>
     <xsl:param name="libelle"/>
+    <!-- ancetre : l'année ou le mois du jour affiché, en rouge comme le jour -->
+    <xsl:param name="ancetre" select="false()"/>
     <xsl:choose>
-      <xsl:when test="$cible = $courant">
+      <xsl:when test="$cible = $courant or $ancetre">
         <strong class="tp-nav-courant"><xsl:sequence select="ord:html(string($libelle))"/></strong>
       </xsl:when>
       <xsl:otherwise>
