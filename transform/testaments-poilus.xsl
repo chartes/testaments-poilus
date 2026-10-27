@@ -956,6 +956,8 @@
   <xsl:template match="tei:supplied[not(parent::tei:choice)]" priority="20">
     <span class="tp-ed tp-supplied"><xsl:apply-templates/></span>
   </xsl:template>
+  <!-- figure dont la légende (figDesc) répète le titre (head) : seul le titre s'affiche -->
+  <xsl:template match="tei:figure/tei:figDesc[normalize-space(.) != '' and normalize-space(.) = normalize-space(../tei:head)]" priority="30"/>
   <xsl:template match="tei:front/tei:docDate" priority="20">
     <xsl:variable name="id" select="string(ancestor::tei:text[@xml:id][1]/@xml:id)"/>
     <xsl:variable name="n" select="number(substring-after($id, 'will-'))"/>
