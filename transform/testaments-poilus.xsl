@@ -925,6 +925,13 @@
       <span class="tp-ed tp-lb-sp"><xsl:text> </xsl:text></span>
     </xsl:if>
   </xsl:template>
+  <!-- 2026-10-29 : lacunes (<gap reason="unreadable"/>, "deleted-unreadable", testaments 18 et 60) : hteiml écrivait la
+       raison brute, en anglais (« [deleted-unreadable] »). Mention en français, dans le style des commentaires éditoriaux. -->
+  <xsl:template match="tei:gap[@reason = ('unreadable', 'deleted-unreadable', 'illegible')]" priority="20">
+    <span class="gap" title="{if (@reason = 'deleted-unreadable') then 'passage biffé illisible' else 'passage illisible'}">
+      <xsl:value-of select="if (@reason = 'deleted-unreadable') then '[biffé, illisible]' else '[illisible]'"/>
+    </span>
+  </xsl:template>
   <xsl:template match="tei:space[@dim = 'vertical']" priority="20">
     <span class="tp-tr space tp-space">
       <span class="editorialComment tp-space-comment">
