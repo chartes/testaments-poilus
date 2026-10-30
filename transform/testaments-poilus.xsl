@@ -147,9 +147,10 @@
   <xsl:template match="tei:note[@type = 'biography' or @type = 'letter-nav'
                               or @type = 'linkToEdition' or @type = 'linksToEdition']"
                 mode="fn" priority="20"/>
-  <xsl:template match="*[local-name() = 'wrapper']/tei:text[@xml:id]" priority="30">
+  <xsl:template match="*[local-name() = 'wrapper']/tei:text[@xml:id]" name="tp-testament" priority="30">
+    <xsl:param name="avec-nav" select="true()"/>
     <article id="{@xml:id}" class="testament">
-      <xsl:call-template name="tp-will-nav"/>
+      <xsl:if test="$avec-nav"><xsl:call-template name="tp-will-nav"/></xsl:if>
       <xsl:call-template name="tp-mode-bar"/>
       <xsl:call-template name="tp-facs-gallery"/>
       <xsl:apply-templates/>
@@ -499,7 +500,14 @@
       <!-- niveau jour : la page du jour affiche le premier testament du jour (pas de page de jour vide) -->
       <xsl:if test="$niveau = 'jour' and $dedans[1]">
         <div class="tp-jour-testament">
-          <xsl:apply-templates select="document($tp-uri-edition)//tei:text[@xml:id = string($dedans[1]/@id)]"/>
+          <!-- 2026-10-30 : par le modèle de la page d'un testament (barre Transcription/Édition, navigation, apparat) ;
+               appliqué directement, le texte sortait sans la barre et les deux formes s'affichaient côte à côte
+               (« Novembrenovembre »). -->
+          <xsl:for-each select="document($tp-uri-edition)//tei:text[@xml:id = string($dedans[1]/@id)]">
+            <xsl:call-template name="tp-testament">
+              <xsl:with-param name="avec-nav" select="false()"/>
+            </xsl:call-template>
+          </xsl:for-each>
         </div>
       </xsl:if>
       <xsl:if test="$niveau != 'jour' and $niveau != 'mois'">
