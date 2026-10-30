@@ -1264,7 +1264,7 @@
               </td>
               <td class="tp-c-dep" data-sort="{$cles[1]}" data-f="{tf:plat(string-join($cles, ' ; '))}">
                 <xsl:choose>
-                  <xsl:when test="$dep != ''"><xsl:value-of select="$dep"/></xsl:when>
+                  <xsl:when test="$dep != ''"><xsl:value-of select="$dep"/><xsl:for-each select="(tei:location/tei:region[normalize-space()])[1]"><span class="tp-region"><xsl:value-of select="normalize-space(.)"/></span></xsl:for-each></xsl:when>
                   <xsl:otherwise><span class="tf-vide">—</span></xsl:otherwise>
                 </xsl:choose>
               </td>
