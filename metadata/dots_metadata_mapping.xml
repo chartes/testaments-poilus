@@ -16,7 +16,7 @@
     <schema:datePublished scope="collection" source="./collection.tsv" value="issued"/>
     <schema:description scope="collection" source="./collection.tsv" value="description"/>
     <dots:shortTitle scope="collection" source="./collection.tsv" value="short_title"/>
-    <dcat:accessURL scope="collection" source="./collection.tsv" value="id" prefix="https://dev.chartes.psl.eu/dots/api/dts/collection?id="/>
+    <dcat:accessURL scope="collection" source="./collection.tsv" value="id" prefix="https://data.chartes.psl.eu/api/dts/collection?id="/>
     <dct:title scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/title[1]"/>
     <dct:created scope="document" xpath="/TEI/teiHeader/profileDesc/creation/date[not(@type)]"/>
     <dct:language scope="document" xpath="/TEI/teiHeader/profileDesc/langUsage/language/tokenize(@ident)"/>
@@ -51,14 +51,14 @@
     <schema:encoding scope="document" xpath="/TEI/@xml:id" type="object">
       <dots:objectProperty name="@type" resourceId="all">schema:MediaObject</dots:objectProperty>
       <dots:objectProperty name="encodingFormat" resourceId="all">application/tei+xml</dots:objectProperty>
-      <dots:objectProperty name="contentUrl" xpath="concat('https://dots.chartes.psl.eu/api/dts/document?resource=', .)"/>
+      <dots:objectProperty name="contentUrl" xpath="concat('https://data.chartes.psl.eu/api/dts/document?resource=', .)"/>
     </schema:encoding>
     <schema:encoding scope="document" xpath="/TEI/@xml:id" type="object">
       <dots:objectProperty name="@type" resourceId="all">schema:MediaObject</dots:objectProperty>
       <dots:objectProperty name="encodingFormat" resourceId="all">text/html</dots:objectProperty>
-      <dots:objectProperty name="contentUrl" xpath="concat('https://dots.chartes.psl.eu/api/dts/document?resource=', ., codepoints-to-string(38), 'mediaType=html')"/>
+      <dots:objectProperty name="contentUrl" xpath="concat('https://data.chartes.psl.eu/api/dts/document?resource=', ., codepoints-to-string(38), 'mediaType=html', codepoints-to-string(38), 'renderer=hteiml')"/>
     </schema:encoding>
-    <download xmlns="http://www.tei-c.org/ns/1.0" scope="document" xpath="let $id := /TEI/@xml:id return concat('api/dts/document?resource=', $id)" prefix="https://dev.chartes.psl.eu/dots/"/>
-    <dcat:accessURL scope="document" xpath="/TEI/@xml:id" prefix="https://dev.chartes.psl.eu/dots/api/dts/collection?id="/>
+    <download xmlns="http://www.tei-c.org/ns/1.0" scope="document" xpath="let $id := /TEI/@xml:id return concat('api/dts/document?resource=', $id)" prefix="https://data.chartes.psl.eu/"/>
+    <dcat:accessURL scope="document" xpath="/TEI/@xml:id" prefix="https://data.chartes.psl.eu/api/dts/collection?id="/>
   </dots:mapping>
 </dots:metadataMap>
